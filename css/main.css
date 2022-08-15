@@ -1,0 +1,1472 @@
+/*reset */ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*estilos del index*/ 
+/*MOBILE FIRST*/
+
+
+header {
+
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgba(43, 42, 42, 0.897);
+    height: 100px;
+    width: 100%;
+    position: sticky;
+    top: 0; 
+    left: 0;   
+    
+    
+    
+}
+
+h1 {
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif; 
+    font-variant-caps: all-small-caps;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+        
+    }
+
+header nav{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:rgba(54, 53, 53, 0.897);
+    height: 2.3rem;
+    margin-bottom: 0.8rem;
+}
+
+nav:hover {
+
+    background-color: rgba(70, 68, 68, 0.897)
+
+}
+
+
+header nav ul li {
+    margin: 0.2rem;
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    color: whitesmoke;
+    font-weight: bold;
+    font-variant-caps: all-petite-caps;
+    
+} 
+
+li:hover {
+
+    transform: scale(1.05);
+}
+
+
+a {
+    color: whitesmoke;
+    display: inline;
+}
+
+
+
+main {
+
+   /* height: 200vh;*/
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 1fr 0.25fr 0.5fr 1fr 1fr 0.01fr 0.3fr 1fr;
+  
+    grid-template-areas: "portadaPrincipal portadaPrincipal"
+                         "citaTextual citaTextual"
+                         "personaje personaje"
+                         "p_ppal1 p_ppal2"
+                         "p_ppal3 p_ppal4"
+                         "masPersonajes masPersonajes"
+                         "lugar lugar"
+                         "cajaVideoLugar cajaVideoLugar"
+                        ;
+    justify-content: center;
+    justify-items: center;
+    
+
+}
+
+.portadaPrincipal {
+
+    grid-area: portadaPrincipal;
+}
+
+
+.citaTextual {
+
+    grid-area: citaTextual;
+    margin: 1.2rem;
+}
+
+
+.personaje {
+
+    grid-area:personaje;
+}
+
+.p_ppal1 {
+
+    grid-area: p_ppal1;
+}
+
+.p_ppal2 {
+
+    grid-area: p_ppal2;
+}
+.p_ppal3 {
+
+    grid-area: p_ppal3;
+}
+.p_ppal4 {
+
+    grid-area: p_ppal4;
+}
+
+.masPersonajes {
+
+    grid-area: masPersonajes;
+    
+
+}
+
+.lugar {
+    grid-area: lugar;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: whitesmoke;
+
+}
+
+.cajaVideoLugar {
+    grid-area: cajaVideoLugar;
+    margin-top: 1.2rem;
+    width: 325px;
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: auto;
+    resize: both;
+    position: relative;
+    z-index: 2;
+    justify-self: center;
+
+}
+
+.videoLugar {
+
+    width: 100%;
+    height: 100%;
+    border: none;
+    
+}
+
+
+
+.imgPrincipal {
+
+    width: 100%;
+    height: 90%;
+    
+}
+
+.sinopsis { 
+
+    display: none;
+}
+
+.citaTextual {
+
+    font-size: 1rem;
+    font-family: 'Port Lligat Sans', sans-serif;
+    margin-top: 0.8rem;
+    text-align: center;
+    color: whitesmoke;
+    
+}
+
+.personaje {
+    color: whitesmoke;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    margin: 2rem 2rem;
+    text-align: center;  
+      
+}
+
+.pTexto {
+    
+    
+    width: 11rem; /*mismo tamaño que imagen de personajes*/
+    padding-top: 1rem ;
+    padding-right: 1rem;
+    text-align: left;     
+    font-size: small;     
+    background-color: whitesmoke;
+    width: 65%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.3rem;
+    }
+
+.pTexto h3 {
+
+    margin-top: 0.5rem;
+    
+    
+}
+
+.pTexto h3 a:hover {
+
+    font-size: 0.9rem;   
+    transform: scale(1.05);
+    
+}
+
+.masPersonajes:hover {
+    background-color: rgb(106, 68, 122);
+    transform: scale(1.05);
+}
+
+
+main div div h3 a {
+    color: black;    
+    font-size: 0.7rem;
+    font-family: 'Port Lligat Sans', sans-serif;
+    
+    
+}
+
+
+.p_ppal1 , .p_ppal2 , .p_ppal3, .p_ppal4 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.imagenSecundaria {
+
+    width: 65%;
+    height: 45%;
+}
+
+
+body {
+
+    background-color: rgba(7, 2, 2, 0.774) ;
+    height: 80vh;
+
+    }
+
+
+
+.masPersonajes, .masLugar {
+  
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border: none solid 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: rgb(115, 73, 133);
+    align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           
+    }
+
+  
+/*.cajaVideoLugar /*padre de la imagen y de columna {
+
+    display: flex;
+    justify-items: center;
+        
+    }*/
+
+.cajaLugar {
+
+    display: none;
+}
+
+.derechosReservados {
+
+    text-align: center;
+    margin-top: 4rem;
+    padding-top: 4rem;
+    font-size: 1.2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+
+}
+   
+
+.logoRedes {
+
+    margin-top: 1rem;
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    gap: 1rem;
+   
+    
+}
+
+   
+/*declaramos media queries para tablet min 600px*/
+
+@media screen and  (min-width:600px) {
+
+header nav ul li {
+  
+    font-size: 1.2rem;
+        
+    } 
+
+main {
+
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1fr 0.1fr 0.1fr 0.5fr 0.3fr 0.15fr 0.6fr;
+       
+    grid-template-areas: " portadaPrincipal portadaPrincipal portadaPrincipal portadaPrincipal" 
+                         ". citaTextual citaTextual ."
+                         ". personaje personaje . "
+                         "p_ppal1 p_ppal2 p_ppal3 p_ppal4"
+                         ". masPersonajes masPersonajes . "
+                         " lugar lugar lugar lugar"
+                         " cajaVideoLugar cajaVideoLugar cajaVideoLugar cajaVideoLugar "
+                        ;
+            
+     
+    }
+
+.citaTextual {
+
+        font-size: 1.3rem;
+    }
+
+.personaje , .lugar {
+
+    font-size: 2rem;
+    margin-bottom: 4rem;
+
+}
+
+.masPersonajes {
+
+    font-size: 1.3rem;
+}
+
+.cajaVideoLugar {
+    margin-top: 1.2rem;
+    width: 650px;
+    height: 550px;
+   
+
+}
+
+.videoLugar {
+
+    width: 100%;
+    height: 100%;
+    border: none;
+    
+}
+
+
+
+}
+
+@media screen and  (min-width:1024px) {
+
+
+
+
+main div h2, p {
+
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ 
+
+    main {
+
+        
+        grid-template-rows: 0.8fr 0.1fr 0.1fr 0.5fr 0.25fr 0.15fr 1fr;
+
+        grid-template-areas: "  portadaPrincipal portadaPrincipal portadaPrincipal sinopsis " 
+                             ". citaTextual citaTextual ."
+                             ". personaje personaje . "
+                             "p_ppal1 p_ppal2 p_ppal3 p_ppal4"
+                             ". masPersonajes masPersonajes . "
+                             " lugar lugar lugar lugar"
+                             " cajaVideoLugar cajaVideoLugar cajaVideoLugar cajaLugar "
+                            ;
+        column-gap: 0.7rem;
+                
+        /*justify-content:center*/ ;
+        }
+
+    
+
+.imgPrincipal {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    width: 100%;
+    height:90%;
+       
+    
+}
+
+.sinopsis {
+    display: block;
+    grid-area: sinopsis;
+    background-color: whitesmoke;
+    height: 90%;
+    width: 75%;
+    padding: 0.6rem;
+    font-size: 1rem;
+    justify-self: left;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.citaTextual {
+
+    margin-top: 0.5rem;
+}
+.imagenSecundaria {
+
+    width: 65%;
+    height: 52%;
+        }
+
+
+.masPersonajes {
+
+    font-size: 1rem;
+    
+}
+
+.lugar {
+    margin-top: 2rem;
+    
+}
+
+
+.cajaVideoLugar {
+    margin-top: 1.2rem;
+    width: 90%;
+    height: 100%;
+    grid-area: cajaVideoLugar;
+    justify-self: right;
+   
+
+}
+
+.videoLugar {
+
+    width: 100%;
+    height: 100%;
+    border: none;
+    
+}
+
+.cajaLugar {
+
+    display: block;
+    grid-area: cajaLugar;
+    background-color: whitesmoke;
+    height: 100%;
+    width: 70%;
+    padding: 0.7rem;
+    margin-top: 1.2rem;
+    justify-self: center;
+    font-size: 1rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-self: left;
+}
+
+.masLugar  {
+
+    justify-content: center;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    
+}
+
+.masLugar:hover {
+    background-color: rgb(106, 68, 122);
+    transform: scale(1.05);
+    
+}
+
+  
+.tituloLugar {
+
+    color: black;
+}
+
+footer {
+
+    margin-top: 2rem;
+    
+}
+   
+}
+
+
+
+/*estilos de COMPRAR*/ 
+/*MOBILE FIRST*/
+
+.contenedorComprar {
+
+    display: grid;
+    grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 0.1fr;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-areas: ". tituloObjetos ."
+                         ". item-1 ."
+                         ". item-2 ."
+                         ". item-3 ."
+                         ". item-4 ."
+                         ". adquirir .";
+
+    
+
+    }
+
+.tituloObjetos {
+
+    grid-area: tituloObjetos;
+    color: whitesmoke;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    margin: 2rem 2rem;
+    text-align: center;  
+    
+    }
+    
+.item-1 {
+
+    grid-area: item-1;
+}
+.item-2{
+
+    grid-area: item-2;
+}
+
+.item-3{
+
+    grid-area: item-3;
+}
+.item-4{
+
+    grid-area: item-4;
+}
+
+.adquirir {
+    grid-area: adquirir;
+}
+
+
+
+
+
+.imgObjeto {
+    font-family: 'Port Lligat Sans', sans-serif;
+    font-size: 1.4rem;
+    color: whitesmoke;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    text-align: left;
+}
+
+
+.precioObjeto {
+    font-family: 'Port Lligat Sans', sans-serif;
+    font-size: 1.1rem;
+    color: whitesmoke;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    text-align: left; 
+}
+
+
+.adquirir {
+    font-family: 'Port Lligat Sans', sans-serif;
+    font-size: 1rem;
+    color: whitesmoke;
+    margin-top: 60px;
+    text-align: center; 
+   
+}
+
+
+.derechosReservados {
+
+    margin-top: 3rem;
+    font-size: 1rem;
+    font-family: 'Port Lligat Sans', sans-serif;
+}
+
+.item-1 img:hover {
+
+    box-shadow: 2px 2px  gray;
+    transform: scale(1.02);
+}
+
+.item-2 img:hover {
+
+    
+    box-shadow: 2px 2px  gray;
+    transform: scale(1.02);
+}
+
+
+.item-3 img:hover {
+
+    
+    box-shadow: 2px 2px  gray;
+    transform: scale(1.02);
+}
+
+
+.item-4 img:hover {
+
+    box-shadow: 2px 2px  gray;
+    transform: scale(1.02);
+
+
+}
+
+/*declaramos media queries para tablet min 600px*/
+
+@media screen and  (min-width:600px) {
+
+    .contenedorComprar {
+        
+        grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
+        grid-template-columns: 10% 40% 40% 10%;
+        grid-template-areas: ". tituloObjetos tituloObjetos ."
+                             ". item-1 item-2 ."
+                             ". item-3 item-4 ."
+                             ". adquirir adquirir .";
+    
+        
+    
+        }
+    
+    .tituloObjetos {
+    
+        font-size: 1.5rem;
+        margin: 2rem 2rem;
+                
+        }
+        
+.derechosReservados {
+
+    margin-top: 3rem;
+}
+    
+
+}
+
+@media screen and  (min-width:1024px) {
+
+    .contenedorComprar {
+        /*height: 80vh;*/
+        grid-template-rows: 0.3fr 1fr 0.1fr;
+        grid-template-columns: 5% 22.5% 22.5% 22.5% 22.5% 5%;
+        grid-template-areas: ". tituloObjetos tituloObjetos tituloObjetos tituloObjetos ."
+                             ". item-1 item-2 item-3 item-4 ."
+                             ". adquirir adquirir adquirir adquirir.";
+
+    
+    
+        }
+
+
+}
+
+ 
+
+  
+/* estilos contacto */
+/*MOBILE FIRST*/  
+
+.contenedorContacto {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.tituloForm {
+
+    color: whitesmoke;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    margin: 2rem 2rem;
+    text-align: center;  
+
+}
+
+.formulario {
+
+    margin: 1rem;
+    font-family: 'Port Lligat Sans', sans-serif;
+    font-size: 1.2rem;
+    color: whitesmoke;
+   
+    
+}
+
+.itemsForm{
+
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-family: 'Port Lligat Sans', sans-serif;
+    font-size: 1rem;
+    color: whitesmoke;
+}
+
+.itemsFormFinal{
+
+    margin-top: 4rem;
+    margin-left: 1rem;
+    font-family: 'Port Lligat Sans', sans-serif;
+    font-size: 1rem;
+    color: whitesmoke;
+}
+
+
+.cuadroForm {
+    margin: 1rem;
+    }
+
+.adquirirProd {
+
+    padding: 1rem;
+    font-family: 'Port Lligat Sans', sans-serif;
+    font-size: 1rem;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.comprarProd {
+
+    display: none;
+    
+}
+
+.logoOffice {
+
+    display: none;
+    
+}
+
+
+@media screen and  (min-width:600px) {
+
+.imagenesPie {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+        }
+
+.comprarProd {
+
+    display: block;
+    
+}
+
+.adquirirProd {
+
+    width: 40%;
+    
+}
+
+
+}
+
+@media screen and  (min-width:1024px) {
+
+.imagenesPie {
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+}
+
+
+/* estilos mejores momentos */
+/*MOBILE FIRST*/  
+
+.tituloEscenas, .tituloMemes {
+
+    color: whitesmoke;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    margin: 2rem 2rem;
+    text-align: center;  
+
+}
+
+.escenaUno, .escenaDos, .escenaTres {
+
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    justify-self: left;
+    
+}
+
+h3 {
+    font-family: 'Port Lligat Sans', sans-serif;
+    font-size: 1.2rem;
+    color: whitesmoke;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    text-align: left;
+}
+
+
+h4 {
+    font-family: 'Port Lligat Sans', sans-serif;
+     
+    font-size: 1rem;
+    color: whitesmoke;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    text-align: left; 
+}
+
+.verOnline {
+
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    border: none solid 1rem;
+    border-radius: 0.5rem;
+    padding: 0.9rem;
+    background-color: rgb(115, 73, 133);
+    align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.verOnline:hover {
+
+    background-color: rgb(106, 68, 122);
+    transform: scale(1.05)
+}
+
+
+.contenedorMomentos {
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 0.1fr 0.1fr 0.2fr 0.1fr 0.2fr 0.1fr 0.2fr 0.1fr 0.2fr 0.2fr 0.2fr;
+    column-gap: 0;
+    grid-template-areas: ". tituloEscenas ."
+                         ". escenaUno ."
+                         ". cajaVideoUno ."
+                         ". escenaDos ."
+                         ". cajaVideoDos ."
+                         ". escenaTres ."
+                         ". cajaVideoTres ."
+                         ". tituloMemes ."
+                         ". cajaMemeUno ."
+                         ". cajaMemeDos . "
+                         ". cajaMemeTres ."
+                        
+                         ;
+
+    /*justify-content: center;*/
+    /*align-items: center;*/
+
+}
+
+.tituloEscenas {
+    grid-area: tituloEscenas;
+
+}
+.escenaUno {
+    grid-area: escenaUno;
+   
+   
+}
+
+.cajaVideoUno {
+
+    grid-area: cajaVideoUno;
+   
+}
+
+.escenaDos {
+    grid-area: escenaDos ;
+
+}
+
+.cajaVideoDos {
+
+    grid-area: cajaVideoDos;
+}
+
+
+.escenaTres {
+    grid-area: escenaTres ;
+
+}
+.cajaVideoTres {
+
+    grid-area: cajaVideoTres;
+}
+
+.tituloMemes {
+    grid-area: tituloMemes ;
+
+}
+
+.cajaMemeUno {
+    grid-area: cajaMemeUno ;
+
+}
+
+.cajaMemeDos {
+    grid-area: cajaMemeDos ;
+
+}
+
+.cajaMemeTres {
+    grid-area: cajaMemeTres ;
+
+}
+
+.cajaVideoUno, .cajaVideoDos, .cajaVideoTres {
+
+    width: 300px;
+    height: 200px;
+    overflow-y: auto;
+    overflow-x: auto;
+    resize: both;
+    position: relative;
+    z-index: 2;
+}
+
+.videoUno, .videoDos, .videoTres {
+
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+.textoMemeUno, .textoMemeDos, .textoMemeTres {
+    
+    text-align: left;     
+    font-size: small;     
+    background-color: whitesmoke;
+    padding: 0.6rem;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+
+@media screen and  (min-width:600px) {
+
+.contenedorMomentos {
+
+        grid-template-columns: 20% 60% 20%;
+    
+    }
+
+.escenaUno, .escenaDos, .escenaTres {
+
+    justify-self: left;
+
+}
+
+h3 {
+    font-size: 1.6rem;
+        
+    }
+    
+    
+h4 {
+    font-size: 1.3rem;
+    }
+
+.memeUno, .memeTres {
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.6rem;
+  
+}
+
+
+.memeDos {
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 0.6rem;
+   
+}
+
+.tenor-gif-embed {
+
+    
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.textoMemeUno {
+    
+   height: 100%;
+   padding-bottom: 2.4rem;
+}
+
+.textoMemeDos {
+    
+    height: 100%;
+    padding-bottom: 0.9rem;
+    margin-top: 0.2rem;
+ }
+
+.textoMemeTres {
+    
+    height: 100%;
+    padding-bottom: 2rem;
+    margin-top: 0;
+ }
+ 
+
+.cajaMemeUno, .cajaMemeDos, .cajaMemeTres {
+
+    margin-top: 3rem;
+}
+
+
+.derechosReservados {
+
+    margin-top: 10rem;
+}
+
+.cajaVideoUno, .cajaVideoDos, .cajaVideoTres {
+
+    width: 500px;
+    height: 350px;
+    overflow-y: auto;
+    overflow-x: auto;
+    resize: both;
+    position: relative;
+    z-index: 2;
+}
+
+.videoUno, .videoDos, .videoTres {
+
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+}
+
+@media screen and  (min-width:1024px) {
+
+
+.cajaVideoUno, .cajaVideoDos, .cajaVideoTres {
+
+    width: 600px;
+    height: 400px;
+    overflow-y: auto;
+    overflow-x: auto;
+    resize: both;
+    position: relative;
+    z-index: 2;
+
+    }
+    
+    .videoUno, .videoDos, .videoTres {
+    
+    width: 100%;
+    height: 100%;
+    border: none;
+
+    }
+
+.textoMemeUno {
+    
+    
+    padding-bottom: 4.5rem;
+    }
+     
+.textoMemeDos {
+         
+    padding-bottom: 4.1rem;
+    
+    }
+         
+}
+
+/*FALTA DECLARAR LAS IFRAMES EN MEJORES MOMENTEOS*/
+
+
+/* estilos temporadas*/
+
+
+
+/*estilos personajes secundarios*/
+/*MOBILE FIRST*/
+
+.contenedorPersonajes {
+
+    width: 100%;
+    display: grid;
+    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-areas: ". tituloPersonajesSec . "
+                         ". persUno ."
+                         ". persDos ."
+                         ". persTres ."
+                         ". persCuatro ."
+                         ;
+    justify-content: center;
+  
+    
+}
+
+.tituloPersonajesSec {
+
+    grid-area: tituloPersonajesSec;
+        
+}
+
+.persUno {
+
+    grid-area: persUno;
+    
+}
+
+.persDos {
+
+    grid-area: persDos;
+    
+}
+
+.persTres {
+
+    grid-area: persTres;
+   
+}
+
+.persCuatro {
+
+    grid-area: persCuatro;
+  
+}
+
+
+.tituloPersonajesSec { 
+    color: whitesmoke;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    margin: 2rem 2rem;
+    text-align: center;  
+
+}
+
+.personajesImpares {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width:250px;
+    height:250px;
+}
+
+.personajesPares {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width:250px;
+    height:250px;
+}
+
+.meredith, .angela, .ryan, .toby {
+
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+.meredith:hover {
+
+    transform: scale(1.2);
+}
+
+.angela:hover {
+
+    transform: scale(1.2);
+}
+.ryan:hover {
+
+    transform: scale(1.2);
+}
+.toby:hover {
+
+    transform: scale(1.2);
+}
+ .sinopsisPersonajePar, .sinopsisPersonajeImpar{
+
+    display: none;
+
+
+}
+
+
+
+main div h3 {
+
+    margin-top: 2rem;
+}
+
+
+
+@media screen and  (min-width:600px) {
+
+    .contenedorPersonajes {
+
+    grid-template-rows: 0.1fr 0.5fr 0.5fr;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-areas: ". tituloPersonajesSec tituloPersonajesSec . "
+                         ". persUno persDos ."
+                         ". persTres persCuatro ."
+                         ;
+
+    justify-content: center;
+    align-items: center
+  
+
+    }
+
+    .sinopsisPersonajePar, .sinopsisPersonajeImpar{
+    
+        display: block;
+        width: 250px;
+        text-align: center;
+        font-size: small;     
+        background-color: whitesmoke;
+        padding: 0.6rem;
+        color: black;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: left;
+        margin-top: 1rem;
+        
+    
+    }
+    
+   
+
+}
+
+@media screen and  (min-width:1024px) {
+
+    .contenedorPersonajes {
+
+        grid-template-rows: 0.1fr 0.5fr;
+        grid-template-columns: 10% 20% 20% 20% 20% 10%;
+        grid-template-areas: ". tituloPersonajesSec tituloPersonajesSec tituloPersonajesSec tituloPersonajesSec. "
+                             ". persUno persDos persTres persCuatro ."
+                             ;
+    
+        justify-content: center;
+        column-gap: 2rem;
+        
+      
+    
+    }
+
+    .tituloPersonajesSec {
+
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+            
+    }        
+
+    .personajesImpares {
+
+        
+        width:200px;
+        height:200px;
+    }
+        
+    .personajesPares {
+        
+           
+        width:200px;
+        height:200px;
+    }
+
+    .sinopsisPersonajePar, .sinopsisPersonajeImpar{
+    
+        display: block;
+        width: 200px;
+        text-align: center;
+        font-size: small;     
+        background-color: whitesmoke;
+        padding: 0.6rem;
+        color: black;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: left;
+        margin-top: 1rem;
+        
+    
+    }
+}
+
+
+
+/*RESIDUAL */
+
+/* estilos temporadas*/
+
+.temporadasImpares {
+
+    display: flex;
+    justify-content: left;
+    padding: 10px
+
+    }
+
+.sinopsisTemporada {
+
+     width: 980px;
+     display: inline-block; 
+     color: black;
+     align-items: center;
+     background-color: bisque;
+     margin: 0px 10px 0px 10px;
+     padding: 40px 20px 10px 10px;
+
+    }
+
+.temporadasPares {
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    padding: 10px
+    
+        }
+
+/* estilos personajes secundarios
+
+.personajesImpares {
+
+    display: flex;
+    justify-content: left;
+    padding: 10px
+
+    }
+    
+.sinopsisPersonajeImpar {
+
+    width: 980px;
+    display: inline-block; 
+    color: black;
+    align-items: center;
+    background-color: bisque;
+    margin: 0px 10px 0px 10px;
+    padding: 40px 20px 10px 10px;
+   
+    }
+
+
+.personajesPares {
+    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    padding: 10px
+    
+        
+}
+
+.sinopsisPersonajePar {
+
+    width: 980px;
+    display: inline-block; 
+    color: black;
+    align-items: center;
+    background-color: bisque;
+    margin: 0px 10px 0px 10px;
+    padding: 40px 20px 10px 10px;
+   
+    }
+
+.personajesChicos {
+    
+    display: flex;
+    list-style: none; 
+    justify-content:space-around;
+    margin-top: 20px;
+    
+            
+    }
+    
+.sinopsisPersonajeChico {
+
+    width: 400px; 
+    color: black;
+    background-color: bisque;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+   
+}
+
+.personajesChicosNombre {
+    display: flex;
+    list-style: none; 
+    justify-content: flex-start;
+    gap: 540px;
+    margin-top: 20px;
+
+    
+            
+    }
+
+
+*/
+

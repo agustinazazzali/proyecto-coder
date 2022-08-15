@@ -9,7 +9,7 @@
 /*MOBILE FIRST*/
 
 
-header {
+/*header {
 
     align-items: center;
     justify-content: space-between;
@@ -22,7 +22,7 @@ header {
     
     
     
-}
+}*/
 
 h1 {
     color: whitesmoke;
@@ -37,12 +37,12 @@ h1 {
 
 header nav{
 
-    display: flex;
+   /* display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center;*/
     background-color:rgba(54, 53, 53, 0.897);
-    height: 2.3rem;
-    margin-bottom: 0.8rem;
+   /* height: 2.3rem;
+    margin-bottom: 0.8rem;*/
 }
 
 nav:hover {
@@ -75,7 +75,7 @@ a {
 
 
 
-main {
+.contenedorIndex {
 
    /* height: 200vh;*/
     width: 100%;
@@ -334,7 +334,7 @@ header nav ul li {
         
     } 
 
-main {
+.contenedorIndex {
 
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 1fr 0.1fr 0.1fr 0.5fr 0.3fr 0.15fr 0.6fr;
@@ -400,7 +400,7 @@ main div h2, p {
 }
  
 
-    main {
+    .contenedorIndex {
 
         
         grid-template-rows: 0.8fr 0.1fr 0.1fr 0.5fr 0.25fr 0.15fr 1fr;
@@ -851,7 +851,6 @@ h3 {
 
 h4 {
     font-family: 'Port Lligat Sans', sans-serif;
-     
     font-size: 1rem;
     color: whitesmoke;
     margin-top: 0.6rem;
@@ -1356,7 +1355,7 @@ main div h3 {
 
 /*RESIDUAL */
 
-/* estilos temporadas*/
+/* estilos temporadas - ARMADO EN BOOTSTRAP
 
 .temporadasImpares {
 
@@ -1470,3 +1469,224 @@ main div h3 {
 
 */
 
+/*Estilos Menu Bootstrap*/
+
+.texto-1 {
+
+    color: whitesmoke;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: center;  
+    width: 100%;
+    
+}
+
+.card-title {
+
+    font-family: 'Port Lligat Sans', sans-serif;
+    font-size: 1.2rem;
+    color: whitesmoke;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    text-align: center;
+    
+
+
+}
+
+.card-text {
+
+    font-family: 'Port Lligat Sans', sans-serif;
+    font-size: 1rem;
+    color: whitesmoke;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    text-align: justify; 
+
+
+}
+
+.btn {
+
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    background-color: rgb(115, 73, 133);
+    border: 1px solid rgb(115, 73, 133); ;
+}
+
+
+.bloque-temp {
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/*Estilos Temporada Uno - 
+MOBILES FIRST*/
+
+.imagenFondo {
+
+    width:100%;
+    height: auto;
+    position: relative;  
+
+
+}
+
+.tempUno {
+
+   
+    position: absolute;
+    top: 300px;
+    left: 250px;
+
+}
+
+/*.contenedorTempUno {
+
+    display: grid;
+    width: 100%;
+    grid-template-columns: 33% 33% 33% ;
+    grid-template-rows: 1fr 0.4fr 1.2fr;
+    grid-template-areas: "imagenFondo imagenFondo imagenFondo"
+                         "tempUno tempUno tempUno"
+                         ". cajaSinopsis ."
+                         "verMasTemporadas verMasTemporadas verMasTemporadas ";
+}
+
+
+.imagenFondo {
+
+    grid-area: imagenFondo;
+}
+
+.tempUno {
+
+    grid-area: tempUno;
+}
+
+.cajaSinopsis {
+
+    grid-area: cajaSinopsis;
+}
+
+.verMasTemporadas {
+
+    grid-area: verMasTemporadas;
+}
+*/
+
+
+.cajaSinopsis {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.sinopsisTemporada{
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+
+.sinopsisTemporada p{
+
+    margin-top: 10rem;
+    width: 500px;
+    text-align: justify;
+    color: whitesmoke;
+
+}
+
+.volverMenu { 
+
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border: none solid 1rem;
+    display: flex;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: rgb(115, 73, 133);
+    justify-content: center;
+    align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+}
+
+@media screen and  (min-width:1024px) {
+
+.imagenFondo {
+
+    position: relative;
+    width: 100%;
+
+}
+
+.tempUno {
+
+   
+    position: absolute;
+    top: 300px;
+    left: 300px;
+
+}
+
+.tituloSinopsisTemp{
+
+
+    font-family: 'Port Lligat Sans', sans-serif;
+    font-size: 1.2rem;
+    color: whitesmoke;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    text-align: left;
+
+}
+
+.temporadaUno {
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.sinopsisTemporada{
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+
+.sinopsisTemporada p{
+
+    margin-top: 10rem;
+    width: 500px;
+    text-align: justify;
+    color: whitesmoke;
+
+}
+
+.volverMenu { 
+
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border: none solid 1rem;
+    display: flex;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: rgb(115, 73, 133);
+    justify-content: center;
+    align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+}
+
+
+}

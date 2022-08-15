@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!--CSS-->
+    <!--Link BOOTSTRAP-->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Karla:wght@200&family=Montserrat:wght@300;400;500&family=Port+Lligat+Sans&display=swap" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+   <!--Link de MI CSS-->
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Karla:wght@200&family=Montserrat:wght@300;400;500&family=Port+Lligat+Sans&display=swap" rel="stylesheet">
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,110 +21,151 @@
 
    <link rel="stylesheet" href="../css/main.css">
 
-    <title>Temporadas de The Office</title>
+
+
+    <title>Prueba Bootstrap</title>
 </head>
 <body>
-    <header>
-        <h1>The Office - U.S.</h1>
-        
-
-        <nav id="menu-principal">
-            <ul>
-                <li>
-                    <a href="../index.html"> Inicio </a>
-                </li>
-                <li>
-                    <a href="./temporadas.html">Temporadas</a>
-                </li>
-                <li> 
-                    <a href="../pages/mejores-momentos.html">Mejores momentos</a>      
-                </li>  
-                <li> 
-                    <a href="../pages/comprar.html">Comprar</a>
-                </li>              
-            </ul>
+    <header class="container-fluid">
+        <nav class="row navbar navbar-expand-lg">
+            <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                    <a class="navbar-brand" href="../index.html"><img src="../img/the-office-logo-negro-sin-bordes.png" width=200 alt="logo the Office"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            </div>
+            <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="mejores-momentos.html">Mejores Momentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="comprar.html">Comprar</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="temporadas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Temporadas</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="temporada-1.html">Uno (2005)</a></li>
+                            <li><a class="dropdown-item" href="temporada-2.html">Dos (2006)</a></li>
+                            <li><a class="dropdown-item" href="temporada-3.html">Tres (2007)</a></li>
+                            <li><a class="dropdown-item" href="temporada-4.html">Cuatro (2008)</a></li>
+                            <li><a class="dropdown-item" href="temporada-5.html">Cinco (2009)</a></li>
+                            <li><a class="dropdown-item" href="temporada-6.html">Seis (2010)</a></li>
+                            <li><a class="dropdown-item" href="temporada-7.html">Siete (2011)</a></li>
+                            <li><a class="dropdown-item" href="temporada-8.html">Ocho (2012)</a></li>
+                            <li><a class="dropdown-item" href="temporada-9.html">Nueve (2013)</a></li>
+                            <li><a class="dropdown-item" href="temporadas.html">Ver todas</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <h2>Temporadas</h2>
-        <h3>Temporada 1</h3>
-            <div class="temporadasImpares">
-                <img src="../img/the-office-temporada-1.webp" alt="temporada-1-the-office" width="350" height="450">
-                <p class="sinopsisTemporada">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam cum debitis dolore rem, illo et eius exercitationem? Fugiat ipsa alias eum quos, quaerat non, maiores aperiam perspiciatis veniam repellat commodi possimus rem ullam, reprehenderit necessitatibus itaque nisi velit aliquam! Reprehenderit beatae exercitationem distinctio commodi harum rem, tempore possimus veniam expedita minima quibusdam! Modi labore unde explicabo culpa dicta, harum autem quibusdam impedit, minus id non praesentium officia libero, recusandae est dolor laudantium? Inventore corporis unde libero blanditiis iusto! Corporis distinctio omnis esse expedita rem quidem temporibus deserunt debitis modi officia voluptate vero nesciunt animi obcaecati accusantium, maxime laborum alias suscipit facilis ipsa minus. Officia esse corrupti molestiae rem fugit sunt itaque at consequuntur ut, deleniti eaque fuga totam voluptates facilis deserunt nisi repudiandae placeat natus delectus voluptas modi, enim quia incidunt accusantium. Tempore, eius neque vitae ipsam suscipit qui. Beatae modi animi suscipit perferendis praesentium iure consectetur, numquam placeat atque at aspernatur officiis fugiat repudiandae libero sed iste quia minima laborum! Eaque in quisquam voluptate minima, nisi, pariatur facilis, natus eveniet cupiditate commodi eum enim reiciendis iusto nulla facere harum.</p>
-
-            </div>
-        
-            
-            
-        <h3>Temporada 2</h3>
-            <div class="temporadasPares">
-                <img src="../img/the-office-temporada-2.webp" alt="temporada-2-the-office" width="350" height="450">
-                <p class="sinopsisTemporada">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam cum debitis dolore rem, illo et eius exercitationem? Fugiat ipsa alias eum quos, quaerat non, maiores aperiam perspiciatis veniam repellat commodi possimus rem ullam, reprehenderit necessitatibus itaque nisi velit aliquam! Reprehenderit beatae exercitationem distinctio commodi harum rem, tempore possimus veniam expedita minima quibusdam! Modi labore unde explicabo culpa dicta, harum autem quibusdam impedit, minus id non praesentium officia libero, recusandae est dolor laudantium? Inventore corporis unde libero blanditiis iusto! Corporis distinctio omnis esse expedita rem quidem temporibus deserunt debitis modi officia voluptate vero nesciunt animi obcaecati accusantium, maxime laborum alias suscipit facilis ipsa minus. Officia esse corrupti molestiae rem fugit sunt itaque at consequuntur ut, deleniti eaque fuga totam voluptates facilis deserunt nisi repudiandae placeat natus delectus voluptas modi, enim quia incidunt accusantium. Tempore, eius neque vitae ipsam suscipit qui. Beatae modi animi suscipit perferendis praesentium iure consectetur, numquam placeat atque at aspernatur officiis fugiat repudiandae libero sed iste quia minima laborum! Eaque in quisquam voluptate minima, nisi, pariatur facilis, natus eveniet cupiditate commodi eum enim reiciendis iusto nulla facere harum.</p>
+    <main class="container-fluid">
+        <div class="row">
+            <p class="texto-1 col-xs-12 col-sm-12 col-md-12 col-lg-12 text-light">Temporadas - The Office</p>
         </div>
-        
-        <h3>Temporada 3</h3>
-            <div class="temporadasImpares">
-                <img src="../img/the-office-temporada-3.webp" alt="temporada-3-the-office" width="350" height="450">
-                <p class="sinopsisTemporada">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam cum debitis dolore rem, illo et eius exercitationem? Fugiat ipsa alias eum quos, quaerat non, maiores aperiam perspiciatis veniam repellat commodi possimus rem ullam, reprehenderit necessitatibus itaque nisi velit aliquam! Reprehenderit beatae exercitationem distinctio commodi harum rem, tempore possimus veniam expedita minima quibusdam! Modi labore unde explicabo culpa dicta, harum autem quibusdam impedit, minus id non praesentium officia libero, recusandae est dolor laudantium? Inventore corporis unde libero blanditiis iusto! Corporis distinctio omnis esse expedita rem quidem temporibus deserunt debitis modi officia voluptate vero nesciunt animi obcaecati accusantium, maxime laborum alias suscipit facilis ipsa minus. Officia esse corrupti molestiae rem fugit sunt itaque at consequuntur ut, deleniti eaque fuga totam voluptates facilis deserunt nisi repudiandae placeat natus delectus voluptas modi, enim quia incidunt accusantium. Tempore, eius neque vitae ipsam suscipit qui. Beatae modi animi suscipit perferendis praesentium iure consectetur, numquam placeat atque at aspernatur officiis fugiat repudiandae libero sed iste quia minima laborum! Eaque in quisquam voluptate minima, nisi, pariatur facilis, natus eveniet cupiditate commodi eum enim reiciendis iusto nulla facere harum.</p>
-
-        </div> 
-
-        <h3>Temporada 4</h3>
-            <div class="temporadasPares">
-                <img src="../img/the-office-temporada-4.webp" alt="temporada-4-the-office" width="350" height="450">
-                <p class="sinopsisTemporada">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam cum debitis dolore rem, illo et eius exercitationem? Fugiat ipsa alias eum quos, quaerat non, maiores aperiam perspiciatis veniam repellat commodi possimus rem ullam, reprehenderit necessitatibus itaque nisi velit aliquam! Reprehenderit beatae exercitationem distinctio commodi harum rem, tempore possimus veniam expedita minima quibusdam! Modi labore unde explicabo culpa dicta, harum autem quibusdam impedit, minus id non praesentium officia libero, recusandae est dolor laudantium? Inventore corporis unde libero blanditiis iusto! Corporis distinctio omnis esse expedita rem quidem temporibus deserunt debitis modi officia voluptate vero nesciunt animi obcaecati accusantium, maxime laborum alias suscipit facilis ipsa minus. Officia esse corrupti molestiae rem fugit sunt itaque at consequuntur ut, deleniti eaque fuga totam voluptates facilis deserunt nisi repudiandae placeat natus delectus voluptas modi, enim quia incidunt accusantium. Tempore, eius neque vitae ipsam suscipit qui. Beatae modi animi suscipit perferendis praesentium iure consectetur, numquam placeat atque at aspernatur officiis fugiat repudiandae libero sed iste quia minima laborum! Eaque in quisquam voluptate minima, nisi, pariatur facilis, natus eveniet cupiditate commodi eum enim reiciendis iusto nulla facere harum.</p>
-            </div> 
-
-        <h3>Temporada 5</h3>
-            <div class="temporadasImpares">
-                <img src="../img/the-office-temporada-5.webp" alt="temporada-5-the-office" width="350" height="450">
-                <p class="sinopsisTemporada">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam cum debitis dolore rem, illo et eius exercitationem? Fugiat ipsa alias eum quos, quaerat non, maiores aperiam perspiciatis veniam repellat commodi possimus rem ullam, reprehenderit necessitatibus itaque nisi velit aliquam! Reprehenderit beatae exercitationem distinctio commodi harum rem, tempore possimus veniam expedita minima quibusdam! Modi labore unde explicabo culpa dicta, harum autem quibusdam impedit, minus id non praesentium officia libero, recusandae est dolor laudantium? Inventore corporis unde libero blanditiis iusto! Corporis distinctio omnis esse expedita rem quidem temporibus deserunt debitis modi officia voluptate vero nesciunt animi obcaecati accusantium, maxime laborum alias suscipit facilis ipsa minus. Officia esse corrupti molestiae rem fugit sunt itaque at consequuntur ut, deleniti eaque fuga totam voluptates facilis deserunt nisi repudiandae placeat natus delectus voluptas modi, enim quia incidunt accusantium. Tempore, eius neque vitae ipsam suscipit qui. Beatae modi animi suscipit perferendis praesentium iure consectetur, numquam placeat atque at aspernatur officiis fugiat repudiandae libero sed iste quia minima laborum! Eaque in quisquam voluptate minima, nisi, pariatur facilis, natus eveniet cupiditate commodi eum enim reiciendis iusto nulla facere harum.</p>
-
-            </div> 
-        
-        <h3>Temporada 6</h3>
-            <div class="temporadasPares">
-                <img src="../img/the-office-temporada-6.webp" alt="temporada-6-the-office" width="350" height="450">
-                <p class="sinopsisTemporada">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam cum debitis dolore rem, illo et eius exercitationem? Fugiat ipsa alias eum quos, quaerat non, maiores aperiam perspiciatis veniam repellat commodi possimus rem ullam, reprehenderit necessitatibus itaque nisi velit aliquam! Reprehenderit beatae exercitationem distinctio commodi harum rem, tempore possimus veniam expedita minima quibusdam! Modi labore unde explicabo culpa dicta, harum autem quibusdam impedit, minus id non praesentium officia libero, recusandae est dolor laudantium? Inventore corporis unde libero blanditiis iusto! Corporis distinctio omnis esse expedita rem quidem temporibus deserunt debitis modi officia voluptate vero nesciunt animi obcaecati accusantium, maxime laborum alias suscipit facilis ipsa minus. Officia esse corrupti molestiae rem fugit sunt itaque at consequuntur ut, deleniti eaque fuga totam voluptates facilis deserunt nisi repudiandae placeat natus delectus voluptas modi, enim quia incidunt accusantium. Tempore, eius neque vitae ipsam suscipit qui. Beatae modi animi suscipit perferendis praesentium iure consectetur, numquam placeat atque at aspernatur officiis fugiat repudiandae libero sed iste quia minima laborum! Eaque in quisquam voluptate minima, nisi, pariatur facilis, natus eveniet cupiditate commodi eum enim reiciendis iusto nulla facere harum.</p>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <img class="card-img-top rounded mx-auto d-block w-50" src="../img/temporada-1.jpg" alt="temporada-1">
+                <div class="card-body mx-auto d-block w-50">
+                    <p class="card-title">Temporada 1</p>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, in dicta! Omnis, recusandae nulla. Dignissimos minus officiis repellat? Voluptatibus magni odit et quas. Ab ex placeat eum similique libero quis.</p>
+                    <a href="temporada-1.html" class="btn btn-primary">Ver más</a>
+                </div>
             </div>
-        
-        <h3>Temporada 7</h3>
-            <div class="temporadasImpares">
-                <img src="../img/the-office-temporada-7.webp" alt="temporada-7-the-office" width="350" height="450">
-                <p class="sinopsisTemporada">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam cum debitis dolore rem, illo et eius exercitationem? Fugiat ipsa alias eum quos, quaerat non, maiores aperiam perspiciatis veniam repellat commodi possimus rem ullam, reprehenderit necessitatibus itaque nisi velit aliquam! Reprehenderit beatae exercitationem distinctio commodi harum rem, tempore possimus veniam expedita minima quibusdam! Modi labore unde explicabo culpa dicta, harum autem quibusdam impedit, minus id non praesentium officia libero, recusandae est dolor laudantium? Inventore corporis unde libero blanditiis iusto! Corporis distinctio omnis esse expedita rem quidem temporibus deserunt debitis modi officia voluptate vero nesciunt animi obcaecati accusantium, maxime laborum alias suscipit facilis ipsa minus. Officia esse corrupti molestiae rem fugit sunt itaque at consequuntur ut, deleniti eaque fuga totam voluptates facilis deserunt nisi repudiandae placeat natus delectus voluptas modi, enim quia incidunt accusantium. Tempore, eius neque vitae ipsam suscipit qui. Beatae modi animi suscipit perferendis praesentium iure consectetur, numquam placeat atque at aspernatur officiis fugiat repudiandae libero sed iste quia minima laborum! Eaque in quisquam voluptate minima, nisi, pariatur facilis, natus eveniet cupiditate commodi eum enim reiciendis iusto nulla facere harum.</p>
-
-            </div> 
-    
-
-        <h3>Temporada 8</h3>
-            <div class="temporadasPares">
-                <img src="../img/the-office-temporada-8.webp" alt="temporada-8-the-office" width="350" height="450">
-                <p class="sinopsisTemporada">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam cum debitis dolore rem, illo et eius exercitationem? Fugiat ipsa alias eum quos, quaerat non, maiores aperiam perspiciatis veniam repellat commodi possimus rem ullam, reprehenderit necessitatibus itaque nisi velit aliquam! Reprehenderit beatae exercitationem distinctio commodi harum rem, tempore possimus veniam expedita minima quibusdam! Modi labore unde explicabo culpa dicta, harum autem quibusdam impedit, minus id non praesentium officia libero, recusandae est dolor laudantium? Inventore corporis unde libero blanditiis iusto! Corporis distinctio omnis esse expedita rem quidem temporibus deserunt debitis modi officia voluptate vero nesciunt animi obcaecati accusantium, maxime laborum alias suscipit facilis ipsa minus. Officia esse corrupti molestiae rem fugit sunt itaque at consequuntur ut, deleniti eaque fuga totam voluptates facilis deserunt nisi repudiandae placeat natus delectus voluptas modi, enim quia incidunt accusantium. Tempore, eius neque vitae ipsam suscipit qui. Beatae modi animi suscipit perferendis praesentium iure consectetur, numquam placeat atque at aspernatur officiis fugiat repudiandae libero sed iste quia minima laborum! Eaque in quisquam voluptate minima, nisi, pariatur facilis, natus eveniet cupiditate commodi eum enim reiciendis iusto nulla facere harum.</p>
+            <div class="bloque-temp col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <img class="card-img-top rounded mx-auto d-block w-50" src="../img/temporada-2.jpg" alt="temporada-2">
+                <div class="card-body mx-auto d-block w-50">
+                    <p class="card-title">Temporada 2</p>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, in dicta! Omnis, recusandae nulla. Dignissimos minus officiis repellat? Voluptatibus magni odit et quas. Ab ex placeat eum similique libero quis.</p>
+                    <a href="temporada-2.html" class="btn btn-primary">Ver más</a>
+                </div>
             </div>
+            <div class="col-xs-12 col-sm-2 col-md-4 col-lg-4">
+                <img class="card-img-top rounded mx-auto d-block w-50" src="../img/temporada-3.jpg"  alt="temporada-3">
+                <div class="card-body mx-auto d-block w-50">
+                    <p class="card-title">Temporada 3</p>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, in dicta! Omnis, recusandae nulla. Dignissimos minus officiis repellat? Voluptatibus magni odit et quas. Ab ex placeat eum similique libero quis.</p>
+                    <a href="temporada-3.html" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+        </div>
+       
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <img class="card-img-top rounded mx-auto d-block w-50" src="../img/temporada-4.jpg" alt="temporada-4">
+                <div class="card-body mx-auto d-block w-50">
+                    <p class="card-title">Temporada 4</p>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, in dicta! Omnis, recusandae nulla. Dignissimos minus officiis repellat? Voluptatibus magni odit et quas. Ab ex placeat eum similique libero quis.</p>
+                    <a href="temporada-4.html" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <img class="card-img-top rounded mx-auto d-block w-50" src="../img/temporada-5.jpg" alt="temporada-5">
+                <div class="card-body mx-auto d-block w-50">
+                    <p class="card-title">Temporada 5</p>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, in dicta! Omnis, recusandae nulla. Dignissimos minus officiis repellat? Voluptatibus magni odit et quas. Ab ex placeat eum similique libero quis.</p>
+                    <a href="temporada-5.html" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-2 col-md-4 col-lg-4">
+                <img class="card-img-top rounded mx-auto d-block w-50" src="../img/temporada-6.jpg"  alt="temporada-6">
+                <div class="card-body mx-auto d-block w-50">
+                    <p class="card-title">Temporada 6</p>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, in dicta! Omnis, recusandae nulla. Dignissimos minus officiis repellat? Voluptatibus magni odit et quas. Ab ex placeat eum similique libero quis.</p>
+                    <a href="temporada-6.html" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+        </div>
 
-        <h3>Temporada 9</h3>
-            <div class="temporadasImpares">
-                <img src="../img/the-office-temporada-9.webp" alt="temporada-9-the-office" width="350" height="450">
-                <p class="sinopsisTemporada">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam cum debitis dolore rem, illo et eius exercitationem? Fugiat ipsa alias eum quos, quaerat non, maiores aperiam perspiciatis veniam repellat commodi possimus rem ullam, reprehenderit necessitatibus itaque nisi velit aliquam! Reprehenderit beatae exercitationem distinctio commodi harum rem, tempore possimus veniam expedita minima quibusdam! Modi labore unde explicabo culpa dicta, harum autem quibusdam impedit, minus id non praesentium officia libero, recusandae est dolor laudantium? Inventore corporis unde libero blanditiis iusto! Corporis distinctio omnis esse expedita rem quidem temporibus deserunt debitis modi officia voluptate vero nesciunt animi obcaecati accusantium, maxime laborum alias suscipit facilis ipsa minus. Officia esse corrupti molestiae rem fugit sunt itaque at consequuntur ut, deleniti eaque fuga totam voluptates facilis deserunt nisi repudiandae placeat natus delectus voluptas modi, enim quia incidunt accusantium. Tempore, eius neque vitae ipsam suscipit qui. Beatae modi animi suscipit perferendis praesentium iure consectetur, numquam placeat atque at aspernatur officiis fugiat repudiandae libero sed iste quia minima laborum! Eaque in quisquam voluptate minima, nisi, pariatur facilis, natus eveniet cupiditate commodi eum enim reiciendis iusto nulla facere harum.</p>
-
-            </div> 
-            
-            <p class="volverMenu"><a href="#menu-principal"> Volver al menú principal</a></p>
-      
-
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <img class="card-img-top rounded mx-auto d-block w-50" src="../img/temporada-7.jpg" alt="temporada-7">
+                <div class="card-body mx-auto d-block w-50">
+                    <p class="card-title">Temporada 7</p>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, in dicta! Omnis, recusandae nulla. Dignissimos minus officiis repellat? Voluptatibus magni odit et quas. Ab ex placeat eum similique libero quis.</p>
+                    <a href="temporada-7.html" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <img class="card-img-top rounded mx-auto d-block w-50" src="../img/temporada-8.jpg" alt="temporada-8">
+                <div class="card-body mx-auto d-block w-50">
+                    <p class="card-title">Temporada 8</p>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, in dicta! Omnis, recusandae nulla. Dignissimos minus officiis repellat? Voluptatibus magni odit et quas. Ab ex placeat eum similique libero quis.</p>
+                    <a href="temporada-8.html" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-2 col-md-4 col-lg-4">
+                <img class="card-img-top rounded mx-auto d-block w-50" src="../img/temporada-9.jpg"  alt="temporada-9">
+                <div class="card-body mx-auto d-block w-50">
+                    <p class="card-title">Temporada 9</p>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, in dicta! Omnis, recusandae nulla. Dignissimos minus officiis repellat? Voluptatibus magni odit et quas. Ab ex placeat eum similique libero quis.</p>
+                    <a href="temporada-9.html" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer>
-        <p class="derechosReservados">Todos los derechos reservados</p>
+    <footer class="container-fluid">
+        <div class="row">
+            <p class="col-12 text-center derechosReservados">Todos los derechos reservados</p>
 
-        <div class="logoRedes">
-            <a href="https://www.instagram.com/theoffice/" target="_blank"><img src="../img/ig.png" alt="instagram oficial the office" width="50" height="50"></a>
-            <a href="https://www.facebook.com/TheOfficeTV/" target="_blank"><img src="../img/facebook.png" alt="facebook oficial the office" width="50" height="50"></a>
-            <a href="https://twitter.com/theofficetv?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="../img/twitter.png" alt="twitter oficial the office" width="50" height="50"></a>
+        <div class="col-12 logoRedes">
+            <a href="https://www.instagram.com/theoffice/" target="_blank"><img class="rounded mx-auto" src="../img/ig.png" alt="instagram oficial the office" width="50" height="50"></a>
+            <a href="https://www.facebook.com/TheOfficeTV/" target="_blank"><img class="rounded mx-auto" src="../img/facebook.png" alt="facebook oficial the office" width="50" height="50"></a>
+            <a href="https://twitter.com/theofficetv?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img class="rounded mx-auto" src="../img/twitter.png" alt="twitter oficial the office" width="50" height="50"></a>
         </div>
     
+
+        </div>
         
     </footer>
+   
+    <!--Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

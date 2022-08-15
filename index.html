@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!--CSS-->
 
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Karla:wght@200&family=Montserrat:wght@300;400;500&family=Port+Lligat+Sans&display=swap" rel="stylesheet">
+
+     
+   
+    <!--Link BOOTSTRAP-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+     <!--Link de mi CSS-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Karla:wght@200&family=Montserrat:wght@300;400;500&family=Port+Lligat+Sans&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,28 +27,45 @@
     <title>The OFFICE</title>
 </head>
 <body>
-    
-        <header>
-            <h1>The Office - U.S.</h1>
-            <nav>
-                <ul>
-                    <li>
-                    <a href="index.html"> Inicio </a>
+    <header class="container-fluid">
+        <nav class="row navbar navbar-expand-lg">
+            <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                    <a class="navbar-brand" href="../index.html"><img src="img/the-office-logo-negro-sin-bordes.png" width=200 alt="logo the Office"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            </div>
+            <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="index.html">Inicio</a>
                     </li>
-                    <li>
-                        <a href="../zazzali-agustina-proyecto/pages/temporadas.html">Temporadas</a>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="pages/mejores-momentos.html">Mejores Momentos</a>
                     </li>
-                    <li> 
-                        <a href="../zazzali-agustina-proyecto/pages/mejores-momentos.html">Mejores momentos</a>      
-                    </li>  
-                    <li> 
-                        <a href="../zazzali-agustina-proyecto/pages/comprar.html">Comprar</a>
-                    </li>              
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="pages/comprar.html">Comprar</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="pages/temporadas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Temporadas</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pages/temporada-1.html">Uno (2005)</a></li>
+                            <li><a class="dropdown-item" href="pages/temporada-2.html">Dos (2006)</a></li>
+                            <li><a class="dropdown-item" href="pages/temporada-3.html">Tres (2007)</a></li>
+                            <li><a class="dropdown-item" href="pages/temporada-4.html">Cuatro (2008)</a></li>
+                            <li><a class="dropdown-item" href="pages/temporada-5.html">Cinco (2009)</a></li>
+                            <li><a class="dropdown-item" href="pages/temporada-6.html">Seis (2010)</a></li>
+                            <li><a class="dropdown-item" href="pages/temporada-7.html">Siete (2011)</a></li>
+                            <li><a class="dropdown-item" href="pages/temporada-8.html">Ocho (2012)</a></li>
+                            <li><a class="dropdown-item" href="pages/temporada-9.html">Nueve (2013)</a></li>
+                            <li><a class="dropdown-item" href="pages/temporadas.html">Ver todas</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                        </ul>
+                    </li>
                 </ul>
-            </nav>
-        </header>
-
-        <main>
+            </div>
+        </nav>
+    </header>
+   
+        <main class="contenedorIndex">
             <div class="portadaPrincipal">
                 <img class="imgPrincipal" src="img/the-office-principal.png" alt="imagen de personaje principal en oficina">
             </div> 
@@ -59,7 +84,7 @@
             <div class="p_ppal1">
                 <img class="imagenSecundaria" src="img/michael.png" alt="Michael Scott">
                 <div class="pTexto">
-                    <h3><a href="../zazzali-agustina-proyecto/pages/michael-scott.html">MICHAEL SCOTT</a></h3>
+                    <h3><a href="pages/michael-scott.html">MICHAEL SCOTT</a></h3>
                     <p class="parrafoSecundario">Lorem ipsum dolor sit, amet con sec tetur consectetur</p>
                 </div>
             </div>
@@ -67,7 +92,7 @@
             <div class="p_ppal2">
                 <img class="imagenSecundaria" src="img/dwight.png" alt="Dwight Schrute">
                 <div class="pTexto">
-                    <h3><a href="../zazzali-agustina-proyecto/pages/dwight-schrute.html">DWIGHT SCHRUTE</a></h3>
+                    <h3><a href="pages/dwight-schrute.html">DWIGHT SCHRUTE</a></h3>
                     <p class="parrafoSecundario">Lorem ipsum dolor sit, amet con sec tetur consectetur</p>
                 </div>
             </div>
@@ -75,7 +100,7 @@
             <div class="p_ppal3">
                 <img class="imagenSecundaria" src="img/jim.png" alt="Jim Halpert"> 
                 <div class="pTexto">
-                    <h3><a href="../zazzali-agustina-proyecto/pages/jim-halpert.html">JIM HALPERT</a></h3>
+                    <h3><a href="pages/jim-halpert.html">JIM HALPERT</a></h3>
                     <p class="parrafoSecundario">Lorem ipsum dolor sit, con sec teturconsecteturr</p>
                 </div>
             </div> 
@@ -83,13 +108,13 @@
             <div class="p_ppal4">
                 <img class="imagenSecundaria" src="img/pam.png" alt="Pam Beesley"> 
                 <div class="pTexto">
-                    <h3><a href="../zazzali-agustina-proyecto/pages/jim-halpert.html">PAM BEESLEY</a></h3>
+                    <h3><a href="pages/jim-halpert.html">PAM BEESLEY</a></h3>
                     <p class="parrafoSecundario">Lorem ipsum dolor sit, con sec teturconsecteturr</p>
                 </div>
             </div> 
                               
             <div class="masPersonajes">
-                <p><a href="../zazzali-agustina-proyecto/pages/personajes-secundarios.html">Ver más personajes</a></p>
+                <p><a href="pages/personajes-secundarios.html">Ver más personajes</a></p>
             </div>
                 
         
@@ -106,7 +131,7 @@
                 <h3 class="tituloLugar">La Oficina - Sucursal Scranton Dunder Mifflin</h3>
                 <p class="parrafoLugar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet natus sed nulla a tenetur, labore ipsa, consequatur alias, ab dolorum voluptatibus excepturi hic.</p> 
                 <p class="masLugar">
-                    <a href="../zazzali-agustina-proyecto/pages/personajes-secundarios.html">Ver más sobre la sucursal</a>
+                    <a href="pages/personajes-secundarios.html">Ver más sobre la sucursal</a>
                 </p>
                    
             </div>     
@@ -124,6 +149,7 @@
     
         
         </footer>
-    
+        <!--Javascript-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

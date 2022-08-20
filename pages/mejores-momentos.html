@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--CSS-->
+    <!--Link BOOTSTRAP-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!--Link de mi CSS-->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,25 +24,44 @@
     <title>Mejores Momentos de The Office</title>
 </head>
 <body>
-    <header>
-        <h1>The Office - U.S.</h1>
-            <nav id="menu-principal">
-            <ul>
-                <li>
-                    <a href="../index.html"> Inicio </a>
-                </li>
-                <li>
-                    <a href="../pages/temporadas.html">Temporadas</a>
-                </li>
-                <li> 
-                    <a href="./mejores-momentos.html">Mejores momentos</a>      
-                </li>  
-                <li> 
-                    <a href="../pages/comprar.html">Comprar</a>
-                </li>              
-            </ul>
+    <header class="container-fluid">
+        <nav class="row navbar navbar-expand-lg">
+            <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                    <a class="navbar-brand" href="../index.html"><img src="../img/the-office-logo-negro-sin-bordes.png" width=200 alt="logo the Office"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            </div>
+            <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="personajes.html">Personajes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="comprar.html">Comprar</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="temporadas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Temporadas</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="temporada-1.html">Uno (2005)</a></li>
+                            <li><a class="dropdown-item" href="temporada-2.html">Dos (2006)</a></li>
+                            <li><a class="dropdown-item" href="temporada-3.html">Tres (2007)</a></li>
+                            <li><a class="dropdown-item" href="temporada-4.html">Cuatro (2008)</a></li>
+                            <li><a class="dropdown-item" href="temporada-5.html">Cinco (2009)</a></li>
+                            <li><a class="dropdown-item" href="temporada-6.html">Seis (2010)</a></li>
+                            <li><a class="dropdown-item" href="temporada-7.html">Siete (2011)</a></li>
+                            <li><a class="dropdown-item" href="temporada-8.html">Ocho (2012)</a></li>
+                            <li><a class="dropdown-item" href="temporada-9.html">Nueve (2013)</a></li>
+                            <li><a class="dropdown-item" href="temporadas.html">Ver todas</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
+
 
     <main class="contenedorMomentos">
         <h2 class="tituloEscenas"> Mejores Escenas</h2>
@@ -130,5 +153,8 @@
     
         
     </footer>
+
+    <!--Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

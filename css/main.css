@@ -11,20 +11,22 @@
 
 header {
 
-    align-items: center;
+    /*align-items: center;
     justify-content: space-between;
     background-color:rgba(43, 42, 42, 0.897);
     height: 100px;
     width: 100%;
     position: sticky;
     top: 0; 
-    left: 0;   
+    left: 0;   */
+    z-index: 1;
+    position: relative;
     
     
     
 }
 
-h1 {
+/*h1 {
     color: whitesmoke;
     font-weight: bold;
     font-family: 'Josefin Sans', sans-serif; 
@@ -33,24 +35,23 @@ h1 {
     padding-bottom: 20px;
     text-align: center;
         
-    }
+    }*/
 
 header nav{
 
-    display: flex;
+   /* display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    background-color:rgba(54, 53, 53, 0.897);
-    height: 2.3rem;
-    margin-bottom: 0.8rem;
+    justify-content: center;*/
+    background-color: rgb(219, 205, 186) /*rgba(54, 53, 53, 0.897);*/
+   /* height: 2.3rem;
+    margin-bottom: 0.8rem;*/
 }
 
 nav:hover {
 
-    background-color: rgba(70, 68, 68, 0.897)
+    background-color: rgba(37, 36, 36, 0.897) /* rgba(70, 68, 68, 0.897)*/
 
 }
-
 
 header nav ul li {
     margin: 0.2rem;
@@ -75,25 +76,27 @@ a {
 
 
 
-main {
+.contenedorIndex {
 
    /* height: 200vh;*/
     width: 100%;
     display: grid;
-    grid-template-columns: 50% 50% ;
-    grid-template-rows: 1fr 0.25fr 0.5fr 1fr 1fr 0.01fr 0.3fr 1fr;
+    grid-template-columns: 10% 80% 10% ;
+    grid-template-rows: 0.6fr 0.05fr 0.2fr 0.7fr 0.7fr 0.7fr 0.7fr 0.1fr 0.2fr 0.6fr;
   
-    grid-template-areas: "portadaPrincipal portadaPrincipal"
-                         "citaTextual citaTextual"
-                         "personaje personaje"
-                         "p_ppal1 p_ppal2"
-                         "p_ppal3 p_ppal4"
-                         "masPersonajes masPersonajes"
-                         "lugar lugar"
-                         "cajaVideoLugar cajaVideoLugar"
+    grid-template-areas: "portadaPrincipal portadaPrincipal portadaPrincipal"
+                         "citaTextual citaTextual citaTextual"
+                         "conoce conoce conoce"
+                         ". conoceUno ."
+                         ". conoceDos ."
+                         ". conoceTres ." 
+                         ". conoceCuatro ."
+                         ". masPersonajes ."
+                         ". lugar ."
+                         "cajaVideoLugar cajaVideoLugar cajaVideoLugar"
                         ;
-    justify-content: center;
-    justify-items: center;
+   /* justify-content: center;
+    justify-items: center;*/
     
 
 }
@@ -107,39 +110,87 @@ main {
 .citaTextual {
 
     grid-area: citaTextual;
-    margin: 1.2rem;
+    font-size: 0.9rem;
+    font-family: 'Port Lligat Sans', sans-serif;
+    text-align: center;
+    color: black;
+    padding: 0.5rem;
 }
 
 
-.personaje {
+.conoce {
 
-    grid-area:personaje;
+    grid-area: conoce;
+    color: whitesmoke;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    margin: 0.8rem 0.8rem;
+    text-align: center; 
 }
 
-.p_ppal1 {
+.conoceUno {
 
-    grid-area: p_ppal1;
+    grid-area: conoceUno;
+    
 }
 
-.p_ppal2 {
+.conoceDos {
 
-    grid-area: p_ppal2;
+    grid-area: conoceDos;
 }
-.p_ppal3 {
+.conoceTres {
 
-    grid-area: p_ppal3;
+    grid-area: conoceTres;
 }
-.p_ppal4 {
+.conoceCuatro {
 
-    grid-area: p_ppal4;
+    grid-area: conoceCuatro;
 }
 
 .masPersonajes {
 
     grid-area: masPersonajes;
-    
-
+    display: inline-block;
+    width: 30%;
+    justify-self: center;
 }
+.masPersonajes p{
+
+    justify-self: center;
+    align-items: center;
+    margin: 0;
+}
+
+
+.lugar {
+
+    grid-area: lugar;
+}
+
+.cajaVideoLugar {
+
+    grid-area: cajaVideoLugar;
+}
+
+.masPersonajes, .masLugar {
+  
+    display: flex;
+    /*margin-top: 2rem;*/
+    margin-bottom: 3rem;
+    border: none solid 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: rgb(115, 73, 133);
+    align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           
+    }
+
+.masPersonajes:hover {
+    background-color: rgb(106, 68, 122);
+    transform: scale(1.05);
+    }
+
 
 .lugar {
     grid-area: lugar;
@@ -177,7 +228,7 @@ main {
 .imgPrincipal {
 
     width: 100%;
-    height: 90%;
+    height: 100%;
     
 }
 
@@ -186,114 +237,103 @@ main {
     display: none;
 }
 
-.citaTextual {
-
-    font-size: 1rem;
-    font-family: 'Port Lligat Sans', sans-serif;
-    margin-top: 0.8rem;
-    text-align: center;
-    color: whitesmoke;
-    
-}
-
-.personaje {
-    color: whitesmoke;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5rem;
-    margin: 2rem 2rem;
-    text-align: center;  
-      
-}
 
 .pTexto {
     
     
     width: 11rem; /*mismo tamaño que imagen de personajes*/
     padding-top: 1rem ;
-    padding-right: 1rem;
-    text-align: left;     
-    font-size: small;     
-    background-color: whitesmoke;
-    width: 65%;
-    margin-top: 0.5rem;
+    padding-right: 0.7rem;
+    text-align: left;       
+    /*background-color: whitesmoke;*/
+    width: 80%;
+    /*margin-top: 0.5rem;*/
     margin-bottom: 0.5rem;
     padding: 0.3rem;
+    
+    
     }
+
 
 .pTexto h3 {
 
-    margin-top: 0.5rem;
-    
-    
-}
-
-.pTexto h3 a:hover {
-
-    font-size: 0.9rem;   
-    transform: scale(1.05);
+    margin-top: 0.8rem;
+    font-size: 1.2rem;
+    color: whitesmoke;
     
 }
 
-.masPersonajes:hover {
-    background-color: rgb(106, 68, 122);
-    transform: scale(1.05);
+
+.parrafoSecundario {
+
+    font-size: 0.9rem;
+    color: whitesmoke;
+    
 }
 
 
-main div div h3 a {
-    color: black;    
-    font-size: 0.7rem;
+
+
+main div div h3 a {    
+    font-size: 1rem;
     font-family: 'Port Lligat Sans', sans-serif;
+    text-align: left;
     
     
 }
 
 
-.p_ppal1 , .p_ppal2 , .p_ppal3, .p_ppal4 {
+.conoceUno , .conoceDos , .conoceTres, .conoceCuatro {
 
     display: flex;
     flex-direction: column;
     align-items: center;
+   /* border: 1px solid black;*/
+    margin: 1rem;
    
+}
+
+
+a .imagenSecundaria {
+
+    margin-top: 0.5rem;
+    
 }
 
 .imagenSecundaria {
 
-    width: 65%;
-    height: 45%;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    object-fit: cover;
+    
+}
+
+.imagenSecundaria:hover {
+
+    transform: scale(1.02);
+}
+
+.cajaImagenSec {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width:250px;
+    height:250px;
 }
 
 
 body {
 
-    background-color: rgba(7, 2, 2, 0.774) ;
-    height: 80vh;
+    background: linear-gradient(rgb(219, 205, 186),rgb(77, 74, 74));
+    background-repeat: no-repeat;
+   /* background-color: rgba(7, 2, 2, 0.774) ;*/
+    height: 200vh;
+    background-color:rgb(77, 74, 74);
 
-    }
-
-
-
-.masPersonajes, .masLugar {
-  
-    display: flex;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    border: none solid 1rem;
-    border-radius: 1rem;
-    padding: 1rem;
-    background-color: rgb(115, 73, 133);
-    align-items: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-           
-    }
-
-  
-/*.cajaVideoLugar /*padre de la imagen y de columna {
-
-    display: flex;
-    justify-items: center;
-        
-    }*/
+}
 
 .cajaLugar {
 
@@ -303,23 +343,27 @@ body {
 .derechosReservados {
 
     text-align: center;
-    margin-top: 4rem;
-    padding-top: 4rem;
+    margin-top: 7rem;
     font-size: 1.2rem;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
-
 }
    
 
 .logoRedes {
 
     margin-top: 1rem;
+    margin-bottom: 2rem;
     display: flex;
     justify-content:center;
     align-content: center;
     gap: 1rem;
-   
+
+}
+
+footer {
+
+    margin-top: 2rem;
+    height: 150px;
     
 }
 
@@ -334,29 +378,34 @@ header nav ul li {
         
     } 
 
-main {
+.contenedorIndex {
 
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 1fr 0.1fr 0.1fr 0.5fr 0.3fr 0.15fr 0.6fr;
-       
-    grid-template-areas: " portadaPrincipal portadaPrincipal portadaPrincipal portadaPrincipal" 
-                         ". citaTextual citaTextual ."
-                         ". personaje personaje . "
-                         "p_ppal1 p_ppal2 p_ppal3 p_ppal4"
-                         ". masPersonajes masPersonajes . "
-                         " lugar lugar lugar lugar"
-                         " cajaVideoLugar cajaVideoLugar cajaVideoLugar cajaVideoLugar "
+    grid-template-columns: 25% 50% 25%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 0.6fr 0.05fr 0.2fr 0.7fr 0.7fr 0.7fr 0.7fr 0.1fr 0.2fr 0.6fr;
+  
+    grid-template-areas: "portadaPrincipal portadaPrincipal portadaPrincipal"
+                         "citaTextual citaTextual citaTextual"
+                         "conoce conoce conoce"
+                         ". conoceUno ."
+                         ". conoceDos ."
+                         ". conoceTres ." 
+                         ". conoceCuatro ."
+                         ". masPersonajes ."
+                         ". lugar ."
+                         "cajaVideoLugar cajaVideoLugar cajaVideoLugar" 
                         ;
-            
-     
-    }
+    justify-content: center;
+
+}
 
 .citaTextual {
 
-        font-size: 1.3rem;
-    }
+    font-size: 1rem;
+}
 
-.personaje , .lugar {
+.personaje, .lugar {
 
     font-size: 2rem;
     margin-bottom: 4rem;
@@ -365,7 +414,9 @@ main {
 
 .masPersonajes {
 
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    justify-self: center;
+    
 }
 
 .cajaVideoLugar {
@@ -384,14 +435,9 @@ main {
     
 }
 
-
-
 }
 
 @media screen and  (min-width:1024px) {
-
-
-
 
 main div h2, p {
 
@@ -399,63 +445,85 @@ main div h2, p {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
  
+    .contenedorIndex {
 
-    main {
+        width: auto;
+        grid-template-rows: 0.8fr 0.1fr 0.1fr 0.5fr 0.1fr 0.1fr 0.15fr 1fr;
+        grid-template-columns: 25% 25% 25% 25%;
 
-        
-        grid-template-rows: 0.8fr 0.1fr 0.1fr 0.5fr 0.25fr 0.15fr 1fr;
-
-        grid-template-areas: "  portadaPrincipal portadaPrincipal portadaPrincipal sinopsis " 
+        grid-template-areas: "portadaPrincipal portadaPrincipal portadaPrincipal portadaPrincipal" 
                              ". citaTextual citaTextual ."
-                             ". personaje personaje . "
-                             "p_ppal1 p_ppal2 p_ppal3 p_ppal4"
+                             ". conoce conoce . "
+                             ". conoceUno conoceDos ."
+                             ". conoceTres conoceCuatro ."
                              ". masPersonajes masPersonajes . "
                              " lugar lugar lugar lugar"
                              " cajaVideoLugar cajaVideoLugar cajaVideoLugar cajaLugar "
                             ;
         column-gap: 0.7rem;
                 
-        /*justify-content:center*/ ;
-        }
-
-    
+        justify-content:center ;
+}
 
 .imgPrincipal {
-    margin-left: 2rem;
-    margin-top: 1rem;
-    width: 100%;
-    height:90%;
-       
     
+    position: relative;
+    justify-self: center;    
 }
 
 .sinopsis {
     display: block;
     grid-area: sinopsis;
-    background-color: whitesmoke;
-    height: 90%;
-    width: 75%;
+    height: 100%;
+    width: 30%;
     padding: 0.6rem;
-    font-size: 1rem;
     justify-self: left;
     margin-top: 1rem;
     margin-left: 2rem;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    
+}
+
+.tituloSinopsis {
+
+    color: black;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif; 
+    font-variant-caps: all-small-caps;
+    font-size: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    
+}
+
+.parrafoSinopsis {
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+
 }
 
 .citaTextual {
 
-    margin-top: 0.5rem;
+    font-size: 1.05rem;
 }
+
 .imagenSecundaria {
 
-    width: 65%;
-    height: 52%;
-        }
+    width: 100%;
+    height: 100%;
+}
 
 
 .masPersonajes {
 
     font-size: 1rem;
+    width: 100px;
+    justify-content: center;
     
 }
 
@@ -487,7 +555,7 @@ main div h2, p {
 
     display: block;
     grid-area: cajaLugar;
-    background-color: whitesmoke;
+    /*background-color: whitesmoke;*/
     height: 100%;
     width: 70%;
     padding: 0.7rem;
@@ -516,15 +584,28 @@ main div h2, p {
   
 .tituloLugar {
 
-    color: black;
+    color: whitesmoke;
 }
 
+.parrafoLugar {
+
+    color: whitesmoke;
+}
 footer {
 
     margin-top: 2rem;
+    height: 150px;
     
 }
    
+.derechosReservados {
+
+    font-size: 1.2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+   
+}
+
 }
 
 
@@ -851,7 +932,6 @@ h3 {
 
 h4 {
     font-family: 'Port Lligat Sans', sans-serif;
-     
     font-size: 1rem;
     color: whitesmoke;
     margin-top: 0.6rem;
@@ -1139,20 +1219,27 @@ h4 {
 
 
 
-/*estilos personajes secundarios*/
+/*estilos personajes*/
 /*MOBILE FIRST*/
 
 .contenedorPersonajes {
 
     width: 100%;
     display: grid;
-    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr;
-    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: 15% 70% 15%;
     grid-template-areas: ". tituloPersonajesSec . "
+                         " todosPersonajes todosPersonajes todosPersonajes"
                          ". persUno ."
                          ". persDos ."
                          ". persTres ."
                          ". persCuatro ."
+                         " . masPersonajesSec . "
+                         ". persCinco ."
+                         ". persSeis ."
+                         ". persSiete ."
+                         ". persOcho ."
+                         
                          ;
     justify-content: center;
   
@@ -1165,61 +1252,98 @@ h4 {
         
 }
 
+.todosPersonajes {
+
+    grid-area: todosPersonajes;
+           
+}
+
+.personajesGeneral {
+
+    width: 100%;
+    height: 100%;
+}
+
 .persUno {
 
     grid-area: persUno;
-    
+    justify-self: center;  
 }
 
 .persDos {
-
     grid-area: persDos;
     
 }
 
 .persTres {
-
     grid-area: persTres;
    
 }
-
 .persCuatro {
 
     grid-area: persCuatro;
+}
+
+.persCinco {
+    grid-area: persCinco;
+  
+}
+.persSeis {
+    grid-area: persSeis;
+  
+}
+.persSiete {
+    grid-area: persSiete;
+}
+
+.persOcho {
+    grid-area: persOcho;
   
 }
 
+.angela, .meredith, .ryan, .toby {
 
-.tituloPersonajesSec { 
+    width: 100%;
+    height: 100%;
+}
+  
+.masPersonajesSec {
+
+    grid-area: masPersonajesSec;
+}
+
+.tituloPersonajesSec, .masPersonajesSec { 
     color: whitesmoke;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.5rem;
-    margin: 2rem 2rem;
+    margin: 0.5rem 0.5rem;
     text-align: center;  
 
 }
 
-.personajesImpares {
+.personajesPrinc {
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     overflow: hidden;
-    width:250px;
-    height:250px;
+    width:100%;
+    height:75%;
 }
 
-.personajesPares {
+.personajesSec {
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     overflow: hidden;
-    width:250px;
-    height:250px;
+    width:100%;
+    height:75%;
 }
 
-.meredith, .angela, .ryan, .toby {
+.dwight, .michael, .jim, .pam {
 
     width: 100%;
     height: 100%;
@@ -1227,35 +1351,56 @@ h4 {
     object-fit: cover;
 }
 
-.meredith:hover {
+.dwight:hover {
 
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
-.angela:hover {
+.michael:hover {
 
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
-.ryan:hover {
+.jim:hover {
 
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
-.toby:hover {
+.pam:hover {
 
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
- .sinopsisPersonajePar, .sinopsisPersonajeImpar{
+ .sinopsisPersonajePrinc {
 
-    display: none;
-
+    color: whitesmoke;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.8rem;
+    margin: 0.5rem 0.5rem;
+    text-align: justify; 
+   
 
 }
 
+.sinopsisPersonajeSec {
+
+    font-size: 0.6rem;
+    color: whitesmoke;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0.5rem 0.5rem;
+    text-align: justify; 
+    
+}
+
+.persUno, .persDos, .persTres, .persCuatro {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
 
 main div h3 {
 
-    margin-top: 2rem;
+    margin-top: 1rem;
+   
 }
 
 
@@ -1264,11 +1409,17 @@ main div h3 {
 
     .contenedorPersonajes {
 
-    grid-template-rows: 0.1fr 0.5fr 0.5fr;
+    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.2fr 0.4fr 0.4fr;
     grid-template-columns: 10% 40% 40% 10%;
     grid-template-areas: ". tituloPersonajesSec tituloPersonajesSec . "
-                         ". persUno persDos ."
-                         ". persTres persCuatro ."
+                         " todosPersonajes todosPersonajes todosPersonajes todosPersonajes"
+                         ". persUno persUno ."
+                         ". persDos persDos ."
+                         ". persTres persTres ."
+                         ". persCuatro persCuatro ."
+                         ". masPersonajesSec masPersonajesSec ."
+                         ". persCinco persSeis ."
+                         ". persSiete persOcho ."                     
                          ;
 
     justify-content: center;
@@ -1277,40 +1428,96 @@ main div h3 {
 
     }
 
-    .sinopsisPersonajePar, .sinopsisPersonajeImpar{
-    
-        display: block;
-        width: 250px;
-        text-align: center;
-        font-size: small;     
-        background-color: whitesmoke;
-        padding: 0.6rem;
-        color: black;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-align: left;
-        margin-top: 1rem;
-        
-    
+    h3 {
+
+        margin: 1rem;
     }
+
+    .sec {
+        display: none;
+    }
+
+
+    .personajesPrinc {
+        
+        width:100%;
+        height:100%;
+    }
+
+    .angela, .meredith, .toby, .ryan { 
+        
+        padding: 1rem;
+        width: 100%;  
+        transition: all 500ms ease-out;
+
+    }
+
+    .sinopsisPersonajePrinc {
     
-   
+        padding: 0.6rem;
+        margin-top: 1rem;
+        font-size: 1rem; 
+        color: whitesmoke;
+    }
+
+    .personajesSec {
+
+        width: 100%;
+        max-width: 600px;
+        position: relative;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        transition: all 500ms ease-out;
+        
+    }
+
+    .personajesSec:hover {
+
+        opacity: 0.4;
+        transition: all 500ms ease-out;
+        
+    }
+
+   .sinopsisPersonajeSec {
+
+    color: whitesmoke;
+    position: absolute;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.5rem;
+    transition: all 500ms ease-out;
+    opacity: 0;
+   }
+
+   .sinopsisPersonajeSec:hover {
+    
+    cursor: auto;
+    opacity: 1;
+    color: whitesmoke;
+    
+   } 
 
 }
 
-@media screen and  (min-width:1024px) {
+@media screen and (min-width:1024px) {
 
-    .contenedorPersonajes {
+   .contenedorPersonajes {
 
-        grid-template-rows: 0.1fr 0.5fr;
-        grid-template-columns: 10% 20% 20% 20% 20% 10%;
-        grid-template-areas: ". tituloPersonajesSec tituloPersonajesSec tituloPersonajesSec tituloPersonajesSec. "
-                             ". persUno persDos persTres persCuatro ."
+        width: 100%;
+        grid-template-rows: 0.1fr 0.5fr 0.5fr 0.3fr 0.3fr 0.3fr;
+        grid-template-columns: 15% 35% 35% 15%;
+        grid-template-areas: ". tituloPersonajesSec tituloPersonajesSec . "
+                             ". persUno persDos ."
+                             ". persTres persCuatro ."
+                             ". masPersonajesSec masPersonajesSec ."
+                             ". persCinco persSeis ." 
+                             ". persSiete persOcho ."
+                             
                              ;
     
         justify-content: center;
-        column-gap: 2rem;
-        
-      
+        column-gap: 1rem;
     
     }
 
@@ -1318,155 +1525,210 @@ main div h3 {
 
         margin-top: 2rem;
         margin-bottom: 4rem;
+        font-size: 1.7rem;
             
     }        
 
-    .personajesImpares {
+    .masPersonajesSec {
 
-        
-        width:200px;
-        height:200px;
-    }
-        
-    .personajesPares {
-        
-           
-        width:200px;
-        height:200px;
-    }
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+            
+    }        
 
-    .sinopsisPersonajePar, .sinopsisPersonajeImpar{
+main div div div p {
+
+    color: whitesmoke;
+
+}
+
+
+}
+
+/*Estilos Menu Bootstrap*/
+
+.texto-1 {
+
+    color: whitesmoke;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: center;  
+    width: 100%;
     
-        display: block;
-        width: 200px;
-        text-align: center;
-        font-size: small;     
-        background-color: whitesmoke;
-        padding: 0.6rem;
-        color: black;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-align: left;
+}
+
+.card-title {
+
+    font-family: 'Port Lligat Sans', sans-serif;
+    font-size: 1.2rem;
+    color: whitesmoke;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    text-align: center;
+    
+
+
+}
+
+.card-text {
+
+    font-family: 'Port Lligat Sans', sans-serif;
+    font-size: 1rem;
+    color: whitesmoke;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    text-align: justify; 
+
+
+}
+
+.btn {
+
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    background-color: rgb(115, 73, 133);
+    border: 1px solid rgb(115, 73, 133); ;
+}
+
+
+.bloque-temp {
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/*Estilos Temporada Uno - 
+MOBILES FIRST*/
+
+body {
+
+    height: auto;
+}
+
+
+.contenedorTempUno {
+
+    display: grid;
+    width: 100%;
+    grid-template-columns: 33.33% 33.33% 33.33% ;
+    grid-template-rows: 0.2fr 0.3fr 0.6fr 0.1fr;
+    grid-template-areas: "imagenFondo imagenFondo imagenFondo"
+                         ". tempUno ."
+                         "cajaSinopsis cajaSinopsis cajaSinopsis"
+                         "verMasTemporadas verMasTemporadas verMasTemporadas ";
+
+    
+                        
+                     
+}
+
+.imagenFondo img{
+
+    width: 100%;    
+    position: relative;  
+
+}
+
+
+ .temporadaUno img{
+
+    position: absolute;
+    width: 30%;
+    top: 200px;
+    z-index: 0;
+    }
+
+  
+.imagenFondo {
+
+    grid-area: imagenFondo;
+}
+
+.tempUno {
+
+    grid-area: tempUno;
+    
+}
+
+.cajaSinopsis {
+
+    grid-area: cajaSinopsis;
+}
+
+.verMasTemporadas {
+
+    grid-area: verMasTemporadas;
+}
+
+
+
+.cajaSinopsis {
+
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin-top: 6rem;
+    
+}
+
+.sinopsisTemporada p{
+
+    
+    width: 200px;
+    text-align: justify;
+    color: whitesmoke;
+    font-size: 0.7rem;
+    justify-self: center;
+    margin-bottom: 5rem;
+
+}
+
+
+footer {
+
+    margin-bottom: 1rem;
+}
+
+
+
+
+@media screen and (min-width:600px) {
+
+
+    .sinopsisTemporada p{
+
+    
+        width: 400px;
+        font-size: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    
+    }
+
+    .derechosReservados {
+
         margin-top: 1rem;
-        
-    
     }
+
 }
 
 
+@media screen and (min-width:1024px) {
 
-/*RESIDUAL */
+.temporadaUno img {
 
-/* estilos temporadas*/
-
-.temporadasImpares {
-
-    display: flex;
-    justify-content: left;
-    padding: 10px
-
-    }
-
-.sinopsisTemporada {
-
-     width: 980px;
-     display: inline-block; 
-     color: black;
-     align-items: center;
-     background-color: bisque;
-     margin: 0px 10px 0px 10px;
-     padding: 40px 20px 10px 10px;
-
-    }
-
-.temporadasPares {
-
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: left;
-    padding: 10px
-    
-        }
-
-/* estilos personajes secundarios
-
-.personajesImpares {
-
-    display: flex;
-    justify-content: left;
-    padding: 10px
-
-    }
-    
-.sinopsisPersonajeImpar {
-
-    width: 980px;
-    display: inline-block; 
-    color: black;
+    width: 20%;
+    top: 300px;
     align-items: center;
-    background-color: bisque;
-    margin: 0px 10px 0px 10px;
-    padding: 40px 20px 10px 10px;
-   
-    }
-
-
-.personajesPares {
+    justify-content: center;
     
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: left;
-    padding: 10px
-    
-        
 }
 
-.sinopsisPersonajePar {
+.derechosReservados {
 
-    width: 980px;
-    display: inline-block; 
-    color: black;
-    align-items: center;
-    background-color: bisque;
-    margin: 0px 10px 0px 10px;
-    padding: 40px 20px 10px 10px;
-   
-    }
-
-.personajesChicos {
-    
-    display: flex;
-    list-style: none; 
-    justify-content:space-around;
-    margin-top: 20px;
-    
-            
-    }
-    
-.sinopsisPersonajeChico {
-
-    width: 400px; 
-    color: black;
-    background-color: bisque;
-    padding-top: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    
-   
+    margin-top: 1rem;
 }
 
-.personajesChicosNombre {
-    display: flex;
-    list-style: none; 
-    justify-content: flex-start;
-    gap: 540px;
-    margin-top: 20px;
-
-    
-            
-    }
-
-
-*/
-
+}

@@ -1,0 +1,224 @@
+/*reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*estilos del index*/
+/*MOBILE FIRST*/
+/*variables*/
+body {
+  background: linear-gradient(#dbcdba, #4d4a4a);
+  background-repeat: no-repeat;
+  height: 200vh;
+  background-color: #4d4a4a; }
+  body header {
+    z-index: 1;
+    position: relative; }
+    body header nav {
+      background-color: #dbcdba; }
+      body header nav ul li {
+        margin: 0.2rem;
+        display: inline-block;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: whitesmoke;
+        font-weight: bold;
+        font-variant-caps: all-petite-caps; }
+        body header nav ul li a {
+          color: whitesmoke;
+          display: inline; }
+      body header nav li:hover {
+        transform: scale(1.05); }
+    body header nav:hover {
+      background-color: rgba(37, 36, 36, 0.897); }
+  body .contenedorIndex {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 0.6fr 0.05fr 0.2fr 0.7fr 0.7fr 0.7fr 0.7fr 0.1fr 0.2fr 0.6fr;
+    grid-template-areas: "portadaPrincipal portadaPrincipal portadaPrincipal" "citaTextual citaTextual citaTextual" "conoce conoce conoce" ". conoceUno ." ". conoceDos ." ". conoceTres ."  ". conoceCuatro ." ". masPersonajes ." ". lugar ." "areaVideoLugar areaVideoLugar areaVideoLugar"; }
+    body .contenedorIndex .portadaPrincipal {
+      grid-area: portadaPrincipal; }
+      body .contenedorIndex .portadaPrincipal .imgPrincipal {
+        width: 100%;
+        height: 100%; }
+    body .contenedorIndex .sinopsis {
+      display: none; }
+    body .contenedorIndex .citaTextual {
+      grid-area: citaTextual;
+      font-size: 0.9rem;
+      font-family: 'Port Lligat Sans', sans-serif;
+      text-align: center;
+      color: black;
+      padding: 0.5rem; }
+    body .contenedorIndex .conoce {
+      grid-area: conoce; }
+    body .contenedorIndex .conoce, body .contenedorIndex .lugar {
+      color: whitesmoke;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 1.5rem;
+      margin: 0.8rem 0.8rem;
+      text-align: center; }
+    body .contenedorIndex .conoceUno {
+      grid-area: conoceUno; }
+      body .contenedorIndex .conoceUno .conoceTexto {
+        width: 11rem;
+        padding-top: 1rem;
+        padding-right: 0.7rem;
+        text-align: left;
+        width: 80%;
+        margin-bottom: 0.5rem; }
+        body .contenedorIndex .conoceUno .conoceTexto .conoceTexto h3 {
+          margin-top: 0.8rem;
+          font-size: 1.2rem;
+          color: whitesmoke; }
+        body .contenedorIndex .conoceUno .conoceTexto .conoceTexto p {
+          font-size: 0.9rem;
+          color: whitesmoke; }
+    body .contenedorIndex .conoceDos {
+      grid-area: conoceDos; }
+    body .contenedorIndex .conoceTres {
+      grid-area: conoceTres; }
+    body .contenedorIndex .conoceCuatro {
+      grid-area: conoceCuatro; }
+    body .contenedorIndex .conoceUno, body .contenedorIndex .conoceDos, body .contenedorIndex .conoceTres, body .contenedorIndex .conoceCuatro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1rem; }
+    body .contenedorIndex div a img {
+      width: 100%;
+      height: 100%;
+      transition: 0.5s;
+      object-fit: cover;
+      margin-top: 0.5rem; }
+    body .contenedorIndex div a img:hover {
+      transform: scale(1.02); }
+    body .contenedorIndex .masPersonajes {
+      grid-area: masPersonajes;
+      justify-self: center; }
+      body .contenedorIndex .masPersonajes a {
+        margin: 0; }
+    body .contenedorIndex .masPersonajes, body .contenedorIndex .masLugar {
+      margin-bottom: 3rem;
+      border: none solid 1rem;
+      border-radius: 1rem;
+      padding: 1rem;
+      background-color: #734985;
+      text-align: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+    body .contenedorIndex .masPersonajes:hover {
+      background-color: #6a447a;
+      transform: scale(1.05); }
+    body .contenedorIndex .lugar {
+      grid-area: lugar; }
+    body .contenedorIndex .areaVideoLugar {
+      grid-area: areaVideoLugar;
+      margin-top: 1.2rem;
+      width: 325px;
+      height: 300px;
+      overflow-y: auto;
+      overflow-x: auto;
+      resize: both;
+      position: relative;
+      z-index: 2;
+      justify-self: center; }
+      body .contenedorIndex .areaVideoLugar .cajaIframe {
+        width: 100%;
+        height: 100%;
+        border: none; }
+    body .contenedorIndex .cajaLugar {
+      display: none; }
+  body footer {
+    margin-top: 2rem;
+    height: 8rem; }
+    body footer .derechosReservados {
+      text-align: center;
+      margin-top: 7rem;
+      font-size: 1rem;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: black; }
+    body footer .logoRedes {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem; }
+
+/*declaramos media queries para tablet min 600px*/
+@media screen and (min-width: 600px) {
+  .contenedorIndex {
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 0.6fr 0.05fr 0.2fr 0.7fr 0.7fr 0.7fr 0.7fr 0.1fr 0.2fr 0.6fr;
+    grid-template-areas: "portadaPrincipal portadaPrincipal portadaPrincipal" "citaTextual citaTextual citaTextual" "conoce conoce conoce" ". conoceUno ." ". conoceDos ." ". conoceTres ."  ". conoceCuatro ." ". masPersonajes ." ". lugar ." "areaVideoLugar areaVideoLugar areaVideoLugar"; }
+    .contenedorIndex .citaTextual {
+      font-size: 1rem; }
+    .contenedorIndex .areaVideoLugar {
+      margin-top: 1.2rem;
+      width: 650px;
+      height: 550px; } }
+
+@media screen and (min-width: 1024px) {
+  .contenedorIndex {
+    grid-template-rows: 0.8fr 0.1fr 0.1fr 0.5fr 0.1fr 0.1fr 0.15fr 1fr;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: "portadaPrincipal portadaPrincipal portadaPrincipal portadaPrincipal"  ". citaTextual citaTextual ." ". conoce conoce . " ". conoceUno conoceDos ." ". conoceTres conoceCuatro ." ". masPersonajes masPersonajes . " " lugar lugar lugar lugar" " areaVideoLugar areaVideoLugar areaVideoLugar cajaLugar ";
+    column-gap: 0.7rem;
+    justify-content: center; }
+    .contenedorIndex .sinopsis {
+      display: block;
+      width: 30%;
+      padding: 0.6rem;
+      margin-top: 1rem;
+      margin-left: 2rem;
+      position: absolute;
+      top: 30%;
+      left: 50%; }
+      .contenedorIndex .sinopsis h1 {
+        font-weight: bold;
+        font-family: 'Josefin Sans', sans-serif;
+        font-variant-caps: all-small-caps;
+        font-size: 3rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        color: black; }
+      .contenedorIndex .sinopsis p {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 0.9rem;
+        text-align: center;
+        color: black; }
+    .contenedorIndex .lugar {
+      margin-top: 2rem; }
+    .contenedorIndex .areaVideoLugar {
+      margin-top: 1.2rem;
+      width: 70%;
+      height: 70%;
+      grid-area: areaVideoLugar;
+      justify-self: right; }
+      .contenedorIndex .areaVideoLugar .cajaIframe {
+        width: 100%;
+        height: 100%;
+        border: none; }
+    .contenedorIndex .cajaLugar {
+      display: block;
+      grid-area: cajaLugar;
+      width: 80%;
+      padding: 0.5rem;
+      margin-top: 1.2rem;
+      font-size: 1rem;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      justify-self: left; }
+      .contenedorIndex .cajaLugar h3 {
+        color: whitesmoke;
+        font-size: 1.2rem; }
+      .contenedorIndex .cajaLugar p {
+        color: whitesmoke; }
+      .contenedorIndex .cajaLugar .masLugar {
+        justify-content: center;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        display: inline-block; }
+      .contenedorIndex .cajaLugar .masLugar:hover {
+        background-color: #6a447a;
+        transform: scale(1.05); } }

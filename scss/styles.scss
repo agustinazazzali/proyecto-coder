@@ -1,0 +1,340 @@
+@import "base/mapas";
+@import "base/variables";
+@import "base/mixin";
+@import "base/extend";
+
+
+
+//SASS - PERSONAJES.HTML
+
+body {
+
+    background: linear-gradient(rgb(219, 205, 186),rgb(77, 74, 74));
+    background-repeat: no-repeat;
+    height: 300vh;
+    background-color:rgb(77, 74, 74);
+
+    header {
+        z-index: 1;
+        position: relative;
+    
+        nav{
+            background-color: $color-nav; 
+    
+            ul li {
+                margin: 0.2rem;
+                display: inline-block;
+                font-family: $texto-general; 
+                color: $color-texto-p;
+                font-weight: bold;
+                font-variant-caps: all-petite-caps;       
+                
+                li:hover::after {
+                    transform: scale(1);
+                
+                    ::after {
+                    content: "";
+                    display: block;
+                    height: 2px;
+                    background-color: $color-botones;
+                    transform: scale(0,0.05);
+                    transition: transform .25s;
+                    }
+                }    
+    
+                a {
+                    color: $color-texto-p;
+                    display: inline;
+                }
+            } 
+        }
+    }
+    
+    .contenedorPersonajes {
+    
+    
+         width: 100%;
+         display: grid;
+         grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.25fr 0.6fr 0.6fr 0.6fr 0.6fr;
+         grid-template-columns: 15% 70% 15%;
+         grid-template-areas: ". titulo . "
+                              " fotoGral fotoGral fotoGral"
+                              ". persUno ."
+                              ". persDos ."
+                              ". persTres ."
+                              ". persCuatro ."
+                              " . masPersonajesSec . "
+                              ". persCinco ."
+                              ". persSeis ."
+                              ". persSiete ."
+                              ". persOcho ."
+                              
+                              ;
+        justify-content: center;
+       
+        
+        .titulo {
+     
+            grid-area: titulo;
+            @include titulos-princ;
+                      
+        }
+    
+        .fotoGral {
+            grid-area: fotoGral;
+            margin-bottom: 2rem;      
+            
+            img {
+    
+                @include medidas (100%, 100%);
+            }
+        }  
+        .persUno {
+            grid-area: persUno;
+        }
+    
+        .persDos {
+            grid-area: persDos;
+        }
+    
+        .persTres {
+            grid-area: persTres;
+        }
+        .persCuatro {
+            grid-area: persCuatro;
+        }
+        
+        .persUno, .persDos, .persTres, .persCuatro {
+     
+            @extend %flex;
+            border: double rgb(163, 161, 161) 0.5px;
+            
+    
+            .personajesPrinc {
+     
+                overflow: hidden;
+                @include medidas (100%, 75%);
+                opacity: 0.8;    
+                
+                .dwight, .michael, .jim, .pam {
+     
+                    width: 100%;
+                    height: 100%;
+                    transition: 0.5s;
+                    object-fit: cover;
+                    padding: 0.5rem;
+    
+                    .dwight:hover, .michael:hover, .jim:hover, .pam:hover {
+                        transform: scale(1.05);
+                    }
+                }  
+            }
+    
+            div h2 {    
+    
+                margin-top: 0.6rem;
+                padding: 0.3rem;
+                color: map-get($map: $princ, $key:color-princ);
+                font-family: map-get($map: $princ, $key: font-princ);
+                font-size: map-get($map: $princ, $key: font-princ-tamaño);
+                text-align:  map-get($map: $princ, $key: font-princ-align);
+            }
+        }        
+    
+        .masPersonajesSec {
+
+            @include titulos-princ;
+            grid-area: masPersonajesSec;
+        }
+        
+        .persCinco {
+            grid-area: persCinco;
+        }
+        .persSeis {
+            grid-area: persSeis;
+        }
+        .persSiete {
+            grid-area: persSiete;
+        }
+        .persOcho {
+            grid-area: persOcho;
+        }
+    
+        .persCinco, .persSeis, .persSiete, .persOcho {
+    
+            @extend %flex;
+    
+            .personajesSec {
+     
+                @extend %flex-dos;
+                overflow: hidden;
+                max-width: 280px;
+                position: relative;
+                transition: all 500ms ease-out;
+    
+                .personajesSec:hover {
+     
+                    opacity: 0.4;
+                    transition: all 500ms ease-out;  
+                }
+    
+                .angela, .meredith, .ryan, .toby {
+     
+                    @include medidas (100%, 75%);
+                    margin-left: 1rem;
+                    margin-right: 1rem;  
+                }  
+                
+                .sinopsisAngela, .sinopsisMeredith, .sinopsisRyan, .sinopsisToby {
+                
+                    position: absolute;
+                    font-size: 1.1rem;
+                    padding: 0.5rem;
+                    width: 70%;
+                    transition: all 500ms ease-out;
+                    opacity: 0;  
+                    color: map-get($map: $princ, $key: color-princ);
+                    font-family: map-get($map: $princ, $key: font-princ);
+                    text-align:  map-get($map: $princ, $key: font-princ-align);
+    
+    
+                        
+                    .sinopsisAngela:hover, .sinopsisMeredith:hover, .sinopsisRyan:hover, .sinopsisToby:hover {
+                        cursor: auto;
+                        opacity: 1;
+                        color: map-get($map: $princ, $key: color-princ );
+                    } 
+                }   
+            }               
+        } 
+        
+        div h3  {          
+            /*width:90%;*/
+            position: relative;
+            margin-left: 0.8rem;
+            margin-right: 0.8rem;
+            margin-top: 0;
+
+            color: map-get($map: $sec, $key:color-sec);
+            font-family: map-get($map: $sec, $key:font-sec);
+            font-size: map-get($map: $sec, $key:font-sec-tamaño);
+            text-align:  map-get($map: $sec, $key:font-sec-align);   
+        }
+
+        footer {
+    
+            margin-top: 2rem;
+            height: 8rem;
+    
+            
+            .derechosReservados {
+        
+                text-align: center;
+                margin-top: 7rem;
+                font-size: 1rem;
+                font-family:$texto-general;
+                color: $color-oscuro-p;
+            }
+            
+            .logoRedes {
+        
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+                display: flex;
+                justify-content:center;
+                gap: 1rem;
+            }
+        }     
+    }
+     
+    @media screen and  (min-width:600px) {
+     
+        .contenedorPersonajes {
+     
+         grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr;
+         grid-template-columns: 20% 30% 30% 20%;
+         grid-template-areas: ". titulo titulo . "
+                              " fotoGral fotoGral fotoGral fotoGral"
+                              ". persUno persUno ."
+                              ". persDos persDos ."
+                              ". persTres persTres ."
+                              ". persCuatro persCuatro ."
+                              ". masPersonajesSec masPersonajesSec ."
+                              ". persCinco persCinco ."
+                              ". persSeis persSeis ."
+                              ". persSiete persSiete ."  
+                              ". persOcho persOcho ."                    
+                              ;
+         justify-content: center;
+         align-items: center;  
+        
+    
+            div div h2 {
+                font-size: map-get($map: $princ, $key: font-princ-tamaño);
+                margin-top: 1.5rem;
+        
+            }
+    
+            .masPersonajesSec {
+                @include titulos-princ;
+            }
+    
+            .persCinco h3, .persSeis h3, .persSiete h3, .persOcho h3 {
+                padding-left: 3rem;
+                margin-top: 0.8rem;
+                margin-left: 0;  
+    
+                .personajesSec {
+     
+                    width: 100%;
+                    max-width: 600px;
+    
+                    .angela, .meredith, .ryan, .toby { 
+             
+                        padding-right: 3rem;
+                        padding-left: 3rem;
+                    }
+                    .sinopsisAngela, .sinopsisMeredith, .sinopsisRyan, .sinopsisToby {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+     
+     @media screen and (min-width:1024px) {
+     
+        .contenedorPersonajes {
+     
+             width: 100%;
+             grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.3fr 0.3fr 0.3fr;
+             grid-template-columns: 15% 35% 35% 15%;
+             grid-template-areas: ". titulo titulo . "
+                                  " fotoGral fotoGral fotoGral fotoGral "
+                                  ". persUno persDos ."
+                                  ". persTres persCuatro ."
+                                  ". masPersonajesSec masPersonajesSec ."
+                                  ". persCinco persSeis ." 
+                                  ". persSiete persOcho ."
+                                  ;
+             column-gap: 1rem;
+           
+            .titulo {
+     
+                @include titulos-princ;
+                margin-top: 1rem;
+                margin-bottom: 1rem; 
+            }
+    
+            .masPersonajesSec {
+     
+                @include titulos-princ;
+                margin-top: 2rem;
+                margin-bottom: 4rem;
+                
+                 
+            }     
+        }
+    }        
+}
+

@@ -1,1734 +1,184 @@
-/*reset */ 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+body .contenedorPersonajes .persUno, body .contenedorPersonajes .persDos, body .contenedorPersonajes .persTres, body .contenedorPersonajes .persCuatro, body .contenedorPersonajes .persCinco, body .contenedorPersonajes .persSeis, body .contenedorPersonajes .persSiete, body .contenedorPersonajes .persOcho {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+  width: 100%; }
 
-/*estilos del index*/ 
-/*MOBILE FIRST*/
+body .contenedorPersonajes .persCinco .personajesSec, body .contenedorPersonajes .persSeis .personajesSec, body .contenedorPersonajes .persSiete .personajesSec, body .contenedorPersonajes .persOcho .personajesSec {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%; }
 
-
-header {
-
-    /*align-items: center;
-    justify-content: space-between;
-    background-color:rgba(43, 42, 42, 0.897);
-    height: 100px;
-    width: 100%;
-    position: sticky;
-    top: 0; 
-    left: 0;   */
+body {
+  background: linear-gradient(#dbcdba, #4d4a4a);
+  background-repeat: no-repeat;
+  height: 250vh;
+  background-color: #4d4a4a; }
+  body header {
     z-index: 1;
-    position: relative;
-    
-    
-    
-}
-
-/*h1 {
-    color: whitesmoke;
-    font-weight: bold;
-    font-family: 'Josefin Sans', sans-serif; 
-    font-variant-caps: all-small-caps;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-        
-    }*/
-
-header nav{
-
-   /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center;*/
-    background-color: rgb(219, 205, 186) /*rgba(54, 53, 53, 0.897);*/
-   /* height: 2.3rem;
-    margin-bottom: 0.8rem;*/
-}
-
-nav:hover {
-
-    background-color: rgba(37, 36, 36, 0.897) /* rgba(70, 68, 68, 0.897)*/
-
-}
-
-header nav ul li {
-    margin: 0.2rem;
-    display: inline-block;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
-    color: whitesmoke;
-    font-weight: bold;
-    font-variant-caps: all-petite-caps;
-    
-} 
-
-li:hover {
-
-    transform: scale(1.05);
-}
-
-
-a {
-    color: whitesmoke;
-    display: inline;
-}
-
-
-
-.contenedorIndex {
-
-   /* height: 200vh;*/
-    width: 100%;
-    display: grid;
-    grid-template-columns: 10% 80% 10% ;
-    grid-template-rows: 0.6fr 0.05fr 0.2fr 0.7fr 0.7fr 0.7fr 0.7fr 0.1fr 0.2fr 0.6fr;
-  
-    grid-template-areas: "portadaPrincipal portadaPrincipal portadaPrincipal"
-                         "citaTextual citaTextual citaTextual"
-                         "conoce conoce conoce"
-                         ". conoceUno ."
-                         ". conoceDos ."
-                         ". conoceTres ." 
-                         ". conoceCuatro ."
-                         ". masPersonajes ."
-                         ". lugar ."
-                         "cajaVideoLugar cajaVideoLugar cajaVideoLugar"
-                        ;
-   /* justify-content: center;
-    justify-items: center;*/
-    
-
-}
-
-.portadaPrincipal {
-
-    grid-area: portadaPrincipal;
-}
-
-
-.citaTextual {
-
-    grid-area: citaTextual;
-    font-size: 0.9rem;
-    font-family: 'Port Lligat Sans', sans-serif;
-    text-align: center;
-    color: black;
-    padding: 0.5rem;
-}
-
-
-.conoce {
-
-    grid-area: conoce;
-    color: whitesmoke;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5rem;
-    margin: 0.8rem 0.8rem;
-    text-align: center; 
-}
-
-.conoceUno {
-
-    grid-area: conoceUno;
-    
-}
-
-.conoceDos {
-
-    grid-area: conoceDos;
-}
-.conoceTres {
-
-    grid-area: conoceTres;
-}
-.conoceCuatro {
-
-    grid-area: conoceCuatro;
-}
-
-.masPersonajes {
-
-    grid-area: masPersonajes;
-    display: inline-block;
-    width: 30%;
-    justify-self: center;
-}
-.masPersonajes p{
-
-    justify-self: center;
-    align-items: center;
-    margin: 0;
-}
-
-
-.lugar {
-
-    grid-area: lugar;
-}
-
-.cajaVideoLugar {
-
-    grid-area: cajaVideoLugar;
-}
-
-.masPersonajes, .masLugar {
-  
-    display: flex;
-    /*margin-top: 2rem;*/
-    margin-bottom: 3rem;
-    border: none solid 1rem;
-    border-radius: 1rem;
-    padding: 1rem;
-    background-color: rgb(115, 73, 133);
-    align-items: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-           
-    }
-
-.masPersonajes:hover {
-    background-color: rgb(106, 68, 122);
-    transform: scale(1.05);
-    }
-
-
-.lugar {
-    grid-area: lugar;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
-    color: whitesmoke;
-
-}
-
-.cajaVideoLugar {
-    grid-area: cajaVideoLugar;
-    margin-top: 1.2rem;
-    width: 325px;
-    height: 300px;
-    overflow-y: auto;
-    overflow-x: auto;
-    resize: both;
-    position: relative;
-    z-index: 2;
-    justify-self: center;
-
-}
-
-.videoLugar {
-
-    width: 100%;
-    height: 100%;
-    border: none;
-    
-}
-
-
-
-.imgPrincipal {
-
-    width: 100%;
-    height: 100%;
-    
-}
-
-.sinopsis { 
-
-    display: none;
-}
-
-
-.pTexto {
-    
-    
-    width: 11rem; /*mismo tamaño que imagen de personajes*/
-    padding-top: 1rem ;
-    padding-right: 0.7rem;
-    text-align: left;       
-    /*background-color: whitesmoke;*/
-    width: 80%;
-    /*margin-top: 0.5rem;*/
-    margin-bottom: 0.5rem;
-    padding: 0.3rem;
-    
-    
-    }
-
-
-.pTexto h3 {
-
-    margin-top: 0.8rem;
-    font-size: 1.2rem;
-    color: whitesmoke;
-    
-}
-
-
-.parrafoSecundario {
-
-    font-size: 0.9rem;
-    color: whitesmoke;
-    
-}
-
-
-
-
-main div div h3 a {    
-    font-size: 1rem;
-    font-family: 'Port Lligat Sans', sans-serif;
-    text-align: left;
-    
-    
-}
-
-
-.conoceUno , .conoceDos , .conoceTres, .conoceCuatro {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   /* border: 1px solid black;*/
-    margin: 1rem;
-   
-}
-
-
-a .imagenSecundaria {
-
-    margin-top: 0.5rem;
-    
-}
-
-.imagenSecundaria {
-
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-    object-fit: cover;
-    
-}
-
-.imagenSecundaria:hover {
-
-    transform: scale(1.02);
-}
-
-.cajaImagenSec {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    width:250px;
-    height:250px;
-}
-
-
-body {
-
-    background: linear-gradient(rgb(219, 205, 186),rgb(77, 74, 74));
-    background-repeat: no-repeat;
-   /* background-color: rgba(7, 2, 2, 0.774) ;*/
-    height: 200vh;
-    background-color:rgb(77, 74, 74);
-
-}
-
-.cajaLugar {
-
-    display: none;
-}
-
-.derechosReservados {
-
-    text-align: center;
-    margin-top: 7rem;
-    font-size: 1.2rem;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-   
-
-.logoRedes {
-
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content:center;
-    align-content: center;
-    gap: 1rem;
-
-}
-
-footer {
-
-    margin-top: 2rem;
-    height: 150px;
-    
-}
-
-   
-/*declaramos media queries para tablet min 600px*/
-
-@media screen and  (min-width:600px) {
-
-header nav ul li {
-  
-    font-size: 1.2rem;
-        
-    } 
-
-.contenedorIndex {
-
-    grid-template-columns: 25% 50% 25%;
-    width: 100%;
-    display: grid;
-    grid-template-rows: 0.6fr 0.05fr 0.2fr 0.7fr 0.7fr 0.7fr 0.7fr 0.1fr 0.2fr 0.6fr;
-  
-    grid-template-areas: "portadaPrincipal portadaPrincipal portadaPrincipal"
-                         "citaTextual citaTextual citaTextual"
-                         "conoce conoce conoce"
-                         ". conoceUno ."
-                         ". conoceDos ."
-                         ". conoceTres ." 
-                         ". conoceCuatro ."
-                         ". masPersonajes ."
-                         ". lugar ."
-                         "cajaVideoLugar cajaVideoLugar cajaVideoLugar" 
-                        ;
-    justify-content: center;
-
-}
-
-.citaTextual {
-
-    font-size: 1rem;
-}
-
-.personaje, .lugar {
-
-    font-size: 2rem;
-    margin-bottom: 4rem;
-
-}
-
-.masPersonajes {
-
-    font-size: 1.1rem;
-    justify-self: center;
-    
-}
-
-.cajaVideoLugar {
-    margin-top: 1.2rem;
-    width: 650px;
-    height: 550px;
-   
-
-}
-
-.videoLugar {
-
-    width: 100%;
-    height: 100%;
-    border: none;
-    
-}
-
-}
-
-@media screen and  (min-width:1024px) {
-
-main div h2, p {
-
-    color: black;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
- 
-    .contenedorIndex {
-
-        width: auto;
-        grid-template-rows: 0.8fr 0.1fr 0.1fr 0.5fr 0.1fr 0.1fr 0.15fr 1fr;
-        grid-template-columns: 25% 25% 25% 25%;
-
-        grid-template-areas: "portadaPrincipal portadaPrincipal portadaPrincipal portadaPrincipal" 
-                             ". citaTextual citaTextual ."
-                             ". conoce conoce . "
-                             ". conoceUno conoceDos ."
-                             ". conoceTres conoceCuatro ."
-                             ". masPersonajes masPersonajes . "
-                             " lugar lugar lugar lugar"
-                             " cajaVideoLugar cajaVideoLugar cajaVideoLugar cajaLugar "
-                            ;
-        column-gap: 0.7rem;
-                
-        justify-content:center ;
-}
-
-.imgPrincipal {
-    
-    position: relative;
-    justify-self: center;    
-}
-
-.sinopsis {
-    display: block;
-    grid-area: sinopsis;
-    height: 100%;
-    width: 30%;
-    padding: 0.6rem;
-    justify-self: left;
-    margin-top: 1rem;
-    margin-left: 2rem;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    
-}
-
-.tituloSinopsis {
-
-    color: black;
-    font-weight: bold;
-    font-family: 'Josefin Sans', sans-serif; 
-    font-variant-caps: all-small-caps;
-    font-size: 3rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    text-align: center;
-    
-}
-
-.parrafoSinopsis {
-
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 0.9rem;
-    text-align: center;
-
-}
-
-.citaTextual {
-
-    font-size: 1.05rem;
-}
-
-.imagenSecundaria {
-
-    width: 100%;
-    height: 100%;
-}
-
-
-.masPersonajes {
-
-    font-size: 1rem;
-    width: 100px;
-    justify-content: center;
-    
-}
-
-.lugar {
-    margin-top: 2rem;
-    
-}
-
-
-.cajaVideoLugar {
-    margin-top: 1.2rem;
-    width: 90%;
-    height: 100%;
-    grid-area: cajaVideoLugar;
-    justify-self: right;
-   
-
-}
-
-.videoLugar {
-
-    width: 100%;
-    height: 100%;
-    border: none;
-    
-}
-
-.cajaLugar {
-
-    display: block;
-    grid-area: cajaLugar;
-    /*background-color: whitesmoke;*/
-    height: 100%;
-    width: 70%;
-    padding: 0.7rem;
-    margin-top: 1.2rem;
-    justify-self: center;
-    font-size: 1rem;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    justify-self: left;
-}
-
-.masLugar  {
-
-    justify-content: center;
-    margin-top: 6rem;
-    margin-bottom: 1rem;
-    display: inline-block;
-    
-}
-
-.masLugar:hover {
-    background-color: rgb(106, 68, 122);
-    transform: scale(1.05);
-    
-}
-
-  
-.tituloLugar {
-
-    color: whitesmoke;
-}
-
-.parrafoLugar {
-
-    color: whitesmoke;
-}
-footer {
-
-    margin-top: 2rem;
-    height: 150px;
-    
-}
-   
-.derechosReservados {
-
-    font-size: 1.2rem;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-
-   
-}
-
-}
-
-
-
-/*estilos de COMPRAR*/ 
-/*MOBILE FIRST*/
-
-.contenedorComprar {
-
-    display: grid;
-    grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 0.1fr;
-    grid-template-columns: 10% 80% 10%;
-    grid-template-areas: ". tituloObjetos ."
-                         ". item-1 ."
-                         ". item-2 ."
-                         ". item-3 ."
-                         ". item-4 ."
-                         ". adquirir .";
-
-    
-
-    }
-
-.tituloObjetos {
-
-    grid-area: tituloObjetos;
-    color: whitesmoke;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5rem;
-    margin: 2rem 2rem;
-    text-align: center;  
-    
-    }
-    
-.item-1 {
-
-    grid-area: item-1;
-}
-.item-2{
-
-    grid-area: item-2;
-}
-
-.item-3{
-
-    grid-area: item-3;
-}
-.item-4{
-
-    grid-area: item-4;
-}
-
-.adquirir {
-    grid-area: adquirir;
-}
-
-
-
-
-
-.imgObjeto {
-    font-family: 'Port Lligat Sans', sans-serif;
-    font-size: 1.4rem;
-    color: whitesmoke;
-    margin-top: 0.6rem;
-    margin-bottom: 0.6rem;
-    text-align: left;
-}
-
-
-.precioObjeto {
-    font-family: 'Port Lligat Sans', sans-serif;
-    font-size: 1.1rem;
-    color: whitesmoke;
-    margin-top: 0.6rem;
-    margin-bottom: 0.6rem;
-    text-align: left; 
-}
-
-
-.adquirir {
-    font-family: 'Port Lligat Sans', sans-serif;
-    font-size: 1rem;
-    color: whitesmoke;
-    margin-top: 60px;
-    text-align: center; 
-   
-}
-
-
-.derechosReservados {
-
-    margin-top: 3rem;
-    font-size: 1rem;
-    font-family: 'Port Lligat Sans', sans-serif;
-}
-
-.item-1 img:hover {
-
-    box-shadow: 2px 2px  gray;
-    transform: scale(1.02);
-}
-
-.item-2 img:hover {
-
-    
-    box-shadow: 2px 2px  gray;
-    transform: scale(1.02);
-}
-
-
-.item-3 img:hover {
-
-    
-    box-shadow: 2px 2px  gray;
-    transform: scale(1.02);
-}
-
-
-.item-4 img:hover {
-
-    box-shadow: 2px 2px  gray;
-    transform: scale(1.02);
-
-
-}
-
-/*declaramos media queries para tablet min 600px*/
-
-@media screen and  (min-width:600px) {
-
-    .contenedorComprar {
-        
-        grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
-        grid-template-columns: 10% 40% 40% 10%;
-        grid-template-areas: ". tituloObjetos tituloObjetos ."
-                             ". item-1 item-2 ."
-                             ". item-3 item-4 ."
-                             ". adquirir adquirir .";
-    
-        
-    
-        }
-    
-    .tituloObjetos {
-    
-        font-size: 1.5rem;
-        margin: 2rem 2rem;
-                
-        }
-        
-.derechosReservados {
-
-    margin-top: 3rem;
-}
-    
-
-}
-
-@media screen and  (min-width:1024px) {
-
-    .contenedorComprar {
-        /*height: 80vh;*/
-        grid-template-rows: 0.3fr 1fr 0.1fr;
-        grid-template-columns: 5% 22.5% 22.5% 22.5% 22.5% 5%;
-        grid-template-areas: ". tituloObjetos tituloObjetos tituloObjetos tituloObjetos ."
-                             ". item-1 item-2 item-3 item-4 ."
-                             ". adquirir adquirir adquirir adquirir.";
-
-    
-    
-        }
-
-
-}
-
- 
-
-  
-/* estilos contacto */
-/*MOBILE FIRST*/  
-
-.contenedorContacto {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-.tituloForm {
-
-    color: whitesmoke;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5rem;
-    margin: 2rem 2rem;
-    text-align: center;  
-
-}
-
-.formulario {
-
-    margin: 1rem;
-    font-family: 'Port Lligat Sans', sans-serif;
-    font-size: 1.2rem;
-    color: whitesmoke;
-   
-    
-}
-
-.itemsForm{
-
-    margin-top: 1rem;
-    margin-left: 1rem;
-    font-family: 'Port Lligat Sans', sans-serif;
-    font-size: 1rem;
-    color: whitesmoke;
-}
-
-.itemsFormFinal{
-
-    margin-top: 4rem;
-    margin-left: 1rem;
-    font-family: 'Port Lligat Sans', sans-serif;
-    font-size: 1rem;
-    color: whitesmoke;
-}
-
-
-.cuadroForm {
-    margin: 1rem;
-    }
-
-.adquirirProd {
-
-    padding: 1rem;
-    font-family: 'Port Lligat Sans', sans-serif;
-    font-size: 1rem;
-    color: whitesmoke;
-    text-align: center;
-}
-
-.comprarProd {
-
-    display: none;
-    
-}
-
-.logoOffice {
-
-    display: none;
-    
-}
-
-
-@media screen and  (min-width:600px) {
-
-.imagenesPie {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-        }
-
-.comprarProd {
-
-    display: block;
-    
-}
-
-.adquirirProd {
-
-    width: 40%;
-    
-}
-
-
-}
-
-@media screen and  (min-width:1024px) {
-
-.imagenesPie {
-
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    }
-
-
-}
-
-
-/* estilos mejores momentos */
-/*MOBILE FIRST*/  
-
-.tituloEscenas, .tituloMemes {
-
-    color: whitesmoke;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5rem;
-    margin: 2rem 2rem;
-    text-align: center;  
-
-}
-
-.escenaUno, .escenaDos, .escenaTres {
-
-    padding-bottom: 2rem;
-    padding-top: 1rem;
-    justify-self: left;
-    
-}
-
-h3 {
-    font-family: 'Port Lligat Sans', sans-serif;
-    font-size: 1.2rem;
-    color: whitesmoke;
-    margin-top: 0.6rem;
-    margin-bottom: 0.6rem;
-    text-align: left;
-}
-
-
-h4 {
-    font-family: 'Port Lligat Sans', sans-serif;
-    font-size: 1rem;
-    color: whitesmoke;
-    margin-top: 0.6rem;
-    margin-bottom: 0.6rem;
-    text-align: left; 
-}
-
-.verOnline {
-
-    font-size: 0.8rem;
-    display: inline-block;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    border: none solid 1rem;
-    border-radius: 0.5rem;
-    padding: 0.9rem;
-    background-color: rgb(115, 73, 133);
-    align-items: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.verOnline:hover {
-
-    background-color: rgb(106, 68, 122);
-    transform: scale(1.05)
-}
-
-
-.contenedorMomentos {
-
-    width: 100%;
-    display: grid;
-    grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 0.1fr 0.1fr 0.2fr 0.1fr 0.2fr 0.1fr 0.2fr 0.1fr 0.2fr 0.2fr 0.2fr;
-    column-gap: 0;
-    grid-template-areas: ". tituloEscenas ."
-                         ". escenaUno ."
-                         ". cajaVideoUno ."
-                         ". escenaDos ."
-                         ". cajaVideoDos ."
-                         ". escenaTres ."
-                         ". cajaVideoTres ."
-                         ". tituloMemes ."
-                         ". cajaMemeUno ."
-                         ". cajaMemeDos . "
-                         ". cajaMemeTres ."
-                        
-                         ;
-
-    /*justify-content: center;*/
-    /*align-items: center;*/
-
-}
-
-.tituloEscenas {
-    grid-area: tituloEscenas;
-
-}
-.escenaUno {
-    grid-area: escenaUno;
-   
-   
-}
-
-.cajaVideoUno {
-
-    grid-area: cajaVideoUno;
-   
-}
-
-.escenaDos {
-    grid-area: escenaDos ;
-
-}
-
-.cajaVideoDos {
-
-    grid-area: cajaVideoDos;
-}
-
-
-.escenaTres {
-    grid-area: escenaTres ;
-
-}
-.cajaVideoTres {
-
-    grid-area: cajaVideoTres;
-}
-
-.tituloMemes {
-    grid-area: tituloMemes ;
-
-}
-
-.cajaMemeUno {
-    grid-area: cajaMemeUno ;
-
-}
-
-.cajaMemeDos {
-    grid-area: cajaMemeDos ;
-
-}
-
-.cajaMemeTres {
-    grid-area: cajaMemeTres ;
-
-}
-
-.cajaVideoUno, .cajaVideoDos, .cajaVideoTres {
-
-    width: 300px;
-    height: 200px;
-    overflow-y: auto;
-    overflow-x: auto;
-    resize: both;
-    position: relative;
-    z-index: 2;
-}
-
-.videoUno, .videoDos, .videoTres {
-
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-
-.textoMemeUno, .textoMemeDos, .textoMemeTres {
-    
-    text-align: left;     
-    font-size: small;     
-    background-color: whitesmoke;
-    padding: 0.6rem;
-    color: black;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 100%;
-    display: inline-block;
-    margin-top: 1rem;
-}
-
-
-@media screen and  (min-width:600px) {
-
-.contenedorMomentos {
-
-        grid-template-columns: 20% 60% 20%;
-    
-    }
-
-.escenaUno, .escenaDos, .escenaTres {
-
-    justify-self: left;
-
-}
-
-h3 {
-    font-size: 1.6rem;
-        
-    }
-    
-    
-h4 {
-    font-size: 1.3rem;
-    }
-
-.memeUno, .memeTres {
-
-    display: flex;
-    flex-direction: row;
-    column-gap: 0.6rem;
-  
-}
-
-
-.memeDos {
-    display: flex;
-    flex-direction: row-reverse;
-    column-gap: 0.6rem;
-   
-}
-
-.tenor-gif-embed {
-
-    
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.textoMemeUno {
-    
-   height: 100%;
-   padding-bottom: 2.4rem;
-}
-
-.textoMemeDos {
-    
-    height: 100%;
-    padding-bottom: 0.9rem;
-    margin-top: 0.2rem;
- }
-
-.textoMemeTres {
-    
-    height: 100%;
-    padding-bottom: 2rem;
-    margin-top: 0;
- }
- 
-
-.cajaMemeUno, .cajaMemeDos, .cajaMemeTres {
-
-    margin-top: 3rem;
-}
-
-
-.derechosReservados {
-
-    margin-top: 10rem;
-}
-
-.cajaVideoUno, .cajaVideoDos, .cajaVideoTres {
-
-    width: 500px;
-    height: 350px;
-    overflow-y: auto;
-    overflow-x: auto;
-    resize: both;
-    position: relative;
-    z-index: 2;
-}
-
-.videoUno, .videoDos, .videoTres {
-
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-}
-
-@media screen and  (min-width:1024px) {
-
-
-.cajaVideoUno, .cajaVideoDos, .cajaVideoTres {
-
-    width: 600px;
-    height: 400px;
-    overflow-y: auto;
-    overflow-x: auto;
-    resize: both;
-    position: relative;
-    z-index: 2;
-
-    }
-    
-    .videoUno, .videoDos, .videoTres {
-    
-    width: 100%;
-    height: 100%;
-    border: none;
-
-    }
-
-.textoMemeUno {
-    
-    
-    padding-bottom: 4.5rem;
-    }
-     
-.textoMemeDos {
-         
-    padding-bottom: 4.1rem;
-    
-    }
-         
-}
-
-/*FALTA DECLARAR LAS IFRAMES EN MEJORES MOMENTEOS*/
-
-
-/* estilos temporadas*/
-
-
-
-/*estilos personajes*/
-/*MOBILE FIRST*/
-
-.contenedorPersonajes {
-
-    width: 100%;
-    display: grid;
-    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr;
-    grid-template-columns: 15% 70% 15%;
-    grid-template-areas: ". tituloPersonajesSec . "
-                         " todosPersonajes todosPersonajes todosPersonajes"
-                         ". persUno ."
-                         ". persDos ."
-                         ". persTres ."
-                         ". persCuatro ."
-                         " . masPersonajesSec . "
-                         ". persCinco ."
-                         ". persSeis ."
-                         ". persSiete ."
-                         ". persOcho ."
-                         
-                         ;
-    justify-content: center;
-  
-    
-}
-
-.tituloPersonajesSec {
-
-    grid-area: tituloPersonajesSec;
-        
-}
-
-.todosPersonajes {
-
-    grid-area: todosPersonajes;
-           
-}
-
-.personajesGeneral {
-
-    width: 100%;
-    height: 100%;
-}
-
-.persUno {
-
-    grid-area: persUno;
-    justify-self: center;  
-}
-
-.persDos {
-    grid-area: persDos;
-    
-}
-
-.persTres {
-    grid-area: persTres;
-   
-}
-.persCuatro {
-
-    grid-area: persCuatro;
-}
-
-.persCinco {
-    grid-area: persCinco;
-  
-}
-.persSeis {
-    grid-area: persSeis;
-  
-}
-.persSiete {
-    grid-area: persSiete;
-}
-
-.persOcho {
-    grid-area: persOcho;
-  
-}
-
-.angela, .meredith, .ryan, .toby {
-
-    width: 100%;
-    height: 100%;
-}
-  
-.masPersonajesSec {
-
-    grid-area: masPersonajesSec;
-}
-
-.tituloPersonajesSec, .masPersonajesSec { 
-    color: whitesmoke;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5rem;
-    margin: 0.5rem 0.5rem;
-    text-align: center;  
-
-}
-
-.personajesPrinc {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    width:100%;
-    height:75%;
-}
-
-.personajesSec {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    width:100%;
-    height:75%;
-}
-
-.dwight, .michael, .jim, .pam {
-
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-    object-fit: cover;
-}
-
-.dwight:hover {
-
-    transform: scale(1.05);
-}
-
-.michael:hover {
-
-    transform: scale(1.05);
-}
-.jim:hover {
-
-    transform: scale(1.05);
-}
-.pam:hover {
-
-    transform: scale(1.05);
-}
- .sinopsisPersonajePrinc {
-
-    color: whitesmoke;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 0.8rem;
-    margin: 0.5rem 0.5rem;
-    text-align: justify; 
-   
-
-}
-
-.sinopsisPersonajeSec {
-
-    font-size: 0.6rem;
-    color: whitesmoke;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0.5rem 0.5rem;
-    text-align: justify; 
-    
-}
-
-.persUno, .persDos, .persTres, .persCuatro {
-
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-
-main div h3 {
-
-    margin-top: 1rem;
-   
-}
-
-
-
-@media screen and  (min-width:600px) {
-
-    .contenedorPersonajes {
-
-    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.2fr 0.4fr 0.4fr;
-    grid-template-columns: 10% 40% 40% 10%;
-    grid-template-areas: ". tituloPersonajesSec tituloPersonajesSec . "
-                         " todosPersonajes todosPersonajes todosPersonajes todosPersonajes"
-                         ". persUno persUno ."
-                         ". persDos persDos ."
-                         ". persTres persTres ."
-                         ". persCuatro persCuatro ."
-                         ". masPersonajesSec masPersonajesSec ."
-                         ". persCinco persSeis ."
-                         ". persSiete persOcho ."                     
-                         ;
-
-    justify-content: center;
-    align-items: center
-  
-
-    }
-
-    h3 {
-
-        margin: 1rem;
-    }
-
-    .sec {
-        display: none;
-    }
-
-
-    .personajesPrinc {
-        
-        width:100%;
-        height:100%;
-    }
-
-    .angela, .meredith, .toby, .ryan { 
-        
-        padding: 1rem;
-        width: 100%;  
-        transition: all 500ms ease-out;
-
-    }
-
-    .sinopsisPersonajePrinc {
-    
-        padding: 0.6rem;
-        margin-top: 1rem;
-        font-size: 1rem; 
+    position: relative; }
+    body header nav {
+      background-color: rgba(37, 36, 36, 0.897); }
+      body header nav ul li {
+        margin: 0.2rem;
+        display: inline-block;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
         color: whitesmoke;
-    }
-
-    .personajesSec {
-
-        width: 100%;
-        max-width: 600px;
-        position: relative;
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        transition: all 500ms ease-out;
-        
-    }
-
-    .personajesSec:hover {
-
-        opacity: 0.4;
-        transition: all 500ms ease-out;
-        
-    }
-
-   .sinopsisPersonajeSec {
-
-    color: whitesmoke;
-    position: absolute;
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 0.5rem;
-    transition: all 500ms ease-out;
-    opacity: 0;
-   }
-
-   .sinopsisPersonajeSec:hover {
-    
-    cursor: auto;
-    opacity: 1;
-    color: whitesmoke;
-    
-   } 
-
-}
-
-@media screen and (min-width:1024px) {
-
-   .contenedorPersonajes {
-
-        width: 100%;
-        grid-template-rows: 0.1fr 0.5fr 0.5fr 0.3fr 0.3fr 0.3fr;
-        grid-template-columns: 15% 35% 35% 15%;
-        grid-template-areas: ". tituloPersonajesSec tituloPersonajesSec . "
-                             ". persUno persDos ."
-                             ". persTres persCuatro ."
-                             ". masPersonajesSec masPersonajesSec ."
-                             ". persCinco persSeis ." 
-                             ". persSiete persOcho ."
-                             
-                             ;
-    
-        justify-content: center;
-        column-gap: 1rem;
-    
-    }
-
-    .tituloPersonajesSec {
-
-        margin-top: 2rem;
-        margin-bottom: 4rem;
-        font-size: 1.7rem;
-            
-    }        
-
-    .masPersonajesSec {
-
-        margin-top: 2rem;
-        margin-bottom: 4rem;
-            
-    }        
-
-main div div div p {
-
-    color: whitesmoke;
-
-}
-
-
-}
-
-/*Estilos Menu Bootstrap*/
-
-.texto-1 {
-
-    color: whitesmoke;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
-    text-align: center;  
+        font-weight: bold;
+        font-variant-caps: all-petite-caps; }
+        body header nav ul li li:hover::after {
+          transform: scale(1); }
+          body header nav ul li li:hover::after ::after {
+            content: "";
+            display: block;
+            height: 2px;
+            background-color: #6b4b86;
+            transform: scale(0, 0.05);
+            transition: transform .25s; }
+        body header nav ul li a {
+          color: whitesmoke;
+          display: inline; }
+  body .contenedorPersonajes {
     width: 100%;
-    
-}
-
-.card-title {
-
-    font-family: 'Port Lligat Sans', sans-serif;
-    font-size: 1.2rem;
-    color: whitesmoke;
-    margin-top: 0.6rem;
-    margin-bottom: 0.6rem;
-    text-align: center;
-    
-
-
-}
-
-.card-text {
-
-    font-family: 'Port Lligat Sans', sans-serif;
-    font-size: 1rem;
-    color: whitesmoke;
-    margin-top: 0.6rem;
-    margin-bottom: 0.6rem;
-    text-align: justify; 
-
-
-}
-
-.btn {
-
-    margin-top: 0.5rem;
-    margin-bottom: 2rem;
-    background-color: rgb(115, 73, 133);
-    border: 1px solid rgb(115, 73, 133); ;
-}
-
-
-.bloque-temp {
-
-    display: flex;
-    flex-direction: column;
-    
-}
-
-/*Estilos Temporada Uno - 
-MOBILES FIRST*/
-
-body {
-
-    height: auto;
-}
-
-
-.contenedorTempUno {
-
     display: grid;
-    width: 100%;
-    grid-template-columns: 33.33% 33.33% 33.33% ;
-    grid-template-rows: 0.2fr 0.3fr 0.6fr 0.1fr;
-    grid-template-areas: "imagenFondo imagenFondo imagenFondo"
-                         ". tempUno ."
-                         "cajaSinopsis cajaSinopsis cajaSinopsis"
-                         "verMasTemporadas verMasTemporadas verMasTemporadas ";
-
-    
-                        
-                     
-}
-
-.imagenFondo img{
-
-    width: 100%;    
-    position: relative;  
-
-}
-
-
- .temporadaUno img{
-
-    position: absolute;
-    width: 30%;
-    top: 200px;
-    z-index: 0;
-    }
-
-  
-.imagenFondo {
-
-    grid-area: imagenFondo;
-}
-
-.tempUno {
-
-    grid-area: tempUno;
-    
-}
-
-.cajaSinopsis {
-
-    grid-area: cajaSinopsis;
-}
-
-.verMasTemporadas {
-
-    grid-area: verMasTemporadas;
-}
-
-
-
-.cajaSinopsis {
-
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    margin-top: 6rem;
-    
-}
-
-.sinopsisTemporada p{
-
-    
-    width: 200px;
-    text-align: justify;
-    color: whitesmoke;
-    font-size: 0.7rem;
-    justify-self: center;
-    margin-bottom: 5rem;
-
-}
-
-
-footer {
-
-    margin-bottom: 1rem;
-}
-
-
-
-
-@media screen and (min-width:600px) {
-
-
-    .sinopsisTemporada p{
-
-    
-        width: 400px;
-        font-size: 1rem;
-        margin-top: 2rem;
-        margin-bottom: 5rem;
-    
-    }
-
-    .derechosReservados {
-
+    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.25fr 0.6fr 0.6fr 0.6fr 0.6fr;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-areas: ". titulo . " " fotoGral fotoGral fotoGral" ". persUno ." ". persDos ." ". persTres ." ". persCuatro ." " . masPersonajesSec . " ". persCinco ." ". persSeis ." ". persSiete ." ". persOcho .";
+    justify-content: center; }
+    body .contenedorPersonajes .titulo {
+      grid-area: titulo;
+      color: whitesmoke;
+      font-family: "Bree Serif", serif;
+      text-align: center;
+      margin: 0.8rem, 0.8rem;
+      font-size: 1.7rem; }
+    body .contenedorPersonajes .fotoGral {
+      grid-area: fotoGral;
+      margin-bottom: 2rem; }
+      body .contenedorPersonajes .fotoGral img {
+        width: 100%;
+        height: 100%; }
+    body .contenedorPersonajes .persUno {
+      grid-area: persUno; }
+    body .contenedorPersonajes .persDos {
+      grid-area: persDos; }
+    body .contenedorPersonajes .persTres {
+      grid-area: persTres; }
+    body .contenedorPersonajes .persCuatro {
+      grid-area: persCuatro; }
+    body .contenedorPersonajes .persUno, body .contenedorPersonajes .persDos, body .contenedorPersonajes .persTres, body .contenedorPersonajes .persCuatro {
+      border: double #a3a1a1 0.5px; }
+      body .contenedorPersonajes .persUno .personajesPrinc, body .contenedorPersonajes .persDos .personajesPrinc, body .contenedorPersonajes .persTres .personajesPrinc, body .contenedorPersonajes .persCuatro .personajesPrinc {
+        overflow: hidden;
+        width: 100%;
+        height: 75%;
+        opacity: 0.8; }
+        body .contenedorPersonajes .persUno .personajesPrinc .dwight, body .contenedorPersonajes .persUno .personajesPrinc .michael, body .contenedorPersonajes .persUno .personajesPrinc .jim, body .contenedorPersonajes .persUno .personajesPrinc .pam, body .contenedorPersonajes .persDos .personajesPrinc .dwight, body .contenedorPersonajes .persDos .personajesPrinc .michael, body .contenedorPersonajes .persDos .personajesPrinc .jim, body .contenedorPersonajes .persDos .personajesPrinc .pam, body .contenedorPersonajes .persTres .personajesPrinc .dwight, body .contenedorPersonajes .persTres .personajesPrinc .michael, body .contenedorPersonajes .persTres .personajesPrinc .jim, body .contenedorPersonajes .persTres .personajesPrinc .pam, body .contenedorPersonajes .persCuatro .personajesPrinc .dwight, body .contenedorPersonajes .persCuatro .personajesPrinc .michael, body .contenedorPersonajes .persCuatro .personajesPrinc .jim, body .contenedorPersonajes .persCuatro .personajesPrinc .pam {
+          width: 100%;
+          height: 100%;
+          transition: 0.5s;
+          object-fit: cover;
+          padding: 0.5rem; }
+          body .contenedorPersonajes .persUno .personajesPrinc .dwight .dwight:hover, body .contenedorPersonajes .persUno .personajesPrinc .dwight .michael:hover, body .contenedorPersonajes .persUno .personajesPrinc .dwight .jim:hover, body .contenedorPersonajes .persUno .personajesPrinc .dwight .pam:hover, body .contenedorPersonajes .persUno .personajesPrinc .michael .dwight:hover, body .contenedorPersonajes .persUno .personajesPrinc .michael .michael:hover, body .contenedorPersonajes .persUno .personajesPrinc .michael .jim:hover, body .contenedorPersonajes .persUno .personajesPrinc .michael .pam:hover, body .contenedorPersonajes .persUno .personajesPrinc .jim .dwight:hover, body .contenedorPersonajes .persUno .personajesPrinc .jim .michael:hover, body .contenedorPersonajes .persUno .personajesPrinc .jim .jim:hover, body .contenedorPersonajes .persUno .personajesPrinc .jim .pam:hover, body .contenedorPersonajes .persUno .personajesPrinc .pam .dwight:hover, body .contenedorPersonajes .persUno .personajesPrinc .pam .michael:hover, body .contenedorPersonajes .persUno .personajesPrinc .pam .jim:hover, body .contenedorPersonajes .persUno .personajesPrinc .pam .pam:hover, body .contenedorPersonajes .persDos .personajesPrinc .dwight .dwight:hover, body .contenedorPersonajes .persDos .personajesPrinc .dwight .michael:hover, body .contenedorPersonajes .persDos .personajesPrinc .dwight .jim:hover, body .contenedorPersonajes .persDos .personajesPrinc .dwight .pam:hover, body .contenedorPersonajes .persDos .personajesPrinc .michael .dwight:hover, body .contenedorPersonajes .persDos .personajesPrinc .michael .michael:hover, body .contenedorPersonajes .persDos .personajesPrinc .michael .jim:hover, body .contenedorPersonajes .persDos .personajesPrinc .michael .pam:hover, body .contenedorPersonajes .persDos .personajesPrinc .jim .dwight:hover, body .contenedorPersonajes .persDos .personajesPrinc .jim .michael:hover, body .contenedorPersonajes .persDos .personajesPrinc .jim .jim:hover, body .contenedorPersonajes .persDos .personajesPrinc .jim .pam:hover, body .contenedorPersonajes .persDos .personajesPrinc .pam .dwight:hover, body .contenedorPersonajes .persDos .personajesPrinc .pam .michael:hover, body .contenedorPersonajes .persDos .personajesPrinc .pam .jim:hover, body .contenedorPersonajes .persDos .personajesPrinc .pam .pam:hover, body .contenedorPersonajes .persTres .personajesPrinc .dwight .dwight:hover, body .contenedorPersonajes .persTres .personajesPrinc .dwight .michael:hover, body .contenedorPersonajes .persTres .personajesPrinc .dwight .jim:hover, body .contenedorPersonajes .persTres .personajesPrinc .dwight .pam:hover, body .contenedorPersonajes .persTres .personajesPrinc .michael .dwight:hover, body .contenedorPersonajes .persTres .personajesPrinc .michael .michael:hover, body .contenedorPersonajes .persTres .personajesPrinc .michael .jim:hover, body .contenedorPersonajes .persTres .personajesPrinc .michael .pam:hover, body .contenedorPersonajes .persTres .personajesPrinc .jim .dwight:hover, body .contenedorPersonajes .persTres .personajesPrinc .jim .michael:hover, body .contenedorPersonajes .persTres .personajesPrinc .jim .jim:hover, body .contenedorPersonajes .persTres .personajesPrinc .jim .pam:hover, body .contenedorPersonajes .persTres .personajesPrinc .pam .dwight:hover, body .contenedorPersonajes .persTres .personajesPrinc .pam .michael:hover, body .contenedorPersonajes .persTres .personajesPrinc .pam .jim:hover, body .contenedorPersonajes .persTres .personajesPrinc .pam .pam:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .dwight .dwight:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .dwight .michael:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .dwight .jim:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .dwight .pam:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .michael .dwight:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .michael .michael:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .michael .jim:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .michael .pam:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .jim .dwight:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .jim .michael:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .jim .jim:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .jim .pam:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .pam .dwight:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .pam .michael:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .pam .jim:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .pam .pam:hover {
+            transform: scale(1.05); }
+      body .contenedorPersonajes .persUno div h2, body .contenedorPersonajes .persDos div h2, body .contenedorPersonajes .persTres div h2, body .contenedorPersonajes .persCuatro div h2 {
+        margin-top: 0.6rem;
+        padding: 0.3rem;
+        color: whitesmoke;
+        font-family: "Bree Serif";
+        text-align: center; }
+    body .contenedorPersonajes .masPersonajesSec {
+      color: whitesmoke;
+      font-family: "Bree Serif", serif;
+      text-align: center;
+      margin: 0.8rem, 0.8rem;
+      font-size: 1.7rem;
+      grid-area: masPersonajesSec; }
+    body .contenedorPersonajes .persCinco {
+      grid-area: persCinco; }
+    body .contenedorPersonajes .persSeis {
+      grid-area: persSeis; }
+    body .contenedorPersonajes .persSiete {
+      grid-area: persSiete; }
+    body .contenedorPersonajes .persOcho {
+      grid-area: persOcho; }
+    body .contenedorPersonajes .persCinco .personajesSec, body .contenedorPersonajes .persSeis .personajesSec, body .contenedorPersonajes .persSiete .personajesSec, body .contenedorPersonajes .persOcho .personajesSec {
+      overflow: hidden;
+      max-width: 280px;
+      position: relative;
+      transition: all 500ms ease-out; }
+      body .contenedorPersonajes .persCinco .personajesSec .personajesSec:hover, body .contenedorPersonajes .persSeis .personajesSec .personajesSec:hover, body .contenedorPersonajes .persSiete .personajesSec .personajesSec:hover, body .contenedorPersonajes .persOcho .personajesSec .personajesSec:hover {
+        opacity: 0.4;
+        transition: all 500ms ease-out; }
+      body .contenedorPersonajes .persCinco .personajesSec .angela, body .contenedorPersonajes .persCinco .personajesSec .meredith, body .contenedorPersonajes .persCinco .personajesSec .ryan, body .contenedorPersonajes .persCinco .personajesSec .toby, body .contenedorPersonajes .persSeis .personajesSec .angela, body .contenedorPersonajes .persSeis .personajesSec .meredith, body .contenedorPersonajes .persSeis .personajesSec .ryan, body .contenedorPersonajes .persSeis .personajesSec .toby, body .contenedorPersonajes .persSiete .personajesSec .angela, body .contenedorPersonajes .persSiete .personajesSec .meredith, body .contenedorPersonajes .persSiete .personajesSec .ryan, body .contenedorPersonajes .persSiete .personajesSec .toby, body .contenedorPersonajes .persOcho .personajesSec .angela, body .contenedorPersonajes .persOcho .personajesSec .meredith, body .contenedorPersonajes .persOcho .personajesSec .ryan, body .contenedorPersonajes .persOcho .personajesSec .toby {
+        width: 100%;
+        height: 75%;
+        margin-left: 1rem;
+        margin-right: 1rem; }
+      body .contenedorPersonajes .persCinco .personajesSec .sinopsisAngela, body .contenedorPersonajes .persCinco .personajesSec .sinopsisMeredith, body .contenedorPersonajes .persCinco .personajesSec .sinopsisRyan, body .contenedorPersonajes .persCinco .personajesSec .sinopsisToby, body .contenedorPersonajes .persSeis .personajesSec .sinopsisAngela, body .contenedorPersonajes .persSeis .personajesSec .sinopsisMeredith, body .contenedorPersonajes .persSeis .personajesSec .sinopsisRyan, body .contenedorPersonajes .persSeis .personajesSec .sinopsisToby, body .contenedorPersonajes .persSiete .personajesSec .sinopsisAngela, body .contenedorPersonajes .persSiete .personajesSec .sinopsisMeredith, body .contenedorPersonajes .persSiete .personajesSec .sinopsisRyan, body .contenedorPersonajes .persSiete .personajesSec .sinopsisToby, body .contenedorPersonajes .persOcho .personajesSec .sinopsisAngela, body .contenedorPersonajes .persOcho .personajesSec .sinopsisMeredith, body .contenedorPersonajes .persOcho .personajesSec .sinopsisRyan, body .contenedorPersonajes .persOcho .personajesSec .sinopsisToby {
+        position: absolute;
+        font-size: 1.1rem;
+        padding: 0.5rem;
+        width: 70%;
+        transition: all 500ms ease-out;
+        opacity: 0;
+        color: whitesmoke;
+        font-family: "Bree Serif";
+        text-align: center; }
+        body .contenedorPersonajes .persCinco .personajesSec .sinopsisAngela .sinopsisAngela:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisAngela .sinopsisMeredith:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisAngela .sinopsisRyan:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisAngela .sinopsisToby:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisMeredith .sinopsisAngela:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisMeredith .sinopsisMeredith:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisMeredith .sinopsisRyan:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisMeredith .sinopsisToby:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisRyan .sinopsisAngela:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisRyan .sinopsisMeredith:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisRyan .sinopsisRyan:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisRyan .sinopsisToby:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisToby .sinopsisAngela:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisToby .sinopsisMeredith:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisToby .sinopsisRyan:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisToby .sinopsisToby:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisAngela .sinopsisAngela:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisAngela .sinopsisMeredith:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisAngela .sinopsisRyan:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisAngela .sinopsisToby:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisMeredith .sinopsisAngela:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisMeredith .sinopsisMeredith:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisMeredith .sinopsisRyan:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisMeredith .sinopsisToby:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisRyan .sinopsisAngela:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisRyan .sinopsisMeredith:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisRyan .sinopsisRyan:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisRyan .sinopsisToby:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisToby .sinopsisAngela:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisToby .sinopsisMeredith:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisToby .sinopsisRyan:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisToby .sinopsisToby:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisAngela .sinopsisAngela:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisAngela .sinopsisMeredith:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisAngela .sinopsisRyan:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisAngela .sinopsisToby:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisMeredith .sinopsisAngela:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisMeredith .sinopsisMeredith:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisMeredith .sinopsisRyan:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisMeredith .sinopsisToby:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisRyan .sinopsisAngela:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisRyan .sinopsisMeredith:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisRyan .sinopsisRyan:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisRyan .sinopsisToby:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisToby .sinopsisAngela:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisToby .sinopsisMeredith:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisToby .sinopsisRyan:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisToby .sinopsisToby:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisAngela .sinopsisAngela:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisAngela .sinopsisMeredith:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisAngela .sinopsisRyan:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisAngela .sinopsisToby:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisMeredith .sinopsisAngela:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisMeredith .sinopsisMeredith:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisMeredith .sinopsisRyan:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisMeredith .sinopsisToby:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisRyan .sinopsisAngela:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisRyan .sinopsisMeredith:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisRyan .sinopsisRyan:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisRyan .sinopsisToby:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisToby .sinopsisAngela:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisToby .sinopsisMeredith:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisToby .sinopsisRyan:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisToby .sinopsisToby:hover {
+          cursor: auto;
+          opacity: 1;
+          color: whitesmoke; }
+    body .contenedorPersonajes .persCinco .persCinco h3, body .contenedorPersonajes .persCinco .persSeis h3, body .contenedorPersonajes .persCinco .persSiete h3, body .contenedorPersonajes .persCinco .persOcho h3, body .contenedorPersonajes .persSeis .persCinco h3, body .contenedorPersonajes .persSeis .persSeis h3, body .contenedorPersonajes .persSeis .persSiete h3, body .contenedorPersonajes .persSeis .persOcho h3, body .contenedorPersonajes .persSiete .persCinco h3, body .contenedorPersonajes .persSiete .persSeis h3, body .contenedorPersonajes .persSiete .persSiete h3, body .contenedorPersonajes .persSiete .persOcho h3, body .contenedorPersonajes .persOcho .persCinco h3, body .contenedorPersonajes .persOcho .persSeis h3, body .contenedorPersonajes .persOcho .persSiete h3, body .contenedorPersonajes .persOcho .persOcho h3 {
+      width: 90%;
+      position: relative;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      margin-left: 0.8rem;
+      margin-right: 0.8rem;
+      margin-top: 0;
+      color: whitesmoke;
+      font-size: 0.85rem;
+      text-align: justify; }
+  @media screen and (min-width: 600px) {
+    body .contenedorPersonajes {
+      grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr;
+      grid-template-columns: 20% 30% 30% 20%;
+      grid-template-areas: ". titulo titulo . " " fotoGral fotoGral fotoGral fotoGral" ". persUno persUno ." ". persDos persDos ." ". persTres persTres ." ". persCuatro persCuatro ." ". masPersonajesSec masPersonajesSec ." ". persCinco persCinco ." ". persSeis persSeis ." ". persSiete persSiete ."   ". persOcho persOcho .";
+      justify-content: center;
+      align-items: center; }
+      body .contenedorPersonajes .titulo {
+        font-size: 2.1rem; }
+      body .contenedorPersonajes div div h2 {
+        margin-top: 1.5rem; }
+      body .contenedorPersonajes .masPersonajesSec {
+        font-size: 2.1rem; }
+      body .contenedorPersonajes .persCinco h3, body .contenedorPersonajes .persSeis h3, body .contenedorPersonajes .persSiete h3, body .contenedorPersonajes .persOcho h3 {
+        padding-left: 3rem;
+        margin-top: 0.8rem;
+        margin-left: 0; }
+        body .contenedorPersonajes .persCinco h3 .personajesSec, body .contenedorPersonajes .persSeis h3 .personajesSec, body .contenedorPersonajes .persSiete h3 .personajesSec, body .contenedorPersonajes .persOcho h3 .personajesSec {
+          width: 100%;
+          max-width: 600px; }
+          body .contenedorPersonajes .persCinco h3 .personajesSec .angela, body .contenedorPersonajes .persCinco h3 .personajesSec .meredith, body .contenedorPersonajes .persCinco h3 .personajesSec .ryan, body .contenedorPersonajes .persCinco h3 .personajesSec .toby, body .contenedorPersonajes .persSeis h3 .personajesSec .angela, body .contenedorPersonajes .persSeis h3 .personajesSec .meredith, body .contenedorPersonajes .persSeis h3 .personajesSec .ryan, body .contenedorPersonajes .persSeis h3 .personajesSec .toby, body .contenedorPersonajes .persSiete h3 .personajesSec .angela, body .contenedorPersonajes .persSiete h3 .personajesSec .meredith, body .contenedorPersonajes .persSiete h3 .personajesSec .ryan, body .contenedorPersonajes .persSiete h3 .personajesSec .toby, body .contenedorPersonajes .persOcho h3 .personajesSec .angela, body .contenedorPersonajes .persOcho h3 .personajesSec .meredith, body .contenedorPersonajes .persOcho h3 .personajesSec .ryan, body .contenedorPersonajes .persOcho h3 .personajesSec .toby {
+            padding-right: 3rem;
+            padding-left: 3rem; }
+          body .contenedorPersonajes .persCinco h3 .personajesSec .sinopsisAngela, body .contenedorPersonajes .persCinco h3 .personajesSec .sinopsisMeredith, body .contenedorPersonajes .persCinco h3 .personajesSec .sinopsisRyan, body .contenedorPersonajes .persCinco h3 .personajesSec .sinopsisToby, body .contenedorPersonajes .persSeis h3 .personajesSec .sinopsisAngela, body .contenedorPersonajes .persSeis h3 .personajesSec .sinopsisMeredith, body .contenedorPersonajes .persSeis h3 .personajesSec .sinopsisRyan, body .contenedorPersonajes .persSeis h3 .personajesSec .sinopsisToby, body .contenedorPersonajes .persSiete h3 .personajesSec .sinopsisAngela, body .contenedorPersonajes .persSiete h3 .personajesSec .sinopsisMeredith, body .contenedorPersonajes .persSiete h3 .personajesSec .sinopsisRyan, body .contenedorPersonajes .persSiete h3 .personajesSec .sinopsisToby, body .contenedorPersonajes .persOcho h3 .personajesSec .sinopsisAngela, body .contenedorPersonajes .persOcho h3 .personajesSec .sinopsisMeredith, body .contenedorPersonajes .persOcho h3 .personajesSec .sinopsisRyan, body .contenedorPersonajes .persOcho h3 .personajesSec .sinopsisToby {
+            font-size: 1.5rem; } }
+  @media screen and (min-width: 1024px) {
+    body .contenedorPersonajes {
+      width: 100%;
+      grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.3fr 0.3fr 0.3fr;
+      grid-template-columns: 15% 35% 35% 15%;
+      grid-template-areas: ". titulo titulo . " " fotoGral fotoGral fotoGral fotoGral " ". persUno persDos ." ". persTres persCuatro ." ". masPersonajesSec masPersonajesSec ." ". persCinco persSeis ."  ". persSiete persOcho .";
+      column-gap: 1rem; }
+      body .contenedorPersonajes .titulo {
+        font-size: 2.5rem;
         margin-top: 1rem;
-    }
-
-}
-
-
-@media screen and (min-width:1024px) {
-
-.temporadaUno img {
-
-    width: 20%;
-    top: 300px;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.derechosReservados {
-
-    margin-top: 1rem;
-}
-
-}
+        margin-bottom: 1rem; }
+      body .contenedorPersonajes .masPersonajesSec {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        font-size: 2.5rem; } }

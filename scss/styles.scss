@@ -36,7 +36,7 @@ body {
                     content: "";
                     display: block;
                     height: 2px;
-                    background-color: $color-botones;
+                    
                     transform: scale(0,0.05);
                     transition: transform .25s;
                     }
@@ -91,32 +91,14 @@ body {
         }  
         .persUno {
             grid-area: persUno;
-        }
-    
-        .persDos {
-            grid-area: persDos;
-        }
-    
-        .persTres {
-            grid-area: persTres;
-        }
-        .persCuatro {
-            grid-area: persCuatro;
-        }
-        
-        .persUno, .persDos, .persTres, .persCuatro {
-     
-            @extend %flex;
-            border: double rgb(163, 161, 161) 0.5px;
-            
-    
+
             .personajesPrinc {
      
                 overflow: hidden;
                 @include medidas (100%, 75%);
                 opacity: 0.8;    
                 
-                .dwight, .michael, .jim, .pam {
+                .michael {
      
                     width: 100%;
                     height: 100%;
@@ -124,7 +106,7 @@ body {
                     object-fit: cover;
                     padding: 0.5rem;
     
-                    .dwight:hover, .michael:hover, .jim:hover, .pam:hover {
+                    :hover {
                         transform: scale(1.05);
                     }
                 }  
@@ -139,6 +121,114 @@ body {
                 font-size: map-get($map: $princ, $key: font-princ-tamaño);
                 text-align:  map-get($map: $princ, $key: font-princ-align);
             }
+        }
+    
+        .persDos {
+            grid-area: persDos;
+
+            .personajesPrinc {
+     
+                overflow: hidden;
+                @include medidas (100%, 75%);
+                opacity: 0.8;    
+                
+                .dwight {
+     
+                    width: 100%;
+                    height: 100%;
+                    transition: 0.5s;
+                    object-fit: cover;
+                    padding: 0.5rem;
+    
+                    :hover {
+                        transform: scale(1.05);
+                    }
+                }  
+            }
+    
+            div h2 {    
+    
+                margin-top: 0.6rem;
+                padding: 0.3rem;
+                color: map-get($map: $princ, $key:color-princ);
+                font-family: map-get($map: $princ, $key: font-princ);
+                font-size: map-get($map: $princ, $key: font-princ-tamaño);
+                text-align:  map-get($map: $princ, $key: font-princ-align);
+            }
+        }
+    
+        .persTres {
+            grid-area: persTres;
+
+            .personajesPrinc {
+     
+                overflow: hidden;
+                @include medidas (100%, 75%);
+                opacity: 0.8;    
+                
+                .jim {
+     
+                    width: 100%;
+                    height: 100%;
+                    transition: 0.5s;
+                    object-fit: cover;
+                    padding: 0.5rem;
+    
+                    :hover {
+                        transform: scale(1.05);
+                    }
+                }  
+            }
+    
+            div h2 {    
+    
+                margin-top: 0.6rem;
+                padding: 0.3rem;
+                color: map-get($map: $princ, $key:color-princ);
+                font-family: map-get($map: $princ, $key: font-princ);
+                font-size: map-get($map: $princ, $key: font-princ-tamaño);
+                text-align:  map-get($map: $princ, $key: font-princ-align);
+            }
+        }
+        .persCuatro {
+            grid-area: persCuatro;
+
+            .personajesPrinc {
+     
+                overflow: hidden;
+                @include medidas (100%, 75%);
+                opacity: 0.8;    
+                
+                .pam {
+     
+                    width: 100%;
+                    height: 100%;
+                    transition: 0.5s;
+                    object-fit: cover;
+                    padding: 0.5rem;
+    
+                    :hover {
+                        transform: scale(1.05);
+                    }
+                }  
+            }
+    
+            div h2 {    
+    
+                margin-top: 0.6rem;
+                padding: 0.3rem;
+                color: map-get($map: $princ, $key:color-princ);
+                font-family: map-get($map: $princ, $key: font-princ);
+                font-size: map-get($map: $princ, $key: font-princ-tamaño);
+                text-align:  map-get($map: $princ, $key: font-princ-align);
+            }
+        }
+        
+        .persUno, .persDos, .persTres, .persCuatro {
+     
+            @extend %flex;
+            border: double rgb(163, 161, 161) 0.5px;
+            
         }        
     
         .masPersonajesSec {
@@ -149,21 +239,7 @@ body {
         
         .persCinco {
             grid-area: persCinco;
-        }
-        .persSeis {
-            grid-area: persSeis;
-        }
-        .persSiete {
-            grid-area: persSiete;
-        }
-        .persOcho {
-            grid-area: persOcho;
-        }
-    
-        .persCinco, .persSeis, .persSiete, .persOcho {
-    
-            @extend %flex;
-    
+
             .personajesSec {
      
                 @extend %flex-dos;
@@ -172,21 +248,79 @@ body {
                 position: relative;
                 transition: all 500ms ease-out;
     
-                .personajesSec:hover {
+                :hover {
      
                     opacity: 0.4;
                     transition: all 500ms ease-out;  
                 }
     
-                .angela, .meredith, .ryan, .toby {
+                .angela {
      
                     @include medidas (100%, 75%);
                     margin-left: 1rem;
                     margin-right: 1rem;  
                 }  
                 
-                .sinopsisAngela, .sinopsisMeredith, .sinopsisRyan, .sinopsisToby {
+                .sinopsisAngela {
                 
+                    position: absolute;
+                    font-size: 1.1rem;
+                    padding: 0.5rem;
+                    width: 70%;
+                    transition: all 500ms ease-out;
+                    opacity: 0;  
+                    color: map-get($map: $princ, $key: color-princ);
+                    font-family: map-get($map: $princ, $key: font-princ);
+                    text-align:  map-get($map: $princ, $key: font-princ-align);
+                            
+                    :hover {
+                        cursor: auto;
+                        opacity: 1;
+                        color: map-get($map: $princ, $key: color-princ);
+                    } 
+                }   
+            }               
+         
+            h3  {          
+            /*width:90%;*/
+            position: relative;
+            margin-left: 0.8rem;
+            margin-right: 0.8rem;
+            margin-top: 0;
+
+            color: map-get($map: $sec, $key:color-sec);
+            font-family: map-get($map: $sec, $key:font-sec);
+            font-size: map-get($map: $sec, $key:font-sec-size);
+            text-align:  map-get($map: $sec, $key:font-sec-align);   
+            }
+        }
+        .persSeis {
+
+            grid-area: persSeis;
+
+            .personajesSec {
+     
+                @extend %flex-dos;
+                overflow: hidden;
+                max-width: 280px;
+                position: relative;
+                transition: all 500ms ease-out;
+    
+                :hover {
+     
+                    opacity: 0.4;
+                    transition: all 500ms ease-out;  
+                }
+    
+                .meredith {
+     
+                    @include medidas (100%, 75%);
+                    margin-left: 1rem;
+                    margin-right: 1rem;  
+                }  
+                
+                .sinopsisMeredith {
+           
                     position: absolute;
                     font-size: 1.1rem;
                     padding: 0.5rem;
@@ -199,16 +333,15 @@ body {
     
     
                         
-                    .sinopsisAngela:hover, .sinopsisMeredith:hover, .sinopsisRyan:hover, .sinopsisToby:hover {
+                    :hover {
                         cursor: auto;
                         opacity: 1;
                         color: map-get($map: $princ, $key: color-princ );
                     } 
                 }   
             }               
-        } 
-        
-        div h3  {          
+           
+            h3  {          
             /*width:90%;*/
             position: relative;
             margin-left: 0.8rem;
@@ -217,14 +350,140 @@ body {
 
             color: map-get($map: $sec, $key:color-sec);
             font-family: map-get($map: $sec, $key:font-sec);
-            font-size: map-get($map: $sec, $key:font-sec-tamaño);
+            font-size: map-get($map: $sec, $key:font-sec-size);
             text-align:  map-get($map: $sec, $key:font-sec-align);   
+            }
         }
+        .persSiete {
+            grid-area: persSiete;
+
+            .personajesSec {
+     
+                @extend %flex-dos;
+                overflow: hidden;
+                max-width: 280px;
+                position: relative;
+                transition: all 500ms ease-out;
+    
+                :hover {
+     
+                    opacity: 0.4;
+                    transition: all 500ms ease-out;  
+                }
+    
+                .ryan {
+     
+                    @include medidas (100%, 75%);
+                    margin-left: 1rem;
+                    margin-right: 1rem;  
+                }  
+                
+                .sinopsisRyan {
+                
+                    position: absolute;
+                    font-size: 1.1rem;
+                    padding: 0.5rem;
+                    width: 70%;
+                    transition: all 500ms ease-out;
+                    opacity: 0;  
+                    color: map-get($map: $princ, $key: color-princ);
+                    font-family: map-get($map: $princ, $key: font-princ);
+                    text-align:  map-get($map: $princ, $key: font-princ-align);
+   
+                    :hover {
+                        cursor: auto;
+                        opacity: 1;
+                        color: map-get($map: $princ, $key: color-princ );
+                    } 
+                }   
+            }               
+          
+            h3 {          
+            /*width:90%;*/
+            position: relative;
+            margin-left: 0.8rem;
+            margin-right: 0.8rem;
+            margin-top: 0;
+
+            color: map-get($map: $sec, $key:color-sec);
+            font-family: map-get($map: $sec, $key:font-sec);
+            font-size: map-get($map: $sec, $key:font-sec-size);
+            text-align:  map-get($map: $sec, $key:font-sec-align);   
+            }
+        }
+
+        .persOcho {
+            grid-area: persOcho;
+
+            .personajesSec {
+     
+                @extend %flex-dos;
+                overflow: hidden;
+                max-width: 280px;
+                position: relative;
+                transition: all 500ms ease-out;
+    
+                :hover {
+     
+                    opacity: 0.4;
+                    transition: all 500ms ease-out;  
+                }
+    
+                .toby {
+     
+                    @include medidas (100%, 75%);
+                    margin-left: 1rem;
+                    margin-right: 1rem;  
+                }  
+                
+                .sinopsisToby {
+                
+                    position: absolute;
+                    font-size: 1.1rem;
+                    padding: 0.5rem;
+                    width: 70%;
+                    transition: all 500ms ease-out;
+                    opacity: 0;  
+                    color: map-get($map: $princ, $key: color-princ);
+                    font-family: map-get($map: $princ, $key: font-princ);
+                    text-align:  map-get($map: $princ, $key: font-princ-align);
+                        
+                    :hover {
+                        cursor: auto;
+                        opacity: 1;
+                        color: map-get($map: $princ, $key: color-princ );
+                    } 
+                }   
+            }               
+        
+            h3  {          
+            /*width:90%;*/
+            position: relative;
+            margin-left: 0.8rem;
+            margin-right: 0.8rem;
+            margin-top: 0;
+
+            color: map-get($map: $sec, $key:color-sec);
+            font-family: map-get($map: $sec, $key:font-sec);
+            font-size: map-get($map: $sec, $key:font-sec-size);
+            text-align:  map-get($map: $sec, $key:font-sec-align);   
+            }
+        }
+    
+        .persCinco, .persSeis, .persSiete, .persOcho {
+    
+            @extend %flex; 
+    
+        } 
+        
 
         footer {
     
             margin-top: 2rem;
             height: 8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
     
             
             .derechosReservados {
@@ -279,22 +538,89 @@ body {
                 @include titulos-princ;
             }
     
-            .persCinco h3, .persSeis h3, .persSiete h3, .persOcho h3 {
-                padding-left: 3rem;
+            .persCinco h3 {
+                /*padding-left: 3rem;*/
+                width: 60%;
                 margin-top: 0.8rem;
-                margin-left: 0;  
+                margin-left: 0; 
     
                 .personajesSec {
      
                     width: 100%;
                     max-width: 600px;
     
-                    .angela, .meredith, .ryan, .toby { 
+                    .angela { 
              
                         padding-right: 3rem;
                         padding-left: 3rem;
                     }
-                    .sinopsisAngela, .sinopsisMeredith, .sinopsisRyan, .sinopsisToby {
+                    .sinopsisAngela {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+            .persSeis h3 {
+               /* padding-left: 3rem;*/
+                width: 60%;
+                margin-top: 0.8rem;
+                margin-left: 0; 
+    
+                .personajesSec {
+     
+                    width: 100%;
+                    max-width: 600px;
+    
+                    .meredith { 
+             
+                        padding-right: 3rem;
+                        padding-left: 3rem;
+                    }
+                    .sinopsisMeredith {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+            .persSiete h3 {
+                /*padding-left: 3rem;*/
+                width: 60%;
+                margin-top: 0.8rem;
+                margin-left: 0; 
+    
+                .personajesSec {
+     
+                    width: 100%;
+                    max-width: 600px;
+    
+                    .ryan, .toby { 
+             
+                        padding-right: 3rem;
+                        padding-left: 3rem;
+                    }
+                    .sinopsisRyan {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+            .persOcho h3 {
+                /*padding-left: 3rem;*/
+                width: 60%;
+                margin-top: 0.8rem;
+                margin-left: 0; 
+    
+                .personajesSec {
+     
+                    width: 100%;
+                    max-width: 600px;
+    
+                    .toby { 
+             
+                        padding-right: 3rem;
+                        padding-left: 3rem;
+                    }
+                    .sinopsisToby {
                         font-size: 1.5rem;
                     }
                 }
@@ -302,7 +628,7 @@ body {
         }
     }
      
-     @media screen and (min-width:1024px) {
+    @media screen and (min-width:1024px) {
      
         .contenedorPersonajes {
      
@@ -330,11 +656,9 @@ body {
      
                 @include titulos-princ;
                 margin-top: 2rem;
-                margin-bottom: 4rem;
-                
+                margin-bottom: 4rem;   
                  
             }     
         }
     }        
-}
-
+} 

@@ -2,6 +2,7 @@ body .contenedorPersonajes .persUno, body .contenedorPersonajes .persDos, body .
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-top: 2rem;
   width: 100%; }
 
@@ -15,7 +16,7 @@ body .contenedorPersonajes .persCinco .personajesSec, body .contenedorPersonajes
 body {
   background: linear-gradient(#dbcdba, #4d4a4a);
   background-repeat: no-repeat;
-  height: 250vh;
+  height: 300vh;
   background-color: #4d4a4a; }
   body header {
     z-index: 1;
@@ -25,7 +26,7 @@ body {
       body header nav ul li {
         margin: 0.2rem;
         display: inline-block;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        font-family: "Gill Sans" "Gill Sans MT" Calibri "Trebuchet MS" sans-serif;
         color: whitesmoke;
         font-weight: bold;
         font-variant-caps: all-petite-caps; }
@@ -35,7 +36,6 @@ body {
             content: "";
             display: block;
             height: 2px;
-            background-color: #6b4b86;
             transform: scale(0, 0.05);
             transition: transform .25s; }
         body header nav ul li a {
@@ -51,7 +51,7 @@ body {
     body .contenedorPersonajes .titulo {
       grid-area: titulo;
       color: whitesmoke;
-      font-family: "Bree Serif", serif;
+      font-family: 'Bree Serif'serif;
       text-align: center;
       margin: 0.8rem, 0.8rem;
       font-size: 1.7rem; }
@@ -63,85 +63,271 @@ body {
         height: 100%; }
     body .contenedorPersonajes .persUno {
       grid-area: persUno; }
-    body .contenedorPersonajes .persDos {
-      grid-area: persDos; }
-    body .contenedorPersonajes .persTres {
-      grid-area: persTres; }
-    body .contenedorPersonajes .persCuatro {
-      grid-area: persCuatro; }
-    body .contenedorPersonajes .persUno, body .contenedorPersonajes .persDos, body .contenedorPersonajes .persTres, body .contenedorPersonajes .persCuatro {
-      border: double #a3a1a1 0.5px; }
-      body .contenedorPersonajes .persUno .personajesPrinc, body .contenedorPersonajes .persDos .personajesPrinc, body .contenedorPersonajes .persTres .personajesPrinc, body .contenedorPersonajes .persCuatro .personajesPrinc {
+      body .contenedorPersonajes .persUno .personajesPrinc {
         overflow: hidden;
         width: 100%;
         height: 75%;
         opacity: 0.8; }
-        body .contenedorPersonajes .persUno .personajesPrinc .dwight, body .contenedorPersonajes .persUno .personajesPrinc .michael, body .contenedorPersonajes .persUno .personajesPrinc .jim, body .contenedorPersonajes .persUno .personajesPrinc .pam, body .contenedorPersonajes .persDos .personajesPrinc .dwight, body .contenedorPersonajes .persDos .personajesPrinc .michael, body .contenedorPersonajes .persDos .personajesPrinc .jim, body .contenedorPersonajes .persDos .personajesPrinc .pam, body .contenedorPersonajes .persTres .personajesPrinc .dwight, body .contenedorPersonajes .persTres .personajesPrinc .michael, body .contenedorPersonajes .persTres .personajesPrinc .jim, body .contenedorPersonajes .persTres .personajesPrinc .pam, body .contenedorPersonajes .persCuatro .personajesPrinc .dwight, body .contenedorPersonajes .persCuatro .personajesPrinc .michael, body .contenedorPersonajes .persCuatro .personajesPrinc .jim, body .contenedorPersonajes .persCuatro .personajesPrinc .pam {
+        body .contenedorPersonajes .persUno .personajesPrinc .michael {
           width: 100%;
           height: 100%;
           transition: 0.5s;
           object-fit: cover;
           padding: 0.5rem; }
-          body .contenedorPersonajes .persUno .personajesPrinc .dwight .dwight:hover, body .contenedorPersonajes .persUno .personajesPrinc .dwight .michael:hover, body .contenedorPersonajes .persUno .personajesPrinc .dwight .jim:hover, body .contenedorPersonajes .persUno .personajesPrinc .dwight .pam:hover, body .contenedorPersonajes .persUno .personajesPrinc .michael .dwight:hover, body .contenedorPersonajes .persUno .personajesPrinc .michael .michael:hover, body .contenedorPersonajes .persUno .personajesPrinc .michael .jim:hover, body .contenedorPersonajes .persUno .personajesPrinc .michael .pam:hover, body .contenedorPersonajes .persUno .personajesPrinc .jim .dwight:hover, body .contenedorPersonajes .persUno .personajesPrinc .jim .michael:hover, body .contenedorPersonajes .persUno .personajesPrinc .jim .jim:hover, body .contenedorPersonajes .persUno .personajesPrinc .jim .pam:hover, body .contenedorPersonajes .persUno .personajesPrinc .pam .dwight:hover, body .contenedorPersonajes .persUno .personajesPrinc .pam .michael:hover, body .contenedorPersonajes .persUno .personajesPrinc .pam .jim:hover, body .contenedorPersonajes .persUno .personajesPrinc .pam .pam:hover, body .contenedorPersonajes .persDos .personajesPrinc .dwight .dwight:hover, body .contenedorPersonajes .persDos .personajesPrinc .dwight .michael:hover, body .contenedorPersonajes .persDos .personajesPrinc .dwight .jim:hover, body .contenedorPersonajes .persDos .personajesPrinc .dwight .pam:hover, body .contenedorPersonajes .persDos .personajesPrinc .michael .dwight:hover, body .contenedorPersonajes .persDos .personajesPrinc .michael .michael:hover, body .contenedorPersonajes .persDos .personajesPrinc .michael .jim:hover, body .contenedorPersonajes .persDos .personajesPrinc .michael .pam:hover, body .contenedorPersonajes .persDos .personajesPrinc .jim .dwight:hover, body .contenedorPersonajes .persDos .personajesPrinc .jim .michael:hover, body .contenedorPersonajes .persDos .personajesPrinc .jim .jim:hover, body .contenedorPersonajes .persDos .personajesPrinc .jim .pam:hover, body .contenedorPersonajes .persDos .personajesPrinc .pam .dwight:hover, body .contenedorPersonajes .persDos .personajesPrinc .pam .michael:hover, body .contenedorPersonajes .persDos .personajesPrinc .pam .jim:hover, body .contenedorPersonajes .persDos .personajesPrinc .pam .pam:hover, body .contenedorPersonajes .persTres .personajesPrinc .dwight .dwight:hover, body .contenedorPersonajes .persTres .personajesPrinc .dwight .michael:hover, body .contenedorPersonajes .persTres .personajesPrinc .dwight .jim:hover, body .contenedorPersonajes .persTres .personajesPrinc .dwight .pam:hover, body .contenedorPersonajes .persTres .personajesPrinc .michael .dwight:hover, body .contenedorPersonajes .persTres .personajesPrinc .michael .michael:hover, body .contenedorPersonajes .persTres .personajesPrinc .michael .jim:hover, body .contenedorPersonajes .persTres .personajesPrinc .michael .pam:hover, body .contenedorPersonajes .persTres .personajesPrinc .jim .dwight:hover, body .contenedorPersonajes .persTres .personajesPrinc .jim .michael:hover, body .contenedorPersonajes .persTres .personajesPrinc .jim .jim:hover, body .contenedorPersonajes .persTres .personajesPrinc .jim .pam:hover, body .contenedorPersonajes .persTres .personajesPrinc .pam .dwight:hover, body .contenedorPersonajes .persTres .personajesPrinc .pam .michael:hover, body .contenedorPersonajes .persTres .personajesPrinc .pam .jim:hover, body .contenedorPersonajes .persTres .personajesPrinc .pam .pam:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .dwight .dwight:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .dwight .michael:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .dwight .jim:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .dwight .pam:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .michael .dwight:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .michael .michael:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .michael .jim:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .michael .pam:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .jim .dwight:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .jim .michael:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .jim .jim:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .jim .pam:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .pam .dwight:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .pam .michael:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .pam .jim:hover, body .contenedorPersonajes .persCuatro .personajesPrinc .pam .pam:hover {
+          body .contenedorPersonajes .persUno .personajesPrinc .michael :hover {
             transform: scale(1.05); }
-      body .contenedorPersonajes .persUno div h2, body .contenedorPersonajes .persDos div h2, body .contenedorPersonajes .persTres div h2, body .contenedorPersonajes .persCuatro div h2 {
+      body .contenedorPersonajes .persUno div h2 {
         margin-top: 0.6rem;
         padding: 0.3rem;
         color: whitesmoke;
-        font-family: "Bree Serif";
+        font-family: "Bree Serif" serif;
         text-align: center; }
+    body .contenedorPersonajes .persDos {
+      grid-area: persDos; }
+      body .contenedorPersonajes .persDos .personajesPrinc {
+        overflow: hidden;
+        width: 100%;
+        height: 75%;
+        opacity: 0.8; }
+        body .contenedorPersonajes .persDos .personajesPrinc .dwight {
+          width: 100%;
+          height: 100%;
+          transition: 0.5s;
+          object-fit: cover;
+          padding: 0.5rem; }
+          body .contenedorPersonajes .persDos .personajesPrinc .dwight :hover {
+            transform: scale(1.05); }
+      body .contenedorPersonajes .persDos div h2 {
+        margin-top: 0.6rem;
+        padding: 0.3rem;
+        color: whitesmoke;
+        font-family: "Bree Serif" serif;
+        text-align: center; }
+    body .contenedorPersonajes .persTres {
+      grid-area: persTres; }
+      body .contenedorPersonajes .persTres .personajesPrinc {
+        overflow: hidden;
+        width: 100%;
+        height: 75%;
+        opacity: 0.8; }
+        body .contenedorPersonajes .persTres .personajesPrinc .jim {
+          width: 100%;
+          height: 100%;
+          transition: 0.5s;
+          object-fit: cover;
+          padding: 0.5rem; }
+          body .contenedorPersonajes .persTres .personajesPrinc .jim :hover {
+            transform: scale(1.05); }
+      body .contenedorPersonajes .persTres div h2 {
+        margin-top: 0.6rem;
+        padding: 0.3rem;
+        color: whitesmoke;
+        font-family: "Bree Serif" serif;
+        text-align: center; }
+    body .contenedorPersonajes .persCuatro {
+      grid-area: persCuatro; }
+      body .contenedorPersonajes .persCuatro .personajesPrinc {
+        overflow: hidden;
+        width: 100%;
+        height: 75%;
+        opacity: 0.8; }
+        body .contenedorPersonajes .persCuatro .personajesPrinc .pam {
+          width: 100%;
+          height: 100%;
+          transition: 0.5s;
+          object-fit: cover;
+          padding: 0.5rem; }
+          body .contenedorPersonajes .persCuatro .personajesPrinc .pam :hover {
+            transform: scale(1.05); }
+      body .contenedorPersonajes .persCuatro div h2 {
+        margin-top: 0.6rem;
+        padding: 0.3rem;
+        color: whitesmoke;
+        font-family: "Bree Serif" serif;
+        text-align: center; }
+    body .contenedorPersonajes .persUno, body .contenedorPersonajes .persDos, body .contenedorPersonajes .persTres, body .contenedorPersonajes .persCuatro {
+      border: double #a3a1a1 0.5px; }
     body .contenedorPersonajes .masPersonajesSec {
       color: whitesmoke;
-      font-family: "Bree Serif", serif;
+      font-family: 'Bree Serif'serif;
       text-align: center;
       margin: 0.8rem, 0.8rem;
       font-size: 1.7rem;
       grid-area: masPersonajesSec; }
     body .contenedorPersonajes .persCinco {
       grid-area: persCinco; }
+      body .contenedorPersonajes .persCinco .personajesSec {
+        overflow: hidden;
+        max-width: 280px;
+        position: relative;
+        transition: all 500ms ease-out; }
+        body .contenedorPersonajes .persCinco .personajesSec :hover {
+          opacity: 0.4;
+          transition: all 500ms ease-out; }
+        body .contenedorPersonajes .persCinco .personajesSec .angela {
+          width: 100%;
+          height: 75%;
+          margin-left: 1rem;
+          margin-right: 1rem; }
+        body .contenedorPersonajes .persCinco .personajesSec .sinopsisAngela {
+          position: absolute;
+          font-size: 1.1rem;
+          padding: 0.5rem;
+          width: 70%;
+          transition: all 500ms ease-out;
+          opacity: 0;
+          color: whitesmoke;
+          font-family: "Bree Serif" serif;
+          text-align: center; }
+          body .contenedorPersonajes .persCinco .personajesSec .sinopsisAngela :hover {
+            cursor: auto;
+            opacity: 1;
+            color: whitesmoke; }
+      body .contenedorPersonajes .persCinco h3 {
+        /*width:90%;*/
+        position: relative;
+        margin-left: 0.8rem;
+        margin-right: 0.8rem;
+        margin-top: 0;
+        color: whitesmoke;
+        font-family: "Gill Sans" "Gill Sans MT" Calibri "Trebuchet MS" sans-serif;
+        font-size: 0.85rem;
+        text-align: justify; }
     body .contenedorPersonajes .persSeis {
       grid-area: persSeis; }
+      body .contenedorPersonajes .persSeis .personajesSec {
+        overflow: hidden;
+        max-width: 280px;
+        position: relative;
+        transition: all 500ms ease-out; }
+        body .contenedorPersonajes .persSeis .personajesSec :hover {
+          opacity: 0.4;
+          transition: all 500ms ease-out; }
+        body .contenedorPersonajes .persSeis .personajesSec .meredith {
+          width: 100%;
+          height: 75%;
+          margin-left: 1rem;
+          margin-right: 1rem; }
+        body .contenedorPersonajes .persSeis .personajesSec .sinopsisMeredith {
+          position: absolute;
+          font-size: 1.1rem;
+          padding: 0.5rem;
+          width: 70%;
+          transition: all 500ms ease-out;
+          opacity: 0;
+          color: whitesmoke;
+          font-family: "Bree Serif" serif;
+          text-align: center; }
+          body .contenedorPersonajes .persSeis .personajesSec .sinopsisMeredith :hover {
+            cursor: auto;
+            opacity: 1;
+            color: whitesmoke; }
+      body .contenedorPersonajes .persSeis h3 {
+        /*width:90%;*/
+        position: relative;
+        margin-left: 0.8rem;
+        margin-right: 0.8rem;
+        margin-top: 0;
+        color: whitesmoke;
+        font-family: "Gill Sans" "Gill Sans MT" Calibri "Trebuchet MS" sans-serif;
+        font-size: 0.85rem;
+        text-align: justify; }
     body .contenedorPersonajes .persSiete {
       grid-area: persSiete; }
+      body .contenedorPersonajes .persSiete .personajesSec {
+        overflow: hidden;
+        max-width: 280px;
+        position: relative;
+        transition: all 500ms ease-out; }
+        body .contenedorPersonajes .persSiete .personajesSec :hover {
+          opacity: 0.4;
+          transition: all 500ms ease-out; }
+        body .contenedorPersonajes .persSiete .personajesSec .ryan {
+          width: 100%;
+          height: 75%;
+          margin-left: 1rem;
+          margin-right: 1rem; }
+        body .contenedorPersonajes .persSiete .personajesSec .sinopsisRyan {
+          position: absolute;
+          font-size: 1.1rem;
+          padding: 0.5rem;
+          width: 70%;
+          transition: all 500ms ease-out;
+          opacity: 0;
+          color: whitesmoke;
+          font-family: "Bree Serif" serif;
+          text-align: center; }
+          body .contenedorPersonajes .persSiete .personajesSec .sinopsisRyan :hover {
+            cursor: auto;
+            opacity: 1;
+            color: whitesmoke; }
+      body .contenedorPersonajes .persSiete h3 {
+        /*width:90%;*/
+        position: relative;
+        margin-left: 0.8rem;
+        margin-right: 0.8rem;
+        margin-top: 0;
+        color: whitesmoke;
+        font-family: "Gill Sans" "Gill Sans MT" Calibri "Trebuchet MS" sans-serif;
+        font-size: 0.85rem;
+        text-align: justify; }
     body .contenedorPersonajes .persOcho {
       grid-area: persOcho; }
-    body .contenedorPersonajes .persCinco .personajesSec, body .contenedorPersonajes .persSeis .personajesSec, body .contenedorPersonajes .persSiete .personajesSec, body .contenedorPersonajes .persOcho .personajesSec {
-      overflow: hidden;
-      max-width: 280px;
-      position: relative;
-      transition: all 500ms ease-out; }
-      body .contenedorPersonajes .persCinco .personajesSec .personajesSec:hover, body .contenedorPersonajes .persSeis .personajesSec .personajesSec:hover, body .contenedorPersonajes .persSiete .personajesSec .personajesSec:hover, body .contenedorPersonajes .persOcho .personajesSec .personajesSec:hover {
-        opacity: 0.4;
+      body .contenedorPersonajes .persOcho .personajesSec {
+        overflow: hidden;
+        max-width: 280px;
+        position: relative;
         transition: all 500ms ease-out; }
-      body .contenedorPersonajes .persCinco .personajesSec .angela, body .contenedorPersonajes .persCinco .personajesSec .meredith, body .contenedorPersonajes .persCinco .personajesSec .ryan, body .contenedorPersonajes .persCinco .personajesSec .toby, body .contenedorPersonajes .persSeis .personajesSec .angela, body .contenedorPersonajes .persSeis .personajesSec .meredith, body .contenedorPersonajes .persSeis .personajesSec .ryan, body .contenedorPersonajes .persSeis .personajesSec .toby, body .contenedorPersonajes .persSiete .personajesSec .angela, body .contenedorPersonajes .persSiete .personajesSec .meredith, body .contenedorPersonajes .persSiete .personajesSec .ryan, body .contenedorPersonajes .persSiete .personajesSec .toby, body .contenedorPersonajes .persOcho .personajesSec .angela, body .contenedorPersonajes .persOcho .personajesSec .meredith, body .contenedorPersonajes .persOcho .personajesSec .ryan, body .contenedorPersonajes .persOcho .personajesSec .toby {
-        width: 100%;
-        height: 75%;
-        margin-left: 1rem;
-        margin-right: 1rem; }
-      body .contenedorPersonajes .persCinco .personajesSec .sinopsisAngela, body .contenedorPersonajes .persCinco .personajesSec .sinopsisMeredith, body .contenedorPersonajes .persCinco .personajesSec .sinopsisRyan, body .contenedorPersonajes .persCinco .personajesSec .sinopsisToby, body .contenedorPersonajes .persSeis .personajesSec .sinopsisAngela, body .contenedorPersonajes .persSeis .personajesSec .sinopsisMeredith, body .contenedorPersonajes .persSeis .personajesSec .sinopsisRyan, body .contenedorPersonajes .persSeis .personajesSec .sinopsisToby, body .contenedorPersonajes .persSiete .personajesSec .sinopsisAngela, body .contenedorPersonajes .persSiete .personajesSec .sinopsisMeredith, body .contenedorPersonajes .persSiete .personajesSec .sinopsisRyan, body .contenedorPersonajes .persSiete .personajesSec .sinopsisToby, body .contenedorPersonajes .persOcho .personajesSec .sinopsisAngela, body .contenedorPersonajes .persOcho .personajesSec .sinopsisMeredith, body .contenedorPersonajes .persOcho .personajesSec .sinopsisRyan, body .contenedorPersonajes .persOcho .personajesSec .sinopsisToby {
-        position: absolute;
-        font-size: 1.1rem;
-        padding: 0.5rem;
-        width: 70%;
-        transition: all 500ms ease-out;
-        opacity: 0;
+        body .contenedorPersonajes .persOcho .personajesSec :hover {
+          opacity: 0.4;
+          transition: all 500ms ease-out; }
+        body .contenedorPersonajes .persOcho .personajesSec .toby {
+          width: 100%;
+          height: 75%;
+          margin-left: 1rem;
+          margin-right: 1rem; }
+        body .contenedorPersonajes .persOcho .personajesSec .sinopsisToby {
+          position: absolute;
+          font-size: 1.1rem;
+          padding: 0.5rem;
+          width: 70%;
+          transition: all 500ms ease-out;
+          opacity: 0;
+          color: whitesmoke;
+          font-family: "Bree Serif" serif;
+          text-align: center; }
+          body .contenedorPersonajes .persOcho .personajesSec .sinopsisToby :hover {
+            cursor: auto;
+            opacity: 1;
+            color: whitesmoke; }
+      body .contenedorPersonajes .persOcho h3 {
+        /*width:90%;*/
+        position: relative;
+        margin-left: 0.8rem;
+        margin-right: 0.8rem;
+        margin-top: 0;
         color: whitesmoke;
-        font-family: "Bree Serif";
-        text-align: center; }
-        body .contenedorPersonajes .persCinco .personajesSec .sinopsisAngela .sinopsisAngela:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisAngela .sinopsisMeredith:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisAngela .sinopsisRyan:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisAngela .sinopsisToby:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisMeredith .sinopsisAngela:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisMeredith .sinopsisMeredith:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisMeredith .sinopsisRyan:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisMeredith .sinopsisToby:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisRyan .sinopsisAngela:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisRyan .sinopsisMeredith:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisRyan .sinopsisRyan:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisRyan .sinopsisToby:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisToby .sinopsisAngela:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisToby .sinopsisMeredith:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisToby .sinopsisRyan:hover, body .contenedorPersonajes .persCinco .personajesSec .sinopsisToby .sinopsisToby:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisAngela .sinopsisAngela:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisAngela .sinopsisMeredith:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisAngela .sinopsisRyan:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisAngela .sinopsisToby:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisMeredith .sinopsisAngela:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisMeredith .sinopsisMeredith:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisMeredith .sinopsisRyan:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisMeredith .sinopsisToby:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisRyan .sinopsisAngela:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisRyan .sinopsisMeredith:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisRyan .sinopsisRyan:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisRyan .sinopsisToby:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisToby .sinopsisAngela:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisToby .sinopsisMeredith:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisToby .sinopsisRyan:hover, body .contenedorPersonajes .persSeis .personajesSec .sinopsisToby .sinopsisToby:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisAngela .sinopsisAngela:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisAngela .sinopsisMeredith:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisAngela .sinopsisRyan:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisAngela .sinopsisToby:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisMeredith .sinopsisAngela:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisMeredith .sinopsisMeredith:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisMeredith .sinopsisRyan:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisMeredith .sinopsisToby:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisRyan .sinopsisAngela:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisRyan .sinopsisMeredith:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisRyan .sinopsisRyan:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisRyan .sinopsisToby:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisToby .sinopsisAngela:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisToby .sinopsisMeredith:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisToby .sinopsisRyan:hover, body .contenedorPersonajes .persSiete .personajesSec .sinopsisToby .sinopsisToby:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisAngela .sinopsisAngela:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisAngela .sinopsisMeredith:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisAngela .sinopsisRyan:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisAngela .sinopsisToby:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisMeredith .sinopsisAngela:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisMeredith .sinopsisMeredith:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisMeredith .sinopsisRyan:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisMeredith .sinopsisToby:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisRyan .sinopsisAngela:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisRyan .sinopsisMeredith:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisRyan .sinopsisRyan:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisRyan .sinopsisToby:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisToby .sinopsisAngela:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisToby .sinopsisMeredith:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisToby .sinopsisRyan:hover, body .contenedorPersonajes .persOcho .personajesSec .sinopsisToby .sinopsisToby:hover {
-          cursor: auto;
-          opacity: 1;
-          color: whitesmoke; }
-    body .contenedorPersonajes .persCinco .persCinco h3, body .contenedorPersonajes .persCinco .persSeis h3, body .contenedorPersonajes .persCinco .persSiete h3, body .contenedorPersonajes .persCinco .persOcho h3, body .contenedorPersonajes .persSeis .persCinco h3, body .contenedorPersonajes .persSeis .persSeis h3, body .contenedorPersonajes .persSeis .persSiete h3, body .contenedorPersonajes .persSeis .persOcho h3, body .contenedorPersonajes .persSiete .persCinco h3, body .contenedorPersonajes .persSiete .persSeis h3, body .contenedorPersonajes .persSiete .persSiete h3, body .contenedorPersonajes .persSiete .persOcho h3, body .contenedorPersonajes .persOcho .persCinco h3, body .contenedorPersonajes .persOcho .persSeis h3, body .contenedorPersonajes .persOcho .persSiete h3, body .contenedorPersonajes .persOcho .persOcho h3 {
-      width: 90%;
-      position: relative;
-      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-      margin-left: 0.8rem;
-      margin-right: 0.8rem;
-      margin-top: 0;
-      color: whitesmoke;
-      font-size: 0.85rem;
-      text-align: justify; }
+        font-family: "Gill Sans" "Gill Sans MT" Calibri "Trebuchet MS" sans-serif;
+        font-size: 0.85rem;
+        text-align: justify; }
+    body .contenedorPersonajes footer {
+      margin-top: 2rem;
+      height: 8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      body .contenedorPersonajes footer .derechosReservados {
+        text-align: center;
+        margin-top: 7rem;
+        font-size: 1rem;
+        font-family: "Gill Sans" "Gill Sans MT" Calibri "Trebuchet MS" sans-serif;
+        color: #4d4a4a; }
+      body .contenedorPersonajes footer .logoRedes {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem; }
   @media screen and (min-width: 600px) {
     body .contenedorPersonajes {
       grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr;
@@ -149,23 +335,65 @@ body {
       grid-template-areas: ". titulo titulo . " " fotoGral fotoGral fotoGral fotoGral" ". persUno persUno ." ". persDos persDos ." ". persTres persTres ." ". persCuatro persCuatro ." ". masPersonajesSec masPersonajesSec ." ". persCinco persCinco ." ". persSeis persSeis ." ". persSiete persSiete ."   ". persOcho persOcho .";
       justify-content: center;
       align-items: center; }
-      body .contenedorPersonajes .titulo {
-        font-size: 2.1rem; }
       body .contenedorPersonajes div div h2 {
         margin-top: 1.5rem; }
       body .contenedorPersonajes .masPersonajesSec {
-        font-size: 2.1rem; }
-      body .contenedorPersonajes .persCinco h3, body .contenedorPersonajes .persSeis h3, body .contenedorPersonajes .persSiete h3, body .contenedorPersonajes .persOcho h3 {
-        padding-left: 3rem;
+        color: whitesmoke;
+        font-family: 'Bree Serif'serif;
+        text-align: center;
+        margin: 0.8rem, 0.8rem;
+        font-size: 1.7rem; }
+      body .contenedorPersonajes .persCinco h3 {
+        /*padding-left: 3rem;*/
+        width: 60%;
         margin-top: 0.8rem;
         margin-left: 0; }
-        body .contenedorPersonajes .persCinco h3 .personajesSec, body .contenedorPersonajes .persSeis h3 .personajesSec, body .contenedorPersonajes .persSiete h3 .personajesSec, body .contenedorPersonajes .persOcho h3 .personajesSec {
+        body .contenedorPersonajes .persCinco h3 .personajesSec {
           width: 100%;
           max-width: 600px; }
-          body .contenedorPersonajes .persCinco h3 .personajesSec .angela, body .contenedorPersonajes .persCinco h3 .personajesSec .meredith, body .contenedorPersonajes .persCinco h3 .personajesSec .ryan, body .contenedorPersonajes .persCinco h3 .personajesSec .toby, body .contenedorPersonajes .persSeis h3 .personajesSec .angela, body .contenedorPersonajes .persSeis h3 .personajesSec .meredith, body .contenedorPersonajes .persSeis h3 .personajesSec .ryan, body .contenedorPersonajes .persSeis h3 .personajesSec .toby, body .contenedorPersonajes .persSiete h3 .personajesSec .angela, body .contenedorPersonajes .persSiete h3 .personajesSec .meredith, body .contenedorPersonajes .persSiete h3 .personajesSec .ryan, body .contenedorPersonajes .persSiete h3 .personajesSec .toby, body .contenedorPersonajes .persOcho h3 .personajesSec .angela, body .contenedorPersonajes .persOcho h3 .personajesSec .meredith, body .contenedorPersonajes .persOcho h3 .personajesSec .ryan, body .contenedorPersonajes .persOcho h3 .personajesSec .toby {
+          body .contenedorPersonajes .persCinco h3 .personajesSec .angela {
             padding-right: 3rem;
             padding-left: 3rem; }
-          body .contenedorPersonajes .persCinco h3 .personajesSec .sinopsisAngela, body .contenedorPersonajes .persCinco h3 .personajesSec .sinopsisMeredith, body .contenedorPersonajes .persCinco h3 .personajesSec .sinopsisRyan, body .contenedorPersonajes .persCinco h3 .personajesSec .sinopsisToby, body .contenedorPersonajes .persSeis h3 .personajesSec .sinopsisAngela, body .contenedorPersonajes .persSeis h3 .personajesSec .sinopsisMeredith, body .contenedorPersonajes .persSeis h3 .personajesSec .sinopsisRyan, body .contenedorPersonajes .persSeis h3 .personajesSec .sinopsisToby, body .contenedorPersonajes .persSiete h3 .personajesSec .sinopsisAngela, body .contenedorPersonajes .persSiete h3 .personajesSec .sinopsisMeredith, body .contenedorPersonajes .persSiete h3 .personajesSec .sinopsisRyan, body .contenedorPersonajes .persSiete h3 .personajesSec .sinopsisToby, body .contenedorPersonajes .persOcho h3 .personajesSec .sinopsisAngela, body .contenedorPersonajes .persOcho h3 .personajesSec .sinopsisMeredith, body .contenedorPersonajes .persOcho h3 .personajesSec .sinopsisRyan, body .contenedorPersonajes .persOcho h3 .personajesSec .sinopsisToby {
+          body .contenedorPersonajes .persCinco h3 .personajesSec .sinopsisAngela {
+            font-size: 1.5rem; }
+      body .contenedorPersonajes .persSeis h3 {
+        /* padding-left: 3rem;*/
+        width: 60%;
+        margin-top: 0.8rem;
+        margin-left: 0; }
+        body .contenedorPersonajes .persSeis h3 .personajesSec {
+          width: 100%;
+          max-width: 600px; }
+          body .contenedorPersonajes .persSeis h3 .personajesSec .meredith {
+            padding-right: 3rem;
+            padding-left: 3rem; }
+          body .contenedorPersonajes .persSeis h3 .personajesSec .sinopsisMeredith {
+            font-size: 1.5rem; }
+      body .contenedorPersonajes .persSiete h3 {
+        /*padding-left: 3rem;*/
+        width: 60%;
+        margin-top: 0.8rem;
+        margin-left: 0; }
+        body .contenedorPersonajes .persSiete h3 .personajesSec {
+          width: 100%;
+          max-width: 600px; }
+          body .contenedorPersonajes .persSiete h3 .personajesSec .ryan, body .contenedorPersonajes .persSiete h3 .personajesSec .toby {
+            padding-right: 3rem;
+            padding-left: 3rem; }
+          body .contenedorPersonajes .persSiete h3 .personajesSec .sinopsisRyan {
+            font-size: 1.5rem; }
+      body .contenedorPersonajes .persOcho h3 {
+        /*padding-left: 3rem;*/
+        width: 60%;
+        margin-top: 0.8rem;
+        margin-left: 0; }
+        body .contenedorPersonajes .persOcho h3 .personajesSec {
+          width: 100%;
+          max-width: 600px; }
+          body .contenedorPersonajes .persOcho h3 .personajesSec .toby {
+            padding-right: 3rem;
+            padding-left: 3rem; }
+          body .contenedorPersonajes .persOcho h3 .personajesSec .sinopsisToby {
             font-size: 1.5rem; } }
   @media screen and (min-width: 1024px) {
     body .contenedorPersonajes {
@@ -175,10 +403,18 @@ body {
       grid-template-areas: ". titulo titulo . " " fotoGral fotoGral fotoGral fotoGral " ". persUno persDos ." ". persTres persCuatro ." ". masPersonajesSec masPersonajesSec ." ". persCinco persSeis ."  ". persSiete persOcho .";
       column-gap: 1rem; }
       body .contenedorPersonajes .titulo {
-        font-size: 2.5rem;
+        color: whitesmoke;
+        font-family: 'Bree Serif'serif;
+        text-align: center;
+        margin: 0.8rem, 0.8rem;
+        font-size: 1.7rem;
         margin-top: 1rem;
         margin-bottom: 1rem; }
       body .contenedorPersonajes .masPersonajesSec {
+        color: whitesmoke;
+        font-family: 'Bree Serif'serif;
+        text-align: center;
+        margin: 0.8rem, 0.8rem;
+        font-size: 1.7rem;
         margin-top: 2rem;
-        margin-bottom: 4rem;
-        font-size: 2.5rem; } }
+        margin-bottom: 4rem; } }

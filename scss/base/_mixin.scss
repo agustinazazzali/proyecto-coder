@@ -1,0 +1,48 @@
+// mixin con parametros
+
+@mixin medidas ($width, $heigth) {
+
+    width: $width;
+    height: $heigth;
+}
+
+//mixin sin parametros
+
+@mixin titulos-princ-xs { //conoce (index), lugar (index) tituloObjetos (comprar), tituloForm (formularios), tituloEscenas (mejores momentos), tituloMemes (mejores momentos), titulo (personajes), masPersonajes (personajes), 
+     
+    font-family: 'Bree Serif'serif;
+    text-align: center;
+    font-size: 2rem;
+    
+}
+
+@mixin subtitulos-1 { //conoce texto h3(index), cajaLugar h3 (index), imgObjetos (comprar), formulario (formularios), escenaUno h2 (mejores momentos), escenaDos h2, escenaTres h2, cajaMemeUno h2, cajaMemeDos h2, cajaMemeTres h2 (mejores momentos)
+     
+    font-family: 'Port Lligat Sans', sans-serif ;
+    text-align:left;
+    font-size: 1.2rem;
+    
+}
+
+@mixin subtitulos-2 { //conoce texto p (index), cajaLugar p (index) precioObjetos (comprar), itemsForm (formularios), itemsFormFinal, escenaUno h3 (mejores momentos), escenaDos h3, escenaTres h3, cajaMemeUno h3, cajaMemeDos h3, cajaMemeTres h3 (mejores momentos)
+     
+    font-family:'Port Lligat Sans', sans-serif;
+    text-align: left;
+    font-size: 0.8rem;
+    
+}
+
+@mixin boton { 
+     
+    border: none solid 1rem;
+    border-radius: 1.1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: rgb(115, 73, 133);
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'NTR', sans-serif;
+    font-variant-caps: all-small-caps; 
+}

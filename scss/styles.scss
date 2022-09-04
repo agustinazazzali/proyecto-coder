@@ -1,0 +1,2101 @@
+@import "base/mapas";
+@import "base/variables";
+@import "base/mixin";
+@import "base/extend";
+
+/*reset */ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*estilos del index*/ 
+/*MOBILE FIRST*/
+
+
+body {
+
+    background: linear-gradient(($gradiente-uno),($gradiente-dos));
+    background-repeat: no-repeat;
+    height: 100%;
+
+
+    header {
+
+        z-index: 1;
+        position: fixed;
+        height: 80px;
+
+        nav{
+
+            background-color:$color-nav; 
+
+            div ul li {
+                margin: 0.2rem;
+                display: inline-block;
+                font-family:$texto-general;
+                color: $texto-claro;
+                font-weight: bold;
+                font-variant-caps: all-petite-caps;
+                @extend %flexdos;
+                
+        
+                :hover {
+                    transform: scale(1.1);
+
+                    ::after {
+                    content: "";
+                        display: inline-block;
+                        height: 2px;
+                        background-color:$boton-accionado;
+                        transform: scale(0,0.02);
+                        transition: transform .25s;
+                    }
+                }  
+
+                a {
+                color: $texto-claro;
+                display: inline;
+                text-decoration: none;
+                }
+            } 
+        }  
+    }
+
+    .contenedorIndex {
+
+        width: 100%;
+        display: grid;
+        grid-template-columns: 10% 80% 10% ;
+        grid-template-rows: 0.6fr 0.05fr 0.2fr 0.3fr 0.3fr 0.3fr 0.3fr 0.1fr 0.2fr 0.6fr;
+  
+        grid-template-areas: "portadaPrincipal portadaPrincipal portadaPrincipal"
+                         "citaTextual citaTextual citaTextual"
+                         "conoce conoce conoce"
+                         ". conoceUno ."
+                         ". conoceDos ."
+                         ". conoceTres ." 
+                         ". conoceCuatro ."
+                         ". masPersonajes ."
+                         ". lugar ."
+                         ". areaVideoLugar ."
+                        ;
+
+        .portadaPrincipal {
+
+            grid-area: portadaPrincipal;     
+        
+            .imgPrincipal {
+
+             width: 100%;
+                height: 100%; 
+            }
+        }
+
+        .sinopsis { 
+            display: none;
+        }
+
+        .citaTextual {
+
+            grid-area: citaTextual;
+            font-size: 0.9rem;
+            font-family:$texto-general;
+            text-align: center;
+            color:$texto-osc;
+            padding: 0.5rem;
+        }
+
+        .conoce {
+            grid-area: conoce;
+            color:$texto-osc;
+            @include titulos-princ-xs;
+            margin: 0.8rem 0.8rem;
+        }
+ 
+        .conoceUno {
+
+            grid-area: conoceUno;
+            @extend %flex;
+            margin: 0.2rem;
+
+            a img{
+
+                width: 100%;
+                height: 100%;
+                transition: 0.5s;
+                object-fit: cover;
+                margin-top: 0.5rem;       
+
+                :hover {
+                    transform: scale(1.02);
+                }
+            }    
+
+            .conoceTexto {
+    
+                padding-top: 1rem ;
+                padding-right: 0.7rem;     
+                width: 80%;
+            
+                h3 {
+                    @include subtitulos-1;
+                    color:$texto-claro;                      
+                }
+
+                p {
+                    @include subtitulos-2;
+                    color: $texto-claro;                   
+                }
+            }
+        }
+
+        .conoceDos {
+
+            grid-area: conoceDos;
+            @extend %flex;
+            margin: 0.2rem;
+
+            a img{
+
+                width: 100%;
+                height: 100%;
+                transition: 0.5s;
+                object-fit: cover;
+                margin-top: 0.5rem;      
+            
+                :hover {
+
+                    transform: scale(1.02);
+                }
+            }
+
+            .conoceTexto {
+    
+                padding-top: 1rem ;
+                padding-right: 0.7rem;  
+                width: 80%;
+
+                h3 {
+
+                    @include subtitulos-1;
+                    color:$texto-claro;    
+                    
+                }
+
+                p {
+                    @include subtitulos-2;
+                    color: $texto-claro;   
+                    
+                }
+            }       
+        }
+
+        .conoceTres {
+
+            grid-area: conoceTres;
+            @extend %flex;
+            margin: 0.2rem;
+
+            a img{
+
+                width: 100%;
+                height: 100%;
+                transition: 0.5s;
+                object-fit: cover;
+                margin-top: 0.5rem;  
+            
+                :hover {
+
+                    transform: scale(1.02);
+                }
+            }
+            .conoceTexto {
+    
+                padding-top: 1rem ;
+                padding-right: 0.7rem;    
+                width: 80%; 
+            
+                h3 {
+                    @include subtitulos-1;
+                    color: whitesmoke;                       
+                }
+
+                p {
+                    @include subtitulos-2;
+                    color: whitesmoke;                    
+                }
+            }
+        }
+
+        .conoceCuatro {
+
+            grid-area: conoceCuatro; 
+            @extend %flex;
+            margin: 0.2rem;
+
+            a img {
+
+                width: 100%;
+                height: 100%;
+                transition: 0.5s;
+                object-fit: cover;
+                margin-top: 0.5rem;     
+            
+                :hover {
+
+                    transform: scale(1.02);
+                }
+            }
+            .conoceTexto {
+    
+                padding-top: 1rem ;
+                padding-right: 0.7rem;      
+                width: 80%;
+            
+                h3 {
+                   @include subtitulos-1;
+                    color:$texto-claro;                     
+                }
+
+                p {
+                    @include subtitulos-2;
+                    color: $texto-claro;   
+                    
+                }
+            }
+        }
+
+        .masPersonajes {
+
+            grid-area: masPersonajes;
+            justify-self: center;
+            margin-bottom: 3rem;
+            @include boton;
+
+            :hover {
+                background-color: rgb(106, 68, 122);
+                transform: scale(1.05);
+            }
+
+            a {
+                margin: 0;
+                text-decoration: none;
+                color: $texto-claro;
+            }
+        } 
+
+        .lugar {
+            grid-area: lugar;  
+            @include titulos-princ-xs;
+            color:$texto-claro;
+
+        }
+
+        .areaVideoLugar {
+            grid-area: areaVideoLugar;
+            margin-top: 1.2rem;
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+            overflow-x: auto;
+            resize: both;
+            position: relative;
+            z-index: 2;
+            justify-self: center;
+
+            .cajaIframe {
+                width: 100%;
+                height: 100%;
+                border: none;   
+            }
+        }
+        .cajaLugar {
+            display: none;
+   
+            .masLugar {
+  
+                margin-bottom: 3rem;
+                @include boton;      
+            }
+        }
+    }
+
+
+    footer {
+
+        margin-top: 2rem;
+        height: 8rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+  
+        .derechosReservados {
+
+            text-align: center;
+            margin-top: 7rem;
+            font-size: 1rem;
+            font-family:$texto-general;
+        }
+
+        .logoRedes {
+
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            @extend %flexdos;
+            gap: 1rem;
+        }   
+    }
+
+    @media screen and  (min-width:600px) {
+
+        .contenedorIndex {
+
+        grid-template-columns: 25% 50% 25%;
+        grid-template-rows: 0.6fr 0.05fr 0.2fr 0.7fr 0.7fr 0.7fr 0.7fr 0.1fr 0.2fr 0.6fr;
+        grid-template-areas: "portadaPrincipal portadaPrincipal portadaPrincipal"
+                         "citaTextual citaTextual citaTextual"
+                         "conoce conoce conoce"
+                         ". conoceUno ."
+                         ". conoceDos ."
+                         ". conoceTres ." 
+                         ". conoceCuatro ."
+                         ". masPersonajes ."
+                         ". lugar ."
+                         "areaVideoLugar areaVideoLugar areaVideoLugar" 
+                        ;
+                        
+            .sinopsis {
+    
+                display: block;
+                width: 30%;
+                padding: 0.6rem;
+                margin-top: 1rem;
+                margin-left: 2rem;
+                position: absolute;
+                top: 12%;
+                left: 50%;   
+            
+                h1 {  
+                    font-family: 'NTR', sans-serif;
+                    color:rgb(77, 74, 74);
+                    font-size: 3.5rem;
+                    text-align: center;
+                
+                }
+                p   {
+                    font-family:$texto-general;
+                    font-size: 0.7rem;
+                    text-align: center;
+                    color:rgb(77, 74, 74);
+                }
+            
+            }
+            .citaTextual {
+
+                font-size: 1rem;
+            }   
+
+            .areaVideoLugar {
+                margin-top: 1.2rem;
+                width: 650px;
+                height: 550px;
+            }
+        }
+    }
+
+    @media screen and  (min-width:1024px) {
+ 
+        .contenedorIndex {
+
+            grid-template-rows: 0.8fr 0.1fr 0.1fr 0.5fr 0.1fr 0.1fr 0.15fr 1fr;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-areas: "portadaPrincipal portadaPrincipal portadaPrincipal portadaPrincipal" 
+                             ". citaTextual citaTextual ."
+                             ". conoce conoce . "
+                             ". conoceUno conoceDos ."
+                             ". conoceTres conoceCuatro ."
+                             ". masPersonajes masPersonajes . "
+                             " lugar lugar lugar lugar"
+                             " areaVideoLugar areaVideoLugar areaVideoLugar cajaLugar "
+                            ;
+            column-gap: 0.7rem;             
+            justify-content:center ;
+
+        
+            .sinopsis {
+                display: block;
+                width: 30%;
+                padding: 0.6rem;
+                margin-top: 1rem;
+                margin-left: 2rem;
+                position: absolute;
+                top: 30%;
+                left: 50%;  
+            
+                h1 {   
+                    font-family: 'NTR', sans-serif;
+                    color:$texto-osc;
+                    /*font-variant-caps: all-small-caps;*/
+                    font-size: 3.9rem;
+                    text-align: center;               
+                }    
+                p {
+                    font-family:$texto-general;
+                    font-size: 1rem;
+                    text-align: center;
+                    color:$texto-osc;
+                }
+
+            }
+
+            .lugar {
+                margin-top: 2rem;
+            }
+
+            .areaVideoLugar {
+                margin-top: 1.2rem;
+                width:80%;
+                height: 75%;
+                grid-area: areaVideoLugar;
+                justify-self: right;
+
+                .cajaIframe {
+
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                }
+            }
+        
+            .cajaLugar {
+
+                display: block;
+                grid-area: cajaLugar;
+                width: 70%;
+                height: 80%;
+                padding: 0.5rem;
+                margin-top: 1.2rem;
+
+                h3 {
+                    color: $texto-claro;
+                    @include subtitulos-1;
+                
+                }
+
+                p {
+                    color:$texto-claro;
+                    @include subtitulos-2;
+                }
+
+                .masLugar  {
+
+                    justify-content: center;
+                    margin-top: 2rem;
+                    margin-bottom: 1rem;
+                    display: inline-block;
+                
+                    :hover {
+                        background-color:$boton-accionado;
+                        transform: scale(1.05); 
+                    }
+
+                    a {
+                        color:$texto-claro;
+                        text-decoration: none;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/*estilos de COMPRAR*/ 
+/*MOBILE FIRST*/
+
+    .contenedorComprar {
+
+        display: grid;
+        grid-template-rows: 0.1fr 0.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-areas: " tituloObjetos tituloObjetos tituloObjetos "
+                         ". item-1 ."
+                         ". item-2 ."
+                         ". item-3 ."
+                         ". item-4 ."
+                         ". item-5 ."
+                         ". item-6 ."
+                         ". item-7 ."
+                         ". item-8 ."
+                         ". adquirir .";
+
+        background-color:rgb(248, 238, 217);
+    
+    
+        .tituloObjetos {
+    
+            grid-area: tituloObjetos;
+            color:$texto-osc;
+            @include titulos-princ-xs;
+            margin-bottom: 0.2rem;
+            width: 100%;
+            padding: 2rem;
+            margin-top: 6rem;
+        }
+            
+        .item-1 {
+
+            @extend %flex;
+            grid-area: item-1;
+            background-color:#eee3d8;
+            border-radius: 0.9rem;
+            padding: 0.5rem;
+            margin: 0.5rem;
+            height: 90%;
+            width: 95%;
+            
+            .imgObjeto {
+               
+                @include subtitulos-1;
+                color: $texto-osc;
+                margin-top: 1rem;
+                margin-bottom: 0;
+            }
+
+            .precioObjeto {
+                
+                @include subtitulos-2;
+                color: $texto-osc;
+                margin-top: 0.2rem;
+                margin-bottom: 0.2rem;
+                 
+            }
+        }
+        
+        .item-2 {
+
+            @extend %flex;
+            grid-area: item-2;
+            background-color: #ece2d8;
+            border-radius: 0.9rem;
+            padding: 0.5rem;
+            margin: 0.5rem;
+            height: 90%;
+            width: 95%;
+
+            .imgObjeto {                
+                @include subtitulos-1;
+                color: $texto-osc;              
+                margin-top: 1rem;
+                margin-bottom: 0;
+            }
+
+            .precioObjeto {            
+                @include subtitulos-2;
+                color:$texto-osc;
+                margin-top: 0.2rem;
+                margin-bottom: 0.2rem;               
+            }
+        }
+       
+        .item-3{
+
+            @extend %flex;
+            grid-area: item-3;
+            background-color:#ece2d8;
+            border-radius: 0.9rem;
+            padding: 0.5rem;
+            margin: 0.5rem;
+            height: 90%;
+            width: 95%;
+
+            .imgObjeto {                
+                @include subtitulos-1;
+                color: rgb(77, 74, 74);              
+                margin-top: 1rem;
+                margin-bottom: 0;
+            }
+
+            .precioObjeto {            
+                @include subtitulos-2;
+                color:$texto-osc;
+                margin-top: 0.2rem;
+                margin-bottom: 0.2rem;               
+            }
+        }
+        
+
+        .item-4{
+
+            @extend %flex; 
+            grid-area: item-4;
+            background-color: #ece2d8;
+            border-radius: 0.9rem;
+            padding: 0.5rem;
+            margin: 0.5rem;
+            height: 90%;
+            width: 95%;
+
+            .imgObjeto {                
+                @include subtitulos-1;
+                color:$texto-osc;              
+                margin-top: 1rem;
+                margin-bottom: 0;
+            }
+
+            .precioObjeto {            
+                @include subtitulos-2;
+                color: $texto-osc;
+                margin-top: 0.2rem;
+                margin-bottom: 0.2rem;               
+            }
+        }
+
+        .item-5{
+
+            @extend %flex; 
+            grid-area: item-5;
+            background-color:/*rgb(220,220,220);*/  #ece2d8;
+            border-radius: 0.9rem;
+            padding: 0.5rem;
+            margin: 0.5rem;
+            height: 90%;
+            width: 95%;
+
+            .imgObjeto {                
+                @include subtitulos-1;
+                color: $texto-osc;              
+                margin-top: 1rem;
+                margin-bottom: 0;
+            }
+
+            .precioObjeto {            
+                @include subtitulos-2;
+                color: $texto-osc;
+                margin-top: 0.2rem;
+                margin-bottom: 0.2rem;               
+            }
+        }
+        
+        .item-6{
+
+            @extend %flex;
+            grid-area: item-6;
+            background-color: #ece2d8;
+            border-radius: 0.9rem;
+            padding: 0.5rem;
+            margin: 0.5rem;
+            height: 90%;
+            width:95%;
+
+            .imgObjeto {                
+                @include subtitulos-1;
+                color:$texto-osc;              
+                margin-top: 1rem;
+                margin-bottom: 0;
+            }
+
+            .precioObjeto {            
+                @include subtitulos-2;
+                color: $texto-osc;
+                margin-top: 0.2rem;
+                margin-bottom: 0.2rem;               
+            }
+        }
+   
+        .item-7{
+
+            @extend %flex;
+            grid-area: item-7;
+            background-color: #ece2d8;
+            border-radius: 0.9rem;
+            padding: 0.5rem;
+            margin: 0.5rem;
+            height: 90%;
+            width: 95%;
+
+            .imgObjeto {                
+                @include subtitulos-1;
+                color:$texto-osc;              
+                margin-top: 1rem;
+                margin-bottom: 0;
+            }
+
+            .precioObjeto {            
+                @include subtitulos-2;
+                color: $texto-osc;
+                margin-top: 0.2rem;
+                margin-bottom: 0.2rem;               
+            }
+        }
+
+        .item-8{
+
+            @extend %flex; 
+            grid-area: item-8;
+            background-color:/*rgb(220,220,220);*/  #ece2d8;
+            border-radius: 0.9rem;
+            padding: 0.5rem;
+            margin: 0.5rem;
+            height: 90%;
+            width: 95%;
+
+            .imgObjeto {                
+                @include subtitulos-1;
+                color: $texto-osc;              
+                margin-top: 1rem;
+                margin-bottom: 0;
+            }
+
+            .precioObjeto {            
+                @include subtitulos-2;
+                color: $texto-osc;
+                margin-top: 0.2rem;
+                margin-bottom: 0.2rem;               
+            }
+        }       
+
+        .adquirir {
+            grid-area: adquirir;
+            font-family: 'Port Lligat Sans', sans-serif;
+            font-size: 1rem;
+            color: $texto-osc;
+            margin-top: 60px;
+            text-align: center;   
+
+            a {
+                color: $texto-osc;
+                display: inline;
+            }          
+        }
+    }
+
+    footer {
+
+        .derechosReservados {   
+            margin-top: 3rem;
+            font-size: 1rem;
+            font-family: 'Port Lligat Sans', sans-serif;
+        }
+
+    }
+
+    /*declaramos media queries para tablet min 600px*/
+
+    @media screen and  (min-width:600px) {
+
+        .contenedorComprar {
+        
+            grid-template-rows: 0.1fr 0.4fr 0.4fr 0.4fr 0.4fr 0.1fr;
+            grid-template-columns: 10% 40% 40% 10%;
+            grid-template-areas: " tituloObjetos tituloObjetos tituloObjetos tituloObjetos"
+                             ". item-1 item-2 ."
+                             ". item-3 item-4 ."
+                             ". item-5 item-6 ."
+                             ". item-7 item-8 ."
+                             ". adquirir adquirir .";
+            .tituloObjetos {
+    
+                font-size: 1.5rem;                                        
+            }
+        }
+
+        footer {
+
+            .derechosReservados {
+                 margin-top: 3rem;
+            }
+        }
+    }
+
+    @media screen and  (min-width:1024px) {
+
+        .contenedorComprar {
+       
+            grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 0.1fr;
+            grid-template-columns: 10% 10% 30% 30% 10% 10%;
+            grid-template-areas: "tituloObjetos tituloObjetos tituloObjetos tituloObjetos tituloObjetos tituloObjetos"
+                             ". . item-1 item-2 . ."
+                             ". . item-3 item-4 . ."
+                             ". . item-5 item-6 . ."
+                             ". . item-7 item-8 . ."
+                             "adquirir adquirir adquirir adquirir adquirir adquirir";  
+
+            .item-1, .item-2, .item-3, .item-4, .item-5, .item-6, .item-7, .item-8 {
+
+                justify-self: center;
+                width: 300px;
+                }
+        }
+    }
+
+
+    /* estilos contacto */
+    /*MOBILE FIRST*/  
+
+    .contenedorContacto {
+
+        @extend %flex; 
+
+        .tituloForm {
+
+            @include titulos-princ-xs;
+            color:$texto-claro;
+            margin-top: 15rem;
+        
+        }
+        .cuadroForm {
+
+            margin: 1rem;
+
+            .formulario {
+
+                margin: 1rem;
+                @include subtitulos-1;
+                color:$texto-claro;  
+
+                .itemsForm{
+                    margin-top: 1rem;
+                    margin-left: 1rem;
+                    @include subtitulos-2;
+                    color:$texto-claro;
+                }
+
+                .itemsFormFinal{
+
+                    margin-top: 4rem;
+                    margin-left: 1rem;
+                    @include subtitulos-2;
+                    color: $texto-claro;
+                }
+            }
+        }
+
+        .imagenesPie {
+
+            .comprarProd {
+                display: none;       
+            }       
+
+            .adquirirProd {
+
+                padding: 1rem;
+                font-family: 'Port Lligat Sans', sans-serif;
+                font-size: 1rem;
+                color: $texto-claro;
+                text-align: center;
+            }
+        }
+    }
+
+
+    @media screen and  (min-width:600px) {
+
+        .imagenesPie {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .comprarProd {
+                display: block;     
+            }
+    
+            .adquirirProd {
+                width: 40%;
+       
+            }
+        }
+    }
+
+    @media screen and  (min-width:1024px) {
+
+        .imagenesPie {
+
+            @extend %flexdos;
+        
+        }
+    }
+
+    /* estilos mejores momentos */
+    /*MOBILE FIRST*/  
+
+
+    .contenedorMomentos {
+
+        width: 100%;
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: 0.2fr 0.1fr 0.2fr 0.1fr 0.2fr 0.1fr 0.2fr 0.1fr 0.2fr 0.2fr 0.2fr;
+        column-gap: 0;
+        grid-template-areas: ". tituloEscenas ."
+                             ". escenaUno ."
+                             ". cajaVideoUno ."
+                             ". escenaDos ."
+                             ". cajaVideoDos ."
+                             ". escenaTres ."
+                             ". cajaVideoTres ."
+                             ". tituloMemes ."
+                             ". cajaMemeUno ."
+                             ". cajaMemeDos . "
+                             ". cajaMemeTres ."
+                            
+                             ;
+    
+        .tituloEscenas {
+
+            grid-area: tituloEscenas;
+            @include titulos-princ-xs;
+            color: $texto-claro;
+            margin-top: 7rem;
+        }
+
+        .escenaUno {
+            grid-area: escenaUno;
+            padding-bottom: 1rem;
+            padding-top: 1rem;
+            justify-self: left;     
+       
+            h2 {
+                @include subtitulos-1;
+                color: $texto-claro;
+                margin-top: 0.6rem;
+                margin-bottom: 0.3rem;
+                
+            }
+            h3 {
+                @include subtitulos-2;
+                color: $texto-claro;
+                margin-bottom: 0.6rem;
+                
+            }
+            
+            .verOnline {
+
+                font-size: 0.8rem;
+                display: inline-block;
+                margin-top: 1rem;
+                margin-bottom: 0.5rem;
+                @include boton;
+                
+                :hover {
+
+                    background-color:$boton-accionado;
+                    transform: scale(1.05)
+                }
+
+                a {
+                    color: $texto-claro;
+                    text-decoration: none;
+                    font-family: 'NTR', sans-serif;
+                    font-variant-caps: all-small-caps;
+                }
+            }
+        }
+
+        .cajaVideoUno {
+
+            grid-area: cajaVideoUno;
+            width: 300px;
+            height: 200px;
+            overflow-y: auto;
+            overflow-x: auto;
+            resize: both;
+            position: relative;
+            z-index: 2;
+            
+
+            .videoUno {
+
+                width: 100%;
+                height: 100%;
+                border: none;
+            }        
+        }
+    
+        .escenaDos {
+            grid-area: escenaDos;
+            padding-bottom: 1rem;
+            padding-top: 1rem;
+            justify-self: left;  
+
+            h2 {
+                @include subtitulos-1;
+                color:$texto-claro;
+                margin-top: 0.6rem;
+                margin-bottom: 0.3rem;
+                
+            }
+            h3 {
+                @include subtitulos-2;
+                color:$texto-claro;
+                margin-bottom: 0.6rem;
+                
+            }
+
+            .verOnline {
+
+                font-size: 0.8rem;
+                display: inline-block;
+                margin-top: 1rem;
+                margin-bottom: 0.5rem;
+                @include boton;
+                
+                :hover {
+
+                    background-color: $boton-accionado;
+                    transform: scale(1.05)
+                }
+
+                a {
+                    color: $texto-claro;
+                    text-decoration: none;
+                    font-family: 'NTR', sans-serif;
+                    font-variant-caps: all-small-caps;
+                }
+            }
+        }
+        
+        .cajaVideoDos {
+
+            grid-area: cajaVideoDos;
+            width: 300px;
+            height: 200px;
+            overflow-y: auto;
+            overflow-x: auto;
+            resize: both;
+            position: relative;
+            z-index: 2;
+            
+
+            .videoDos {
+
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+
+        }
+
+        .escenaTres {
+            grid-area: escenaTres;
+            padding-bottom: 1rem;
+            padding-top: 1rem;
+            justify-self: left;
+
+            h2 {
+                @include subtitulos-1;
+                color: $texto-claro;
+                margin-top: 0.6rem;
+                margin-bottom: 0.3rem;
+                
+            }
+            h3 {
+                @include subtitulos-2;
+                color: $texto-claro;
+                margin-bottom: 0.6rem;
+                
+            }
+            
+            .verOnline {
+
+                font-size: 0.8rem;
+                display: inline-block;
+                margin-top: 1rem;
+                margin-bottom: 0.5rem;
+                @include boton;
+                
+                :hover {
+
+                    background-color:$boton-accionado;
+                    transform: scale(1.05)
+                }
+
+                a {
+                    color: $texto-claro;
+                    text-decoration: none;
+                    font-family: 'NTR', sans-serif;
+                    font-variant-caps: all-small-caps;
+                }
+            }
+        }
+
+        .cajaVideoTres {
+
+            grid-area: cajaVideoTres;
+            width: 300px;
+            height: 200px;
+            overflow-y: auto;
+            overflow-x: auto;
+            resize: both;
+            position: relative;
+            z-index: 2;
+            
+
+            .videoTres {
+
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+        }
+        
+        .tituloMemes {
+            grid-area: tituloMemes ;
+            @include titulos-princ-xs;
+            color: $texto-claro;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .cajaMemeUno {
+            grid-area: cajaMemeUno ;
+
+            h2 {
+                @include subtitulos-1;
+                color:$texto-claro;
+                margin-top: 0.6rem;
+                margin-bottom: 0.3rem;
+                
+            }
+            h3 {
+                @include subtitulos-2;
+                color: $texto-claro;
+                margin-bottom: 0.6rem;
+                
+            }
+
+            .memeUno {
+                
+                .textoMemeUno {  
+
+                    text-align: justify;     
+                    color: $texto-claro;
+                    font-family:$texto-general;
+                    width: 100%;
+                    display: inline-block;
+                    font-size: 0.8rem;
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+
+        .cajaMemeDos {
+             grid-area: cajaMemeDos ;
+
+             h2 {
+                @include subtitulos-1;
+                color: $texto-claro;
+                margin-top: 0.6rem;
+                margin-bottom: 0.3rem;
+                
+            }
+            h3 {
+                @include subtitulos-2;
+                color: $texto-claro;
+                margin-bottom: 0.6rem;
+                
+            }
+
+            .memeDos {
+
+                .textoMemeDos {
+    
+                    text-align: justify;     
+                    color: $texto-claro;
+                    font-family:$texto-general;
+                    width: 100%;
+                    display: inline-block;
+                    font-size: 0.8rem;
+                    margin-bottom: 3rem;
+                    margin-top: 1rem;
+                }
+            }
+        }
+       
+        .cajaMemeTres {
+            grid-area: cajaMemeTres ;
+
+            h2 {
+                @include subtitulos-1;
+                color:$texto-claro;
+                margin-top: 0.6rem;
+                margin-bottom: 0.3rem;
+                
+            }
+            h3 {
+                @include subtitulos-2;
+                color:$texto-claro;
+                margin-bottom: 0.6rem;
+                
+            }
+
+            .memeTres {
+
+                .textoMemeTres {
+    
+                    color: $texto-claro;
+                    font-family:$texto-general;
+                    width: 100%;
+                    display: inline-block;
+                    font-size: 0.8rem;
+                    margin-bottom: 3rem;
+                    margin-top: 1rem;
+                    text-align: justify;
+                }
+            }       
+        }       
+    }
+    
+    @media screen and  (min-width:600px) {
+
+        .contenedorMomentos {
+
+            grid-template-columns: 20% 60% 20%;   
+
+                          
+            .cajaVideoUno {
+
+                width: 500px;
+                height: 350px;
+                max-width: 660;
+                max-height: 450px;
+            }
+            
+            .cajaVideoDos {
+
+                width: 500px;
+                height: 350px;
+                max-width: 660px;
+                max-height: 450px;
+            }
+             
+            .cajaVideoTres {
+
+                width: 500px;
+                height: 350px;
+                max-width: 660px;
+                max-height: 450px;
+                
+            }
+
+            .cajaMemeUno {
+
+                margin-top: 3rem;
+               
+                .memeUno {
+                    display: flex;
+                    flex-direction: row;
+                    column-gap: 0.6rem; 
+                    align-items: flex-start;
+                    margin-top: 2rem;
+                   
+                    .tenor-gif-embed {
+   
+                        width: 100%;
+                        height: 100%;
+                       
+                    }
+                   
+                    .textoMemeUno {   
+                        height: 100%;
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+                        text-align: justify;
+                        
+                    }
+                }
+            }
+            .cajaMemeDos {
+
+                margin-top: 3rem;
+               
+                .memeDos {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    column-gap: 0.6rem;  
+                    align-items: flex-start;
+                    margin-top: 2rem;
+                    
+                    .tenor-gif-embed {   
+                        width: 100%;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    .textoMemeDos {
+    
+                        height: 100%;
+                        padding-right: 0.9rem;
+                        margin-top: 0;
+                        text-align: justify;
+                    }
+                }
+            }
+            .cajaMemeTres {
+
+                margin-top: 3rem;
+
+                .memeTres {
+                    display: flex;
+                    flex-direction: row;
+                    column-gap: 0.6rem; 
+                    align-items: flex-start;
+                    margin-top: 2rem;
+
+                    .tenor-gif-embed{
+    
+                        width: 100%;
+                        padding: 0;
+                        margin: 0;
+                    }
+                   
+                    .textoMemeTres {
+    
+                        height: 100%;
+                        padding-left: 0.9rem;
+                        margin-top: 0;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+
+        .derechosReservados {
+
+            margin-top: 10rem;
+        }
+    }
+
+    @media screen and  (min-width:1024px) {
+
+        
+        .escenaUno {
+        
+            justify-self: center;     
+        }
+
+       
+        .cajaVideoUno {
+
+            width: 600px;
+            height: 400px;
+            justify-self: center;
+            
+        }
+
+        .escenaDos {
+            justify-self: center;     
+        }
+
+        .cajaVideoDos {
+
+            width: 600px;
+            height: 400px;
+            justify-self: center;
+        }
+
+        
+        .escenaTres {
+            justify-self: center;     
+        }
+
+        .cajaVideoTres {
+
+            width: 600px;
+            height: 400px;
+            justify-self: center;
+        }      
+    }
+
+/*estilos personajes*/
+/*MOBILE FIRST*/
+
+body {
+
+    .menu-principal {
+
+        height: 80px;
+    }
+    
+    .contenedorPersonajes {
+    
+        width: 100%;
+        display: grid;
+        grid-template-rows: 0.4fr 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.25fr 0.6fr 0.6fr 0.6fr 0.6fr;
+        grid-template-columns: 15% 70% 15%;
+        grid-template-areas: 
+                             " fotoGral fotoGral fotoGral"
+                             ". titulo . "
+                             ". persUno ."
+                             ". persDos ."
+                             ". persTres ."
+                             ". persCuatro ."
+                             " . masPersonajesSec . "
+                             ". persCinco ."
+                             ". persSeis ."
+                             ". persSiete ."
+                             ". persOcho .";
+        justify-content: center;
+     
+        .fotoGral {
+    
+        grid-area: fotoGral;
+        margin-bottom: 2rem;
+        
+            img {
+    
+                width: 100%;
+                height: 100%;
+            }          
+        }
+        .titulo {
+    
+            grid-area: titulo;
+            @include titulos-princ-xs;
+            color:$texto-claro;
+            margin: 0.8rem 0.8rem;
+        }
+          
+        .persUno {
+    
+            grid-area: persUno;
+            justify-self:right;  
+            @extend %flex; 
+            width: 100%;
+            border: double rgb(163, 161, 161) 0.5px;
+            margin-top: 2rem;
+            max-width: 500px;
+          
+            .personajesPrinc {
+    
+                overflow: hidden;
+                width:100%;
+                height:75%;
+                opacity: 0.8;
+                max-width: 500px;
+    
+                .michael {
+    
+                    width: 100%;
+                    height: 100%;
+                    transition: 0.5s;
+                    object-fit: cover;
+                    padding: 0.5rem;
+                    max-width: 500px;
+                }
+            }
+            
+            div h2 {
+      
+                color: map-get($map: $personajeprinc, $key:color-princ);
+                font-family: map-get($map: $personajeprinc, $key:font-princ);
+                font-size: map-get($map:$personajeprinc, $key: font-princ-size);
+                text-align:map-get($map:$personajeprinc, $key: font-princ-align);
+                margin-top: 0.6rem;
+                padding: 0.3rem;
+            }
+        }
+        .persDos {
+            grid-area: persDos;
+            justify-self: left;
+            @extend %flex;
+           
+            width: 100%;
+            border: double rgb(163, 161, 161) 0.5px;
+            margin-top: 2rem;
+            max-width: 500px;
+    
+            .personajesPrinc {
+    
+                overflow: hidden;
+                width:100%;
+                height:75%;
+                opacity: 0.8;
+                max-width: 500px;
+    
+                .dwight {
+    
+                    width: 100%;
+                    height: 100%;
+                    transition: 0.5s;
+                    object-fit: cover;
+                    padding: 0.5rem;
+                    max-width: 500px;
+                }
+            }
+            
+            div h2 {
+      
+                color: map-get($map: $personajeprinc, $key:color-princ);
+                font-family: map-get($map: $personajeprinc, $key:font-princ);
+                font-size: map-get($map:$personajeprinc, $key: font-princ-size);
+                text-align:map-get($map:$personajeprinc, $key: font-princ-align);
+                margin-top: 0.6rem;
+                padding: 0.3rem;
+            }   
+        } 
+        .persTres {
+            grid-area: persTres;
+            justify-self: right;
+            @extend %flex;
+            width: 100%;
+            border: double rgb(163, 161, 161) 0.5px;
+            margin-top: 2rem;
+            max-width: 500px;
+    
+            .personajesPrinc {
+    
+                overflow: hidden;
+                width:100%;
+                height:75%;
+                opacity: 0.8;
+                max-width: 500px;
+    
+                .jim {
+    
+                    width: 100%;
+                    height: 100%;
+                    transition: 0.5s;
+                    object-fit: cover;
+                    padding: 0.5rem;
+                    max-width: 500px;
+                }
+            }        
+            div h2 {
+      
+                color: map-get($map: $personajeprinc, $key:color-princ);
+                font-family: map-get($map: $personajeprinc, $key:font-princ);
+                font-size: map-get($map:$personajeprinc, $key: font-princ-size);
+                text-align:map-get($map:$personajeprinc, $key: font-princ-align);
+                margin-top: 0.6rem;
+                padding: 0.3rem;
+            }
+        }
+        .persCuatro {
+    
+            grid-area: persCuatro;
+            justify-self: left;
+            @extend %flex;
+            width: 100%;
+            border: double rgb(163, 161, 161) 0.5px;
+            margin-top: 2rem;
+            max-width: 500px;
+    
+            .personajesPrinc {
+    
+                overflow: hidden;
+                width:100%;
+                height:75%;
+                opacity: 0.8;
+                max-width: 500px;
+    
+                .pam {
+    
+                    width: 100%;
+                    height: 100%;
+                    transition: 0.5s;
+                    object-fit: cover;
+                    padding: 0.5rem;
+                    max-width: 500px;
+                }
+            }
+            
+            div h2 {
+      
+                color: map-get($map: $personajeprinc, $key:color-princ);
+                font-family: map-get($map: $personajeprinc, $key:font-princ);
+                font-size: map-get($map:$personajeprinc, $key: font-princ-size);
+                text-align:map-get($map:$personajeprinc, $key: font-princ-align);
+                margin-top: 0.6rem;
+                padding: 0.3rem;
+            }
+        }
+    
+        .masPersonajesSec {
+    
+            grid-area: masPersonajesSec;
+            color:$texto-osc;
+            margin: 0.8rem 0.8rem;
+            @include titulos-princ-xs;
+        }
+    
+        .persCinco {
+            grid-area: persCinco;
+            @extend %flex;
+            margin-top: 2rem;
+            width: 100%;
+    
+            .personajesSec {
+    
+                @extend %flex-dos;
+                overflow: hidden;
+                height:100%;
+                max-width: 280px;
+                position: relative;
+                transition: all 500ms ease-out;
+    
+                :hover {
+    
+                    opacity: 0.4;
+                    transition: all 500ms ease-out;
+                }
+               
+                .angela {
+    
+                    width: 100%;
+                    height: 75%;   
+                }  
+    
+                .sinopsisAngela {
+    
+                    color:$texto-claro;
+                    position: absolute;
+                    font-size: 1.1rem;
+                    font-family:'Bree Serif', serif ;
+                    text-align: center;
+                    padding: 0.5rem;
+                    width: 70%;
+                    transition: all 500ms ease-out;
+                    opacity: 0; 
+                        
+                    :hover {   
+                        cursor: auto;
+                        opacity: 1;
+                         color:$texto-claro;   
+                    } 
+                }            
+            }      
+            h3  { 
+                @extend %flex;
+                color:map-get($map:$personajesec, $key:color-sec);
+                font-family:map-get($map:$personajesec, $key:font-sec);
+                font-size:map-get($map:$personajesec, $key:font-sec-size);
+                text-align:map-get($map:$personajesec, $key:font-sec-align);
+                width: 100%;               
+                position: relative;               
+                margin-top: 0;
+            }
+        }
+        .persSeis {
+            grid-area: persSeis;
+            @extend %flex;
+            margin-top: 2rem;
+            width: 100%;
+    
+            .personajesSec {
+    
+                @extend %flex-dos;
+                overflow: hidden;
+                height:100%;
+                max-width: 280px;
+                position: relative;
+                transition: all 500ms ease-out;
+                
+                :hover {
+    
+                    opacity: 0.4;
+                    transition: all 500ms ease-out;
+                }
+               
+                .meredith {
+    
+                    width: 100%;
+                    height: 75%;   
+                }  
+    
+                .sinopsisMeredith {
+    
+                    color: $texto-claro;
+                    position: absolute;
+                    font-size: 1.1rem;
+                    font-family:'Bree Serif', serif ;
+                    text-align: center;
+                    padding: 0.5rem;
+                    width: 70%;
+                    transition: all 500ms ease-out;
+                    opacity: 0; 
+    
+                    :hover {   
+                        cursor: auto;
+                        opacity: 1;
+                         color: $texto-claro;   
+                    } 
+                }            
+            }      
+            h3  { 
+                @extend %flex;
+                color:map-get($map:$personajesec, $key:color-sec);
+                font-family:map-get($map:$personajesec, $key:font-sec);
+                font-size:map-get($map:$personajesec, $key:font-sec-size);
+                text-align:map-get($map:$personajesec, $key:font-sec-align);
+                width: 100%;               
+                position: relative;               
+                margin-top: 0;
+            }
+        }
+        
+        .persSiete {
+    
+            grid-area: persSiete;
+            @extend %flex;
+            margin-top: 2rem;
+            width: 100%;
+    
+            .personajesSec {
+    
+                @extend %flex-dos;
+                overflow: hidden;
+                height:100%;
+                max-width: 280px;
+                position: relative;
+                transition: all 500ms ease-out;
+                
+                :hover {
+    
+                    opacity: 0.4;
+                    transition: all 500ms ease-out;
+                }
+               
+                .ryan {
+    
+                    width: 100%;
+                    height: 75%;   
+                }  
+    
+                .sinopsisRyan {
+    
+                    color: $texto-claro;
+                    position: absolute;
+                    font-size: 1.1rem;
+                    font-family:'Bree Serif', serif ;
+                    text-align: center;
+                    padding: 0.5rem;
+                    width: 70%;
+                    transition: all 500ms ease-out;
+                    opacity: 0; 
+    
+                    :hover {   
+                        cursor: auto;
+                        opacity: 1;
+                         color:$texto-claro;   
+                    } 
+                }            
+            }      
+            h3  { 
+                @extend %flex;
+                color:map-get($map:$personajesec, $key:color-sec);
+                font-family:map-get($map:$personajesec, $key:font-sec);
+                font-size:map-get($map:$personajesec, $key:font-sec-size);
+                text-align:map-get($map:$personajesec, $key:font-sec-align);
+                width: 100%;               
+                position: relative;               
+                margin-top: 0;
+            }
+        }
+    
+        .persOcho {
+            grid-area: persOcho;
+            @extend %flex;
+            margin-top: 2rem;
+            width: 100%;
+    
+            .personajesSec {
+    
+                @extend %flex-dos;
+                overflow: hidden;
+                height:100%;
+                max-width: 280px;
+                position: relative;
+                transition: all 500ms ease-out;
+              
+                :hover {
+    
+                    opacity: 0.4;
+                    transition: all 500ms ease-out;
+                }
+               
+                .toby {
+    
+                    width: 100%;
+                    height: 75%;   
+                }  
+    
+                .sinopsisToby {
+    
+                    color: $texto-claro;
+                    position: absolute;
+                    font-size: 1.1rem;
+                    font-family:'Bree Serif', serif ;
+                    text-align: center;
+                    padding: 0.5rem;
+                    width: 70%;
+                    transition: all 500ms ease-out;
+                    opacity: 0; 
+    
+                    :hover {   
+                        cursor: auto;
+                        opacity: 1;
+                         color:$texto-claro;   
+                    } 
+                }            
+            }      
+            h3  { 
+                @extend %flex;
+                color:map-get($map:$personajesec, $key:color-sec);
+                font-family:map-get($map:$personajesec, $key:font-sec);
+                font-size:map-get($map:$personajesec, $key:font-sec-size);
+                text-align:map-get($map:$personajesec, $key:font-sec-align);
+                width: 100%;               
+                position: relative;               
+                margin-top: 0;
+            }
+        }
+    }
+    
+    
+    @media screen and  (min-width:600px) {
+    
+        .contenedorPersonajes {
+    
+        grid-template-rows: 0.5fr 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr;
+        grid-template-columns: 20% 30% 30% 20%;
+        grid-template-areas: 
+                             " fotoGral fotoGral fotoGral fotoGral"
+                             ". titulo titulo . "
+                             ". persUno persUno ."
+                             ". persDos persDos ."
+                             ". persTres persTres ."
+                             ". persCuatro persCuatro ."
+                             ". masPersonajesSec masPersonajesSec ."
+                             ". persCinco persCinco ."
+                             ". persSeis persSeis ."
+                             ". persSiete persSiete ."  
+                             ". persOcho persOcho ."                    
+                             ;
+        justify-content: center;
+        align-items: center;  
+
+            .titulo {
+    
+                font-size: 2.1rem;                
+            }
+
+            div div h2 {
+                font-size: 1.7rem;
+                margin-top: 1.5rem;   
+            }
+       
+            .masPersonajesSec {
+                font-size: 2.1rem;
+            }
+
+            .persCinco {              
+                .personajesSec {
+    
+                    width: 100%;
+                    max-width: 600px;
+
+                    .angela { 
+            
+                        padding-right: 3rem;
+                        padding-left: 3rem;   
+                    }
+
+                    .sinopsisAngela {  
+                        font-size: 1.5rem;
+                   }
+                }                 
+                h3 {        
+                    padding-left: 3rem;
+                    margin-top: 0.8rem;
+                    margin-left: 0;  
+                    padding-right: 3rem;
+                }
+            }
+
+            .persSeis {              
+                .personajesSec {
+    
+                    width: 100%;
+                    max-width: 600px;
+
+                    .meredith { 
+            
+                        padding-right: 3rem;
+                        padding-left: 3rem;   
+                    }
+
+                    .sinopsisMeredith {  
+                        font-size: 1.5rem;
+                   }
+                }                 
+                h3 {        
+                    padding-left: 3rem;
+                    margin-top: 0.8rem;
+                    margin-left: 0;  
+                    padding-right: 3rem;
+                }
+            }
+            .persSiete {              
+                .personajesSec {
+    
+                    width: 100%;
+                    max-width: 600px;
+
+                    .ryan { 
+            
+                        padding-right: 3rem;
+                        padding-left: 3rem;   
+                    }
+
+                    .sinopsisRyan {  
+                        font-size: 1.5rem;
+                   }
+                }                 
+                h3 {        
+                    padding-left: 3rem;
+                    margin-top: 0.8rem;
+                    margin-left: 0;  
+                    padding-right: 3rem;
+                }
+            }
+            .persOcho {              
+                .personajesSec {
+    
+                    width: 100%;
+                    max-width: 600px;
+
+                    .toby { 
+            
+                        padding-right: 3rem;
+                        padding-left: 3rem;   
+                    }
+
+                    .sinopsisToby {  
+                        font-size: 1.5rem;
+                   }
+                }                 
+                h3 {        
+                    padding-left: 3rem;
+                    margin-top: 0.8rem;
+                    margin-left: 0;  
+                    padding-right: 3rem;
+                }
+            }
+        }    
+    }
+    
+    @media screen and (min-width:1024px) {
+    
+       .contenedorPersonajes {
+    
+            width: 100%;
+            grid-template-rows: 0.5fr 0.1fr 0.5fr 0.5fr 0.3fr 0.3fr 0.3fr;
+            grid-template-columns: 15% 35% 35% 15%;
+            grid-template-areas: 
+                                 " fotoGral fotoGral fotoGral fotoGral "
+                                 ". titulo titulo . "
+                                 ". persUno persDos ."
+                                 ". persTres persCuatro ."
+                                 ". masPersonajesSec masPersonajesSec ."
+                                 ". persCinco persSeis ." 
+                                 ". persSiete persOcho ."
+                                 ;
+            column-gap: 1rem;
+            
+            .titulo {
+    
+                font-size: 2.5rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;                   
+            }          
+            .masPersonajesSec {
+    
+                margin-top: 2rem;
+                margin-bottom: 4rem;
+                font-size: 2.5rem;    
+            }        
+
+            .persCinco {
+
+                .personajesSec {
+    
+                    width: 100%;
+                    justify-self: center;
+                    
+                    .angela {
+                        justify-content: right;         
+                    }                  
+                }               
+                h3 {
+    
+                    margin-top: 0.8rem;
+                    max-width: 600px;
+                    @extend %flex;            
+                }
+            }
+
+            .persSeis {
+
+                .personajesSec {
+    
+                    width: 100%;
+                    justify-self: center;
+                    
+                    .meredith {
+                        justify-content:left;         
+                    }                  
+                }               
+                h3 {
+                    margin-top: 0.8rem;
+                    max-width: 600px;
+                    @extend %flex;
+          
+                }
+            }
+            
+            .persSiete {
+
+                .personajesSec {
+    
+                    width: 100%;
+                    justify-self: center;
+                    
+                    .ryan  {
+                        justify-content: right;         
+                    }                  
+                }               
+                h3 {
+    
+                    margin-top: 0.8rem;
+                    max-width: 600px;
+                    @extend %flex;             
+                }
+            }
+
+            .persOcho {
+
+                .personajesSec {
+    
+                    width: 100%;
+                    justify-self: center;
+                    
+                    .toby  {
+                        justify-content: left;         
+                    }                  
+                }               
+                h3 {
+    
+                    margin-top: 0.8rem;
+                    max-width: 600px;
+                    @extend %flex;           
+                }
+            }
+        }   
+    }
+}

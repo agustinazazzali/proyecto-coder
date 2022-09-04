@@ -1,1734 +1,1455 @@
-/*reset */ 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+body .contenedorIndex .conoceUno, body .contenedorIndex .conoceDos, body .contenedorIndex .conoceTres, body .contenedorIndex .conoceCuatro, .contenedorComprar .item-1, .contenedorComprar .item-2, .contenedorComprar .item-3, .contenedorComprar .item-4, .contenedorComprar .item-5, .contenedorComprar .item-6, .contenedorComprar .item-7, .contenedorComprar .item-8, .contenedorContacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
-/*estilos del index*/ 
+body header nav div ul li, body footer .logoRedes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+/*reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*estilos del index*/
 /*MOBILE FIRST*/
-
-
-header {
-
-    /*align-items: center;
-    justify-content: space-between;
-    background-color:rgba(43, 42, 42, 0.897);
-    height: 100px;
-    width: 100%;
-    position: sticky;
-    top: 0; 
-    left: 0;   */
-    z-index: 1;
-    position: relative;
-    
-    
-    
-}
-
-/*h1 {
-    color: whitesmoke;
-    font-weight: bold;
-    font-family: 'Josefin Sans', sans-serif; 
-    font-variant-caps: all-small-caps;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-        
-    }*/
-
-header nav{
-
-   /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center;*/
-    background-color: rgb(219, 205, 186) /*rgba(54, 53, 53, 0.897);*/
-   /* height: 2.3rem;
-    margin-bottom: 0.8rem;*/
-}
-
-nav:hover {
-
-    background-color: rgba(37, 36, 36, 0.897) /* rgba(70, 68, 68, 0.897)*/
-
-}
-
-header nav ul li {
-    margin: 0.2rem;
-    display: inline-block;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
-    color: whitesmoke;
-    font-weight: bold;
-    font-variant-caps: all-petite-caps;
-    
-} 
-
-li:hover {
-
-    transform: scale(1.05);
-}
-
-
-a {
-    color: whitesmoke;
-    display: inline;
-}
-
-
-
-.contenedorIndex {
-
-   /* height: 200vh;*/
-    width: 100%;
-    display: grid;
-    grid-template-columns: 10% 80% 10% ;
-    grid-template-rows: 0.6fr 0.05fr 0.2fr 0.7fr 0.7fr 0.7fr 0.7fr 0.1fr 0.2fr 0.6fr;
-  
-    grid-template-areas: "portadaPrincipal portadaPrincipal portadaPrincipal"
-                         "citaTextual citaTextual citaTextual"
-                         "conoce conoce conoce"
-                         ". conoceUno ."
-                         ". conoceDos ."
-                         ". conoceTres ." 
-                         ". conoceCuatro ."
-                         ". masPersonajes ."
-                         ". lugar ."
-                         "cajaVideoLugar cajaVideoLugar cajaVideoLugar"
-                        ;
-   /* justify-content: center;
-    justify-items: center;*/
-    
-
-}
-
-.portadaPrincipal {
-
-    grid-area: portadaPrincipal;
-}
-
-
-.citaTextual {
-
-    grid-area: citaTextual;
-    font-size: 0.9rem;
-    font-family: 'Port Lligat Sans', sans-serif;
-    text-align: center;
-    color: black;
-    padding: 0.5rem;
-}
-
-
-.conoce {
-
-    grid-area: conoce;
-    color: whitesmoke;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5rem;
-    margin: 0.8rem 0.8rem;
-    text-align: center; 
-}
-
-.conoceUno {
-
-    grid-area: conoceUno;
-    
-}
-
-.conoceDos {
-
-    grid-area: conoceDos;
-}
-.conoceTres {
-
-    grid-area: conoceTres;
-}
-.conoceCuatro {
-
-    grid-area: conoceCuatro;
-}
-
-.masPersonajes {
-
-    grid-area: masPersonajes;
-    display: inline-block;
-    width: 30%;
-    justify-self: center;
-}
-.masPersonajes p{
-
-    justify-self: center;
-    align-items: center;
-    margin: 0;
-}
-
-
-.lugar {
-
-    grid-area: lugar;
-}
-
-.cajaVideoLugar {
-
-    grid-area: cajaVideoLugar;
-}
-
-.masPersonajes, .masLugar {
-  
-    display: flex;
-    /*margin-top: 2rem;*/
-    margin-bottom: 3rem;
-    border: none solid 1rem;
-    border-radius: 1rem;
-    padding: 1rem;
-    background-color: rgb(115, 73, 133);
-    align-items: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-           
-    }
-
-.masPersonajes:hover {
-    background-color: rgb(106, 68, 122);
-    transform: scale(1.05);
-    }
-
-
-.lugar {
-    grid-area: lugar;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
-    color: whitesmoke;
-
-}
-
-.cajaVideoLugar {
-    grid-area: cajaVideoLugar;
-    margin-top: 1.2rem;
-    width: 325px;
-    height: 300px;
-    overflow-y: auto;
-    overflow-x: auto;
-    resize: both;
-    position: relative;
-    z-index: 2;
-    justify-self: center;
-
-}
-
-.videoLugar {
-
-    width: 100%;
-    height: 100%;
-    border: none;
-    
-}
-
-
-
-.imgPrincipal {
-
-    width: 100%;
-    height: 100%;
-    
-}
-
-.sinopsis { 
-
-    display: none;
-}
-
-
-.pTexto {
-    
-    
-    width: 11rem; /*mismo tamaño que imagen de personajes*/
-    padding-top: 1rem ;
-    padding-right: 0.7rem;
-    text-align: left;       
-    /*background-color: whitesmoke;*/
-    width: 80%;
-    /*margin-top: 0.5rem;*/
-    margin-bottom: 0.5rem;
-    padding: 0.3rem;
-    
-    
-    }
-
-
-.pTexto h3 {
-
-    margin-top: 0.8rem;
-    font-size: 1.2rem;
-    color: whitesmoke;
-    
-}
-
-
-.parrafoSecundario {
-
-    font-size: 0.9rem;
-    color: whitesmoke;
-    
-}
-
-
-
-
-main div div h3 a {    
-    font-size: 1rem;
-    font-family: 'Port Lligat Sans', sans-serif;
-    text-align: left;
-    
-    
-}
-
-
-.conoceUno , .conoceDos , .conoceTres, .conoceCuatro {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   /* border: 1px solid black;*/
-    margin: 1rem;
-   
-}
-
-
-a .imagenSecundaria {
-
-    margin-top: 0.5rem;
-    
-}
-
-.imagenSecundaria {
-
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-    object-fit: cover;
-    
-}
-
-.imagenSecundaria:hover {
-
-    transform: scale(1.02);
-}
-
-.cajaImagenSec {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    width:250px;
-    height:250px;
-}
-
-
 body {
-
-    background: linear-gradient(rgb(219, 205, 186),rgb(77, 74, 74));
-    background-repeat: no-repeat;
-   /* background-color: rgba(7, 2, 2, 0.774) ;*/
-    height: 200vh;
-    background-color:rgb(77, 74, 74);
-
-}
-
-.cajaLugar {
-
-    display: none;
-}
-
-.derechosReservados {
-
-    text-align: center;
-    margin-top: 7rem;
-    font-size: 1.2rem;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-   
-
-.logoRedes {
-
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content:center;
-    align-content: center;
-    gap: 1rem;
-
-}
-
-footer {
-
-    margin-top: 2rem;
-    height: 150px;
-    
-}
-
-   
-/*declaramos media queries para tablet min 600px*/
-
-@media screen and  (min-width:600px) {
-
-header nav ul li {
-  
-    font-size: 1.2rem;
-        
-    } 
-
-.contenedorIndex {
-
-    grid-template-columns: 25% 50% 25%;
+  background: linear-gradient(#dbcdba, #4d4a4a);
+  background-repeat: no-repeat;
+  height: 100%; }
+  body header {
+    z-index: 1;
+    position: fixed;
+    height: 80px; }
+    body header nav {
+      background-color: rgba(37, 36, 36, 0.897); }
+      body header nav div ul li {
+        margin: 0.2rem;
+        display: inline-block;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: whitesmoke;
+        font-weight: bold;
+        font-variant-caps: all-petite-caps; }
+        body header nav div ul li :hover {
+          transform: scale(1.1); }
+          body header nav div ul li :hover ::after {
+            content: "";
+            display: inline-block;
+            height: 2px;
+            background-color: #6b4b86;
+            transform: scale(0, 0.02);
+            transition: transform .25s; }
+        body header nav div ul li a {
+          color: whitesmoke;
+          display: inline;
+          text-decoration: none; }
+  body .contenedorIndex {
     width: 100%;
     display: grid;
-    grid-template-rows: 0.6fr 0.05fr 0.2fr 0.7fr 0.7fr 0.7fr 0.7fr 0.1fr 0.2fr 0.6fr;
-  
-    grid-template-areas: "portadaPrincipal portadaPrincipal portadaPrincipal"
-                         "citaTextual citaTextual citaTextual"
-                         "conoce conoce conoce"
-                         ". conoceUno ."
-                         ". conoceDos ."
-                         ". conoceTres ." 
-                         ". conoceCuatro ."
-                         ". masPersonajes ."
-                         ". lugar ."
-                         "cajaVideoLugar cajaVideoLugar cajaVideoLugar" 
-                        ;
-    justify-content: center;
-
-}
-
-.citaTextual {
-
-    font-size: 1rem;
-}
-
-.personaje, .lugar {
-
-    font-size: 2rem;
-    margin-bottom: 4rem;
-
-}
-
-.masPersonajes {
-
-    font-size: 1.1rem;
-    justify-self: center;
-    
-}
-
-.cajaVideoLugar {
-    margin-top: 1.2rem;
-    width: 650px;
-    height: 550px;
-   
-
-}
-
-.videoLugar {
-
-    width: 100%;
-    height: 100%;
-    border: none;
-    
-}
-
-}
-
-@media screen and  (min-width:1024px) {
-
-main div h2, p {
-
-    color: black;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
- 
-    .contenedorIndex {
-
-        width: auto;
-        grid-template-rows: 0.8fr 0.1fr 0.1fr 0.5fr 0.1fr 0.1fr 0.15fr 1fr;
-        grid-template-columns: 25% 25% 25% 25%;
-
-        grid-template-areas: "portadaPrincipal portadaPrincipal portadaPrincipal portadaPrincipal" 
-                             ". citaTextual citaTextual ."
-                             ". conoce conoce . "
-                             ". conoceUno conoceDos ."
-                             ". conoceTres conoceCuatro ."
-                             ". masPersonajes masPersonajes . "
-                             " lugar lugar lugar lugar"
-                             " cajaVideoLugar cajaVideoLugar cajaVideoLugar cajaLugar "
-                            ;
-        column-gap: 0.7rem;
-                
-        justify-content:center ;
-}
-
-.imgPrincipal {
-    
-    position: relative;
-    justify-self: center;    
-}
-
-.sinopsis {
-    display: block;
-    grid-area: sinopsis;
-    height: 100%;
-    width: 30%;
-    padding: 0.6rem;
-    justify-self: left;
-    margin-top: 1rem;
-    margin-left: 2rem;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    
-}
-
-.tituloSinopsis {
-
-    color: black;
-    font-weight: bold;
-    font-family: 'Josefin Sans', sans-serif; 
-    font-variant-caps: all-small-caps;
-    font-size: 3rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    text-align: center;
-    
-}
-
-.parrafoSinopsis {
-
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 0.9rem;
-    text-align: center;
-
-}
-
-.citaTextual {
-
-    font-size: 1.05rem;
-}
-
-.imagenSecundaria {
-
-    width: 100%;
-    height: 100%;
-}
-
-
-.masPersonajes {
-
-    font-size: 1rem;
-    width: 100px;
-    justify-content: center;
-    
-}
-
-.lugar {
-    margin-top: 2rem;
-    
-}
-
-
-.cajaVideoLugar {
-    margin-top: 1.2rem;
-    width: 90%;
-    height: 100%;
-    grid-area: cajaVideoLugar;
-    justify-self: right;
-   
-
-}
-
-.videoLugar {
-
-    width: 100%;
-    height: 100%;
-    border: none;
-    
-}
-
-.cajaLugar {
-
-    display: block;
-    grid-area: cajaLugar;
-    /*background-color: whitesmoke;*/
-    height: 100%;
-    width: 70%;
-    padding: 0.7rem;
-    margin-top: 1.2rem;
-    justify-self: center;
-    font-size: 1rem;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    justify-self: left;
-}
-
-.masLugar  {
-
-    justify-content: center;
-    margin-top: 6rem;
-    margin-bottom: 1rem;
-    display: inline-block;
-    
-}
-
-.masLugar:hover {
-    background-color: rgb(106, 68, 122);
-    transform: scale(1.05);
-    
-}
-
-  
-.tituloLugar {
-
-    color: whitesmoke;
-}
-
-.parrafoLugar {
-
-    color: whitesmoke;
-}
-footer {
-
-    margin-top: 2rem;
-    height: 150px;
-    
-}
-   
-.derechosReservados {
-
-    font-size: 1.2rem;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-
-   
-}
-
-}
-
-
-
-/*estilos de COMPRAR*/ 
-/*MOBILE FIRST*/
-
-.contenedorComprar {
-
-    display: grid;
-    grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 0.1fr;
     grid-template-columns: 10% 80% 10%;
-    grid-template-areas: ". tituloObjetos ."
-                         ". item-1 ."
-                         ". item-2 ."
-                         ". item-3 ."
-                         ". item-4 ."
-                         ". adquirir .";
+    grid-template-rows: 0.6fr 0.05fr 0.2fr 0.3fr 0.3fr 0.3fr 0.3fr 0.1fr 0.2fr 0.6fr;
+    grid-template-areas: "portadaPrincipal portadaPrincipal portadaPrincipal" "citaTextual citaTextual citaTextual" "conoce conoce conoce" ". conoceUno ." ". conoceDos ." ". conoceTres ."  ". conoceCuatro ." ". masPersonajes ." ". lugar ." ". areaVideoLugar ."; }
+    body .contenedorIndex .portadaPrincipal {
+      grid-area: portadaPrincipal; }
+      body .contenedorIndex .portadaPrincipal .imgPrincipal {
+        width: 100%;
+        height: 100%; }
+    body .contenedorIndex .sinopsis {
+      display: none; }
+    body .contenedorIndex .citaTextual {
+      grid-area: citaTextual;
+      font-size: 0.9rem;
+      font-family: 'Port Lligat Sans', sans-serif;
+      text-align: center;
+      color: black;
+      padding: 0.5rem; }
+    body .contenedorIndex .conoce {
+      grid-area: conoce;
+      color: rgba(37, 36, 36, 0.897);
+      font-family: 'Bree Serif', serif;
+      font-size: 2rem;
+      margin: 0.8rem 0.8rem;
+      text-align: center; }
+    body .contenedorIndex .conoceUno {
+      grid-area: conoceUno;
+      margin: 0.2rem; }
+      body .contenedorIndex .conoceUno a img {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+        object-fit: cover;
+        margin-top: 0.5rem; }
+        body .contenedorIndex .conoceUno a img :hover {
+          transform: scale(1.02); }
+      body .contenedorIndex .conoceUno .conoceTexto {
+        padding-top: 1rem;
+        padding-right: 0.7rem;
+        text-align: left;
+        width: 80%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+        body .contenedorIndex .conoceUno .conoceTexto h3 {
+          font-size: 1.2rem;
+          color: whitesmoke;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+        body .contenedorIndex .conoceUno .conoceTexto p {
+          font-size: 1rem;
+          color: whitesmoke;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+    body .contenedorIndex .conoceDos {
+      grid-area: conoceDos;
+      margin: 0.2rem; }
+      body .contenedorIndex .conoceDos a img {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+        object-fit: cover;
+        margin-top: 0.5rem; }
+        body .contenedorIndex .conoceDos a img :hover {
+          transform: scale(1.02); }
+      body .contenedorIndex .conoceDos .conoceTexto {
+        padding-top: 1rem;
+        padding-right: 0.7rem;
+        text-align: left;
+        width: 80%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+        body .contenedorIndex .conoceDos .conoceTexto h3 {
+          font-size: 1.2rem;
+          color: whitesmoke;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+        body .contenedorIndex .conoceDos .conoceTexto p {
+          font-size: 1rem;
+          color: whitesmoke;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+    body .contenedorIndex .conoceTres {
+      grid-area: conoceTres;
+      margin: 0.2rem; }
+      body .contenedorIndex .conoceTres a img {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+        object-fit: cover;
+        margin-top: 0.5rem; }
+        body .contenedorIndex .conoceTres a img :hover {
+          transform: scale(1.02); }
+      body .contenedorIndex .conoceTres .conoceTexto {
+        padding-top: 1rem;
+        padding-right: 0.7rem;
+        text-align: left;
+        width: 80%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+        body .contenedorIndex .conoceTres .conoceTexto h3 {
+          font-size: 1.2rem;
+          color: whitesmoke;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+        body .contenedorIndex .conoceTres .conoceTexto p {
+          font-size: 1rem;
+          color: whitesmoke;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+    body .contenedorIndex .conoceCuatro {
+      grid-area: conoceCuatro;
+      margin: 0.2rem; }
+      body .contenedorIndex .conoceCuatro a img {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+        object-fit: cover;
+        margin-top: 0.5rem; }
+        body .contenedorIndex .conoceCuatro a img :hover {
+          transform: scale(1.02); }
+      body .contenedorIndex .conoceCuatro .conoceTexto {
+        padding-top: 1rem;
+        padding-right: 0.7rem;
+        text-align: left;
+        width: 80%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+        body .contenedorIndex .conoceCuatro .conoceTexto h3 {
+          font-size: 1.2rem;
+          color: whitesmoke;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+        body .contenedorIndex .conoceCuatro .conoceTexto p {
+          font-size: 1rem;
+          color: whitesmoke;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+    body .contenedorIndex .masPersonajes {
+      grid-area: masPersonajes;
+      justify-self: center;
+      margin-bottom: 3rem;
+      border: none solid 1rem;
+      border-radius: 1.1rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      background-color: #734985;
+      text-align: center;
+      font-size: 1.1rem;
+      font-family: 'NTR', sans-serif;
+      font-variant-caps: all-small-caps; }
+      body .contenedorIndex .masPersonajes :hover {
+        background-color: #6a447a;
+        transform: scale(1.05); }
+      body .contenedorIndex .masPersonajes a {
+        margin: 0;
+        text-decoration: none;
+        color: whitesmoke; }
+    body .contenedorIndex .lugar {
+      grid-area: lugar;
+      font-family: 'Bree Serif', serif;
+      font-size: 2rem;
+      text-align: center;
+      color: whitesmoke; }
+    body .contenedorIndex .areaVideoLugar {
+      grid-area: areaVideoLugar;
+      margin-top: 1.2rem;
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      overflow-x: auto;
+      resize: both;
+      position: relative;
+      z-index: 2;
+      justify-self: center; }
+      body .contenedorIndex .areaVideoLugar .cajaIframe {
+        width: 100%;
+        height: 100%;
+        border: none; }
+    body .contenedorIndex .cajaLugar {
+      display: none; }
+      body .contenedorIndex .cajaLugar .masLugar {
+        margin-bottom: 3rem;
+        border: none solid 1rem;
+        border-radius: 1.1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        background-color: #734985;
+        text-align: center;
+        font-size: 1.1rem;
+        font-family: 'NTR', sans-serif;
+        font-variant-caps: all-small-caps; }
+  body footer {
+    margin-top: 2rem;
+    height: 8rem;
+    margin-bottom: 0;
+    padding-bottom: 0; }
+    body footer .derechosReservados {
+      text-align: center;
+      margin-top: 7rem;
+      font-size: 1rem;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+    body footer .logoRedes {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      gap: 1rem; }
+  @media screen and (min-width: 600px) {
+    body .contenedorIndex {
+      grid-template-columns: 25% 50% 25%;
+      grid-template-rows: 0.6fr 0.05fr 0.2fr 0.7fr 0.7fr 0.7fr 0.7fr 0.1fr 0.2fr 0.6fr;
+      grid-template-areas: "portadaPrincipal portadaPrincipal portadaPrincipal" "citaTextual citaTextual citaTextual" "conoce conoce conoce" ". conoceUno ." ". conoceDos ." ". conoceTres ."  ". conoceCuatro ." ". masPersonajes ." ". lugar ." "areaVideoLugar areaVideoLugar areaVideoLugar"; }
+      body .contenedorIndex .sinopsis {
+        display: block;
+        width: 30%;
+        padding: 0.6rem;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        position: absolute;
+        top: 12%;
+        left: 50%; }
+        body .contenedorIndex .sinopsis h1 {
+          font-family: 'NTR', sans-serif;
+          color: #4d4a4a;
+          font-size: 3.5rem;
+          text-align: center; }
+        body .contenedorIndex .sinopsis p {
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          font-size: 0.7rem;
+          text-align: center;
+          color: #4d4a4a; }
+      body .contenedorIndex .citaTextual {
+        font-size: 1rem; }
+      body .contenedorIndex .areaVideoLugar {
+        margin-top: 1.2rem;
+        width: 650px;
+        height: 550px; } }
+  @media screen and (min-width: 1024px) {
+    body .contenedorIndex {
+      grid-template-rows: 0.8fr 0.1fr 0.1fr 0.5fr 0.1fr 0.1fr 0.15fr 1fr;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-areas: "portadaPrincipal portadaPrincipal portadaPrincipal portadaPrincipal"  ". citaTextual citaTextual ." ". conoce conoce . " ". conoceUno conoceDos ." ". conoceTres conoceCuatro ." ". masPersonajes masPersonajes . " " lugar lugar lugar lugar" " areaVideoLugar areaVideoLugar areaVideoLugar cajaLugar ";
+      column-gap: 0.7rem;
+      justify-content: center; }
+      body .contenedorIndex .sinopsis {
+        display: block;
+        width: 30%;
+        padding: 0.6rem;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        position: absolute;
+        top: 30%;
+        left: 50%; }
+        body .contenedorIndex .sinopsis h1 {
+          font-family: 'NTR', sans-serif;
+          color: #4d4a4a;
+          /*font-variant-caps: all-small-caps;*/
+          font-size: 3.9rem;
+          text-align: center; }
+        body .contenedorIndex .sinopsis p {
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          font-size: 1rem;
+          text-align: center;
+          color: #4d4a4a; }
+      body .contenedorIndex .lugar {
+        margin-top: 2rem; }
+      body .contenedorIndex .areaVideoLugar {
+        margin-top: 1.2rem;
+        width: 80%;
+        height: 75%;
+        grid-area: areaVideoLugar;
+        justify-self: right; }
+        body .contenedorIndex .areaVideoLugar .cajaIframe {
+          width: 100%;
+          height: 100%;
+          border: none; }
+      body .contenedorIndex .cajaLugar {
+        display: block;
+        grid-area: cajaLugar;
+        width: 70%;
+        height: 80%;
+        padding: 0.5rem;
+        margin-top: 1.2rem;
+        font-size: 1rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        justify-self: left; }
+        body .contenedorIndex .cajaLugar h3 {
+          color: whitesmoke;
+          font-size: 1.2rem;
+          text-align: justify; }
+        body .contenedorIndex .cajaLugar p {
+          color: whitesmoke;
+          text-align: justify; }
+        body .contenedorIndex .cajaLugar .masLugar {
+          justify-content: center;
+          margin-top: 2rem;
+          margin-bottom: 1rem;
+          display: inline-block; }
+          body .contenedorIndex .cajaLugar .masLugar :hover {
+            background-color: #6a447a;
+            transform: scale(1.05); }
+          body .contenedorIndex .cajaLugar .masLugar a {
+            color: whitesmoke;
+            text-decoration: none; } }
 
-    
-
-    }
-
-.tituloObjetos {
-
+/*estilos de COMPRAR*/
+/*MOBILE FIRST*/
+.contenedorComprar {
+  display: grid;
+  grid-template-rows: 0.1fr 0.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-areas: " tituloObjetos tituloObjetos tituloObjetos " ". item-1 ." ". item-2 ." ". item-3 ." ". item-4 ." ". item-5 ." ". item-6 ." ". item-7 ." ". item-8 ." ". adquirir .";
+  background-color: #f8eed9; }
+  .contenedorComprar .tituloObjetos {
     grid-area: tituloObjetos;
-    color: whitesmoke;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5rem;
-    margin: 2rem 2rem;
-    text-align: center;  
-    
-    }
-    
-.item-1 {
-
+    color: #4d4a4a;
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 0.2rem;
+    text-align: center;
+    width: 100%;
+    padding: 2rem;
+    margin-top: 6rem; }
+  .contenedorComprar .item-1 {
     grid-area: item-1;
-}
-.item-2{
-
+    background-color: #eee3d8;
+    border-radius: 0.9rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    height: 90%;
+    width: 95%; }
+    .contenedorComprar .item-1 .imgObjeto {
+      font-family: 'Port Lligat Sans', sans-serif;
+      font-size: 1.4rem;
+      color: #4d4a4a;
+      text-align: left;
+      margin-top: 1rem;
+      margin-bottom: 0; }
+    .contenedorComprar .item-1 .precioObjeto {
+      font-family: 'Port Lligat Sans', sans-serif;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #4d4a4a;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+      text-align: left; }
+  .contenedorComprar .item-2 {
     grid-area: item-2;
-}
-
-.item-3{
-
+    background-color: #ece2d8;
+    border-radius: 0.9rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    height: 90%;
+    width: 95%; }
+    .contenedorComprar .item-2 .imgObjeto {
+      font-family: 'Port Lligat Sans', sans-serif;
+      font-size: 1.4rem;
+      color: #4d4a4a;
+      text-align: left;
+      margin-top: 1rem;
+      margin-bottom: 0; }
+    .contenedorComprar .item-2 .precioObjeto {
+      font-family: 'Port Lligat Sans', sans-serif;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #4d4a4a;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+      text-align: left; }
+  .contenedorComprar .item-3 {
     grid-area: item-3;
-}
-.item-4{
-
+    background-color: #ece2d8;
+    border-radius: 0.9rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    height: 90%;
+    width: 95%; }
+    .contenedorComprar .item-3 .imgObjeto {
+      font-family: 'Port Lligat Sans', sans-serif;
+      font-size: 1.4rem;
+      color: #4d4a4a;
+      text-align: left;
+      margin-top: 1rem;
+      margin-bottom: 0; }
+    .contenedorComprar .item-3 .precioObjeto {
+      font-family: 'Port Lligat Sans', sans-serif;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #4d4a4a;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+      text-align: left; }
+  .contenedorComprar .item-4 {
     grid-area: item-4;
-}
-
-.adquirir {
+    background-color: #ece2d8;
+    border-radius: 0.9rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    height: 90%;
+    width: 95%; }
+    .contenedorComprar .item-4 .imgObjeto {
+      font-family: 'Port Lligat Sans', sans-serif;
+      font-size: 1.4rem;
+      color: #4d4a4a;
+      text-align: left;
+      margin-top: 1rem;
+      margin-bottom: 0; }
+    .contenedorComprar .item-4 .precioObjeto {
+      font-family: 'Port Lligat Sans', sans-serif;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #4d4a4a;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+      text-align: left; }
+  .contenedorComprar .item-5 {
+    grid-area: item-5;
+    background-color: #ece2d8;
+    border-radius: 0.9rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    height: 90%;
+    width: 95%; }
+    .contenedorComprar .item-5 .imgObjeto {
+      font-family: 'Port Lligat Sans', sans-serif;
+      font-size: 1.4rem;
+      color: #4d4a4a;
+      text-align: left;
+      margin-top: 1rem;
+      margin-bottom: 0; }
+    .contenedorComprar .item-5 .precioObjeto {
+      font-family: 'Port Lligat Sans', sans-serif;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #4d4a4a;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+      text-align: left; }
+  .contenedorComprar .item-6 {
+    grid-area: item-6;
+    background-color: #ece2d8;
+    border-radius: 0.9rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    height: 90%;
+    width: 95%; }
+    .contenedorComprar .item-6 .imgObjeto {
+      font-family: 'Port Lligat Sans', sans-serif;
+      font-size: 1.4rem;
+      color: #4d4a4a;
+      text-align: left;
+      margin-top: 1rem;
+      margin-bottom: 0; }
+    .contenedorComprar .item-6 .precioObjeto {
+      font-family: 'Port Lligat Sans', sans-serif;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #4d4a4a;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+      text-align: left; }
+  .contenedorComprar .item-7 {
+    grid-area: item-7;
+    background-color: #ece2d8;
+    border-radius: 0.9rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    height: 90%;
+    width: 95%; }
+    .contenedorComprar .item-7 .imgObjeto {
+      font-family: 'Port Lligat Sans', sans-serif;
+      font-size: 1.4rem;
+      color: #4d4a4a;
+      text-align: left;
+      margin-top: 1rem;
+      margin-bottom: 0; }
+    .contenedorComprar .item-7 .precioObjeto {
+      font-family: 'Port Lligat Sans', sans-serif;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #4d4a4a;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+      text-align: left; }
+  .contenedorComprar .item-8 {
+    grid-area: item-8;
+    background-color: #ece2d8;
+    border-radius: 0.9rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    height: 90%;
+    width: 95%; }
+    .contenedorComprar .item-8 .imgObjeto {
+      font-family: 'Port Lligat Sans', sans-serif;
+      font-size: 1.4rem;
+      color: #4d4a4a;
+      text-align: left;
+      margin-top: 1rem;
+      margin-bottom: 0; }
+    .contenedorComprar .item-8 .precioObjeto {
+      font-family: 'Port Lligat Sans', sans-serif;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #4d4a4a;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+      text-align: left; }
+  .contenedorComprar .adquirir {
     grid-area: adquirir;
-}
-
-
-
-
-
-.imgObjeto {
-    font-family: 'Port Lligat Sans', sans-serif;
-    font-size: 1.4rem;
-    color: whitesmoke;
-    margin-top: 0.6rem;
-    margin-bottom: 0.6rem;
-    text-align: left;
-}
-
-
-.precioObjeto {
-    font-family: 'Port Lligat Sans', sans-serif;
-    font-size: 1.1rem;
-    color: whitesmoke;
-    margin-top: 0.6rem;
-    margin-bottom: 0.6rem;
-    text-align: left; 
-}
-
-
-.adquirir {
     font-family: 'Port Lligat Sans', sans-serif;
     font-size: 1rem;
-    color: whitesmoke;
+    color: #4d4a4a;
     margin-top: 60px;
-    text-align: center; 
-   
-}
+    text-align: center; }
+    .contenedorComprar .adquirir a {
+      color: #4d4a4a;
+      display: inline; }
 
-
-.derechosReservados {
-
-    margin-top: 3rem;
-    font-size: 1rem;
-    font-family: 'Port Lligat Sans', sans-serif;
-}
-
-.item-1 img:hover {
-
-    box-shadow: 2px 2px  gray;
-    transform: scale(1.02);
-}
-
-.item-2 img:hover {
-
-    
-    box-shadow: 2px 2px  gray;
-    transform: scale(1.02);
-}
-
-
-.item-3 img:hover {
-
-    
-    box-shadow: 2px 2px  gray;
-    transform: scale(1.02);
-}
-
-
-.item-4 img:hover {
-
-    box-shadow: 2px 2px  gray;
-    transform: scale(1.02);
-
-
-}
+footer .derechosReservados {
+  margin-top: 3rem;
+  font-size: 1rem;
+  font-family: 'Port Lligat Sans', sans-serif; }
 
 /*declaramos media queries para tablet min 600px*/
+@media screen and (min-width: 600px) {
+  .contenedorComprar {
+    grid-template-rows: 0.1fr 0.4fr 0.4fr 0.4fr 0.4fr 0.1fr;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-areas: " tituloObjetos tituloObjetos tituloObjetos tituloObjetos" ". item-1 item-2 ." ". item-3 item-4 ." ". item-5 item-6 ." ". item-7 item-8 ." ". adquirir adquirir ."; }
+    .contenedorComprar .tituloObjetos {
+      font-size: 1.5rem; }
+  footer .derechosReservados {
+    margin-top: 3rem; } }
 
-@media screen and  (min-width:600px) {
+@media screen and (min-width: 1024px) {
+  .contenedorComprar {
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 0.1fr;
+    grid-template-columns: 10% 10% 30% 30% 10% 10%;
+    grid-template-areas: "tituloObjetos tituloObjetos tituloObjetos tituloObjetos tituloObjetos tituloObjetos" ". . item-1 item-2 . ." ". . item-3 item-4 . ." ". . item-5 item-6 . ." ". . item-7 item-8 . ." "adquirir adquirir adquirir adquirir adquirir adquirir"; }
+    .contenedorComprar .item-1, .contenedorComprar .item-2, .contenedorComprar .item-3, .contenedorComprar .item-4, .contenedorComprar .item-5, .contenedorComprar .item-6, .contenedorComprar .item-7, .contenedorComprar .item-8 {
+      justify-self: center;
+      width: 300px; } }
 
-    .contenedorComprar {
-        
-        grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
-        grid-template-columns: 10% 40% 40% 10%;
-        grid-template-areas: ". tituloObjetos tituloObjetos ."
-                             ". item-1 item-2 ."
-                             ". item-3 item-4 ."
-                             ". adquirir adquirir .";
-    
-        
-    
-        }
-    
-    .tituloObjetos {
-    
-        font-size: 1.5rem;
-        margin: 2rem 2rem;
-                
-        }
-        
-.derechosReservados {
-
-    margin-top: 3rem;
-}
-    
-
-}
-
-@media screen and  (min-width:1024px) {
-
-    .contenedorComprar {
-        /*height: 80vh;*/
-        grid-template-rows: 0.3fr 1fr 0.1fr;
-        grid-template-columns: 5% 22.5% 22.5% 22.5% 22.5% 5%;
-        grid-template-areas: ". tituloObjetos tituloObjetos tituloObjetos tituloObjetos ."
-                             ". item-1 item-2 item-3 item-4 ."
-                             ". adquirir adquirir adquirir adquirir.";
-
-    
-    
-        }
-
-
-}
-
- 
-
-  
 /* estilos contacto */
-/*MOBILE FIRST*/  
+/*MOBILE FIRST*/
+.contenedorContacto .tituloForm {
+  color: whitesmoke;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5rem;
+  margin: 2rem 2rem;
+  text-align: center; }
 
-.contenedorContacto {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-.tituloForm {
-
-    color: whitesmoke;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5rem;
-    margin: 2rem 2rem;
-    text-align: center;  
-
-}
-
-.formulario {
-
+.contenedorContacto .cuadroForm {
+  margin: 1rem; }
+  .contenedorContacto .cuadroForm .formulario {
     margin: 1rem;
     font-family: 'Port Lligat Sans', sans-serif;
     font-size: 1.2rem;
-    color: whitesmoke;
-   
-    
-}
+    color: whitesmoke; }
+    .contenedorContacto .cuadroForm .formulario .itemsForm {
+      margin-top: 1rem;
+      margin-left: 1rem;
+      font-family: 'Port Lligat Sans', sans-serif;
+      font-size: 1rem;
+      color: whitesmoke; }
+    .contenedorContacto .cuadroForm .formulario .itemsFormFinal {
+      margin-top: 4rem;
+      margin-left: 1rem;
+      font-family: 'Port Lligat Sans', sans-serif;
+      font-size: 1rem;
+      color: whitesmoke; }
 
-.itemsForm{
+.contenedorContacto .imagenesPie .comprarProd {
+  display: none; }
 
-    margin-top: 1rem;
-    margin-left: 1rem;
-    font-family: 'Port Lligat Sans', sans-serif;
-    font-size: 1rem;
-    color: whitesmoke;
-}
+.contenedorContacto .imagenesPie .adquirirProd {
+  padding: 1rem;
+  font-family: 'Port Lligat Sans', sans-serif;
+  font-size: 1rem;
+  color: whitesmoke;
+  text-align: center; }
 
-.itemsFormFinal{
-
-    margin-top: 4rem;
-    margin-left: 1rem;
-    font-family: 'Port Lligat Sans', sans-serif;
-    font-size: 1rem;
-    color: whitesmoke;
-}
-
-
-.cuadroForm {
-    margin: 1rem;
-    }
-
-.adquirirProd {
-
-    padding: 1rem;
-    font-family: 'Port Lligat Sans', sans-serif;
-    font-size: 1rem;
-    color: whitesmoke;
-    text-align: center;
-}
-
-.comprarProd {
-
-    display: none;
-    
-}
-
-.logoOffice {
-
-    display: none;
-    
-}
-
-
-@media screen and  (min-width:600px) {
-
-.imagenesPie {
-
+@media screen and (min-width: 600px) {
+  .imagenesPie {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
-        }
+    align-items: center; }
+    .imagenesPie .comprarProd {
+      display: block; }
+    .imagenesPie .adquirirProd {
+      width: 40%; } }
 
-.comprarProd {
-
-    display: block;
-    
-}
-
-.adquirirProd {
-
-    width: 40%;
-    
-}
-
-
-}
-
-@media screen and  (min-width:1024px) {
-
-.imagenesPie {
-
+@media screen and (min-width: 1024px) {
+  .imagenesPie {
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    }
-
-
-}
-
+    align-items: center; } }
 
 /* estilos mejores momentos */
-/*MOBILE FIRST*/  
-
-.tituloEscenas, .tituloMemes {
-
-    color: whitesmoke;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5rem;
-    margin: 2rem 2rem;
-    text-align: center;  
-
-}
-
-.escenaUno, .escenaDos, .escenaTres {
-
-    padding-bottom: 2rem;
-    padding-top: 1rem;
-    justify-self: left;
-    
-}
-
-h3 {
-    font-family: 'Port Lligat Sans', sans-serif;
-    font-size: 1.2rem;
-    color: whitesmoke;
-    margin-top: 0.6rem;
-    margin-bottom: 0.6rem;
-    text-align: left;
-}
-
-
-h4 {
-    font-family: 'Port Lligat Sans', sans-serif;
-    font-size: 1rem;
-    color: whitesmoke;
-    margin-top: 0.6rem;
-    margin-bottom: 0.6rem;
-    text-align: left; 
-}
-
-.verOnline {
-
-    font-size: 0.8rem;
-    display: inline-block;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    border: none solid 1rem;
-    border-radius: 0.5rem;
-    padding: 0.9rem;
-    background-color: rgb(115, 73, 133);
-    align-items: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.verOnline:hover {
-
-    background-color: rgb(106, 68, 122);
-    transform: scale(1.05)
-}
-
-
+/*MOBILE FIRST*/
 .contenedorMomentos {
-
-    width: 100%;
-    display: grid;
-    grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 0.1fr 0.1fr 0.2fr 0.1fr 0.2fr 0.1fr 0.2fr 0.1fr 0.2fr 0.2fr 0.2fr;
-    column-gap: 0;
-    grid-template-areas: ". tituloEscenas ."
-                         ". escenaUno ."
-                         ". cajaVideoUno ."
-                         ". escenaDos ."
-                         ". cajaVideoDos ."
-                         ". escenaTres ."
-                         ". cajaVideoTres ."
-                         ". tituloMemes ."
-                         ". cajaMemeUno ."
-                         ". cajaMemeDos . "
-                         ". cajaMemeTres ."
-                        
-                         ;
-
-    /*justify-content: center;*/
-    /*align-items: center;*/
-
-}
-
-.tituloEscenas {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 0.2fr 0.1fr 0.2fr 0.1fr 0.2fr 0.1fr 0.2fr 0.1fr 0.2fr 0.2fr 0.2fr;
+  column-gap: 0;
+  grid-template-areas: ". tituloEscenas ." ". escenaUno ." ". cajaVideoUno ." ". escenaDos ." ". cajaVideoDos ." ". escenaTres ." ". cajaVideoTres ." ". tituloMemes ." ". cajaMemeUno ." ". cajaMemeDos . " ". cajaMemeTres ."; }
+  .contenedorMomentos .tituloEscenas {
     grid-area: tituloEscenas;
-
-}
-.escenaUno {
+    color: whitesmoke;
+    font-family: 'Bree Serif', serif;
+    font-size: 2.2rem;
+    margin-top: 7rem;
+    text-align: center; }
+  .contenedorMomentos .escenaUno {
     grid-area: escenaUno;
-   
-   
-}
-
-.cajaVideoUno {
-
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    justify-self: left; }
+    .contenedorMomentos .escenaUno h2 {
+      font-family: 'Bree Serif', serif;
+      font-size: 1.2rem;
+      color: whitesmoke;
+      margin-top: 0.6rem;
+      margin-bottom: 0.3rem;
+      text-align: left; }
+    .contenedorMomentos .escenaUno h3 {
+      font-family: 'Bree Serif', serif;
+      font-size: 0.8rem;
+      color: whitesmoke;
+      margin-bottom: 0.6rem;
+      text-align: left; }
+    .contenedorMomentos .escenaUno .verOnline {
+      font-size: 0.8rem;
+      display: inline-block;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      border: none solid 1rem;
+      border-radius: 0.5rem;
+      padding: 0.5rem 0.7rem;
+      background-color: #734985;
+      align-items: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+      .contenedorMomentos .escenaUno .verOnline :hover {
+        background-color: #6a447a;
+        transform: scale(1.05); }
+      .contenedorMomentos .escenaUno .verOnline a {
+        color: whitesmoke;
+        text-decoration: none;
+        font-family: 'NTR', sans-serif;
+        font-variant-caps: all-small-caps; }
+  .contenedorMomentos .cajaVideoUno {
     grid-area: cajaVideoUno;
-   
-}
-
-.escenaDos {
-    grid-area: escenaDos ;
-
-}
-
-.cajaVideoDos {
-
-    grid-area: cajaVideoDos;
-}
-
-
-.escenaTres {
-    grid-area: escenaTres ;
-
-}
-.cajaVideoTres {
-
-    grid-area: cajaVideoTres;
-}
-
-.tituloMemes {
-    grid-area: tituloMemes ;
-
-}
-
-.cajaMemeUno {
-    grid-area: cajaMemeUno ;
-
-}
-
-.cajaMemeDos {
-    grid-area: cajaMemeDos ;
-
-}
-
-.cajaMemeTres {
-    grid-area: cajaMemeTres ;
-
-}
-
-.cajaVideoUno, .cajaVideoDos, .cajaVideoTres {
-
     width: 300px;
     height: 200px;
     overflow-y: auto;
     overflow-x: auto;
     resize: both;
     position: relative;
-    z-index: 2;
-}
-
-.videoUno, .videoDos, .videoTres {
-
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-
-.textoMemeUno, .textoMemeDos, .textoMemeTres {
-    
-    text-align: left;     
-    font-size: small;     
-    background-color: whitesmoke;
-    padding: 0.6rem;
-    color: black;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 100%;
-    display: inline-block;
-    margin-top: 1rem;
-}
-
-
-@media screen and  (min-width:600px) {
-
-.contenedorMomentos {
-
-        grid-template-columns: 20% 60% 20%;
-    
-    }
-
-.escenaUno, .escenaDos, .escenaTres {
-
-    justify-self: left;
-
-}
-
-h3 {
-    font-size: 1.6rem;
-        
-    }
-    
-    
-h4 {
-    font-size: 1.3rem;
-    }
-
-.memeUno, .memeTres {
-
-    display: flex;
-    flex-direction: row;
-    column-gap: 0.6rem;
-  
-}
-
-
-.memeDos {
-    display: flex;
-    flex-direction: row-reverse;
-    column-gap: 0.6rem;
-   
-}
-
-.tenor-gif-embed {
-
-    
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.textoMemeUno {
-    
-   height: 100%;
-   padding-bottom: 2.4rem;
-}
-
-.textoMemeDos {
-    
-    height: 100%;
-    padding-bottom: 0.9rem;
-    margin-top: 0.2rem;
- }
-
-.textoMemeTres {
-    
-    height: 100%;
-    padding-bottom: 2rem;
-    margin-top: 0;
- }
- 
-
-.cajaMemeUno, .cajaMemeDos, .cajaMemeTres {
-
-    margin-top: 3rem;
-}
-
-
-.derechosReservados {
-
-    margin-top: 10rem;
-}
-
-.cajaVideoUno, .cajaVideoDos, .cajaVideoTres {
-
-    width: 500px;
-    height: 350px;
+    z-index: 2; }
+    .contenedorMomentos .cajaVideoUno .videoUno {
+      width: 100%;
+      height: 100%;
+      border: none; }
+  .contenedorMomentos .escenaDos {
+    grid-area: escenaDos;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    justify-self: left; }
+    .contenedorMomentos .escenaDos h2 {
+      font-family: 'Bree Serif', serif;
+      font-size: 1.2rem;
+      color: whitesmoke;
+      margin-top: 0.6rem;
+      margin-bottom: 0.3rem;
+      text-align: left; }
+    .contenedorMomentos .escenaDos h3 {
+      font-family: 'Bree Serif', serif;
+      font-size: 0.8rem;
+      color: whitesmoke;
+      margin-bottom: 0.6rem;
+      text-align: left; }
+    .contenedorMomentos .escenaDos .verOnline {
+      font-size: 0.8rem;
+      display: inline-block;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      border: none solid 1rem;
+      border-radius: 0.5rem;
+      padding: 0.5rem 0.7rem;
+      background-color: #734985;
+      align-items: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+      .contenedorMomentos .escenaDos .verOnline :hover {
+        background-color: #6a447a;
+        transform: scale(1.05); }
+      .contenedorMomentos .escenaDos .verOnline a {
+        color: whitesmoke;
+        text-decoration: none;
+        font-family: 'NTR', sans-serif;
+        font-variant-caps: all-small-caps; }
+  .contenedorMomentos .cajaVideoDos {
+    grid-area: cajaVideoDos;
+    width: 300px;
+    height: 200px;
     overflow-y: auto;
     overflow-x: auto;
     resize: both;
     position: relative;
-    z-index: 2;
-}
+    z-index: 2; }
+    .contenedorMomentos .cajaVideoDos .videoDos {
+      width: 100%;
+      height: 100%;
+      border: none; }
+  .contenedorMomentos .escenaTres {
+    grid-area: escenaTres;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    justify-self: left; }
+    .contenedorMomentos .escenaTres h2 {
+      font-family: 'Bree Serif', serif;
+      font-size: 1.2rem;
+      color: whitesmoke;
+      margin-top: 0.6rem;
+      margin-bottom: 0.3rem;
+      text-align: left; }
+    .contenedorMomentos .escenaTres h3 {
+      font-family: 'Bree Serif', serif;
+      font-size: 0.8rem;
+      color: whitesmoke;
+      margin-bottom: 0.6rem;
+      text-align: left; }
+    .contenedorMomentos .escenaTres .verOnline {
+      font-size: 0.8rem;
+      display: inline-block;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      border: none solid 1rem;
+      border-radius: 0.5rem;
+      padding: 0.5rem 0.7rem;
+      background-color: #734985;
+      align-items: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+      .contenedorMomentos .escenaTres .verOnline :hover {
+        background-color: #6a447a;
+        transform: scale(1.05); }
+      .contenedorMomentos .escenaTres .verOnline a {
+        color: whitesmoke;
+        text-decoration: none;
+        font-family: 'NTR', sans-serif;
+        font-variant-caps: all-small-caps; }
+  .contenedorMomentos .cajaVideoTres {
+    grid-area: cajaVideoTres;
+    width: 300px;
+    height: 200px;
+    overflow-y: auto;
+    overflow-x: auto;
+    resize: both;
+    position: relative;
+    z-index: 2; }
+    .contenedorMomentos .cajaVideoTres .videoTres {
+      width: 100%;
+      height: 100%;
+      border: none; }
+  .contenedorMomentos .tituloMemes {
+    grid-area: tituloMemes;
+    color: whitesmoke;
+    font-family: 'Bree Serif', serif;
+    font-size: 2.2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center; }
+  .contenedorMomentos .cajaMemeUno {
+    grid-area: cajaMemeUno; }
+    .contenedorMomentos .cajaMemeUno h2 {
+      font-family: 'Bree Serif', serif;
+      font-size: 1.2rem;
+      color: whitesmoke;
+      margin-top: 0.6rem;
+      margin-bottom: 0.3rem;
+      text-align: left; }
+    .contenedorMomentos .cajaMemeUno h3 {
+      font-family: 'Bree Serif', serif;
+      font-size: 0.8rem;
+      color: whitesmoke;
+      margin-bottom: 0.6rem;
+      text-align: left; }
+    .contenedorMomentos .cajaMemeUno .memeUno .textoMemeUno {
+      text-align: justify;
+      color: whitesmoke;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      width: 100%;
+      display: inline-block;
+      font-size: 0.8rem;
+      margin-bottom: 3rem; }
+  .contenedorMomentos .cajaMemeDos {
+    grid-area: cajaMemeDos; }
+    .contenedorMomentos .cajaMemeDos h2 {
+      font-family: 'Bree Serif', serif;
+      font-size: 1.2rem;
+      color: whitesmoke;
+      margin-top: 0.6rem;
+      margin-bottom: 0.3rem;
+      text-align: left; }
+    .contenedorMomentos .cajaMemeDos h3 {
+      font-family: 'Bree Serif', serif;
+      font-size: 0.8rem;
+      color: whitesmoke;
+      margin-bottom: 0.6rem;
+      text-align: left; }
+    .contenedorMomentos .cajaMemeDos .memeDos .textoMemeDos {
+      text-align: justify;
+      color: whitesmoke;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      width: 100%;
+      display: inline-block;
+      font-size: 0.8rem;
+      margin-bottom: 3rem;
+      margin-top: 1rem; }
+  .contenedorMomentos .cajaMemeTres {
+    grid-area: cajaMemeTres; }
+    .contenedorMomentos .cajaMemeTres h2 {
+      font-family: 'Bree Serif', serif;
+      font-size: 1.2rem;
+      color: whitesmoke;
+      margin-top: 0.6rem;
+      margin-bottom: 0.3rem;
+      text-align: left; }
+    .contenedorMomentos .cajaMemeTres h3 {
+      font-family: 'Bree Serif', serif;
+      font-size: 0.8rem;
+      color: whitesmoke;
+      margin-bottom: 0.6rem;
+      text-align: left; }
+    .contenedorMomentos .cajaMemeTres .memeTres .textoMemeTres {
+      color: whitesmoke;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      width: 100%;
+      display: inline-block;
+      font-size: 0.8rem;
+      margin-bottom: 3rem;
+      margin-top: 1rem;
+      text-align: justify; }
 
-.videoUno, .videoDos, .videoTres {
+@media screen and (min-width: 600px) {
+  .contenedorMomentos {
+    grid-template-columns: 20% 60% 20%; }
+    .contenedorMomentos .cajaVideoUno {
+      width: 500px;
+      height: 350px;
+      max-width: 660;
+      max-height: 450px; }
+    .contenedorMomentos .cajaVideoDos {
+      width: 500px;
+      height: 350px;
+      max-width: 660px;
+      max-height: 450px; }
+    .contenedorMomentos .cajaVideoTres {
+      width: 500px;
+      height: 350px;
+      max-width: 660px;
+      max-height: 450px; }
+    .contenedorMomentos .cajaMemeUno {
+      margin-top: 3rem; }
+      .contenedorMomentos .cajaMemeUno .memeUno {
+        display: flex;
+        flex-direction: row;
+        column-gap: 0.6rem;
+        align-items: flex-start;
+        margin-top: 2rem; }
+        .contenedorMomentos .cajaMemeUno .memeUno .tenor-gif-embed {
+          width: 100%;
+          height: 100%; }
+        .contenedorMomentos .cajaMemeUno .memeUno .textoMemeUno {
+          height: 100%;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          text-align: justify; }
+    .contenedorMomentos .cajaMemeDos {
+      margin-top: 3rem; }
+      .contenedorMomentos .cajaMemeDos .memeDos {
+        display: flex;
+        flex-direction: row-reverse;
+        column-gap: 0.6rem;
+        align-items: flex-start;
+        margin-top: 2rem; }
+        .contenedorMomentos .cajaMemeDos .memeDos .tenor-gif-embed {
+          width: 100%;
+          padding: 0;
+          margin: 0; }
+        .contenedorMomentos .cajaMemeDos .memeDos .textoMemeDos {
+          height: 100%;
+          padding-right: 0.9rem;
+          margin-top: 0;
+          text-align: justify; }
+    .contenedorMomentos .cajaMemeTres {
+      margin-top: 3rem; }
+      .contenedorMomentos .cajaMemeTres .memeTres {
+        display: flex;
+        flex-direction: row;
+        column-gap: 0.6rem;
+        align-items: flex-start;
+        margin-top: 2rem; }
+        .contenedorMomentos .cajaMemeTres .memeTres .tenor-gif-embed {
+          width: 100%;
+          padding: 0;
+          margin: 0; }
+        .contenedorMomentos .cajaMemeTres .memeTres .textoMemeTres {
+          height: 100%;
+          padding-left: 0.9rem;
+          margin-top: 0;
+          text-align: justify; }
+  .derechosReservados {
+    margin-top: 10rem; } }
 
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-}
-
-@media screen and  (min-width:1024px) {
-
-
-.cajaVideoUno, .cajaVideoDos, .cajaVideoTres {
-
+@media screen and (min-width: 1024px) {
+  .escenaUno {
+    justify-self: center; }
+  .cajaVideoUno {
     width: 600px;
     height: 400px;
-    overflow-y: auto;
-    overflow-x: auto;
-    resize: both;
-    position: relative;
-    z-index: 2;
-
-    }
-    
-    .videoUno, .videoDos, .videoTres {
-    
-    width: 100%;
-    height: 100%;
-    border: none;
-
-    }
-
-.textoMemeUno {
-    
-    
-    padding-bottom: 4.5rem;
-    }
-     
-.textoMemeDos {
-         
-    padding-bottom: 4.1rem;
-    
-    }
-         
-}
-
-/*FALTA DECLARAR LAS IFRAMES EN MEJORES MOMENTEOS*/
-
-
-/* estilos temporadas*/
-
-
+    justify-self: center; }
+  .escenaDos {
+    justify-self: center; }
+  .cajaVideoDos {
+    width: 600px;
+    height: 400px;
+    justify-self: center; }
+  .escenaTres {
+    justify-self: center; }
+  .cajaVideoTres {
+    width: 600px;
+    height: 400px;
+    justify-self: center; } }
 
 /*estilos personajes*/
 /*MOBILE FIRST*/
+body .menu-principal {
+  height: 80px; }
 
-.contenedorPersonajes {
-
-    width: 100%;
-    display: grid;
-    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr;
-    grid-template-columns: 15% 70% 15%;
-    grid-template-areas: ". tituloPersonajesSec . "
-                         " todosPersonajes todosPersonajes todosPersonajes"
-                         ". persUno ."
-                         ". persDos ."
-                         ". persTres ."
-                         ". persCuatro ."
-                         " . masPersonajesSec . "
-                         ". persCinco ."
-                         ". persSeis ."
-                         ". persSiete ."
-                         ". persOcho ."
-                         
-                         ;
-    justify-content: center;
-  
-    
-}
-
-.tituloPersonajesSec {
-
-    grid-area: tituloPersonajesSec;
-        
-}
-
-.todosPersonajes {
-
-    grid-area: todosPersonajes;
-           
-}
-
-.personajesGeneral {
-
-    width: 100%;
-    height: 100%;
-}
-
-.persUno {
-
+body .contenedorPersonajes {
+  /* background-color: rgba(37, 36, 36, 0.897);*/
+  width: 100%;
+  display: grid;
+  grid-template-rows: 0.4fr 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.25fr 0.6fr 0.6fr 0.6fr 0.6fr;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-areas: " fotoGral fotoGral fotoGral" ". titulo . " ". persUno ." ". persDos ." ". persTres ." ". persCuatro ." " . masPersonajesSec . " ". persCinco ." ". persSeis ." ". persSiete ." ". persOcho .";
+  justify-content: center; }
+  body .contenedorPersonajes .fotoGral {
+    grid-area: fotoGral;
+    margin-bottom: 2rem; }
+    body .contenedorPersonajes .fotoGral img {
+      width: 100%;
+      height: 100%; }
+  body .contenedorPersonajes .titulo {
+    grid-area: titulo;
+    color: whitesmoke;
+    font-family: 'Bree Serif', serif;
+    font-size: 1.5rem;
+    margin: 0.8rem 0.8rem;
+    text-align: center; }
+  body .contenedorPersonajes .persUno {
     grid-area: persUno;
-    justify-self: center;  
-}
-
-.persDos {
+    justify-self: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: double #a3a1a1 0.5px;
+    margin-top: 2rem;
+    max-width: 500px; }
+    body .contenedorPersonajes .persUno .personajesPrinc {
+      overflow: hidden;
+      width: 100%;
+      height: 75%;
+      opacity: 0.8;
+      max-width: 500px; }
+      body .contenedorPersonajes .persUno .personajesPrinc .michael {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+        object-fit: cover;
+        padding: 0.5rem;
+        max-width: 500px; }
+    body .contenedorPersonajes .persUno div h2 {
+      font-family: 'Bree Serif', serif;
+      font-size: 1.3rem;
+      margin-top: 0.6rem;
+      padding: 0.3rem;
+      text-align: center;
+      color: whitesmoke;
+      justify-content: center; }
+  body .contenedorPersonajes .persDos {
     grid-area: persDos;
-    
-}
-
-.persTres {
+    justify-self: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: double #a3a1a1 0.5px;
+    margin-top: 2rem;
+    max-width: 500px; }
+    body .contenedorPersonajes .persDos .personajesPrinc {
+      overflow: hidden;
+      width: 100%;
+      height: 75%;
+      opacity: 0.8;
+      max-width: 500px; }
+      body .contenedorPersonajes .persDos .personajesPrinc .dwight {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+        object-fit: cover;
+        padding: 0.5rem;
+        max-width: 500px; }
+    body .contenedorPersonajes .persDos div h2 {
+      font-family: 'Bree Serif', serif;
+      font-size: 1.3rem;
+      margin-top: 0.6rem;
+      padding: 0.3rem;
+      text-align: center;
+      color: whitesmoke;
+      justify-content: center; }
+  body .contenedorPersonajes .persTres {
     grid-area: persTres;
-   
-}
-.persCuatro {
-
+    justify-self: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: double #a3a1a1 0.5px;
+    margin-top: 2rem;
+    max-width: 500px; }
+    body .contenedorPersonajes .persTres .personajesPrinc {
+      overflow: hidden;
+      width: 100%;
+      height: 75%;
+      opacity: 0.8;
+      max-width: 500px; }
+      body .contenedorPersonajes .persTres .personajesPrinc .jim {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+        object-fit: cover;
+        padding: 0.5rem;
+        max-width: 500px; }
+    body .contenedorPersonajes .persTres div h2 {
+      font-family: 'Bree Serif', serif;
+      font-size: 1.3rem;
+      margin-top: 0.6rem;
+      padding: 0.3rem;
+      text-align: center;
+      color: whitesmoke;
+      justify-content: center; }
+  body .contenedorPersonajes .persCuatro {
     grid-area: persCuatro;
-}
-
-.persCinco {
-    grid-area: persCinco;
-  
-}
-.persSeis {
-    grid-area: persSeis;
-  
-}
-.persSiete {
-    grid-area: persSiete;
-}
-
-.persOcho {
-    grid-area: persOcho;
-  
-}
-
-.angela, .meredith, .ryan, .toby {
-
+    justify-self: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 100%;
-}
-  
-.masPersonajesSec {
-
+    border: double #a3a1a1 0.5px;
+    margin-top: 2rem;
+    max-width: 500px; }
+    body .contenedorPersonajes .persCuatro .personajesPrinc {
+      overflow: hidden;
+      width: 100%;
+      height: 75%;
+      opacity: 0.8;
+      max-width: 500px; }
+      body .contenedorPersonajes .persCuatro .personajesPrinc .pam {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+        object-fit: cover;
+        padding: 0.5rem;
+        max-width: 500px; }
+    body .contenedorPersonajes .persCuatro div h2 {
+      font-family: 'Bree Serif', serif;
+      font-size: 1.3rem;
+      margin-top: 0.6rem;
+      padding: 0.3rem;
+      text-align: center;
+      color: whitesmoke;
+      justify-content: center; }
+  body .contenedorPersonajes .masPersonajesSec {
     grid-area: masPersonajesSec;
-}
-
-.tituloPersonajesSec, .masPersonajesSec { 
-    color: whitesmoke;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5rem;
-    margin: 0.5rem 0.5rem;
-    text-align: center;  
-
-}
-
-.personajesPrinc {
-
+    color: #4d4a4a;
+    margin: 0.8rem 0.8rem;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-size: 1.5rem; }
+  body .contenedorPersonajes .persCinco {
+    grid-area: persCinco;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    width:100%;
-    height:75%;
-}
-
-.personajesSec {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    width:100%;
-    height:75%;
-}
-
-.dwight, .michael, .jim, .pam {
-
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-    object-fit: cover;
-}
-
-.dwight:hover {
-
-    transform: scale(1.05);
-}
-
-.michael:hover {
-
-    transform: scale(1.05);
-}
-.jim:hover {
-
-    transform: scale(1.05);
-}
-.pam:hover {
-
-    transform: scale(1.05);
-}
- .sinopsisPersonajePrinc {
-
-    color: whitesmoke;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 0.8rem;
-    margin: 0.5rem 0.5rem;
-    text-align: justify; 
-   
-
-}
-
-.sinopsisPersonajeSec {
-
-    font-size: 0.6rem;
-    color: whitesmoke;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0.5rem 0.5rem;
-    text-align: justify; 
-    
-}
-
-.persUno, .persDos, .persTres, .persCuatro {
-
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-
-main div h3 {
-
-    margin-top: 1rem;
-   
-}
-
-
-
-@media screen and  (min-width:600px) {
-
-    .contenedorPersonajes {
-
-    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.2fr 0.4fr 0.4fr;
-    grid-template-columns: 10% 40% 40% 10%;
-    grid-template-areas: ". tituloPersonajesSec tituloPersonajesSec . "
-                         " todosPersonajes todosPersonajes todosPersonajes todosPersonajes"
-                         ". persUno persUno ."
-                         ". persDos persDos ."
-                         ". persTres persTres ."
-                         ". persCuatro persCuatro ."
-                         ". masPersonajesSec masPersonajesSec ."
-                         ". persCinco persSeis ."
-                         ". persSiete persOcho ."                     
-                         ;
-
-    justify-content: center;
-    align-items: center
-  
-
-    }
-
-    h3 {
-
-        margin: 1rem;
-    }
-
-    .sec {
-        display: none;
-    }
-
-
-    .personajesPrinc {
-        
-        width:100%;
-        height:100%;
-    }
-
-    .angela, .meredith, .toby, .ryan { 
-        
-        padding: 1rem;
-        width: 100%;  
-        transition: all 500ms ease-out;
-
-    }
-
-    .sinopsisPersonajePrinc {
-    
-        padding: 0.6rem;
-        margin-top: 1rem;
-        font-size: 1rem; 
-        color: whitesmoke;
-    }
-
-    .personajesSec {
-
-        width: 100%;
-        max-width: 600px;
-        position: relative;
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        transition: all 500ms ease-out;
-        
-    }
-
-    .personajesSec:hover {
-
+    margin-top: 2rem;
+    width: 100%; }
+    body .contenedorPersonajes .persCinco .personajesSec {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      height: 100%;
+      max-width: 280px;
+      position: relative;
+      transition: all 500ms ease-out; }
+      body .contenedorPersonajes .persCinco .personajesSec :hover {
         opacity: 0.4;
-        transition: all 500ms ease-out;
-        
-    }
-
-   .sinopsisPersonajeSec {
-
-    color: whitesmoke;
-    position: absolute;
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 0.5rem;
-    transition: all 500ms ease-out;
-    opacity: 0;
-   }
-
-   .sinopsisPersonajeSec:hover {
-    
-    cursor: auto;
-    opacity: 1;
-    color: whitesmoke;
-    
-   } 
-
-}
-
-@media screen and (min-width:1024px) {
-
-   .contenedorPersonajes {
-
+        transition: all 500ms ease-out; }
+      body .contenedorPersonajes .persCinco .personajesSec .angela {
         width: 100%;
-        grid-template-rows: 0.1fr 0.5fr 0.5fr 0.3fr 0.3fr 0.3fr;
-        grid-template-columns: 15% 35% 35% 15%;
-        grid-template-areas: ". tituloPersonajesSec tituloPersonajesSec . "
-                             ". persUno persDos ."
-                             ". persTres persCuatro ."
-                             ". masPersonajesSec masPersonajesSec ."
-                             ". persCinco persSeis ." 
-                             ". persSiete persOcho ."
-                             
-                             ;
-    
-        justify-content: center;
-        column-gap: 1rem;
-    
-    }
-
-    .tituloPersonajesSec {
-
-        margin-top: 2rem;
-        margin-bottom: 4rem;
-        font-size: 1.7rem;
-            
-    }        
-
-    .masPersonajesSec {
-
-        margin-top: 2rem;
-        margin-bottom: 4rem;
-            
-    }        
-
-main div div div p {
-
-    color: whitesmoke;
-
-}
-
-
-}
-
-/*Estilos Menu Bootstrap*/
-
-.texto-1 {
-
-    color: whitesmoke;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
-    text-align: center;  
-    width: 100%;
-    
-}
-
-.card-title {
-
-    font-family: 'Port Lligat Sans', sans-serif;
-    font-size: 1.2rem;
-    color: whitesmoke;
-    margin-top: 0.6rem;
-    margin-bottom: 0.6rem;
-    text-align: center;
-    
-
-
-}
-
-.card-text {
-
-    font-family: 'Port Lligat Sans', sans-serif;
-    font-size: 1rem;
-    color: whitesmoke;
-    margin-top: 0.6rem;
-    margin-bottom: 0.6rem;
-    text-align: justify; 
-
-
-}
-
-.btn {
-
-    margin-top: 0.5rem;
-    margin-bottom: 2rem;
-    background-color: rgb(115, 73, 133);
-    border: 1px solid rgb(115, 73, 133); ;
-}
-
-
-.bloque-temp {
-
+        height: 75%; }
+      body .contenedorPersonajes .persCinco .personajesSec .sinopsisAngela {
+        color: whitesmoke;
+        position: absolute;
+        font-size: 1.1rem;
+        font-family: 'Bree Serif', serif;
+        text-align: center;
+        padding: 0.5rem;
+        width: 70%;
+        transition: all 500ms ease-out;
+        opacity: 0; }
+        body .contenedorPersonajes .persCinco .personajesSec .sinopsisAngela :hover {
+          cursor: auto;
+          opacity: 1;
+          color: whitesmoke; }
+    body .contenedorPersonajes .persCinco h3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 0.85rem;
+      width: 100%;
+      text-align: justify;
+      position: relative;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin-top: 0; }
+  body .contenedorPersonajes .persSeis {
+    grid-area: persSeis;
     display: flex;
     flex-direction: column;
-    
-}
-
-/*Estilos Temporada Uno - 
-MOBILES FIRST*/
-
-body {
-
-    height: auto;
-}
-
-
-.contenedorTempUno {
-
-    display: grid;
-    width: 100%;
-    grid-template-columns: 33.33% 33.33% 33.33% ;
-    grid-template-rows: 0.2fr 0.3fr 0.6fr 0.1fr;
-    grid-template-areas: "imagenFondo imagenFondo imagenFondo"
-                         ". tempUno ."
-                         "cajaSinopsis cajaSinopsis cajaSinopsis"
-                         "verMasTemporadas verMasTemporadas verMasTemporadas ";
-
-    
-                        
-                     
-}
-
-.imagenFondo img{
-
-    width: 100%;    
-    position: relative;  
-
-}
-
-
- .temporadaUno img{
-
-    position: absolute;
-    width: 30%;
-    top: 200px;
-    z-index: 0;
-    }
-
-  
-.imagenFondo {
-
-    grid-area: imagenFondo;
-}
-
-.tempUno {
-
-    grid-area: tempUno;
-    
-}
-
-.cajaSinopsis {
-
-    grid-area: cajaSinopsis;
-}
-
-.verMasTemporadas {
-
-    grid-area: verMasTemporadas;
-}
-
-
-
-.cajaSinopsis {
-
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    margin-top: 6rem;
-    
-}
-
-.sinopsisTemporada p{
-
-    
-    width: 200px;
-    text-align: justify;
-    color: whitesmoke;
-    font-size: 0.7rem;
-    justify-self: center;
-    margin-bottom: 5rem;
-
-}
-
-
-footer {
-
-    margin-bottom: 1rem;
-}
-
-
-
-
-@media screen and (min-width:600px) {
-
-
-    .sinopsisTemporada p{
-
-    
-        width: 400px;
-        font-size: 1rem;
-        margin-top: 2rem;
-        margin-bottom: 5rem;
-    
-    }
-
-    .derechosReservados {
-
-        margin-top: 1rem;
-    }
-
-}
-
-
-@media screen and (min-width:1024px) {
-
-.temporadaUno img {
-
-    width: 20%;
-    top: 300px;
-    align-items: center;
     justify-content: center;
-    
-}
+    margin-top: 2rem;
+    width: 100%; }
+    body .contenedorPersonajes .persSeis .personajesSec {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      height: 100%;
+      max-width: 280px;
+      position: relative;
+      transition: all 500ms ease-out; }
+      body .contenedorPersonajes .persSeis .personajesSec :hover {
+        opacity: 0.4;
+        transition: all 500ms ease-out; }
+      body .contenedorPersonajes .persSeis .personajesSec .meredith {
+        width: 100%;
+        height: 75%; }
+      body .contenedorPersonajes .persSeis .personajesSec .sinopsisMeredith {
+        color: whitesmoke;
+        position: absolute;
+        font-size: 1.1rem;
+        font-family: 'Bree Serif', serif;
+        text-align: center;
+        padding: 0.5rem;
+        width: 70%;
+        transition: all 500ms ease-out;
+        opacity: 0; }
+        body .contenedorPersonajes .persSeis .personajesSec .sinopsisMeredith :hover {
+          cursor: auto;
+          opacity: 1;
+          color: whitesmoke; }
+    body .contenedorPersonajes .persSeis h3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 0.85rem;
+      width: 100%;
+      text-align: justify;
+      position: relative;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin-top: 0; }
+  body .contenedorPersonajes .persSiete {
+    grid-area: persSiete;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%; }
+    body .contenedorPersonajes .persSiete .personajesSec {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      height: 100%;
+      max-width: 280px;
+      position: relative;
+      transition: all 500ms ease-out; }
+      body .contenedorPersonajes .persSiete .personajesSec :hover {
+        opacity: 0.4;
+        transition: all 500ms ease-out; }
+      body .contenedorPersonajes .persSiete .personajesSec .ryan {
+        width: 100%;
+        height: 75%; }
+      body .contenedorPersonajes .persSiete .personajesSec .sinopsisRyan {
+        color: whitesmoke;
+        position: absolute;
+        font-size: 1.1rem;
+        font-family: 'Bree Serif', serif;
+        text-align: center;
+        padding: 0.5rem;
+        width: 70%;
+        transition: all 500ms ease-out;
+        opacity: 0; }
+        body .contenedorPersonajes .persSiete .personajesSec .sinopsisRyan :hover {
+          cursor: auto;
+          opacity: 1;
+          color: whitesmoke; }
+    body .contenedorPersonajes .persSiete h3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 0.85rem;
+      width: 100%;
+      text-align: justify;
+      position: relative;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin-top: 0; }
+  body .contenedorPersonajes .persOcho {
+    grid-area: persOcho;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%; }
+    body .contenedorPersonajes .persOcho .personajesSec {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      height: 100%;
+      max-width: 280px;
+      position: relative;
+      transition: all 500ms ease-out; }
+      body .contenedorPersonajes .persOcho .personajesSec :hover {
+        opacity: 0.4;
+        transition: all 500ms ease-out; }
+      body .contenedorPersonajes .persOcho .personajesSec .toby {
+        width: 100%;
+        height: 75%; }
+      body .contenedorPersonajes .persOcho .personajesSec .sinopsisToby {
+        color: whitesmoke;
+        position: absolute;
+        font-size: 1.1rem;
+        font-family: 'Bree Serif', serif;
+        text-align: center;
+        padding: 0.5rem;
+        width: 70%;
+        transition: all 500ms ease-out;
+        opacity: 0; }
+        body .contenedorPersonajes .persOcho .personajesSec .sinopsisToby :hover {
+          cursor: auto;
+          opacity: 1;
+          color: whitesmoke; }
+    body .contenedorPersonajes .persOcho h3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 0.85rem;
+      width: 100%;
+      text-align: justify;
+      position: relative;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin-top: 0; }
 
-.derechosReservados {
+@media screen and (min-width: 600px) {
+  body .contenedorPersonajes {
+    grid-template-rows: 0.5fr 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr;
+    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-areas: " fotoGral fotoGral fotoGral fotoGral" ". titulo titulo . " ". persUno persUno ." ". persDos persDos ." ". persTres persTres ." ". persCuatro persCuatro ." ". masPersonajesSec masPersonajesSec ." ". persCinco persCinco ." ". persSeis persSeis ." ". persSiete persSiete ."   ". persOcho persOcho .";
+    justify-content: center;
+    align-items: center; }
+    body .contenedorPersonajes .titulo {
+      font-size: 2.1rem; }
+    body .contenedorPersonajes div div h2 {
+      font-size: 1.7rem;
+      margin-top: 1.5rem; }
+    body .contenedorPersonajes .masPersonajesSec {
+      font-size: 2.1rem; }
+    body .contenedorPersonajes .persCinco .personajesSec {
+      width: 100%;
+      max-width: 600px; }
+      body .contenedorPersonajes .persCinco .personajesSec .angela {
+        padding-right: 3rem;
+        padding-left: 3rem; }
+      body .contenedorPersonajes .persCinco .personajesSec .sinopsisAngela {
+        font-size: 1.5rem; }
+    body .contenedorPersonajes .persCinco h3 {
+      padding-left: 3rem;
+      margin-top: 0.8rem;
+      margin-left: 0;
+      padding-right: 3rem; }
+    body .contenedorPersonajes .persSeis .personajesSec {
+      width: 100%;
+      max-width: 600px; }
+      body .contenedorPersonajes .persSeis .personajesSec .meredith {
+        padding-right: 3rem;
+        padding-left: 3rem; }
+      body .contenedorPersonajes .persSeis .personajesSec .sinopsisMeredith {
+        font-size: 1.5rem; }
+    body .contenedorPersonajes .persSeis h3 {
+      padding-left: 3rem;
+      margin-top: 0.8rem;
+      margin-left: 0;
+      padding-right: 3rem; }
+    body .contenedorPersonajes .persSiete .personajesSec {
+      width: 100%;
+      max-width: 600px; }
+      body .contenedorPersonajes .persSiete .personajesSec .ryan {
+        padding-right: 3rem;
+        padding-left: 3rem; }
+      body .contenedorPersonajes .persSiete .personajesSec .sinopsisRyan {
+        font-size: 1.5rem; }
+    body .contenedorPersonajes .persSiete h3 {
+      padding-left: 3rem;
+      margin-top: 0.8rem;
+      margin-left: 0;
+      padding-right: 3rem; }
+    body .contenedorPersonajes .persOcho .personajesSec {
+      width: 100%;
+      max-width: 600px; }
+      body .contenedorPersonajes .persOcho .personajesSec .toby {
+        padding-right: 3rem;
+        padding-left: 3rem; }
+      body .contenedorPersonajes .persOcho .personajesSec .sinopsisToby {
+        font-size: 1.5rem; }
+    body .contenedorPersonajes .persOcho h3 {
+      padding-left: 3rem;
+      margin-top: 0.8rem;
+      margin-left: 0;
+      padding-right: 3rem; } }
 
-    margin-top: 1rem;
-}
-
-}
+@media screen and (min-width: 1024px) {
+  body .contenedorPersonajes {
+    width: 100%;
+    grid-template-rows: 0.5fr 0.1fr 0.5fr 0.5fr 0.3fr 0.3fr 0.3fr;
+    grid-template-columns: 15% 35% 35% 15%;
+    grid-template-areas: " fotoGral fotoGral fotoGral fotoGral " ". titulo titulo . " ". persUno persDos ." ". persTres persCuatro ." ". masPersonajesSec masPersonajesSec ." ". persCinco persSeis ."  ". persSiete persOcho .";
+    column-gap: 1rem; }
+    body .contenedorPersonajes .titulo {
+      font-size: 2.5rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem; }
+    body .contenedorPersonajes .masPersonajesSec {
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+      font-size: 2.5rem; }
+    body .contenedorPersonajes .persCinco .personajesSec {
+      width: 100%;
+      justify-self: center; }
+      body .contenedorPersonajes .persCinco .personajesSec .angela {
+        justify-content: right; }
+    body .contenedorPersonajes .persCinco h3 {
+      margin-top: 0.8rem;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    body .contenedorPersonajes .persSeis .personajesSec {
+      width: 100%;
+      justify-self: center; }
+      body .contenedorPersonajes .persSeis .personajesSec .meredith {
+        justify-content: left; }
+    body .contenedorPersonajes .persSeis h3 {
+      margin-top: 0.8rem;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    body .contenedorPersonajes .persSiete .personajesSec {
+      width: 100%;
+      justify-self: center; }
+      body .contenedorPersonajes .persSiete .personajesSec .ryan {
+        justify-content: right; }
+    body .contenedorPersonajes .persSiete h3 {
+      margin-top: 0.8rem;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    body .contenedorPersonajes .persOcho .personajesSec {
+      width: 100%;
+      justify-self: center; }
+      body .contenedorPersonajes .persOcho .personajesSec .toby {
+        justify-content: left; }
+    body .contenedorPersonajes .persOcho h3 {
+      margin-top: 0.8rem;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; } }

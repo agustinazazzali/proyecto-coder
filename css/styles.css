@@ -1331,8 +1331,7 @@ body .contenedorPersTipo {
     body .contenedorPersTipo .persTipoFraseUno h3 {
       font-family: "Port Lligat Sans", sans-serif;
       text-align: left;
-      font-size: 1.4rem;
-      /*text-align: left;*/
+      font-size: 1rem;
       margin-top: 2rem;
       margin-bottom: 0; }
   body .contenedorPersTipo .masEscenaUno {
@@ -1367,14 +1366,13 @@ body .contenedorPersTipo {
     body .contenedorPersTipo .persTipoFraseDos h3 {
       font-family: "Port Lligat Sans", sans-serif;
       text-align: left;
-      font-size: 1.4rem;
+      font-size: 1rem;
       color: #4d4a4a;
-      /*text-align: left;*/
       margin-top: 2rem;
       margin-bottom: 0; }
   body .contenedorPersTipo .masEscenaDos {
     grid-area: masEscenaDos;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
     border: none solid 1rem;
     border-radius: 1.1rem;
@@ -1404,14 +1402,13 @@ body .contenedorPersTipo {
     body .contenedorPersTipo .persTipoFraseTres h3 {
       font-family: "Port Lligat Sans", sans-serif;
       text-align: left;
-      font-size: 1.4rem;
+      font-size: 1rem;
       color: #4d4a4a;
-      /*text-align: left;*/
       margin-top: 2rem;
       margin-bottom: 0; }
   body .contenedorPersTipo .masEscenaTres {
     grid-area: masEscenaTres;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
     border: none solid 1rem;
     border-radius: 1.1rem;
@@ -1441,14 +1438,13 @@ body .contenedorPersTipo {
     body .contenedorPersTipo .persTipoFraseCuatro h3 {
       font-family: "Port Lligat Sans", sans-serif;
       text-align: left;
-      font-size: 1.4rem;
+      font-size: 1rem;
       color: #4d4a4a;
-      /*text-align: left;*/
       margin-top: 2rem;
       margin-bottom: 0; }
   body .contenedorPersTipo .masEscenaCuatro {
     grid-area: masEscenaCuatro;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
     border: none solid 1rem;
     border-radius: 1.1rem;

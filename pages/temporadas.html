@@ -1,171 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--CSS-->
-    <!--Link BOOTSTRAP-->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="TEMPORADAS THE OFFICE, SITCOM, CAPITULOS, FINAL DE TEMPORADA, 2003">
+        <meta name="description" content="Breve resumen y datos sobre las nueve temporadas de la serie americana The Office, incluyendo año de emisión y actores principales">
+        
+        <!--Link BOOTSTRAP-->
 
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
-   <!--Link de MI CSS-->
+        <!--Link de MI CSS-->
 
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Karla:wght@200&family=Montserrat:wght@300;400;500&family=Port+Lligat+Sans&display=swap" rel="stylesheet">
-
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Port+Lligat+Sans&display=swap" rel="stylesheet">
-
-   <link rel="stylesheet" href="../css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
 
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
 
-    <title>Prueba Bootstrap</title>
-</head>
-<body>
-    <header class="container-fluid">
-        <nav class="row navbar navbar-expand-lg">
-            <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=NTR&display=swap" rel="stylesheet">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=NTR&display=swap" rel="stylesheet"> 
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Karla:wght@200&family=Montserrat:wght@300;400;500&family=Port+Lligat+Sans&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Port+Lligat+Sans&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="../css/styles.css">
+
+        <title>Temporadas</title>
+    </head>
+    <body>
+        <header class="container-fluid menu-principal">
+            <nav class="row navbar navbar-expand-lg">
+                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
                     <a class="navbar-brand" href="../index.html"><img src="../img/the-office-logo-negro-sin-bordes.png" width=200 alt="logo the Office"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                </div>
+                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="personajes.html">Personajes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="comprar.html">Comprar</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link-dos dropdown-toggle text-light" href="temporadas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Temporadas</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="temporada-1.html">Uno (2005)</a></li>
+                                <li><a class="dropdown-item" href="temporada-2.html">Dos (2006)</a></li>
+                                <li><a class="dropdown-item" href="temporada-3.html">Tres (2007)</a></li>
+                                <li><a class="dropdown-item" href="temporada-4.html">Cuatro (2008)</a></li>
+                                <li><a class="dropdown-item" href="temporada-5.html">Cinco (2009)</a></li>
+                                <li><a class="dropdown-item" href="temporada-6.html">Seis (2010)</a></li>
+                                <li><a class="dropdown-item" href="temporada-7.html">Siete (2011)</a></li>
+                                <li><a class="dropdown-item" href="temporada-8.html">Ocho (2012)</a></li>
+                                <li><a class="dropdown-item" href="temporada-9.html">Nueve (2013)</a></li>
+                                <li><a class="dropdown-item" href="temporadas.html">Ver todas</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>                           
+            </nav>       
+        </header>   
+        <main class="container-fluid contenedor-temp">            
+            <div class="row">
+                <img class="imagen-general" src="../img/wallpaper-michael.jpg" alt="imagen de personaje principal en oficina">
             </div>
-            <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active text-light" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="personajes.html">Personajes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="comprar.html">Comprar</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-light" href="temporadas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Temporadas</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="temporada-1.html">Uno (2005)</a></li>
-                            <li><a class="dropdown-item" href="temporada-2.html">Dos (2006)</a></li>
-                            <li><a class="dropdown-item" href="temporada-3.html">Tres (2007)</a></li>
-                            <li><a class="dropdown-item" href="temporada-4.html">Cuatro (2008)</a></li>
-                            <li><a class="dropdown-item" href="temporada-5.html">Cinco (2009)</a></li>
-                            <li><a class="dropdown-item" href="temporada-6.html">Seis (2010)</a></li>
-                            <li><a class="dropdown-item" href="temporada-7.html">Siete (2011)</a></li>
-                            <li><a class="dropdown-item" href="temporada-8.html">Ocho (2012)</a></li>
-                            <li><a class="dropdown-item" href="temporada-9.html">Nueve (2013)</a></li>
-                            <li><a class="dropdown-item" href="temporadas.html">Ver todas</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <main class="container-fluid">
-        <div class="row">
-            <p class="texto-1 col-xs-12 col-sm-12 col-md-12 col-lg-12 text-light">Temporadas - The Office</p>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                <img class="card-img-top rounded mx-auto d-block w-50" src="../img/temporada-1.jpg" alt="temporada-1">
-                <div class="card-body mx-auto d-block w-50">
-                    <p class="card-title">Temporada 1</p>
-                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, in dicta! Omnis, recusandae nulla. Dignissimos minus officiis repellat? Voluptatibus magni odit et quas. Ab ex placeat eum similique libero quis.</p>
-                    <a href="temporada-1.html" class="btn btn-primary">Ver más</a>
+            <div class="row">
+                <p class="texto-1 col-xs-12 col-sm-12 col-md-12 col-lg-12">Temporadas</p>
+                <p class="texto-2 col-xs-12 col-sm-12 col-md-12 col-lg-12">Descubrí todas las temporadas de la mejor comedia del siglo</p>
+            </div>            
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img class="card-img-top rounded mx-auto d-block w-50" src="../img/temporada-1.jpg" alt="temporada-1">
+                    <div class="card-body mx-auto d-block w-50">
+                        <p class="card-title">Temporada 1</p>
+                        <p class="card-text">2005</p>
+                        <a href="temporada-1.html" class="btn">Ver mas</a>
+                    </div>
+                </div>
+                <div class="bloque-temp col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img class="card-img-top rounded mx-auto d-block w-50" src="../img/temporada-2.jpg" alt="temporada-2">
+                    <div class="card-body mx-auto d-block w-50">
+                        <p class="card-title">Temporada 2</p>
+                        <p class="card-text">2006</p>
+                        <a href="temporada-2.html" class="btn">Ver mas</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-2 col-md-4 col-lg-4">
+                    <img class="card-img-top rounded mx-auto d-block w-50" src="../img/temporada-3.jpg"  alt="temporada-3">
+                    <div class="card-body mx-auto d-block w-50">
+                        <p class="card-title">Temporada 3</p>
+                        <p class="card-text">2007</p>
+                        <a href="temporada-3.html" class="btn">Ver mas</a>
+                    </div>
+                </div>
+            </div>       
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img class="card-img-top rounded mx-auto d-block w-50" src="../img/temporada-4.jpg" alt="temporada-4">
+                    <div class="card-body mx-auto d-block w-50">
+                        <p class="card-title">Temporada 4</p>
+                        <p class="card-text">2008</p>
+                        <a href="temporada-4.html" class="btn">Ver mas</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img class="card-img-top rounded mx-auto d-block w-50" src="../img/temporada-5.jpg" alt="temporada-5">
+                    <div class="card-body mx-auto d-block w-50">
+                        <p class="card-title">Temporada 5</p>
+                        <p class="card-text">2009</p>
+                        <a href="temporada-5.html" class="btn">Ver mas</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-2 col-md-4 col-lg-4">
+                    <img class="card-img-top rounded mx-auto d-block w-50" src="../img/temporada-6.jpg"  alt="temporada-6">
+                    <div class="card-body mx-auto d-block w-50">
+                        <p class="card-title">Temporada 6</p>
+                        <p class="card-text">2010</p>
+                        <a href="temporada-6.html" class="btn">Ver mas</a>
+                    </div>
                 </div>
             </div>
-            <div class="bloque-temp col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                <img class="card-img-top rounded mx-auto d-block w-50" src="../img/temporada-2.jpg" alt="temporada-2">
-                <div class="card-body mx-auto d-block w-50">
-                    <p class="card-title">Temporada 2</p>
-                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, in dicta! Omnis, recusandae nulla. Dignissimos minus officiis repellat? Voluptatibus magni odit et quas. Ab ex placeat eum similique libero quis.</p>
-                    <a href="temporada-2.html" class="btn btn-primary">Ver más</a>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img class="card-img-top rounded mx-auto d-block w-50" src="../img/temporada-7.jpg" alt="temporada-7">
+                    <div class="card-body mx-auto d-block w-50">
+                        <p class="card-title">Temporada 7</p>
+                        <p class="card-text">2011</p>
+                        <a href="temporada-7.html" class="btn">Ver mas</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img class="card-img-top rounded mx-auto d-block w-50" src="../img/temporada-8.jpg" alt="temporada-8">
+                    <div class="card-body mx-auto d-block w-50">
+                        <p class="card-title">Temporada 8</p>
+                        <p class="card-text">2012</p>
+                        <a href="temporada-8.html" class="btn">Ver mas</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-2 col-md-4 col-lg-4">
+                    <img class="card-img-top rounded mx-auto d-block w-50" src="../img/temporada-9.jpg"  alt="temporada-9">
+                    <div class="card-body mx-auto d-block w-50">
+                        <p class="card-title">Temporada 9</p>
+                        <p class="card-text">2013</p>
+                        <a href="temporada-9.html" class="btn">Ver mas</a>
+                    </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-2 col-md-4 col-lg-4">
-                <img class="card-img-top rounded mx-auto d-block w-50" src="../img/temporada-3.jpg"  alt="temporada-3">
-                <div class="card-body mx-auto d-block w-50">
-                    <p class="card-title">Temporada 3</p>
-                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, in dicta! Omnis, recusandae nulla. Dignissimos minus officiis repellat? Voluptatibus magni odit et quas. Ab ex placeat eum similique libero quis.</p>
-                    <a href="temporada-3.html" class="btn btn-primary">Ver más</a>
+        </main>
+        <footer class="container-fluid">
+            <div>
+                <p class="text-center derechosReservados">Todos los derechos reservados</p>
+                <div class="logoRedes">
+                    <a href="https://www.instagram.com/theoffice/" target="_blank"><img class="rounded mx-auto" src="../img/ig.png" alt="instagram oficial the office" width="50" height="50"></a>
+                    <a href="https://www.facebook.com/TheOfficeTV/" target="_blank"><img class="rounded mx-auto" src="../img/facebook.png" alt="facebook oficial the office" width="50" height="50"></a>
+                    <a href="https://twitter.com/theofficetv?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img class="rounded mx-auto" src="../img/twitter.png" alt="twitter oficial the office" width="50" height="50"></a>
                 </div>
-            </div>
-        </div>
-       
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                <img class="card-img-top rounded mx-auto d-block w-50" src="../img/temporada-4.jpg" alt="temporada-4">
-                <div class="card-body mx-auto d-block w-50">
-                    <p class="card-title">Temporada 4</p>
-                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, in dicta! Omnis, recusandae nulla. Dignissimos minus officiis repellat? Voluptatibus magni odit et quas. Ab ex placeat eum similique libero quis.</p>
-                    <a href="temporada-4.html" class="btn btn-primary">Ver más</a>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                <img class="card-img-top rounded mx-auto d-block w-50" src="../img/temporada-5.jpg" alt="temporada-5">
-                <div class="card-body mx-auto d-block w-50">
-                    <p class="card-title">Temporada 5</p>
-                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, in dicta! Omnis, recusandae nulla. Dignissimos minus officiis repellat? Voluptatibus magni odit et quas. Ab ex placeat eum similique libero quis.</p>
-                    <a href="temporada-5.html" class="btn btn-primary">Ver más</a>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-2 col-md-4 col-lg-4">
-                <img class="card-img-top rounded mx-auto d-block w-50" src="../img/temporada-6.jpg"  alt="temporada-6">
-                <div class="card-body mx-auto d-block w-50">
-                    <p class="card-title">Temporada 6</p>
-                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, in dicta! Omnis, recusandae nulla. Dignissimos minus officiis repellat? Voluptatibus magni odit et quas. Ab ex placeat eum similique libero quis.</p>
-                    <a href="temporada-6.html" class="btn btn-primary">Ver más</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                <img class="card-img-top rounded mx-auto d-block w-50" src="../img/temporada-7.jpg" alt="temporada-7">
-                <div class="card-body mx-auto d-block w-50">
-                    <p class="card-title">Temporada 7</p>
-                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, in dicta! Omnis, recusandae nulla. Dignissimos minus officiis repellat? Voluptatibus magni odit et quas. Ab ex placeat eum similique libero quis.</p>
-                    <a href="temporada-7.html" class="btn btn-primary">Ver más</a>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                <img class="card-img-top rounded mx-auto d-block w-50" src="../img/temporada-8.jpg" alt="temporada-8">
-                <div class="card-body mx-auto d-block w-50">
-                    <p class="card-title">Temporada 8</p>
-                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, in dicta! Omnis, recusandae nulla. Dignissimos minus officiis repellat? Voluptatibus magni odit et quas. Ab ex placeat eum similique libero quis.</p>
-                    <a href="temporada-8.html" class="btn btn-primary">Ver más</a>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-2 col-md-4 col-lg-4">
-                <img class="card-img-top rounded mx-auto d-block w-50" src="../img/temporada-9.jpg"  alt="temporada-9">
-                <div class="card-body mx-auto d-block w-50">
-                    <p class="card-title">Temporada 9</p>
-                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, in dicta! Omnis, recusandae nulla. Dignissimos minus officiis repellat? Voluptatibus magni odit et quas. Ab ex placeat eum similique libero quis.</p>
-                    <a href="temporada-9.html" class="btn btn-primary">Ver más</a>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer class="container-fluid">
-        <div class="row">
-            <p class="col-12 text-center derechosReservados">Todos los derechos reservados</p>
-
-        <div class="col-12 logoRedes">
-            <a href="https://www.instagram.com/theoffice/" target="_blank"><img class="rounded mx-auto" src="../img/ig.png" alt="instagram oficial the office" width="50" height="50"></a>
-            <a href="https://www.facebook.com/TheOfficeTV/" target="_blank"><img class="rounded mx-auto" src="../img/facebook.png" alt="facebook oficial the office" width="50" height="50"></a>
-            <a href="https://twitter.com/theofficetv?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img class="rounded mx-auto" src="../img/twitter.png" alt="twitter oficial the office" width="50" height="50"></a>
-        </div>
-    
-
-        </div>
-        
-    </footer>
-   
-    <!--Javascript-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-</body>
+            </div>            
+        </footer>    
+        <!--Javascript-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    </body>
 </html>

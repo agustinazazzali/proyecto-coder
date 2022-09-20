@@ -1,0 +1,20 @@
+@import "base/reset";
+
+@import "layout/footer";
+@import "layout/header";
+
+
+@import "utilities/extend";
+@import "utilities/mapas";
+@import "utilities/mixins";
+@import "utilities/variables";
+
+@import "views/comprar";
+@import "views/contacto";
+@import "views/fanart";
+@import "views/index";
+@import "views/mejores-momentos";
+@import "views/personaje-tipo";
+@import "views/personajes";
+@import "views/temporada-tipo";
+@import "views/temporadas";

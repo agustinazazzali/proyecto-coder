@@ -1,0 +1,106 @@
+/* estilos contacto */
+/*MOBILE FIRST*/  
+
+body {
+
+    .contenedorContacto {
+
+        @extend %flex; 
+        background: linear-gradient(rgb(219, 205, 186),rgb(77, 74, 74));
+        background-repeat: no-repeat;
+       
+        
+        .tituloForm {
+            @include titulos-princ-xs;
+            color:$texto-claro;
+            margin-top: 8rem;   
+        }
+    
+        .cuadroForm {
+    
+            margin: 1rem;
+    
+            .formulario {
+    
+                margin-top: 3rem;
+                margin-bottom: 2rem;
+                @include subtitulos-1;
+                color:$texto-claro;   
+             
+                
+                .itemsForm{
+        
+                    margin-top: 1rem;
+                    margin-left: 1rem;
+                    @include subtitulos-2;
+                    color:$texto-claro;
+                }            
+                .itemsFormFinal{
+        
+                    margin-top: 4rem;
+                    margin-left: 1rem;
+                    @include subtitulos-2;
+                    color: $texto-claro;
+                }   
+            }
+        }
+        
+        .imagenesPie {
+
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+    
+            .comprarProd {
+    
+                display: none;
+                
+            }
+    
+            .adquirirProd {
+        
+                padding: 1rem;
+                @include subtitulos-2;
+                color: $texto-claro;
+                text-align: center;
+                margin-top: 4rem;
+            }
+        }
+    }
+    
+    @media screen and (min-width:600px) {
+
+        .contenedorContacto {
+
+            .imagenesPie {
+        
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+    
+                .comprarProd {
+            
+                    display: block;           
+                }
+                
+                .adquirirProd {
+                
+                    width: 40%;           
+                }
+            }      
+        }       
+    }
+
+    @media screen and  (min-width:1024px) {
+
+        .contenedorContacto {
+
+            .imagenesPie {
+        
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }       
+        }       
+    }
+}

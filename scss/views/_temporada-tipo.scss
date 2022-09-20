@@ -1,0 +1,201 @@
+/*Estilos Temporada Tipo (1 a 9) - 
+MOBILES FIRST*/
+
+body {
+
+    .contenedorTempTipo {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 33.33% 33.33% 33.33% ;
+        grid-template-rows: 0.2fr 0.2fr 0.1fr 0.1fr;
+        grid-template-areas: "imagenFondo imagenFondo imagenFondo"
+                             ". tempTipo ."
+                             "cajaSinopsis cajaSinopsis cajaSinopsis"
+                             "verMasTemporadas verMasTemporadas verMasTemporadas ";    
+                             
+        
+        background: linear-gradient(rgb(219, 205, 186),rgb(77, 74, 74));
+        background-repeat: no-repeat;
+        height: 100%;
+        padding-bottom: 3rem;
+    
+        .imagenFondo {
+
+            grid-area: imagenFondo;
+
+            img{
+
+                width: 100%;    
+                position: relative;  
+                margin-top: 5rem;                         
+            }
+        } 
+
+        .tempTipo {
+
+            grid-area: tempTipo;
+
+            .temporadaTipo {
+    
+                @extend %flex;
+                width: 100%;
+
+                img{       
+                    position: absolute;
+                    width: 33%;
+                    top: 20%;
+                    z-index: 0;
+                    justify-self: center;                   
+                }
+            }
+        }
+        .cajaSinopsis {
+            grid-area: cajaSinopsis;
+            @extend %flex;
+            margin-top: 6rem;
+
+            .sinopsisTemporada p{
+
+    
+                width: 200px;
+                text-align: justify;
+                color: $texto-claro;
+                font-size: 0.7rem;
+                justify-self: center;
+                margin-bottom: 3rem;
+                margin-top: 1rem;
+                font-family: $texto-general;
+            
+            }       
+        }
+        .verMasTemporadas {
+            grid-area: verMasTemporadas;
+
+            div div div div a .img-temp {
+
+                width: 30%;
+                height: 30%;
+               
+            }
+        }
+    }
+
+    @media screen and (min-width:600px) {
+
+        .contenedorTempTipo {
+
+            .tempTipo {
+
+                .temporadaTipo{
+
+                    img{
+                             
+                        position: absolute;
+                        width: 33%;
+                        top: 15%;
+                        justify-self: center;
+                        padding: 2rem;
+                    }
+                }
+            }
+            .cajaSinopsis {
+
+                .sinopsisTemporada p{
+        
+                    width: 375px;
+                    font-size: 1rem;
+                    margin-top: 6rem;
+                    margin-bottom: 7rem;   
+                } 
+            }       
+        }     
+    }
+
+    @media screen and (min-width:1024px) {
+
+    
+        .contenedorTempTipo {
+
+            .tempTipo {
+
+                .temporadaTipo{
+
+                    img{                           
+                        position: absolute;
+                        width: 25%;
+                        top: 45%;
+                        justify-self: center;
+                        padding: 2rem;
+                    }
+                }
+            }
+
+            .cajaSinopsis {
+
+                .sinopsisTemporada p{
+    
+                    width: 550px;
+                    font-size: 1rem;
+                    margin-top: 6rem;
+                    margin-bottom: 7rem;
+                
+                } 
+            }
+
+            .verMasTemporadas {
+                grid-area: verMasTemporadas;
+    
+                div div div div a .img-temp {
+    
+                    width: 15%;
+                    height: 15%;
+                   
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:1900px) {
+
+    
+        .contenedorTempTipo {
+
+            .tempTipo {
+
+                .temporadaTipo{
+
+                    img{                           
+                        position: absolute;
+                        width: 25%;
+                        top: 65%;
+                        justify-self: center;
+                        padding: 7.5rem;
+                    }
+                }
+            }
+
+            .cajaSinopsis {
+
+                .sinopsisTemporada p{
+    
+                    width: 550px;
+                    font-size: 1rem;
+                    margin-top: 6rem;
+                    margin-bottom: 7rem;
+                
+                } 
+            }
+
+            .verMasTemporadas {
+                grid-area: verMasTemporadas;
+    
+                div div div div a .img-temp {
+    
+                    width: 10%;
+                    height: 10%;
+                   
+                }
+            }
+        }
+    }
+}

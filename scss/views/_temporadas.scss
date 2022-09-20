@@ -1,0 +1,80 @@
+/*Estilos Temporadas*/
+
+body {
+
+    .contenedor-temp {
+
+        background: linear-gradient(rgb(219, 205, 186),rgb(77, 74, 74));
+        background-repeat: no-repeat;
+        height: 100%;
+
+        .imagen-general {
+
+            padding: 0;
+            margin-bottom: 1rem;
+            opacity: 0.8;      
+        }
+        
+        .texto-1 {
+            margin-top: 1.5rem;
+            margin-bottom: 0.2rem;
+            text-align: center;  
+            width: 100%;     
+            @include titulos-princ-xs;
+            color:$texto-claro;      
+        }
+        
+        .texto-2 {
+        
+            font-family:$texto-subtitulos;
+            text-align: center;
+            font-style: italic;
+            color:$texto-claro;   
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+        
+        .bloque-temp {
+        
+            @extend %flex;
+        }
+        
+        .card-img-top {
+            
+            box-shadow: 0 0 25px rgb(58, 54, 54);
+            border-radius: 16px;    
+        }
+        
+        .card-body {
+
+            @extend %flex;     
+            text-align: center;
+          
+            .card-title {
+        
+                font-family: $texto-titulos;
+                font-size: 1.2rem;
+                color:$texto-claro;   
+                margin-top: 0.6rem;
+                margin-bottom: 0.3rem;   
+            }
+            
+            .card-text {
+            
+                font-family: $texto-subtitulos;
+                font-size: 1rem;
+                color:$texto-claro;  
+                margin-bottom: 0.6rem;      
+            }
+            
+            .btn {
+            
+                @include boton;
+                color:$texto-claro;  
+                margin-top: 0.5rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,305 @@
+/* FANART */
+
+body {
+
+    .contenedorFanart {
+
+        display: grid;
+        grid-template-rows: 0.1fr 0.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-areas: " tituloFanart tituloFanart tituloFanart "
+                            ". arte-1 ."
+                            ". arte-2 ."
+                            ". arte-3 ."
+                            ". arte-4 ."
+                            ". arte-5 ."
+                            ". arte-6 ."
+                            ". arte-7 ."
+                            ". arte-8 ."
+                            ". adquirir .";
+
+        background-color:rgb(248, 238, 217);
+
+
+        .tituloFanart {
+    
+            grid-area: tituloFanart;
+            color: $texto-osc;  
+            @include titulos-princ-xs;         
+            margin-bottom: 0.2rem;
+            width: 100%;
+            padding: 2rem;
+            margin-top: 6rem; 
+        }
+    
+           
+        .arte-1 {
+    
+            @extend %flex;
+            grid-area: arte-1;
+            background-color:$color-claro-fondo;
+            border-radius: 0.9rem;
+            padding: 0.5rem;
+            margin: 0.5rem;
+            height: 90%;
+            width: 95%;
+            
+            .comprarMas img {
+
+                height: 90%;
+                margin-top: 2rem;
+            }
+            .textoArte {
+                .imgArte {
+                    @include subtitulos-1;
+                    color: $texto-osc;
+                    margin-top: 1rem;
+                    margin-bottom: 0;
+                    padding-bottom: 1.5rem;      
+                }
+            }
+        }
+    
+        .arte-2 {
+    
+            @extend %flex;
+            grid-area: arte-2;
+            background-color:$color-claro-fondo;
+            border-radius: 0.9rem;
+            padding: 0.5rem;
+            margin: 0.5rem;
+            height: 90%;
+            width: 95%;
+             
+            .comprarMas img {
+
+                height: 90%;
+                margin-top: 2rem;
+            }
+            .textoArte {
+                .imgArte {
+                    @include subtitulos-1;
+                    color: $texto-osc;
+                    margin-top: 1rem;
+                    margin-bottom: 0;    
+                    padding-bottom: 1.5rem;               
+                }
+            }
+        }   
+        .arte-3{
+    
+            @extend %flex;
+            grid-area: arte-3;
+            background-color:$color-claro-fondo;
+            border-radius: 0.9rem;
+            padding: 0.5rem;
+            margin: 0.5rem;
+            height: 90%;
+            width: 95%;
+             
+            .comprarMas img {
+
+                height: 90%;
+                margin-top: 2rem;
+            }
+            .textoArte {
+                .imgArte {
+                    @include subtitulos-1;
+                    color: $texto-osc;
+                    margin-top: 1rem;
+                    margin-bottom: 0;   
+                    padding-bottom: 1.5rem;                
+                }
+            }
+        }
+        .arte-4{
+    
+            @extend %flex;
+            grid-area: arte-4;
+            background-color:$color-claro-fondo;
+            border-radius: 0.9rem;
+            padding: 0.5rem;
+            margin: 0.5rem;
+            height: 90%;
+            width: 95%;
+             
+            .comprarMas img {
+
+                height: 90%;
+                margin-top: 2rem;
+            }
+            .textoArte {
+                .imgArte {
+                    @include subtitulos-1;
+                    color: $texto-osc;
+                    margin-top: 1rem;
+                    margin-bottom: 0;  
+                    padding-bottom: 1.5rem;                
+                }
+            }
+        }
+    
+        .arte-5{
+    
+            @extend %flex;
+            grid-area: arte-5;
+            background-color:$color-claro-fondo;
+            border-radius: 0.9rem;
+            padding: 0.5rem;
+            margin: 0.5rem;
+            height: 90%;
+            width: 95%;
+             
+            .comprarMas img {
+
+                height: 90%;
+                margin-top: 2rem;
+            }
+            .textoArte {
+                .imgArte {
+                    @include subtitulos-1;
+                    color: $texto-osc;
+                    margin-top: 1rem;
+                    margin-bottom: 0;   
+                    padding-bottom: 1.5rem;                 
+                }
+            }
+        }
+    
+        .arte-6{
+    
+            @extend %flex;
+            grid-area: arte-6;
+            background-color:$color-claro-fondo;
+            border-radius: 0.9rem;
+            padding: 0.5rem;
+            margin: 0.5rem;
+            height: 90%;
+            width:95%;
+             
+            .comprarMas img {
+
+                height: 90%;
+                margin-top: 2rem;
+            }
+            .textoArte {
+                .imgArte {
+                    @include subtitulos-1;
+                    color: $texto-osc;
+                    margin-top: 1rem;
+                    margin-bottom: 0;    
+                    padding-bottom: 1.5rem;                   
+                }
+            }
+        }
+    
+        .arte-7{
+    
+            @extend %flex;
+            grid-area: arte-7;
+            background-color:$color-claro-fondo;
+            border-radius: 0.9rem;
+            padding: 0.5rem;
+            margin: 0.5rem;
+            height: 90%;
+            width: 95%;
+             
+            .comprarMas img {
+
+                height: 90%;
+                margin-top: 2rem;
+            }
+            .textoArte {
+                .imgArte {
+                    @include subtitulos-1;
+                    color: $texto-osc;
+                    margin-top: 1rem;
+                    margin-bottom: 0;  
+                    padding-bottom: 1.5rem;                  
+                }
+            }
+        }
+    
+        .arte-8{
+    
+            @extend %flex;
+            grid-area: arte-8;
+            background-color:$color-claro-fondo;
+            border-radius: 0.9rem;
+            padding: 0.5rem;
+            margin: 0.5rem;
+            height: 90%;
+            width: 95%;
+             
+            .comprarMas img {
+
+                height: 90%;
+                margin-top: 2rem;
+            }
+            .textoArte {
+                .imgArte {
+                    @include subtitulos-1;
+                    color: $texto-osc;
+                    margin-top: 1rem;
+                    margin-bottom: 0;    
+                    padding-bottom: 1.5rem;             
+                }
+            }
+        }
+        .adquirir {
+            grid-area: adquirir;
+            font-family: $texto-subtitulos;
+            font-size: 1rem;
+            color: $texto-osc;
+            margin-top: 60px;
+            text-align: center; 
+            a {
+                color: $texto-osc;
+                display: inline;
+            }          
+        }
+    }
+
+    @media screen and  (min-width:600px) {
+
+        .contenedorFanart {
+            
+            grid-template-rows: 0.1fr 0.4fr 0.4fr 0.4fr 0.4fr 0.1fr;
+            grid-template-columns: 10% 40% 40% 10%;
+            grid-template-areas: " tituloFanart tituloFanart tituloFanart tituloFanart"
+                                 ". arte-1 arte-2 ."
+                                 ". arte-3 arte-4 ."
+                                 ". arte-5 arte-6 ."
+                                 ". arte-7 arte-8 ."
+                                 ". adquirir adquirir .";
+            .tituloObjetos {       
+                font-size: 1.5rem;
+                                            
+            }
+                                    
+            .derechosReservados {                          
+                margin-top: 3rem;
+            }
+        }
+    }
+    
+    @media screen and  (min-width:1024px) {
+    
+        .contenedorFanart {
+           
+            grid-template-rows: 0.3fr 1fr 1fr 1fr 0.1fr;
+            grid-template-columns: 5% 30% 30% 30% 5%;
+            grid-template-areas: "tituloFanart tituloFanart tituloFanart tituloFanart tituloFanart "
+                                 ". arte-1 arte-2 arte-3 ."
+                                 ". arte-4 arte-5 arte-6 ."
+                                 ". arte-7 arte-8 . ."
+                                 "adquirir adquirir adquirir adquirir adquirir";  
+
+            .arte-1, .arte-2, .arte-3, .arte-4, .arte-5, .arte-6, .arte-7, .arte-8 {
+                justify-self: center;
+                width: 280px;
+                                 
+            }
+        }       
+    }
+}

@@ -1,0 +1,357 @@
+
+/*ESTILOS INDEX MOBILE FIRST*/
+body {
+    .contenedorIndex {
+
+        width: 100%;
+        display: grid;
+        grid-template-columns: 10% 80% 10% ;
+        grid-template-rows: 0.7fr 0.1fr 0.2fr 0.3fr 0.3fr 0.3fr 0.3fr 0.1fr 0.2fr 0.6fr;
+        grid-template-areas: "portadaPrincipal portadaPrincipal portadaPrincipal"
+                             "citaTextual citaTextual citaTextual"
+                             "conoce conoce conoce"
+                             ". conoceUno ."
+                             ". conoceDos ."
+                             ". conoceTres ." 
+                             ". conoceCuatro ."
+                             ". masPersonajes ."
+                             ". lugar ."
+                             ". areaVideoLugar ."
+                        ;
+        background: linear-gradient(rgb(219, 205, 186),rgb(77, 74, 74));
+        background-repeat: no-repeat;
+        height: 100%;
+     
+
+        .portadaPrincipal {
+
+            grid-area: portadaPrincipal;
+
+            .imgPrincipal {
+                        
+                margin-top: 2rem;
+                width: 100%;
+                height: 95%;            
+            }                          
+        }
+        .sinopsis { 
+                        
+            display: none;
+        }
+    
+        .citaTextual {
+                        
+            grid-area: citaTextual;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            font-family:$texto-subtitulos;
+            text-align: center;
+            color: black;
+            padding: 0.5rem;
+        }                 
+            
+        .conoce {
+            grid-area: conoce;
+            color:$texto-osc;
+            @include titulos-princ-xs;
+            margin: 0.8rem 0.8rem; 
+        }             
+
+        .conoceUno {
+                        
+            grid-area: conoceUno;
+            @extend %flex;
+            margin: 0.2rem;     
+            
+            a img {
+                        
+                width: 100%;
+                height: 100%;
+                transition: 0.5s;
+                object-fit: cover;
+                margin-top: 0.5rem;
+
+                &:hover {
+            
+                    transform: scale(1.02);
+                }               
+            }       
+            
+            .conoceTexto {
+                            
+                padding-top: 1rem ;
+                padding-right: 0.7rem;    
+                width: 100%;
+            
+                h3 {         
+                    @include subtitulos-1;
+                    color: $texto-claro;    
+                }
+                                           
+                p {
+                    @include subtitulos-2;
+                    color: $texto-claro; 
+                }                            
+            }           
+        }
+        
+        .conoceDos {
+        
+            grid-area: conoceDos;
+            @extend %flex;
+            margin: 0.2rem;
+
+            a img {
+                        
+                width: 100%;
+                height: 100%;
+                transition: 0.5s;
+                object-fit: cover;
+                margin-top: 0.5rem;
+
+                &:hover {
+            
+                    transform: scale(1.02);
+                }               
+            }    
+            
+            .conoceTexto {
+                            
+                padding-top: 1rem ;
+                padding-right: 0.7rem;
+                width: 100%;               
+                h3 {
+                    @include subtitulos-1;
+                    color: $texto-claro;  
+                }                                        
+                p {
+                    @include subtitulos-2;
+                    color: $texto-claro;
+                }                            
+            }
+            
+        }
+        .conoceTres {
+        
+            grid-area: conoceTres;
+            @extend %flex;
+            margin: 0.2rem;
+
+            a img {
+                        
+                width: 100%;
+                height: 100%;
+                transition: 0.5s;
+                object-fit: cover;
+                margin-top: 0.5rem;
+
+                &:hover {
+            
+                    transform: scale(1.02);
+                }               
+            }         
+
+            .conoceTexto {
+                            
+                padding-top: 1rem ;
+                padding-right: 0.7rem;     
+                width: 100%;
+                h3 {
+                    @include subtitulos-1;
+                    color: $texto-claro; 
+                }
+                                           
+                p {
+                    @include subtitulos-2;
+                    color: $texto-claro;
+                }                            
+            }      
+        }
+        .conoceCuatro {
+        
+            grid-area: conoceCuatro;
+            @extend %flex;
+            margin: 0.2rem;
+
+            a img {
+                        
+                width: 100%;
+                height: 100%;
+                transition: 0.5s;
+                object-fit: cover;
+                margin-top: 0.5rem;
+
+                &:hover {
+                    transform: scale(1.02);
+                }               
+            }     
+            
+            .conoceTexto {
+                            
+                padding-top: 1rem ;
+                padding-right: 0.7rem;       
+                width: 100%;
+                h3 {
+                    @include subtitulos-1;
+                    color: $texto-claro; 
+                }                                          
+                p {
+                    @include subtitulos-2;
+                    color: $texto-claro;
+                }                            
+            }          
+        }
+
+        .masPersonajes {
+                        
+            grid-area: masPersonajes;
+            justify-self: center;
+            margin-bottom: 3rem;
+            @include boton;
+
+            &:hover {
+                background-color: $boton;
+                transform: scale(1.05);
+                }
+            a {
+                margin: 0;
+                text-decoration: none;
+                color: $texto-claro;
+            }                                   
+        }           
+        
+        .lugar {
+                        
+            grid-area: lugar;
+            @include titulos-princ-xs;
+            color:$texto-claro;
+        }
+
+        .areaVideoLugar {
+            grid-area: areaVideoLugar;
+            margin-top: 1.2rem;
+            padding-bottom: 3rem;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            justify-self: center;
+
+            .cajaIframe {
+                        
+                width: 100%;
+                height: 100%;
+                border: none;
+                
+            }       
+        }                 
+    }
+
+    @media screen and  (min-width:600px) {
+
+
+        .contenedorIndex {
+        
+            grid-template-columns: 25% 50% 25%;
+            grid-template-rows: 0.6fr 0.05fr 0.2fr 0.7fr 0.7fr 0.7fr 0.7fr 0.1fr 0.15fr 0.6fr;
+            grid-template-areas: "portadaPrincipal portadaPrincipal portadaPrincipal"
+                                 "citaTextual citaTextual citaTextual"
+                                 "conoce conoce conoce"
+                                 ". conoceUno ."
+                                 ". conoceDos ."
+                                 ". conoceTres ." 
+                                 ". conoceCuatro ."
+                                 ". masPersonajes ."
+                                 ". lugar ."
+                                 ". areaVideoLugar ." 
+                                ;
+
+            .sinopsis {
+            
+                display: block;
+                width: 40%;
+                padding: 0.6rem;
+                margin-top: 1rem;
+                margin-left: 2rem;
+                position: absolute;
+                top: 12%;
+                left: 50%;
+                        
+                h1 {
+                    font-family: $texto-boton;
+                    color:$texto-osc;
+                    font-size: 3.5rem;
+                    text-align: center;      
+                }
+                                    
+                p {
+                    font-family:$texto-general;
+                    font-size: 0.7rem;
+                    text-align: center;
+                    color:$texto-osc;
+                }            
+            }
+                                      
+            .citaTextual {
+                                
+                font-size: 1rem;
+            }
+                                
+            .areaVideoLugar {
+                margin-top: 3rem;
+                width: 650px;
+                height: 550px;
+            }       
+        }       
+    }
+        
+    @media screen and  (min-width:1024px) {
+        
+         
+        .contenedorIndex {
+        
+            grid-template-rows: 0.8fr 0.1fr 0.1fr 0.5fr 0.1fr 0.05fr 0.05fr 0.7fr;
+            grid-template-columns: 27.5% 22.5% 22.5% 27.5%;
+            grid-template-areas: "portadaPrincipal portadaPrincipal portadaPrincipal portadaPrincipal" 
+                                 ". citaTextual citaTextual ."
+                                 ". conoce conoce . "
+                                 ". conoceUno conoceDos ."
+                                 ". conoceTres conoceCuatro ."
+                                 ". masPersonajes masPersonajes . "
+                                 " lugar lugar lugar lugar"
+                                 " . areaVideoLugar areaVideoLugar . ";
+                column-gap: 1.5rem;                    
+                justify-content: center ;
+        
+            .sinopsis {
+                width: 30%;
+                top: 30%;
+                left: 50%;
+        
+                h1 {       
+                    font-size: 3.9rem;
+                }         
+                p {           
+                    font-size: 1rem;
+                }           
+            }       
+        }
+        
+        .lugar {
+            margin-top: 2rem;
+            }
+        
+        .areaVideoLugar {
+            margin-top: 2rem;     
+           
+            .cajaIframe {
+        
+                width: 100%;
+                height: 100%;
+                border: none;               
+            }                 
+        }
+    }
+}
+
+
+

@@ -1,0 +1,626 @@
+
+/* estilos mejores momentos */
+/*MOBILE FIRST*/  
+
+body {
+
+    .contenedorMomentos {
+    
+        width: 100%;
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: 0.1fr 0.1fr  0.1fr  0.1fr  0.1fr 0.2fr 0.2fr 0.2fr;
+        column-gap: 0;
+        grid-template-areas: ". tituloEscenas ."
+                            ". escenaUno ."
+                            
+                            ". escenaDos ."
+                            
+                            ". escenaTres ."
+                          
+                            ". tituloMemes ."
+                            ". cajaMemeUno ."
+                            ". cajaMemeDos . "
+                            ". cajaMemeTres ."
+                            ; 
+        background: linear-gradient(rgb(219, 205, 186),rgb(77, 74, 74));
+        background-repeat: no-repeat;
+        height: 100%;
+
+        .tituloEscenas{
+            grid-area: tituloEscenas;
+            @include titulos-princ-xs;
+            color: $texto-claro;
+            margin-top: 8rem;             
+        }
+
+        .escenaUno { 
+            grid-area: escenaUno;
+            padding-bottom: 2rem;
+            padding-top: 1rem;
+            justify-self: center;    
+            
+            h3 {
+                @include subtitulos-1;
+                color: $texto-claro;
+                margin-top: 0.6rem;
+                margin-bottom: 0.6rem;
+            }
+            
+            
+            h4 {
+                @include subtitulos-2;
+                color: $texto-claro;
+                margin-top: 0.6rem;
+                margin-bottom: 0.6rem;
+               
+            }
+            
+            .verOnline {
+            
+                display: inline-block;
+                margin-top: 1rem;
+                margin-bottom: 0.5rem;
+                @include boton;
+
+                a {
+                margin: 0;
+                text-decoration: none;
+                color:$texto-claro;
+               
+                }
+
+                &:hover {
+            
+                    background-color:$boton-accionado;
+                    transform: scale(1.05);
+                }
+
+                
+            }        
+            
+            .cajaVideoUno {
+    
+               
+                width: 300px;
+                height: 200px;
+                position: relative;   
+                justify-self: center;     
+                
+                .videoUno {
+                
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    margin-top: 1rem;
+                }
+            }  
+        }
+        
+        .escenaDos {       
+            grid-area: escenaDos;
+            padding-bottom: 2rem;
+            padding-top: 1rem;
+            justify-self: center; 
+            
+            h3 {
+                @include subtitulos-1;
+                color: $texto-claro;
+                margin-top: 0.6rem;
+                margin-bottom: 0.6rem;
+                
+            }
+            
+            
+            h4 {
+                @include subtitulos-2;
+                color: $texto-claro;
+                margin-top: 0.6rem;
+                margin-bottom: 0.6rem;
+                
+            }
+            
+            .verOnline {
+            
+                display: inline-block;
+                margin-top: 1rem;
+                margin-bottom: 0.5rem;
+                @include boton;
+
+                a {
+                margin: 0;
+                text-decoration: none;
+                color:$texto-claro;
+               
+                }
+
+                &:hover {
+            
+                    background-color:$boton-accionado;
+                    transform: scale(1.05);
+                }              
+            }        
+            .cajaVideoDos {
+        
+                
+                width: 300px;
+                height: 200px;
+                position: relative;
+                justify-self: center; 
+    
+                .videoDos {
+                
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+        
+        .escenaTres {
+            grid-area: escenaTres;
+            padding-bottom: 2rem;
+            padding-top: 1rem;
+            justify-self: center;   
+
+            h3 {
+                @include subtitulos-1;
+                color: $texto-claro;
+                margin-top: 0.6rem;
+                margin-bottom: 0.6rem;
+              
+            }
+            
+            
+            h4 {
+                @include subtitulos-2;
+                color: $texto-claro;
+                margin-top: 0.6rem;
+                margin-bottom: 0.6rem;
+              
+            }
+            
+            .verOnline {
+            
+                display: inline-block;
+                margin-top: 1rem;
+                margin-bottom: 0.5rem;
+                @include boton;
+
+                a {
+                margin: 0;
+                text-decoration: none;
+                color:$texto-claro;
+               
+                }
+
+                &:hover {
+            
+                    background-color:$boton-accionado;
+                    transform: scale(1.05);
+                }
+
+                
+            }        
+            .cajaVideoTres {
+    
+               
+                width: 300px;
+                height: 200px;
+                position: relative;
+                justify-self: center; 
+    
+                .videoTres {
+                
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    margin-top: 1rem;
+                }
+            }
+        }
+        
+        .tituloMemes {
+
+            @include titulos-princ-xs;
+            color: $texto-claro;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            grid-area: tituloMemes ;  
+        }
+        .cajaMemeUno {
+            grid-area: cajaMemeUno;      
+                       
+            
+            h3 {
+                @include subtitulos-1;
+                color: $texto-claro;
+                margin-top: 0.6rem;
+                margin-bottom: 0.6rem;               
+            }
+                        
+            h4 {
+                @include subtitulos-2;
+                color: $texto-claro;
+                margin-top: 0.6rem;
+                margin-bottom: 1rem;
+                
+            }
+
+            .memeUno {
+                
+                img {
+
+                    width: 100%;
+                }
+                 
+                .textoMemeUno {
+                    
+                    text-align: justify;     
+                    font-size: 1rem;     
+                    color:$texto-claro;
+                    font-family:$texto-general;
+                    width: 100%;
+                    display: inline-block;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;                   
+                }           
+            }
+            .verOnline {
+
+                display: inline-block;
+                margin-top: 1rem;
+                margin-bottom: 3rem;
+                @include boton;
+
+                a {
+                margin: 0;
+                text-decoration: none;
+                color:$texto-claro;
+               
+                }
+
+                &:hover {
+            
+                    background-color:$boton-accionado;
+                    transform: scale(1.05);
+                }          
+            }         
+        }       
+        .cajaMemeDos {
+            grid-area: cajaMemeDos ;     
+            
+            
+            h3 {
+                @include subtitulos-1;
+                color: $texto-claro;
+                margin-top: 0.6rem;
+                margin-bottom: 0.6rem;
+            }
+            
+            
+            h4 {
+                @include subtitulos-2;
+                color: $texto-claro;
+                margin-top: 0.6rem;
+                margin-bottom: 1rem;
+            }
+
+            .memeDos {
+
+                img {
+                    width: 100%;
+                }
+
+                .textoMemeDos {
+                    
+                    text-align: justify;     
+                    font-size: 0.8;     
+                    color:$texto-claro;
+                    font-family:$texto-general;
+                    width: 100%;
+                    display: inline-block;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;                   
+                }                      
+            }
+            .verOnline {
+            
+                display: inline-block;
+                margin-top: 1rem;
+                margin-bottom: 3rem;
+                @include boton;
+
+                a {
+                margin: 0;
+                text-decoration: none;
+                color:$texto-claro;
+               
+                }
+
+                &:hover {
+            
+                    background-color:$boton-accionado;
+                    transform: scale(1.05);
+                }                
+            }                   
+        }       
+        .cajaMemeTres {
+            grid-area: cajaMemeTres ;        
+            h3 {
+                @include subtitulos-1;
+                color: $texto-claro;
+                margin-top: 0.6rem;
+                margin-bottom: 0.6rem;
+            }
+            
+            
+            h4 {
+                @include subtitulos-2;
+                color: $texto-claro;
+                margin-top: 0.6rem;
+                margin-bottom: 1rem;
+            }
+            .memeTres {
+                img {
+                    width: 100%;
+                }
+
+                .textoMemeTres {
+                    
+                    text-align: justify;     
+                    font-size: 0.8;     
+                    color:$texto-claro;
+                    font-family: $texto-general;
+                    width: 100%;
+                    display: inline-block;
+                    margin-top: 1rem;     
+                    margin-bottom: 1rem;                             
+                }                    
+            }
+            .verOnline {
+            
+                display: inline-block;
+                margin-top: 1rem;
+                margin-bottom: 3rem;
+                @include boton;
+
+                a {
+                margin: 0;
+                text-decoration: none;
+                color:$texto-claro;
+               
+                }
+
+                &:hover {
+            
+                    background-color:$boton-accionado;
+                    transform: scale(1.05);
+                }         
+            }                      
+        }
+    }
+
+    @media screen and  (min-width:600px) {
+
+        .contenedorMomentos {
+        
+                grid-template-columns: 20% 60% 20%;
+
+
+            .escenaUno {
+        
+                justify-self: center;
+
+                h3 {
+                    font-size: 1.6rem;       
+                }
+                    
+                h4 {
+                    font-size: 1.3rem;
+                }
+
+                .cajaVideoUno {
+                
+                    width: 500px;
+                    height: 350px;
+                    position: relative;
+    
+                    .videoUno {
+                
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                    }              
+                }              
+            }
+            .escenaDos {
+        
+                justify-self: center;
+
+                h3 {
+                    font-size: 1.6rem;       
+                }
+                    
+                h4 {
+                    font-size: 1.3rem;
+                }
+                
+                .cajaVideoDos {
+                
+                    width: 500px;
+                    height: 350px;
+                    position: relative;
+                    
+                    .videoDos {
+                
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                    }                
+                }
+            }
+
+            .escenaTres {
+        
+                justify-self: center;
+
+                h3 {
+                    font-size: 1.6rem;       
+                }
+                    
+                h4 {
+                    font-size: 1.3rem;
+                }
+                .cajaVideoTres {
+                
+                    width: 500px;
+                    height: 350px;
+                    position: relative;
+                    
+                    .videoTres {
+                
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                    }               
+                }                     
+            }
+              
+            .cajaMemeUno {
+                
+                margin-top: 3rem;
+                width: 80%;
+                justify-self: center;
+                
+                .memeUno {
+                
+                    display: flex;
+                    flex-direction: column;
+                    column-gap: 0.6rem;
+
+                    .textoMemeUno {
+                        
+                        height: 100%;      
+                        margin-top: 1rem;                 
+                    }                
+                }
+            }
+
+            .cajaMemeDos {
+                
+                margin-top: 3rem;
+                width: 80%;
+                justify-self: center;
+             
+                .memeDos {
+                    display: flex;
+                    flex-direction: column;
+                    column-gap: 0.6rem;
+
+                    .textoMemeDos {
+                        
+                        height: 100%;
+                        margin-top: 1rem;
+                    }
+                
+                }
+            }
+
+            .cajaMemeTres {
+                
+                margin-top: 3rem;
+                width: 80%;
+                justify-self: center;
+
+                .memeTres {
+                
+                    display: flex;
+                    flex-direction: column;
+                    column-gap: 0.6rem;
+                
+                    .textoMemeTres {
+                    
+                        height: 100%;
+                        margin-top: 1rem;
+                    }
+                
+                }
+            }
+        }
+    }
+
+    @media screen and  (min-width:1024px) {
+
+        .contenedorMomentos {
+    
+            grid-template-columns: 27.5% 45% 27.5%;
+            grid-template-rows: 0.1fr 0.3fr 0.3fr 0.3fr 0.1fr 0.1fr 0.1fr 0.1fr;
+
+            .escenaUno {
+
+                width: 700px;
+
+                .cajaVideoUno {
+    
+                    width: 100%;
+                    height: 400px;
+                    position: relative;
+                    justify-self: center;
+    
+                    .videoUno {
+                    
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                    
+                    }          
+                }
+            }
+
+            .escenaDos {
+
+                width: 700px;
+
+                .cajaVideoDos {
+    
+                    width: 100%;
+                    height: 400px;
+                    position: relative;
+                    justify-self: center;
+    
+                    .videoDos {
+                    
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                    
+                    }          
+                }
+            }
+          
+            .escenaTres {
+
+                width: 700px;
+
+                .cajaVideoTres {
+    
+                    width: 100%;
+                    height: 400px;
+                    position: relative;          
+                    justify-self: center;
+    
+                    .videoTres {
+                    
+                        width: 100%;
+                        height: 100%;
+                        border: none;                   
+                    }          
+                }
+            }
+        }             
+    }
+}
+

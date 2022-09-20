@@ -1,0 +1,2129 @@
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*Estilos FOOTER GENERAL*/
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body .contenedorComprar .item-1, body .contenedorComprar .item-2, body .contenedorComprar .item-3, body .contenedorComprar .item-4, body .contenedorComprar .item-5, body .contenedorComprar .item-6, body .contenedorComprar .item-7, body .contenedorComprar .item-8, body .contenedorContacto, body .contenedorFanart .arte-1, body .contenedorFanart .arte-2, body .contenedorFanart .arte-3, body .contenedorFanart .arte-4, body .contenedorFanart .arte-5, body .contenedorFanart .arte-6, body .contenedorFanart .arte-7, body .contenedorFanart .arte-8, body .contenedorIndex .conoceUno, body .contenedorIndex .conoceDos, body .contenedorIndex .conoceTres, body .contenedorIndex .conoceCuatro, body .contenedorPersonajes .persUno, body .contenedorPersonajes .persDos, body .contenedorPersonajes .persTres, body .contenedorPersonajes .persCuatro, body .contenedorPersonajes .persCinco, body .contenedorPersonajes .persCinco h3, body .contenedorPersonajes .persSeis, body .contenedorPersonajes .persSeis .personajesSec, body .contenedorPersonajes .persSeis h3, body .contenedorPersonajes .persSiete, body .contenedorPersonajes .persSiete h3, body .contenedorPersonajes .persOcho, body .contenedorPersonajes .persOcho h3, body .contenedorTempTipo .tempTipo .temporadaTipo, body .contenedorTempTipo .cajaSinopsis, body .contenedor-temp .bloque-temp, body .contenedor-temp .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+footer .logoRedes, header nav div ul li, body .contenedorPersonajes .persCinco .personajesSec, body .contenedorPersonajes .persSiete .personajesSec, body .contenedorPersonajes .persOcho .personajesSec {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+footer {
+  height: 10rem;
+  background-color: rgba(37, 36, 36, 0.897);
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+  footer .derechosReservados {
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+  footer .logoRedes {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    gap: 1rem; }
+
+/*Estilos HEADER GENERAL*/
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body .contenedorComprar .item-1, body .contenedorComprar .item-2, body .contenedorComprar .item-3, body .contenedorComprar .item-4, body .contenedorComprar .item-5, body .contenedorComprar .item-6, body .contenedorComprar .item-7, body .contenedorComprar .item-8, body .contenedorContacto, body .contenedorFanart .arte-1, body .contenedorFanart .arte-2, body .contenedorFanart .arte-3, body .contenedorFanart .arte-4, body .contenedorFanart .arte-5, body .contenedorFanart .arte-6, body .contenedorFanart .arte-7, body .contenedorFanart .arte-8, body .contenedorIndex .conoceUno, body .contenedorIndex .conoceDos, body .contenedorIndex .conoceTres, body .contenedorIndex .conoceCuatro, body .contenedorPersonajes .persUno, body .contenedorPersonajes .persDos, body .contenedorPersonajes .persTres, body .contenedorPersonajes .persCuatro, body .contenedorPersonajes .persCinco, body .contenedorPersonajes .persCinco h3, body .contenedorPersonajes .persSeis, body .contenedorPersonajes .persSeis .personajesSec, body .contenedorPersonajes .persSeis h3, body .contenedorPersonajes .persSiete, body .contenedorPersonajes .persSiete h3, body .contenedorPersonajes .persOcho, body .contenedorPersonajes .persOcho h3, body .contenedorTempTipo .tempTipo .temporadaTipo, body .contenedorTempTipo .cajaSinopsis, body .contenedor-temp .bloque-temp, body .contenedor-temp .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+footer .logoRedes, header nav div ul li, body .contenedorPersonajes .persCinco .personajesSec, body .contenedorPersonajes .persSiete .personajesSec, body .contenedorPersonajes .persOcho .personajesSec {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+header {
+  z-index: 1;
+  position: fixed;
+  height: 5rem; }
+  header nav {
+    background-color: rgba(37, 36, 36, 0.897); }
+    header nav div ul li {
+      margin: 0.2rem;
+      display: inline-block;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      color: whitesmoke;
+      font-weight: lighter;
+      font-variant-caps: all-petite-caps;
+      position: relative; }
+      header nav div ul li .nav-link:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: inline;
+        height: 2px;
+        width: 100%;
+        background-color: #734985;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .5s ease-in-out; }
+      header nav div ul li .nav-link:hover:after {
+        transform-origin: left;
+        transform: scaleX(1); }
+    header nav a {
+      color: whitesmoke;
+      display: inline;
+      text-decoration: none; }
+
+body .contenedorComprar .item-1, body .contenedorComprar .item-2, body .contenedorComprar .item-3, body .contenedorComprar .item-4, body .contenedorComprar .item-5, body .contenedorComprar .item-6, body .contenedorComprar .item-7, body .contenedorComprar .item-8, body .contenedorContacto, body .contenedorFanart .arte-1, body .contenedorFanart .arte-2, body .contenedorFanart .arte-3, body .contenedorFanart .arte-4, body .contenedorFanart .arte-5, body .contenedorFanart .arte-6, body .contenedorFanart .arte-7, body .contenedorFanart .arte-8, body .contenedorIndex .conoceUno, body .contenedorIndex .conoceDos, body .contenedorIndex .conoceTres, body .contenedorIndex .conoceCuatro, body .contenedorPersonajes .persUno, body .contenedorPersonajes .persDos, body .contenedorPersonajes .persTres, body .contenedorPersonajes .persCuatro, body .contenedorPersonajes .persCinco, body .contenedorPersonajes .persCinco h3, body .contenedorPersonajes .persSeis, body .contenedorPersonajes .persSeis .personajesSec, body .contenedorPersonajes .persSeis h3, body .contenedorPersonajes .persSiete, body .contenedorPersonajes .persSiete h3, body .contenedorPersonajes .persOcho, body .contenedorPersonajes .persOcho h3, body .contenedorTempTipo .tempTipo .temporadaTipo, body .contenedorTempTipo .cajaSinopsis, body .contenedor-temp .bloque-temp, body .contenedor-temp .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+footer .logoRedes, header nav div ul li, body .contenedorPersonajes .persCinco .personajesSec, body .contenedorPersonajes .persSiete .personajesSec, body .contenedorPersonajes .persOcho .personajesSec {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+/* ESTILOS COMPRAR*/
+body .contenedorComprar {
+  display: grid;
+  grid-template-rows: 0.1fr 0.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-areas: " tituloObjetos tituloObjetos tituloObjetos " ". item-1 ." ". item-2 ." ". item-3 ." ". item-4 ." ". item-5 ." ". item-6 ." ". item-7 ." ". item-8 ." ". adquirir .";
+  background-color: #f8eed9; }
+  body .contenedorComprar .tituloObjetos {
+    grid-area: tituloObjetos;
+    color: #4d4a4a;
+    font-family: "Bree Serif", "serif";
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+    width: 100%;
+    padding: 2rem;
+    margin-top: 6rem; }
+  body .contenedorComprar .item-1 {
+    grid-area: item-1;
+    background-color: #eee3d8;
+    border-radius: 0.9rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    height: 90%;
+    width: 95%; }
+    body .contenedorComprar .item-1 div .imgObjeto {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1.4rem;
+      color: #4d4a4a;
+      margin-top: 1rem;
+      margin-bottom: 0; }
+    body .contenedorComprar .item-1 div .precioObjeto {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1rem;
+      color: #4d4a4a;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem; }
+  body .contenedorComprar .item-2 {
+    grid-area: item-2;
+    background-color: #eee3d8;
+    border-radius: 0.9rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    height: 90%;
+    width: 95%; }
+    body .contenedorComprar .item-2 div .imgObjeto {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1.4rem;
+      color: #4d4a4a;
+      margin-top: 1rem;
+      margin-bottom: 0; }
+    body .contenedorComprar .item-2 div .precioObjeto {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1rem;
+      color: #4d4a4a;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem; }
+  body .contenedorComprar .item-3 {
+    grid-area: item-3;
+    background-color: #eee3d8;
+    border-radius: 0.9rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    height: 90%;
+    width: 95%; }
+    body .contenedorComprar .item-3 div .imgObjeto {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1.4rem;
+      color: #4d4a4a;
+      margin-top: 1rem;
+      margin-bottom: 0; }
+    body .contenedorComprar .item-3 div .precioObjeto {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1rem;
+      color: #4d4a4a;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem; }
+  body .contenedorComprar .item-4 {
+    grid-area: item-4;
+    background-color: #eee3d8;
+    border-radius: 0.9rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    height: 90%;
+    width: 95%; }
+    body .contenedorComprar .item-4 div .imgObjeto {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1.4rem;
+      color: #4d4a4a;
+      margin-top: 1rem;
+      margin-bottom: 0; }
+    body .contenedorComprar .item-4 div .precioObjeto {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1rem;
+      color: #4d4a4a;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem; }
+  body .contenedorComprar .item-5 {
+    grid-area: item-5;
+    background-color: #eee3d8;
+    border-radius: 0.9rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    height: 90%;
+    width: 95%; }
+    body .contenedorComprar .item-5 div .imgObjeto {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1.4rem;
+      color: #4d4a4a;
+      margin-top: 1rem;
+      margin-bottom: 0; }
+    body .contenedorComprar .item-5 div .precioObjeto {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1rem;
+      color: #4d4a4a;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem; }
+  body .contenedorComprar .item-6 {
+    grid-area: item-6;
+    background-color: #eee3d8;
+    border-radius: 0.9rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    height: 90%;
+    width: 95%; }
+    body .contenedorComprar .item-6 div .imgObjeto {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1.4rem;
+      color: #4d4a4a;
+      margin-top: 1rem;
+      margin-bottom: 0; }
+    body .contenedorComprar .item-6 div .precioObjeto {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1rem;
+      color: #4d4a4a;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem; }
+  body .contenedorComprar .item-7 {
+    grid-area: item-7;
+    background-color: #eee3d8;
+    border-radius: 0.9rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    height: 90%;
+    width: 95%; }
+    body .contenedorComprar .item-7 div .imgObjeto {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1.4rem;
+      color: #4d4a4a;
+      margin-top: 1rem;
+      margin-bottom: 0; }
+    body .contenedorComprar .item-7 div .precioObjeto {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1rem;
+      color: #4d4a4a;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem; }
+  body .contenedorComprar .item-8 {
+    grid-area: item-8;
+    background-color: #eee3d8;
+    border-radius: 0.9rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    height: 90%;
+    width: 95%; }
+    body .contenedorComprar .item-8 div .imgObjeto {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1.4rem;
+      color: #4d4a4a;
+      margin-top: 1rem;
+      margin-bottom: 0; }
+    body .contenedorComprar .item-8 div .precioObjeto {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1rem;
+      color: #4d4a4a;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem; }
+  body .contenedorComprar .adquirir {
+    grid-area: adquirir;
+    font-family: "Port Lligat Sans", sans-serif;
+    font-size: 1rem;
+    color: #4d4a4a;
+    margin-top: 60px;
+    text-align: center; }
+    body .contenedorComprar .adquirir a {
+      color: #4d4a4a;
+      display: inline; }
+
+@media screen and (min-width: 600px) {
+  body .contenedorComprar {
+    grid-template-rows: 0.1fr 0.4fr 0.4fr 0.4fr 0.4fr 0.1fr;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-areas: " tituloObjetos tituloObjetos tituloObjetos tituloObjetos" ". item-1 item-2 ." ". item-3 item-4 ." ". item-5 item-6 ." ". item-7 item-8 ." ". adquirir adquirir ."; }
+    body .contenedorComprar .tituloObjetos {
+      font-size: 1.5rem; } }
+
+@media screen and (min-width: 1024px) {
+  body .contenedorComprar {
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 0.1fr;
+    grid-template-columns: 5% 30% 30% 30% 5%;
+    grid-template-areas: "tituloObjetos tituloObjetos tituloObjetos tituloObjetos tituloObjetos" ". item-1 item-2 item-3 ." ". item-4 item-5 item-6 ." ". item-7 item-8 . ." "adquirir adquirir adquirir adquirir adquirir"; }
+    body .contenedorComprar .item-1, body .contenedorComprar .item-2, body .contenedorComprar .item-3, body .contenedorComprar .item-4, body .contenedorComprar .item-5, body .contenedorComprar .item-6, body .contenedorComprar .item-7, body .contenedorComprar .item-8 {
+      justify-self: center;
+      width: 280px; } }
+
+/* estilos contacto */
+/*MOBILE FIRST*/
+body .contenedorContacto {
+  background: linear-gradient(#dbcdba, #4d4a4a);
+  background-repeat: no-repeat; }
+  body .contenedorContacto .tituloForm {
+    font-family: "Bree Serif", "serif";
+    text-align: center;
+    font-size: 2rem;
+    color: whitesmoke;
+    margin-top: 8rem; }
+  body .contenedorContacto .cuadroForm {
+    margin: 1rem; }
+    body .contenedorContacto .cuadroForm .formulario {
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1.4rem;
+      color: whitesmoke; }
+      body .contenedorContacto .cuadroForm .formulario .itemsForm {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        font-family: "Port Lligat Sans", sans-serif;
+        text-align: left;
+        font-size: 1rem;
+        color: whitesmoke; }
+      body .contenedorContacto .cuadroForm .formulario .itemsFormFinal {
+        margin-top: 4rem;
+        margin-left: 1rem;
+        font-family: "Port Lligat Sans", sans-serif;
+        text-align: left;
+        font-size: 1rem;
+        color: whitesmoke; }
+  body .contenedorContacto .imagenesPie {
+    margin-top: 4rem;
+    margin-bottom: 2rem; }
+    body .contenedorContacto .imagenesPie .comprarProd {
+      display: none; }
+    body .contenedorContacto .imagenesPie .adquirirProd {
+      padding: 1rem;
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1rem;
+      color: whitesmoke;
+      text-align: center;
+      margin-top: 4rem; }
+
+@media screen and (min-width: 600px) {
+  body .contenedorContacto .imagenesPie {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+    body .contenedorContacto .imagenesPie .comprarProd {
+      display: block; }
+    body .contenedorContacto .imagenesPie .adquirirProd {
+      width: 40%; } }
+
+@media screen and (min-width: 1024px) {
+  body .contenedorContacto .imagenesPie {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; } }
+
+/* FANART */
+body .contenedorFanart {
+  display: grid;
+  grid-template-rows: 0.1fr 0.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-areas: " tituloFanart tituloFanart tituloFanart " ". arte-1 ." ". arte-2 ." ". arte-3 ." ". arte-4 ." ". arte-5 ." ". arte-6 ." ". arte-7 ." ". arte-8 ." ". adquirir .";
+  background-color: #f8eed9; }
+  body .contenedorFanart .tituloFanart {
+    grid-area: tituloFanart;
+    color: #4d4a4a;
+    font-family: "Bree Serif", "serif";
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+    width: 100%;
+    padding: 2rem;
+    margin-top: 6rem; }
+  body .contenedorFanart .arte-1 {
+    grid-area: arte-1;
+    background-color: #eee3d8;
+    border-radius: 0.9rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    height: 90%;
+    width: 95%; }
+    body .contenedorFanart .arte-1 .comprarMas img {
+      height: 90%;
+      margin-top: 2rem; }
+    body .contenedorFanart .arte-1 .textoArte .imgArte {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1.4rem;
+      color: #4d4a4a;
+      margin-top: 1rem;
+      margin-bottom: 0;
+      padding-bottom: 1.5rem; }
+  body .contenedorFanart .arte-2 {
+    grid-area: arte-2;
+    background-color: #eee3d8;
+    border-radius: 0.9rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    height: 90%;
+    width: 95%; }
+    body .contenedorFanart .arte-2 .comprarMas img {
+      height: 90%;
+      margin-top: 2rem; }
+    body .contenedorFanart .arte-2 .textoArte .imgArte {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1.4rem;
+      color: #4d4a4a;
+      margin-top: 1rem;
+      margin-bottom: 0;
+      padding-bottom: 1.5rem; }
+  body .contenedorFanart .arte-3 {
+    grid-area: arte-3;
+    background-color: #eee3d8;
+    border-radius: 0.9rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    height: 90%;
+    width: 95%; }
+    body .contenedorFanart .arte-3 .comprarMas img {
+      height: 90%;
+      margin-top: 2rem; }
+    body .contenedorFanart .arte-3 .textoArte .imgArte {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1.4rem;
+      color: #4d4a4a;
+      margin-top: 1rem;
+      margin-bottom: 0;
+      padding-bottom: 1.5rem; }
+  body .contenedorFanart .arte-4 {
+    grid-area: arte-4;
+    background-color: #eee3d8;
+    border-radius: 0.9rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    height: 90%;
+    width: 95%; }
+    body .contenedorFanart .arte-4 .comprarMas img {
+      height: 90%;
+      margin-top: 2rem; }
+    body .contenedorFanart .arte-4 .textoArte .imgArte {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1.4rem;
+      color: #4d4a4a;
+      margin-top: 1rem;
+      margin-bottom: 0;
+      padding-bottom: 1.5rem; }
+  body .contenedorFanart .arte-5 {
+    grid-area: arte-5;
+    background-color: #eee3d8;
+    border-radius: 0.9rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    height: 90%;
+    width: 95%; }
+    body .contenedorFanart .arte-5 .comprarMas img {
+      height: 90%;
+      margin-top: 2rem; }
+    body .contenedorFanart .arte-5 .textoArte .imgArte {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1.4rem;
+      color: #4d4a4a;
+      margin-top: 1rem;
+      margin-bottom: 0;
+      padding-bottom: 1.5rem; }
+  body .contenedorFanart .arte-6 {
+    grid-area: arte-6;
+    background-color: #eee3d8;
+    border-radius: 0.9rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    height: 90%;
+    width: 95%; }
+    body .contenedorFanart .arte-6 .comprarMas img {
+      height: 90%;
+      margin-top: 2rem; }
+    body .contenedorFanart .arte-6 .textoArte .imgArte {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1.4rem;
+      color: #4d4a4a;
+      margin-top: 1rem;
+      margin-bottom: 0;
+      padding-bottom: 1.5rem; }
+  body .contenedorFanart .arte-7 {
+    grid-area: arte-7;
+    background-color: #eee3d8;
+    border-radius: 0.9rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    height: 90%;
+    width: 95%; }
+    body .contenedorFanart .arte-7 .comprarMas img {
+      height: 90%;
+      margin-top: 2rem; }
+    body .contenedorFanart .arte-7 .textoArte .imgArte {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1.4rem;
+      color: #4d4a4a;
+      margin-top: 1rem;
+      margin-bottom: 0;
+      padding-bottom: 1.5rem; }
+  body .contenedorFanart .arte-8 {
+    grid-area: arte-8;
+    background-color: #eee3d8;
+    border-radius: 0.9rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    height: 90%;
+    width: 95%; }
+    body .contenedorFanart .arte-8 .comprarMas img {
+      height: 90%;
+      margin-top: 2rem; }
+    body .contenedorFanart .arte-8 .textoArte .imgArte {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1.4rem;
+      color: #4d4a4a;
+      margin-top: 1rem;
+      margin-bottom: 0;
+      padding-bottom: 1.5rem; }
+  body .contenedorFanart .adquirir {
+    grid-area: adquirir;
+    font-family: "Port Lligat Sans", sans-serif;
+    font-size: 1rem;
+    color: #4d4a4a;
+    margin-top: 60px;
+    text-align: center; }
+    body .contenedorFanart .adquirir a {
+      color: #4d4a4a;
+      display: inline; }
+
+@media screen and (min-width: 600px) {
+  body .contenedorFanart {
+    grid-template-rows: 0.1fr 0.4fr 0.4fr 0.4fr 0.4fr 0.1fr;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-areas: " tituloFanart tituloFanart tituloFanart tituloFanart" ". arte-1 arte-2 ." ". arte-3 arte-4 ." ". arte-5 arte-6 ." ". arte-7 arte-8 ." ". adquirir adquirir ."; }
+    body .contenedorFanart .tituloObjetos {
+      font-size: 1.5rem; }
+    body .contenedorFanart .derechosReservados {
+      margin-top: 3rem; } }
+
+@media screen and (min-width: 1024px) {
+  body .contenedorFanart {
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 0.1fr;
+    grid-template-columns: 5% 30% 30% 30% 5%;
+    grid-template-areas: "tituloFanart tituloFanart tituloFanart tituloFanart tituloFanart " ". arte-1 arte-2 arte-3 ." ". arte-4 arte-5 arte-6 ." ". arte-7 arte-8 . ." "adquirir adquirir adquirir adquirir adquirir"; }
+    body .contenedorFanart .arte-1, body .contenedorFanart .arte-2, body .contenedorFanart .arte-3, body .contenedorFanart .arte-4, body .contenedorFanart .arte-5, body .contenedorFanart .arte-6, body .contenedorFanart .arte-7, body .contenedorFanart .arte-8 {
+      justify-self: center;
+      width: 280px; } }
+
+/*ESTILOS INDEX MOBILE FIRST*/
+body .contenedorIndex {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 0.7fr 0.1fr 0.2fr 0.3fr 0.3fr 0.3fr 0.3fr 0.1fr 0.2fr 0.6fr;
+  grid-template-areas: "portadaPrincipal portadaPrincipal portadaPrincipal" "citaTextual citaTextual citaTextual" "conoce conoce conoce" ". conoceUno ." ". conoceDos ." ". conoceTres ."  ". conoceCuatro ." ". masPersonajes ." ". lugar ." ". areaVideoLugar .";
+  background: linear-gradient(#dbcdba, #4d4a4a);
+  background-repeat: no-repeat;
+  height: 100%; }
+  body .contenedorIndex .portadaPrincipal {
+    grid-area: portadaPrincipal; }
+    body .contenedorIndex .portadaPrincipal .imgPrincipal {
+      margin-top: 2rem;
+      width: 100%;
+      height: 95%; }
+  body .contenedorIndex .sinopsis {
+    display: none; }
+  body .contenedorIndex .citaTextual {
+    grid-area: citaTextual;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    font-family: "Port Lligat Sans", sans-serif;
+    text-align: center;
+    color: black;
+    padding: 0.5rem; }
+  body .contenedorIndex .conoce {
+    grid-area: conoce;
+    color: #4d4a4a;
+    font-family: "Bree Serif", "serif";
+    text-align: center;
+    font-size: 2rem;
+    margin: 0.8rem 0.8rem; }
+  body .contenedorIndex .conoceUno {
+    grid-area: conoceUno;
+    margin: 0.2rem; }
+    body .contenedorIndex .conoceUno a img {
+      width: 100%;
+      height: 100%;
+      transition: 0.5s;
+      object-fit: cover;
+      margin-top: 0.5rem; }
+      body .contenedorIndex .conoceUno a img:hover {
+        transform: scale(1.02); }
+    body .contenedorIndex .conoceUno .conoceTexto {
+      padding-top: 1rem;
+      padding-right: 0.7rem;
+      width: 100%; }
+      body .contenedorIndex .conoceUno .conoceTexto h3 {
+        font-family: "Port Lligat Sans", sans-serif;
+        text-align: left;
+        font-size: 1.4rem;
+        color: whitesmoke; }
+      body .contenedorIndex .conoceUno .conoceTexto p {
+        font-family: "Port Lligat Sans", sans-serif;
+        text-align: left;
+        font-size: 1rem;
+        color: whitesmoke; }
+  body .contenedorIndex .conoceDos {
+    grid-area: conoceDos;
+    margin: 0.2rem; }
+    body .contenedorIndex .conoceDos a img {
+      width: 100%;
+      height: 100%;
+      transition: 0.5s;
+      object-fit: cover;
+      margin-top: 0.5rem; }
+      body .contenedorIndex .conoceDos a img:hover {
+        transform: scale(1.02); }
+    body .contenedorIndex .conoceDos .conoceTexto {
+      padding-top: 1rem;
+      padding-right: 0.7rem;
+      width: 100%; }
+      body .contenedorIndex .conoceDos .conoceTexto h3 {
+        font-family: "Port Lligat Sans", sans-serif;
+        text-align: left;
+        font-size: 1.4rem;
+        color: whitesmoke; }
+      body .contenedorIndex .conoceDos .conoceTexto p {
+        font-family: "Port Lligat Sans", sans-serif;
+        text-align: left;
+        font-size: 1rem;
+        color: whitesmoke; }
+  body .contenedorIndex .conoceTres {
+    grid-area: conoceTres;
+    margin: 0.2rem; }
+    body .contenedorIndex .conoceTres a img {
+      width: 100%;
+      height: 100%;
+      transition: 0.5s;
+      object-fit: cover;
+      margin-top: 0.5rem; }
+      body .contenedorIndex .conoceTres a img:hover {
+        transform: scale(1.02); }
+    body .contenedorIndex .conoceTres .conoceTexto {
+      padding-top: 1rem;
+      padding-right: 0.7rem;
+      width: 100%; }
+      body .contenedorIndex .conoceTres .conoceTexto h3 {
+        font-family: "Port Lligat Sans", sans-serif;
+        text-align: left;
+        font-size: 1.4rem;
+        color: whitesmoke; }
+      body .contenedorIndex .conoceTres .conoceTexto p {
+        font-family: "Port Lligat Sans", sans-serif;
+        text-align: left;
+        font-size: 1rem;
+        color: whitesmoke; }
+  body .contenedorIndex .conoceCuatro {
+    grid-area: conoceCuatro;
+    margin: 0.2rem; }
+    body .contenedorIndex .conoceCuatro a img {
+      width: 100%;
+      height: 100%;
+      transition: 0.5s;
+      object-fit: cover;
+      margin-top: 0.5rem; }
+      body .contenedorIndex .conoceCuatro a img:hover {
+        transform: scale(1.02); }
+    body .contenedorIndex .conoceCuatro .conoceTexto {
+      padding-top: 1rem;
+      padding-right: 0.7rem;
+      width: 100%; }
+      body .contenedorIndex .conoceCuatro .conoceTexto h3 {
+        font-family: "Port Lligat Sans", sans-serif;
+        text-align: left;
+        font-size: 1.4rem;
+        color: whitesmoke; }
+      body .contenedorIndex .conoceCuatro .conoceTexto p {
+        font-family: "Port Lligat Sans", sans-serif;
+        text-align: left;
+        font-size: 1rem;
+        color: whitesmoke; }
+  body .contenedorIndex .masPersonajes {
+    grid-area: masPersonajes;
+    justify-self: center;
+    margin-bottom: 3rem;
+    border: none solid 1rem;
+    border-radius: 1.1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #734985;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: "NTR", sans-serif;
+    font-variant-caps: all-small-caps; }
+    body .contenedorIndex .masPersonajes:hover {
+      background-color: #734985;
+      transform: scale(1.05); }
+    body .contenedorIndex .masPersonajes a {
+      margin: 0;
+      text-decoration: none;
+      color: whitesmoke; }
+  body .contenedorIndex .lugar {
+    grid-area: lugar;
+    font-family: "Bree Serif", "serif";
+    text-align: center;
+    font-size: 2rem;
+    color: whitesmoke; }
+  body .contenedorIndex .areaVideoLugar {
+    grid-area: areaVideoLugar;
+    margin-top: 1.2rem;
+    padding-bottom: 3rem;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    justify-self: center; }
+    body .contenedorIndex .areaVideoLugar .cajaIframe {
+      width: 100%;
+      height: 100%;
+      border: none; }
+
+@media screen and (min-width: 600px) {
+  body .contenedorIndex {
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 0.6fr 0.05fr 0.2fr 0.7fr 0.7fr 0.7fr 0.7fr 0.1fr 0.15fr 0.6fr;
+    grid-template-areas: "portadaPrincipal portadaPrincipal portadaPrincipal" "citaTextual citaTextual citaTextual" "conoce conoce conoce" ". conoceUno ." ". conoceDos ." ". conoceTres ."  ". conoceCuatro ." ". masPersonajes ." ". lugar ." ". areaVideoLugar ."; }
+    body .contenedorIndex .sinopsis {
+      display: block;
+      width: 40%;
+      padding: 0.6rem;
+      margin-top: 1rem;
+      margin-left: 2rem;
+      position: absolute;
+      top: 12%;
+      left: 50%; }
+      body .contenedorIndex .sinopsis h1 {
+        font-family: "NTR", sans-serif;
+        color: #4d4a4a;
+        font-size: 3.5rem;
+        text-align: center; }
+      body .contenedorIndex .sinopsis p {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        font-size: 0.7rem;
+        text-align: center;
+        color: #4d4a4a; }
+    body .contenedorIndex .citaTextual {
+      font-size: 1rem; }
+    body .contenedorIndex .areaVideoLugar {
+      margin-top: 3rem;
+      width: 650px;
+      height: 550px; } }
+
+@media screen and (min-width: 1024px) {
+  body .contenedorIndex {
+    grid-template-rows: 0.8fr 0.1fr 0.1fr 0.5fr 0.1fr 0.05fr 0.05fr 0.7fr;
+    grid-template-columns: 27.5% 22.5% 22.5% 27.5%;
+    grid-template-areas: "portadaPrincipal portadaPrincipal portadaPrincipal portadaPrincipal"  ". citaTextual citaTextual ." ". conoce conoce . " ". conoceUno conoceDos ." ". conoceTres conoceCuatro ." ". masPersonajes masPersonajes . " " lugar lugar lugar lugar" " . areaVideoLugar areaVideoLugar . ";
+    column-gap: 1.5rem;
+    justify-content: center; }
+    body .contenedorIndex .sinopsis {
+      width: 30%;
+      top: 30%;
+      left: 50%; }
+      body .contenedorIndex .sinopsis h1 {
+        font-size: 3.9rem; }
+      body .contenedorIndex .sinopsis p {
+        font-size: 1rem; }
+  body .lugar {
+    margin-top: 2rem; }
+  body .areaVideoLugar {
+    margin-top: 2rem; }
+    body .areaVideoLugar .cajaIframe {
+      width: 100%;
+      height: 100%;
+      border: none; } }
+
+/* estilos mejores momentos */
+/*MOBILE FIRST*/
+body .contenedorMomentos {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 0.1fr 0.1fr  0.1fr  0.1fr  0.1fr 0.2fr 0.2fr 0.2fr;
+  column-gap: 0;
+  grid-template-areas: ". tituloEscenas ." ". escenaUno ."  ". escenaDos ."  ". escenaTres ."  ". tituloMemes ." ". cajaMemeUno ." ". cajaMemeDos . " ". cajaMemeTres .";
+  background: linear-gradient(#dbcdba, #4d4a4a);
+  background-repeat: no-repeat;
+  height: 100%; }
+  body .contenedorMomentos .tituloEscenas {
+    grid-area: tituloEscenas;
+    font-family: "Bree Serif", "serif";
+    text-align: center;
+    font-size: 2rem;
+    color: whitesmoke;
+    margin-top: 8rem; }
+  body .contenedorMomentos .escenaUno {
+    grid-area: escenaUno;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    justify-self: center; }
+    body .contenedorMomentos .escenaUno h3 {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1.4rem;
+      color: whitesmoke;
+      margin-top: 0.6rem;
+      margin-bottom: 0.6rem; }
+    body .contenedorMomentos .escenaUno h4 {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1rem;
+      color: whitesmoke;
+      margin-top: 0.6rem;
+      margin-bottom: 0.6rem; }
+    body .contenedorMomentos .escenaUno .verOnline {
+      display: inline-block;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      border: none solid 1rem;
+      border-radius: 1.1rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      background-color: #734985;
+      text-align: center;
+      font-size: 1.1rem;
+      font-family: "NTR", sans-serif;
+      font-variant-caps: all-small-caps; }
+      body .contenedorMomentos .escenaUno .verOnline a {
+        margin: 0;
+        text-decoration: none;
+        color: whitesmoke; }
+      body .contenedorMomentos .escenaUno .verOnline:hover {
+        background-color: #6a447a;
+        transform: scale(1.05); }
+    body .contenedorMomentos .escenaUno .cajaVideoUno {
+      width: 300px;
+      height: 200px;
+      position: relative;
+      justify-self: center; }
+      body .contenedorMomentos .escenaUno .cajaVideoUno .videoUno {
+        width: 100%;
+        height: 100%;
+        border: none;
+        margin-top: 1rem; }
+  body .contenedorMomentos .escenaDos {
+    grid-area: escenaDos;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    justify-self: center; }
+    body .contenedorMomentos .escenaDos h3 {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1.4rem;
+      color: whitesmoke;
+      margin-top: 0.6rem;
+      margin-bottom: 0.6rem; }
+    body .contenedorMomentos .escenaDos h4 {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1rem;
+      color: whitesmoke;
+      margin-top: 0.6rem;
+      margin-bottom: 0.6rem; }
+    body .contenedorMomentos .escenaDos .verOnline {
+      display: inline-block;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      border: none solid 1rem;
+      border-radius: 1.1rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      background-color: #734985;
+      text-align: center;
+      font-size: 1.1rem;
+      font-family: "NTR", sans-serif;
+      font-variant-caps: all-small-caps; }
+      body .contenedorMomentos .escenaDos .verOnline a {
+        margin: 0;
+        text-decoration: none;
+        color: whitesmoke; }
+      body .contenedorMomentos .escenaDos .verOnline:hover {
+        background-color: #6a447a;
+        transform: scale(1.05); }
+    body .contenedorMomentos .escenaDos .cajaVideoDos {
+      width: 300px;
+      height: 200px;
+      position: relative;
+      justify-self: center; }
+      body .contenedorMomentos .escenaDos .cajaVideoDos .videoDos {
+        width: 100%;
+        height: 100%;
+        border: none;
+        margin-top: 1rem; }
+  body .contenedorMomentos .escenaTres {
+    grid-area: escenaTres;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    justify-self: center; }
+    body .contenedorMomentos .escenaTres h3 {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1.4rem;
+      color: whitesmoke;
+      margin-top: 0.6rem;
+      margin-bottom: 0.6rem; }
+    body .contenedorMomentos .escenaTres h4 {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1rem;
+      color: whitesmoke;
+      margin-top: 0.6rem;
+      margin-bottom: 0.6rem; }
+    body .contenedorMomentos .escenaTres .verOnline {
+      display: inline-block;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      border: none solid 1rem;
+      border-radius: 1.1rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      background-color: #734985;
+      text-align: center;
+      font-size: 1.1rem;
+      font-family: "NTR", sans-serif;
+      font-variant-caps: all-small-caps; }
+      body .contenedorMomentos .escenaTres .verOnline a {
+        margin: 0;
+        text-decoration: none;
+        color: whitesmoke; }
+      body .contenedorMomentos .escenaTres .verOnline:hover {
+        background-color: #6a447a;
+        transform: scale(1.05); }
+    body .contenedorMomentos .escenaTres .cajaVideoTres {
+      width: 300px;
+      height: 200px;
+      position: relative;
+      justify-self: center; }
+      body .contenedorMomentos .escenaTres .cajaVideoTres .videoTres {
+        width: 100%;
+        height: 100%;
+        border: none;
+        margin-top: 1rem; }
+  body .contenedorMomentos .tituloMemes {
+    font-family: "Bree Serif", "serif";
+    text-align: center;
+    font-size: 2rem;
+    color: whitesmoke;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    grid-area: tituloMemes; }
+  body .contenedorMomentos .cajaMemeUno {
+    grid-area: cajaMemeUno; }
+    body .contenedorMomentos .cajaMemeUno h3 {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1.4rem;
+      color: whitesmoke;
+      margin-top: 0.6rem;
+      margin-bottom: 0.6rem; }
+    body .contenedorMomentos .cajaMemeUno h4 {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1rem;
+      color: whitesmoke;
+      margin-top: 0.6rem;
+      margin-bottom: 1rem; }
+    body .contenedorMomentos .cajaMemeUno .memeUno img {
+      width: 100%; }
+    body .contenedorMomentos .cajaMemeUno .memeUno .textoMemeUno {
+      text-align: justify;
+      font-size: 1rem;
+      color: whitesmoke;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      width: 100%;
+      display: inline-block;
+      margin-top: 1rem;
+      margin-bottom: 1rem; }
+    body .contenedorMomentos .cajaMemeUno .verOnline {
+      display: inline-block;
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+      border: none solid 1rem;
+      border-radius: 1.1rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      background-color: #734985;
+      text-align: center;
+      font-size: 1.1rem;
+      font-family: "NTR", sans-serif;
+      font-variant-caps: all-small-caps; }
+      body .contenedorMomentos .cajaMemeUno .verOnline a {
+        margin: 0;
+        text-decoration: none;
+        color: whitesmoke; }
+      body .contenedorMomentos .cajaMemeUno .verOnline:hover {
+        background-color: #6a447a;
+        transform: scale(1.05); }
+  body .contenedorMomentos .cajaMemeDos {
+    grid-area: cajaMemeDos; }
+    body .contenedorMomentos .cajaMemeDos h3 {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1.4rem;
+      color: whitesmoke;
+      margin-top: 0.6rem;
+      margin-bottom: 0.6rem; }
+    body .contenedorMomentos .cajaMemeDos h4 {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1rem;
+      color: whitesmoke;
+      margin-top: 0.6rem;
+      margin-bottom: 1rem; }
+    body .contenedorMomentos .cajaMemeDos .memeDos img {
+      width: 100%; }
+    body .contenedorMomentos .cajaMemeDos .memeDos .textoMemeDos {
+      text-align: justify;
+      font-size: 0.8;
+      color: whitesmoke;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      width: 100%;
+      display: inline-block;
+      margin-top: 1rem;
+      margin-bottom: 1rem; }
+    body .contenedorMomentos .cajaMemeDos .verOnline {
+      display: inline-block;
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+      border: none solid 1rem;
+      border-radius: 1.1rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      background-color: #734985;
+      text-align: center;
+      font-size: 1.1rem;
+      font-family: "NTR", sans-serif;
+      font-variant-caps: all-small-caps; }
+      body .contenedorMomentos .cajaMemeDos .verOnline a {
+        margin: 0;
+        text-decoration: none;
+        color: whitesmoke; }
+      body .contenedorMomentos .cajaMemeDos .verOnline:hover {
+        background-color: #6a447a;
+        transform: scale(1.05); }
+  body .contenedorMomentos .cajaMemeTres {
+    grid-area: cajaMemeTres; }
+    body .contenedorMomentos .cajaMemeTres h3 {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1.4rem;
+      color: whitesmoke;
+      margin-top: 0.6rem;
+      margin-bottom: 0.6rem; }
+    body .contenedorMomentos .cajaMemeTres h4 {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1rem;
+      color: whitesmoke;
+      margin-top: 0.6rem;
+      margin-bottom: 1rem; }
+    body .contenedorMomentos .cajaMemeTres .memeTres img {
+      width: 100%; }
+    body .contenedorMomentos .cajaMemeTres .memeTres .textoMemeTres {
+      text-align: justify;
+      font-size: 0.8;
+      color: whitesmoke;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      width: 100%;
+      display: inline-block;
+      margin-top: 1rem;
+      margin-bottom: 1rem; }
+    body .contenedorMomentos .cajaMemeTres .verOnline {
+      display: inline-block;
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+      border: none solid 1rem;
+      border-radius: 1.1rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      background-color: #734985;
+      text-align: center;
+      font-size: 1.1rem;
+      font-family: "NTR", sans-serif;
+      font-variant-caps: all-small-caps; }
+      body .contenedorMomentos .cajaMemeTres .verOnline a {
+        margin: 0;
+        text-decoration: none;
+        color: whitesmoke; }
+      body .contenedorMomentos .cajaMemeTres .verOnline:hover {
+        background-color: #6a447a;
+        transform: scale(1.05); }
+
+@media screen and (min-width: 600px) {
+  body .contenedorMomentos {
+    grid-template-columns: 20% 60% 20%; }
+    body .contenedorMomentos .escenaUno {
+      justify-self: center; }
+      body .contenedorMomentos .escenaUno h3 {
+        font-size: 1.6rem; }
+      body .contenedorMomentos .escenaUno h4 {
+        font-size: 1.3rem; }
+      body .contenedorMomentos .escenaUno .cajaVideoUno {
+        width: 500px;
+        height: 350px;
+        position: relative; }
+        body .contenedorMomentos .escenaUno .cajaVideoUno .videoUno {
+          width: 100%;
+          height: 100%;
+          border: none; }
+    body .contenedorMomentos .escenaDos {
+      justify-self: center; }
+      body .contenedorMomentos .escenaDos h3 {
+        font-size: 1.6rem; }
+      body .contenedorMomentos .escenaDos h4 {
+        font-size: 1.3rem; }
+      body .contenedorMomentos .escenaDos .cajaVideoDos {
+        width: 500px;
+        height: 350px;
+        position: relative; }
+        body .contenedorMomentos .escenaDos .cajaVideoDos .videoDos {
+          width: 100%;
+          height: 100%;
+          border: none; }
+    body .contenedorMomentos .escenaTres {
+      justify-self: center; }
+      body .contenedorMomentos .escenaTres h3 {
+        font-size: 1.6rem; }
+      body .contenedorMomentos .escenaTres h4 {
+        font-size: 1.3rem; }
+      body .contenedorMomentos .escenaTres .cajaVideoTres {
+        width: 500px;
+        height: 350px;
+        position: relative; }
+        body .contenedorMomentos .escenaTres .cajaVideoTres .videoTres {
+          width: 100%;
+          height: 100%;
+          border: none; }
+    body .contenedorMomentos .cajaMemeUno {
+      margin-top: 3rem;
+      width: 80%;
+      justify-self: center; }
+      body .contenedorMomentos .cajaMemeUno .memeUno {
+        display: flex;
+        flex-direction: column;
+        column-gap: 0.6rem; }
+        body .contenedorMomentos .cajaMemeUno .memeUno .textoMemeUno {
+          height: 100%;
+          margin-top: 1rem; }
+    body .contenedorMomentos .cajaMemeDos {
+      margin-top: 3rem;
+      width: 80%;
+      justify-self: center; }
+      body .contenedorMomentos .cajaMemeDos .memeDos {
+        display: flex;
+        flex-direction: column;
+        column-gap: 0.6rem; }
+        body .contenedorMomentos .cajaMemeDos .memeDos .textoMemeDos {
+          height: 100%;
+          margin-top: 1rem; }
+    body .contenedorMomentos .cajaMemeTres {
+      margin-top: 3rem;
+      width: 80%;
+      justify-self: center; }
+      body .contenedorMomentos .cajaMemeTres .memeTres {
+        display: flex;
+        flex-direction: column;
+        column-gap: 0.6rem; }
+        body .contenedorMomentos .cajaMemeTres .memeTres .textoMemeTres {
+          height: 100%;
+          margin-top: 1rem; } }
+
+@media screen and (min-width: 1024px) {
+  body .contenedorMomentos {
+    grid-template-columns: 27.5% 45% 27.5%;
+    grid-template-rows: 0.1fr 0.3fr 0.3fr 0.3fr 0.1fr 0.1fr 0.1fr 0.1fr; }
+    body .contenedorMomentos .escenaUno {
+      width: 700px; }
+      body .contenedorMomentos .escenaUno .cajaVideoUno {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        justify-self: center; }
+        body .contenedorMomentos .escenaUno .cajaVideoUno .videoUno {
+          width: 100%;
+          height: 100%;
+          border: none; }
+    body .contenedorMomentos .escenaDos {
+      width: 700px; }
+      body .contenedorMomentos .escenaDos .cajaVideoDos {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        justify-self: center; }
+        body .contenedorMomentos .escenaDos .cajaVideoDos .videoDos {
+          width: 100%;
+          height: 100%;
+          border: none; }
+    body .contenedorMomentos .escenaTres {
+      width: 700px; }
+      body .contenedorMomentos .escenaTres .cajaVideoTres {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        justify-self: center; }
+        body .contenedorMomentos .escenaTres .cajaVideoTres .videoTres {
+          width: 100%;
+          height: 100%;
+          border: none; } }
+
+/* PERSONAJE TIPO */
+body .contenedorPersTipo {
+  background-color: #eee3d8;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 0.3fr 0.1fr 0.05fr 0.6fr 0.1fr 0.3fr 0.05fr 0.3fr 0.05fr 0.3fr 0.05fr 0.3fr 0.05fr 0.2fr;
+  grid-template-areas: "persTipoPpal persTipoPpal persTipoPpal" "h1 h1 h1" ". masPersonajes . " ". persTipoTexto ." " h2 h2 h2 " ". persTipoFraseUno ." ". masEscenaUno . " ". persTipoFraseDos . " ". masEscenaDos . " ". persTipoFraseTres . " ". masEscenaTres . " ". persTipoFraseCuatro . " ". masEscenaCuatro. " " . verMasPersTipo . "; }
+  body .contenedorPersTipo .persTipoPpal {
+    grid-area: persTipoPpal;
+    width: 100%;
+    box-shadow: 0 0 25px #3a3636;
+    border-radius: 6px;
+    margin-top: 5.3rem; }
+  body .contenedorPersTipo h1 {
+    grid-area: h1;
+    color: #4d4a4a;
+    font-family: "Bree Serif", "serif";
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+    padding: 1rem;
+    margin-top: 1rem; }
+  body .contenedorPersTipo .masPersonajes {
+    grid-area: masPersonajes;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: none solid 1rem;
+    border-radius: 1.1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #734985;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: "NTR", sans-serif;
+    font-variant-caps: all-small-caps;
+    justify-self: center; }
+    body .contenedorPersTipo .masPersonajes a {
+      margin: 0;
+      text-decoration: none;
+      color: whitesmoke; }
+  body .contenedorPersTipo .persTipoTexto {
+    margin-top: 1rem;
+    grid-area: persTipoTexto;
+    font-size: 1rem;
+    color: #4d4a4a;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+  body .contenedorPersTipo h2 {
+    grid-area: h2;
+    color: #4d4a4a;
+    font-family: "Bree Serif", "serif";
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+    width: 100%;
+    padding: 2rem; }
+  body .contenedorPersTipo .persTipoFraseUno {
+    grid-area: persTipoFraseUno; }
+    body .contenedorPersTipo .persTipoFraseUno img {
+      margin-top: 1rem;
+      width: 100%;
+      height: 65%;
+      box-shadow: 0 0 5px #3a3636;
+      border-radius: 5px; }
+    body .contenedorPersTipo .persTipoFraseUno h3 {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1.4rem;
+      /*text-align: left;*/
+      margin-top: 2rem;
+      margin-bottom: 0; }
+  body .contenedorPersTipo .masEscenaUno {
+    grid-area: masEscenaUno;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border: none solid 1rem;
+    border-radius: 1.1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #734985;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: "NTR", sans-serif;
+    font-variant-caps: all-small-caps;
+    justify-self: center; }
+    body .contenedorPersTipo .masEscenaUno a {
+      display: inline-block;
+      margin: 0;
+      text-decoration: none;
+      color: whitesmoke; }
+  body .contenedorPersTipo .persTipoFraseDos {
+    grid-area: persTipoFraseDos; }
+    body .contenedorPersTipo .persTipoFraseDos img {
+      margin-top: 1rem;
+      width: 100%;
+      height: 65%;
+      box-shadow: 0 0 5px #3a3636;
+      border-radius: 5px; }
+    body .contenedorPersTipo .persTipoFraseDos h3 {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1.4rem;
+      color: #4d4a4a;
+      /*text-align: left;*/
+      margin-top: 2rem;
+      margin-bottom: 0; }
+  body .contenedorPersTipo .masEscenaDos {
+    grid-area: masEscenaDos;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    border: none solid 1rem;
+    border-radius: 1.1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #734985;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: "NTR", sans-serif;
+    font-variant-caps: all-small-caps;
+    justify-self: center; }
+    body .contenedorPersTipo .masEscenaDos a {
+      display: inline-block;
+      margin: 0;
+      text-decoration: none;
+      color: whitesmoke; }
+  body .contenedorPersTipo .persTipoFraseTres {
+    grid-area: persTipoFraseTres; }
+    body .contenedorPersTipo .persTipoFraseTres img {
+      margin-top: 1rem;
+      width: 100%;
+      height: 65%;
+      box-shadow: 0 0 5px #3a3636;
+      border-radius: 5px; }
+    body .contenedorPersTipo .persTipoFraseTres h3 {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1.4rem;
+      color: #4d4a4a;
+      /*text-align: left;*/
+      margin-top: 2rem;
+      margin-bottom: 0; }
+  body .contenedorPersTipo .masEscenaTres {
+    grid-area: masEscenaTres;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    border: none solid 1rem;
+    border-radius: 1.1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #734985;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: "NTR", sans-serif;
+    font-variant-caps: all-small-caps;
+    justify-self: center; }
+    body .contenedorPersTipo .masEscenaTres a {
+      display: inline-block;
+      margin: 0;
+      text-decoration: none;
+      color: whitesmoke; }
+  body .contenedorPersTipo .persTipoFraseCuatro {
+    grid-area: persTipoFraseCuatro; }
+    body .contenedorPersTipo .persTipoFraseCuatro img {
+      margin-top: 1rem;
+      width: 100%;
+      height: 65%;
+      box-shadow: 0 0 5px #3a3636;
+      border-radius: 5px; }
+    body .contenedorPersTipo .persTipoFraseCuatro h3 {
+      font-family: "Port Lligat Sans", sans-serif;
+      text-align: left;
+      font-size: 1.4rem;
+      color: #4d4a4a;
+      /*text-align: left;*/
+      margin-top: 2rem;
+      margin-bottom: 0; }
+  body .contenedorPersTipo .masEscenaCuatro {
+    grid-area: masEscenaCuatro;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    border: none solid 1rem;
+    border-radius: 1.1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #734985;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: "NTR", sans-serif;
+    font-variant-caps: all-small-caps;
+    justify-self: center; }
+    body .contenedorPersTipo .masEscenaCuatro a {
+      display: inline-block;
+      margin: 0;
+      text-decoration: none;
+      color: whitesmoke; }
+  body .contenedorPersTipo .verMasPersTipo {
+    grid-area: verMasPersTipo; }
+  body .contenedorPersTipo div div div div div a .img-pers {
+    margin-top: 2rem;
+    width: 60%;
+    height: 60%; }
+
+@media screen and (min-width: 600px) {
+  body .contenedorPersTipo {
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 0.3fr 0.05fr 0.05fr 0.5fr 0.1fr 0.3fr 0.05fr 0.3fr 0.05fr 0.3fr 0.05fr 0.3fr 0.05fr 0.2fr; }
+    body .contenedorPersTipo .persTipoFraseUno img, body .contenedorPersTipo .persTipoFraseDos img, body .contenedorPersTipo .persTipoFraseTres img, body .contenedorPersTipo .persTipoFraseCuatro img {
+      width: 100%;
+      height: 80%; }
+    body .contenedorPersTipo .masEscenaUno, body .contenedorPersTipo .masEscenaDos, body .contenedorPersTipo .masEscenaTres, body .contenedorPersTipo .masEscenaCuatro {
+      margin-top: 2rem; } }
+
+@media screen and (min-width: 1024px) {
+  body .contenedorPersTipo {
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 0.3fr 0.05fr 0.05fr 0.5fr 0.1fr 0.3fr 0.05fr 0.3fr 0.05fr 0.3fr 0.05fr 0.3fr 0.05fr 0.2fr; }
+    body .contenedorPersTipo h1 {
+      margin-top: 1rem; } }
+
+/*estilos personajes*/
+/*MOBILE FIRST*/
+body .contenedorPersonajes {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 0.4fr 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.25fr 0.75fr 0.75fr 0.75fr 0.75fr;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-areas: " fotoGral fotoGral fotoGral" ". titulo . " ". persUno ." ". persDos ." ". persTres ." ". persCuatro ." " . masPersonajesSec . " ". persCinco ." ". persSeis ." ". persSiete ." ". persOcho .";
+  justify-content: center;
+  background: linear-gradient(#dbcdba, #4d4a4a);
+  background-repeat: no-repeat;
+  height: 100%;
+  padding-bottom: 3rem; }
+  body .contenedorPersonajes .fotoGral {
+    grid-area: fotoGral;
+    margin-bottom: 2rem;
+    margin-top: 5rem; }
+    body .contenedorPersonajes .fotoGral img {
+      width: 100%;
+      height: 100%; }
+  body .contenedorPersonajes .titulo {
+    grid-area: titulo;
+    font-family: "Bree Serif", "serif";
+    text-align: center;
+    font-size: 2rem;
+    color: whitesmoke;
+    margin: 0.8rem 0.8rem; }
+  body .contenedorPersonajes .persUno {
+    grid-area: persUno;
+    width: 100%;
+    border: double #a3a1a1 0.5px;
+    margin-top: 2rem;
+    max-width: 500px; }
+    body .contenedorPersonajes .persUno .personajesPrinc {
+      overflow: hidden;
+      width: 100%;
+      height: 75%;
+      opacity: 0.8;
+      max-width: 500px; }
+      body .contenedorPersonajes .persUno .personajesPrinc a .michael {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+        object-fit: cover;
+        padding: 0.5rem;
+        max-width: 500px; }
+        body .contenedorPersonajes .persUno .personajesPrinc a .michael:hover {
+          transform: scale(1.05); }
+    body .contenedorPersonajes .persUno div h2 {
+      color: whitesmoke;
+      font-family: 'Bree Serif','serif';
+      font-size: 1.2rem;
+      text-align: center;
+      margin-top: 0.6rem;
+      padding: 0.3rem;
+      justify-content: center; }
+  body .contenedorPersonajes .persDos {
+    grid-area: persDos;
+    width: 100%;
+    border: double #a3a1a1 0.5px;
+    margin-top: 2rem;
+    max-width: 500px; }
+    body .contenedorPersonajes .persDos .personajesPrinc {
+      overflow: hidden;
+      width: 100%;
+      height: 75%;
+      opacity: 0.8;
+      max-width: 500px; }
+      body .contenedorPersonajes .persDos .personajesPrinc a .dwight {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+        object-fit: cover;
+        padding: 0.5rem;
+        max-width: 500px; }
+        body .contenedorPersonajes .persDos .personajesPrinc a .dwight:hover {
+          transform: scale(1.05); }
+    body .contenedorPersonajes .persDos div h2 {
+      color: whitesmoke;
+      font-family: 'Bree Serif','serif';
+      font-size: 1.2rem;
+      text-align: center;
+      margin-top: 0.6rem;
+      padding: 0.3rem;
+      justify-content: center; }
+  body .contenedorPersonajes .persTres {
+    grid-area: persTres;
+    width: 100%;
+    border: double #a3a1a1 0.5px;
+    margin-top: 2rem;
+    max-width: 500px; }
+    body .contenedorPersonajes .persTres .personajesPrinc {
+      overflow: hidden;
+      width: 100%;
+      height: 75%;
+      opacity: 0.8;
+      max-width: 500px; }
+      body .contenedorPersonajes .persTres .personajesPrinc a .jim {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+        object-fit: cover;
+        padding: 0.5rem;
+        max-width: 500px; }
+        body .contenedorPersonajes .persTres .personajesPrinc a .jim:hover {
+          transform: scale(1.05); }
+    body .contenedorPersonajes .persTres div h2 {
+      color: whitesmoke;
+      font-family: 'Bree Serif','serif';
+      font-size: 1.2rem;
+      text-align: center;
+      margin-top: 0.6rem;
+      padding: 0.3rem;
+      justify-content: center; }
+  body .contenedorPersonajes .persCuatro {
+    grid-area: persCuatro;
+    width: 100%;
+    border: double #a3a1a1 0.5px;
+    margin-top: 2rem;
+    max-width: 500px; }
+    body .contenedorPersonajes .persCuatro .personajesPrinc {
+      overflow: hidden;
+      width: 100%;
+      height: 75%;
+      opacity: 0.8;
+      max-width: 500px; }
+      body .contenedorPersonajes .persCuatro .personajesPrinc a .pam {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+        object-fit: cover;
+        padding: 0.5rem;
+        max-width: 500px; }
+        body .contenedorPersonajes .persCuatro .personajesPrinc a .pam:hover {
+          transform: scale(1.05); }
+    body .contenedorPersonajes .persCuatro div h2 {
+      color: whitesmoke;
+      font-family: 'Bree Serif','serif';
+      font-size: 1.2rem;
+      text-align: center;
+      margin-top: 0.6rem;
+      padding: 0.3rem;
+      justify-content: center; }
+  body .contenedorPersonajes .masPersonajesSec {
+    grid-area: masPersonajesSec;
+    color: #4d4a4a;
+    font-family: "Bree Serif", "serif";
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1.5rem; }
+  body .contenedorPersonajes .persCinco {
+    grid-area: persCinco;
+    margin-top: 1rem;
+    width: 100%;
+    margin-bottom: 2rem; }
+    body .contenedorPersonajes .persCinco .personajesSec {
+      /*display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;*/
+      overflow: hidden;
+      height: 100%;
+      max-width: 280px;
+      position: relative;
+      transition: all 500ms ease-out; }
+      body .contenedorPersonajes .persCinco .personajesSec:hover {
+        opacity: 0.4;
+        transition: all 500ms ease-out; }
+      body .contenedorPersonajes .persCinco .personajesSec .angela {
+        width: 100%;
+        height: 85%; }
+      body .contenedorPersonajes .persCinco .personajesSec .sinopsisAngela {
+        color: whitesmoke;
+        position: absolute;
+        font-size: 1.1rem;
+        font-family: 'Bree Serif', serif;
+        text-align: center;
+        padding: 0.5rem;
+        width: 70%;
+        transition: all 500ms ease-out;
+        opacity: 0;
+        align-items: center; }
+        body .contenedorPersonajes .persCinco .personajesSec .sinopsisAngela:hover {
+          cursor: auto;
+          opacity: 1;
+          color: whitesmoke; }
+    body .contenedorPersonajes .persCinco h3 {
+      color: whitesmoke;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 0.95rem;
+      text-align: justify;
+      width: 100%;
+      position: relative;
+      margin-top: 1rem; }
+  body .contenedorPersonajes .persSeis {
+    grid-area: persSeis;
+    margin-top: 1rem;
+    width: 100%;
+    margin-bottom: 2rem; }
+    body .contenedorPersonajes .persSeis .personajesSec {
+      overflow: hidden;
+      height: 100%;
+      max-width: 280px;
+      position: relative;
+      transition: all 500ms ease-out; }
+      body .contenedorPersonajes .persSeis .personajesSec:hover {
+        opacity: 0.4;
+        transition: all 500ms ease-out; }
+      body .contenedorPersonajes .persSeis .personajesSec .meredith {
+        width: 100%;
+        height: 85%; }
+      body .contenedorPersonajes .persSeis .personajesSec .sinopsisMeredith {
+        color: whitesmoke;
+        position: absolute;
+        font-size: 1.1rem;
+        font-family: 'Bree Serif', serif;
+        text-align: center;
+        padding: 0.5rem;
+        width: 70%;
+        transition: all 500ms ease-out;
+        opacity: 0;
+        align-items: center; }
+        body .contenedorPersonajes .persSeis .personajesSec .sinopsisMeredith:hover {
+          cursor: auto;
+          opacity: 1;
+          color: whitesmoke; }
+    body .contenedorPersonajes .persSeis h3 {
+      color: whitesmoke;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 0.95rem;
+      text-align: justify;
+      width: 100%;
+      position: relative;
+      margin-top: 1rem; }
+  body .contenedorPersonajes .persSiete {
+    grid-area: persSiete;
+    margin-top: 1rem;
+    width: 100%;
+    margin-bottom: 2rem; }
+    body .contenedorPersonajes .persSiete .personajesSec {
+      /*display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;*/
+      overflow: hidden;
+      height: 100%;
+      max-width: 280px;
+      position: relative;
+      transition: all 500ms ease-out; }
+      body .contenedorPersonajes .persSiete .personajesSec:hover {
+        opacity: 0.4;
+        transition: all 500ms ease-out; }
+      body .contenedorPersonajes .persSiete .personajesSec .ryan {
+        width: 100%;
+        height: 85%; }
+      body .contenedorPersonajes .persSiete .personajesSec .sinopsisRyan {
+        color: whitesmoke;
+        position: absolute;
+        font-size: 1.1rem;
+        font-family: 'Bree Serif', serif;
+        text-align: center;
+        padding: 0.5rem;
+        width: 70%;
+        transition: all 500ms ease-out;
+        opacity: 0;
+        align-items: center; }
+        body .contenedorPersonajes .persSiete .personajesSec .sinopsisRyan:hover {
+          cursor: auto;
+          opacity: 1;
+          color: whitesmoke; }
+    body .contenedorPersonajes .persSiete h3 {
+      color: whitesmoke;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 0.95rem;
+      text-align: justify;
+      position: relative;
+      margin-top: 1rem; }
+  body .contenedorPersonajes .persOcho {
+    grid-area: persOcho;
+    margin-top: 1rem;
+    width: 100%;
+    margin-bottom: 2rem; }
+    body .contenedorPersonajes .persOcho .personajesSec {
+      overflow: hidden;
+      height: 100%;
+      max-width: 280px;
+      position: relative;
+      transition: all 500ms ease-out; }
+      body .contenedorPersonajes .persOcho .personajesSec:hover {
+        opacity: 0.4;
+        transition: all 500ms ease-out; }
+      body .contenedorPersonajes .persOcho .personajesSec .toby {
+        width: 100%;
+        height: 85%; }
+      body .contenedorPersonajes .persOcho .personajesSec .sinopsisToby {
+        color: whitesmoke;
+        position: absolute;
+        font-size: 1.1rem;
+        font-family: 'Bree Serif', serif;
+        text-align: center;
+        padding: 0.5rem;
+        width: 70%;
+        transition: all 500ms ease-out;
+        opacity: 0;
+        align-items: center; }
+        body .contenedorPersonajes .persOcho .personajesSec .sinopsisToby:hover {
+          cursor: auto;
+          opacity: 1;
+          color: whitesmoke; }
+    body .contenedorPersonajes .persOcho h3 {
+      color: whitesmoke;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 0.95rem;
+      text-align: justify;
+      width: 100%;
+      position: relative;
+      margin-top: 1rem; }
+
+@media screen and (min-width: 600px) {
+  body .contenedorPersonajes {
+    grid-template-rows: 0.5fr 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr;
+    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-areas: " fotoGral fotoGral fotoGral fotoGral" ". titulo titulo . " ". persUno persUno ." ". persDos persDos ." ". persTres persTres ." ". persCuatro persCuatro ." ". masPersonajesSec masPersonajesSec ." ". persCinco persCinco ." ". persSeis persSeis ." ". persSiete persSiete ."   ". persOcho persOcho .";
+    justify-content: center;
+    align-items: center; }
+    body .contenedorPersonajes .titulo {
+      font-size: 2.1rem; }
+    body .contenedorPersonajes div div h2 {
+      font-size: 1.7rem;
+      margin-top: 1.5rem; }
+    body .contenedorPersonajes .masPersonajesSec {
+      font-size: 2.1rem; }
+    body .contenedorPersonajes .persCinco .personajesSec {
+      width: 100%;
+      max-width: 600px; }
+    body .contenedorPersonajes .persCinco .angela, body .contenedorPersonajes .persCinco .meredith, body .contenedorPersonajes .persCinco .ryan, body .contenedorPersonajes .persCinco .toby {
+      padding-right: 3rem;
+      padding-left: 3rem; }
+    body .contenedorPersonajes .persCinco .sinopsisAngela, body .contenedorPersonajes .persCinco .sinopsisMeredith, body .contenedorPersonajes .persCinco .sinopsisRyan, body .contenedorPersonajes .persCinco .sinopsisToby {
+      font-size: 1.5rem; }
+    body .contenedorPersonajes h3 {
+      padding-left: 3rem;
+      margin-top: 0.8rem;
+      margin-left: 0;
+      padding-right: 3rem; }
+    body .contenedorPersonajes .persSeis .personajesSec {
+      width: 100%;
+      max-width: 600px; }
+    body .contenedorPersonajes .persSeis .meredith {
+      padding-right: 3rem;
+      padding-left: 3rem; }
+    body .contenedorPersonajes .persSeis .sinopsisMeredith {
+      font-size: 1.5rem; }
+    body .contenedorPersonajes h3 {
+      padding-left: 3rem;
+      margin-top: 0.8rem;
+      margin-left: 0;
+      padding-right: 3rem; }
+    body .contenedorPersonajes .persSiete .personajesSec {
+      width: 100%;
+      max-width: 600px; }
+    body .contenedorPersonajes .persSiete .ryan {
+      padding-right: 3rem;
+      padding-left: 3rem; }
+    body .contenedorPersonajes .persSiete .sinopsisRyan {
+      font-size: 1.5rem; }
+    body .contenedorPersonajes h3 {
+      padding-left: 3rem;
+      margin-top: 0.8rem;
+      margin-left: 0;
+      padding-right: 3rem; }
+    body .contenedorPersonajes .persOcho .personajesSec {
+      width: 100%;
+      max-width: 600px; }
+    body .contenedorPersonajes .persOcho .toby {
+      padding-right: 3rem;
+      padding-left: 3rem; }
+    body .contenedorPersonajes .persOcho .sinopsisToby {
+      font-size: 1.5rem; }
+    body .contenedorPersonajes h3 {
+      padding-left: 3rem;
+      margin-top: 0.8rem;
+      margin-left: 0;
+      padding-right: 3rem; } }
+
+@media screen and (min-width: 1024px) {
+  body .contenedorPersonajes {
+    width: 100%;
+    grid-template-rows: 0.5fr 0.1fr 0.5fr 0.5fr 0.1fr 0.3fr 0.3fr;
+    grid-template-columns: 15% 35% 35% 15%;
+    grid-template-areas: " fotoGral fotoGral fotoGral fotoGral " ". titulo titulo . " ". persUno persDos ." ". persTres persCuatro ." ". masPersonajesSec masPersonajesSec ." ". persCinco persSeis ."  ". persSiete persOcho .";
+    column-gap: 1rem; }
+    body .contenedorPersonajes .titulo {
+      font-size: 2.5rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem; }
+    body .contenedorPersonajes .masPersonajesSec {
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+      font-size: 2.5rem; }
+    body .contenedorPersonajes .persUno {
+      justify-self: center; }
+    body .contenedorPersonajes .persDos {
+      justify-self: center; }
+    body .contenedorPersonajes .persTres {
+      justify-self: center; }
+    body .contenedorPersonajes .persCuatro {
+      justify-self: center; }
+    body .contenedorPersonajes .persCinco {
+      margin-top: 0.8rem;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      align-items: center; }
+      body .contenedorPersonajes .persCinco .personajesSec {
+        width: 100%;
+        justify-self: center; }
+        body .contenedorPersonajes .persCinco .personajesSec .angela {
+          justify-content: right; }
+      body .contenedorPersonajes .persCinco h3 {
+        margin-top: 0.8rem;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center; }
+    body .contenedorPersonajes .persSeis {
+      margin-top: 0.8rem;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      align-items: center; }
+      body .contenedorPersonajes .persSeis .personajesSec {
+        width: 100%;
+        justify-self: center; }
+        body .contenedorPersonajes .persSeis .personajesSec .meredith {
+          justify-content: left; }
+      body .contenedorPersonajes .persSeis h3 {
+        margin-top: 0.8rem;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center; }
+    body .contenedorPersonajes .persSiete {
+      margin-top: 0.8rem;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      align-items: center; }
+      body .contenedorPersonajes .persSiete .personajesSec {
+        width: 100%;
+        justify-self: center; }
+        body .contenedorPersonajes .persSiete .personajesSec .ryan {
+          justify-content: right; }
+      body .contenedorPersonajes .persSiete h3 {
+        margin-top: 0.8rem;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center; }
+    body .contenedorPersonajes .persOcho {
+      margin-top: 0.8rem;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      align-items: center; }
+      body .contenedorPersonajes .persOcho .personajesSec {
+        width: 100%;
+        justify-self: center; }
+        body .contenedorPersonajes .persOcho .personajesSec .toby {
+          justify-content: left; }
+      body .contenedorPersonajes .persOcho h3 {
+        margin-top: 0.8rem;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center; } }
+
+/*Estilos Temporada Tipo (1 a 9) - 
+MOBILES FIRST*/
+body .contenedorTempTipo {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-rows: 0.2fr 0.2fr 0.1fr 0.1fr;
+  grid-template-areas: "imagenFondo imagenFondo imagenFondo" ". tempTipo ." "cajaSinopsis cajaSinopsis cajaSinopsis" "verMasTemporadas verMasTemporadas verMasTemporadas ";
+  background: linear-gradient(#dbcdba, #4d4a4a);
+  background-repeat: no-repeat;
+  height: 100%;
+  padding-bottom: 3rem; }
+  body .contenedorTempTipo .imagenFondo {
+    grid-area: imagenFondo; }
+    body .contenedorTempTipo .imagenFondo img {
+      width: 100%;
+      position: relative;
+      margin-top: 5rem; }
+  body .contenedorTempTipo .tempTipo {
+    grid-area: tempTipo; }
+    body .contenedorTempTipo .tempTipo .temporadaTipo {
+      width: 100%; }
+      body .contenedorTempTipo .tempTipo .temporadaTipo img {
+        position: absolute;
+        width: 33%;
+        top: 20%;
+        z-index: 0;
+        justify-self: center; }
+  body .contenedorTempTipo .cajaSinopsis {
+    grid-area: cajaSinopsis;
+    margin-top: 6rem; }
+    body .contenedorTempTipo .cajaSinopsis .sinopsisTemporada p {
+      width: 200px;
+      text-align: justify;
+      color: whitesmoke;
+      font-size: 0.7rem;
+      justify-self: center;
+      margin-bottom: 3rem;
+      margin-top: 1rem;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+  body .contenedorTempTipo .verMasTemporadas {
+    grid-area: verMasTemporadas; }
+    body .contenedorTempTipo .verMasTemporadas div div div div a .img-temp {
+      width: 30%;
+      height: 30%; }
+
+@media screen and (min-width: 600px) {
+  body .contenedorTempTipo .tempTipo .temporadaTipo img {
+    position: absolute;
+    width: 33%;
+    top: 15%;
+    justify-self: center;
+    padding: 2rem; }
+  body .contenedorTempTipo .cajaSinopsis .sinopsisTemporada p {
+    width: 375px;
+    font-size: 1rem;
+    margin-top: 6rem;
+    margin-bottom: 7rem; } }
+
+@media screen and (min-width: 1024px) {
+  body .contenedorTempTipo .tempTipo .temporadaTipo img {
+    position: absolute;
+    width: 25%;
+    top: 45%;
+    justify-self: center;
+    padding: 2rem; }
+  body .contenedorTempTipo .cajaSinopsis .sinopsisTemporada p {
+    width: 550px;
+    font-size: 1rem;
+    margin-top: 6rem;
+    margin-bottom: 7rem; }
+  body .contenedorTempTipo .verMasTemporadas {
+    grid-area: verMasTemporadas; }
+    body .contenedorTempTipo .verMasTemporadas div div div div a .img-temp {
+      width: 15%;
+      height: 15%; } }
+
+@media screen and (min-width: 1900px) {
+  body .contenedorTempTipo .tempTipo .temporadaTipo img {
+    position: absolute;
+    width: 25%;
+    top: 65%;
+    justify-self: center;
+    padding: 7.5rem; }
+  body .contenedorTempTipo .cajaSinopsis .sinopsisTemporada p {
+    width: 550px;
+    font-size: 1rem;
+    margin-top: 6rem;
+    margin-bottom: 7rem; }
+  body .contenedorTempTipo .verMasTemporadas {
+    grid-area: verMasTemporadas; }
+    body .contenedorTempTipo .verMasTemporadas div div div div a .img-temp {
+      width: 10%;
+      height: 10%; } }
+
+/*Estilos Temporadas*/
+body .contenedor-temp {
+  background: linear-gradient(#dbcdba, #4d4a4a);
+  background-repeat: no-repeat;
+  height: 100%; }
+  body .contenedor-temp .imagen-general {
+    padding: 0;
+    margin-bottom: 1rem;
+    opacity: 0.8; }
+  body .contenedor-temp .texto-1 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.2rem;
+    text-align: center;
+    width: 100%;
+    font-family: "Bree Serif", "serif";
+    text-align: center;
+    font-size: 2rem;
+    color: whitesmoke; }
+  body .contenedor-temp .texto-2 {
+    font-family: "Port Lligat Sans", sans-serif;
+    text-align: center;
+    font-style: italic;
+    color: whitesmoke;
+    width: 100%;
+    margin-bottom: 2rem; }
+  body .contenedor-temp .card-img-top {
+    box-shadow: 0 0 25px #3a3636;
+    border-radius: 16px; }
+  body .contenedor-temp .card-body {
+    text-align: center; }
+    body .contenedor-temp .card-body .card-title {
+      font-family: "Bree Serif", "serif";
+      font-size: 1.2rem;
+      color: whitesmoke;
+      margin-top: 0.6rem;
+      margin-bottom: 0.3rem; }
+    body .contenedor-temp .card-body .card-text {
+      font-family: "Port Lligat Sans", sans-serif;
+      font-size: 1rem;
+      color: whitesmoke;
+      margin-bottom: 0.6rem; }
+    body .contenedor-temp .card-body .btn {
+      border: none solid 1rem;
+      border-radius: 1.1rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      background-color: #734985;
+      text-align: center;
+      font-size: 1.1rem;
+      font-family: "NTR", sans-serif;
+      font-variant-caps: all-small-caps;
+      color: whitesmoke;
+      margin-top: 0.5rem;
+      margin-bottom: 2rem; }

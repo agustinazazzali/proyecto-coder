@@ -1,0 +1,59 @@
+/*Estilos HEADER GENERAL*/
+
+@import "../base/reset";
+@import "../utilities/extend";
+@import "../utilities/mapas";
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+
+header {
+    z-index: 1;
+    position: fixed;
+    height: 5rem;
+  
+    nav{
+    background-color: rgba(37, 36, 36, 0.897);
+
+        div ul li {
+            margin: 0.2rem;
+            display: inline-block;
+            font-family:$texto-general; 
+            color: $texto-claro;
+            font-weight: lighter;
+            font-variant-caps: all-petite-caps;
+            @extend %flexdos;
+            position: relative;
+
+
+            .nav-link {
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    display: inline;
+                    height: 2px;
+                    width: 100%;
+                    background-color: $boton;
+                    transform-origin: right;
+                    transform: scaleX(0);
+                    transition: transform .5s ease-in-out;
+                }                  
+                &:hover {
+                    &:after {
+                        transform-origin: left;
+                        transform: scaleX(1);
+                    }   
+                }    
+            }       
+        }
+        a {
+            color: $texto-claro;
+            display: inline;
+            text-decoration: none;
+        }
+    } 
+}
+

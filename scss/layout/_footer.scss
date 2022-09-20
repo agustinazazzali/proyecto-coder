@@ -1,0 +1,35 @@
+
+/*Estilos FOOTER GENERAL*/
+
+
+@import "base/reset";
+@import "../utilities/extend";
+@import "../utilities/mapas";
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+
+footer {
+
+  
+    height: 10rem;
+    background-color:$color-nav;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    .derechosReservados {
+        color:black;
+        text-align: center;
+        font-size: 1rem;
+        font-family:$texto-general;
+    }      
+    .logoRedes {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        @extend %flexdos;
+        gap: 1rem;
+    }
+}
+
+
+
